@@ -18,9 +18,6 @@
     [[Simpson99]] Stephen G. Simpson. Subsystems of second order
     arithmetic, Cambridge University Press, 1999 *)
 
-From Stdlib Require Import List.
-Import ListNotations.
-
 (** [inductively_barred P l] means that P eventually holds above l *)
 
 Inductive inductively_barred P : list bool -> Prop :=
@@ -34,8 +31,8 @@ Inductive inductively_barred P : list bool -> Prop :=
 
 Fixpoint approx X (l:list bool) :=
   match l with
-  | [] => True
-  | b::l => approx X l /\ (if b then X (length l) else ~ X (length l))
+  | nil => True
+  | cons b l => approx X l /\ (if b then X (length l) else ~ X (length l))
   end.
 
 (** [barred P] means that for any infinite path represented as a predicate,
@@ -51,8 +48,8 @@ Definition barred P :=
 
 Fixpoint Y P (l:list bool) :=
   match l with
-  | [] => True
-  | b::l =>
+  | nil => True
+  | cons b l =>
       Y P l /\
       if b then inductively_barred P (false::l) else ~ inductively_barred P (false::l)
   end.
@@ -88,7 +85,7 @@ induction l.
     * firstorder.
 Qed.
 
-Theorem WeakFanTheorem : forall P, barred P -> inductively_barred P [].
+Theorem WeakFanTheorem : forall P, barred P -> inductively_barred P nil.
 Proof.
 intros P Hbar.
 destruct Hbar with (X P) as (l,(Hd%Y_approx,HP)).
