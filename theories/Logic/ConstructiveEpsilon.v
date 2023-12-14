@@ -107,8 +107,6 @@ related to conformity to [rel_ls].
 
 (* Direct version *)
 
-From Stdlib Require Import Arith.
-
 Section ConstructiveIndefiniteGroundDescription_Direct.
 
 Variable P : nat -> Prop.
@@ -226,13 +224,16 @@ Proof.
   apply (rel_ls_post r).
 Defined.
 
+Lemma le_0_l n : 0 <= n.
+Proof. induction n; auto. Qed.
+
 Definition epsilon_smallest :
   (exists n : nat, P n) -> { n : nat | P n /\ forall k, P k -> n <= k }.
 Proof.
   intro e; destruct (linear_search_from_0_conform e) as [found r]; exists found.
   split.
   - apply (rel_ls_post r).
-  - intros k pk. apply (rel_ls_lower_bound r pk), Nat.le_0_l.
+  - intros k pk. apply (rel_ls_lower_bound r pk), le_0_l.
 Defined.
 
 (** NB. The previous version used a negative formulation:
@@ -286,7 +287,7 @@ Proof.
   intro e. exists (linear_search_from_0 e). split.
   - apply (rel_ls_post (linear_search_from_0_rel e)).
   - intros k pk.
-    apply (@rel_ls_lower_bound _ 0 (linear_search_from_0_rel e) k pk), Nat.le_0_l.
+    apply (@rel_ls_lower_bound _ 0 (linear_search_from_0_rel e) k pk), le_0_l.
 Defined.
 
 End ConstructiveIndefiniteGroundDescription_Direct.
@@ -331,13 +332,13 @@ intros x n; generalize x; clear x; induction n as [|n IH]; simpl.
 - apply P_implies_acc.
 - intros x H. constructor. intros y [fxy _].
   apply IH. rewrite fxy.
-  replace (n + S x) with (S (n + x)); auto with arith.
+  replace (n + S x) with (S (n + x)); auto.
 Defined.
 
 Corollary P_eventually_implies_acc_ex : (exists n : nat, P n) -> acc 0.
 Proof.
 intros H; elim H. intros x Px. apply P_eventually_implies_acc with (n := x).
-replace (x + 0) with x; auto with arith.
+replace (x + 0) with x; auto.
 Defined.
 
 (** In the following statement, we use the trick with recursion on
