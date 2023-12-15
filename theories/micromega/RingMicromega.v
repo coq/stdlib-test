@@ -10,7 +10,7 @@
 (*                      Evgeny Makarov, INRIA, 2007                     *)
 (************************************************************************)
 
-From Stdlib Require Import NArith.
+From Stdlib Require Import NArith NArithRing.
 From Stdlib Require Import Relation_Definitions.
 From Stdlib Require Import Setoid.
 (*****)

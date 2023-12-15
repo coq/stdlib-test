@@ -10,7 +10,7 @@
 
 From Stdlib Require Import Bool.
 From Stdlib Require Import Sumbool.
-From Stdlib Require Import Arith.
+From Stdlib Require Import Arith_base.
 From Stdlib Require Import BinPos.
 From Stdlib Require Import BinNat.
 From Stdlib Require Import Pnat.

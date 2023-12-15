@@ -17,7 +17,6 @@ From Stdlib Require Export Nnat.
 From Stdlib Require Export Ndiv_def.
 From Stdlib Require Export Nsqrt_def.
 From Stdlib Require Export Ngcd_def.
-From Stdlib Require Export NArithRing.
 
 (** [N] contains an [order] tactic for natural numbers *)
 
