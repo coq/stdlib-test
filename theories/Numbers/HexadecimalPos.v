@@ -13,7 +13,7 @@
     Proofs that conversions between hexadecimal numbers and [positive]
     are bijections. *)
 
-From Stdlib Require Import Hexadecimal HexadecimalFacts PArith NArith.
+From Stdlib Require Import Hexadecimal HexadecimalFacts PArith NArith NArithRing.
 
 Module Unsigned.
 
