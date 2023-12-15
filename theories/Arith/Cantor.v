@@ -10,7 +10,7 @@
 
 (** Implementation of the Cantor pairing and its inverse function *)
 
-From Stdlib Require Import PeanoNat Lia.
+From Stdlib Require Import PeanoNat.
 
 (** Bijections between [nat * nat] and [nat] *)
 
@@ -71,7 +71,14 @@ Qed.
 Lemma to_nat_spec x y :
   to_nat (x, y) * 2 = y * 2 + (y + x) * S (y + x).
 Proof.
-  cbn. induction (y + x) as [|n IHn]; cbn; lia.
+  cbn; induction (y + x) as [|n IHn]; cbn; [now rewrite !Nat.add_0_r|].
+  rewrite <-plus_Sn_m, Nat.add_assoc, (Nat.add_comm y), <-Nat.add_assoc.
+  rewrite Nat.mul_add_distr_r, IHn, Nat.add_comm, <-Nat.add_assoc.
+  apply f_equal2; [reflexivity|].
+  rewrite Nat.mul_comm, <-Nat.mul_add_distr_l.
+  rewrite <-!plus_Sn_m, <-(Nat.mul_1_l (S (S n))) at 1.
+  rewrite <-Nat.mul_add_distr_r.
+  now change 2 with (1 + 1); rewrite Nat.add_assoc, !Nat.add_1_r.
 Qed.
 
 Lemma to_nat_spec2 x y :
@@ -84,5 +91,13 @@ Qed.
 
 Lemma to_nat_non_decreasing x y : y + x <= to_nat (x, y).
 Proof.
-  pose proof (to_nat_spec x y). nia.
+  pose proof (to_nat_spec x y).
+  rewrite (Nat.mul_le_mono_pos_r _ _ 2 Nat.lt_0_2), H.
+  rewrite Nat.mul_add_distr_r, <-Nat.add_le_mono_l.
+  case x as [|x]; [now rewrite Nat.mul_0_l; apply le_0_n|].
+  rewrite Nat.mul_add_distr_r, <-(Nat.add_0_l (S x * 2)); apply Nat.add_le_mono.
+    now apply le_0_n.
+  apply Nat.mul_le_mono_l.
+  rewrite <-(Nat.add_1_r (y + _)), <-(Nat.add_1_r x).
+  now rewrite Nat.add_assoc, <-Nat.add_assoc; apply Nat.le_add_l.
 Qed.
