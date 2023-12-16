@@ -75,7 +75,7 @@ Infix "<>b" := nequiv_decb (no associativity, at level 70).
 
 (** Decidable leibniz equality instances. *)
 
-From Stdlib.Arith Require Import Arith.
+From Stdlib.Arith Require Import Arith_base.
 
 (** The equiv is buried inside the setoid, but we can recover
   it by specifying which setoid we're talking about. *)
