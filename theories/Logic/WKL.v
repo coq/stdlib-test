@@ -25,7 +25,7 @@
 From Stdlib Require Import WeakFan List.
 Import ListNotations.
 
-From Stdlib Require Import Arith.
+From Stdlib Require Import Arith_base.
 
 (** [is_path_from P n l] means that there exists a path of length [n]
     from [l] on which [P] does not hold *)
