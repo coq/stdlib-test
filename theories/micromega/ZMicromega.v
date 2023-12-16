@@ -14,10 +14,12 @@
 (*                                                                      *)
 (************************************************************************)
 
+
 From Stdlib Require Import List.
 From Stdlib Require Import Bool.
 From Stdlib Require Import OrderedRing.
 From Stdlib Require Import RingMicromega.
+From Stdlib Require Import ZArithRing.
 From Stdlib Require Import ZCoeff.
 From Stdlib Require Import Refl.
 From Stdlib Require Import BinInt.
@@ -558,8 +560,6 @@ Proof.
 Qed.
 
 (** NB: narrow_interval_upper_bound is Zdiv.Zdiv_le_lower_bound *)
-
-From Stdlib Require Import QArith.
 
 Inductive ZArithProof :=
 | DoneProof
