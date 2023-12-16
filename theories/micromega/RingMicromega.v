@@ -13,6 +13,7 @@
 From Stdlib Require Import NArith NArithRing.
 From Stdlib Require Import Relation_Definitions.
 From Stdlib Require Import Setoid.
+From Stdlib Require Import Ring.
 (*****)
 From Stdlib Require Import Env.
 From Stdlib Require Import EnvRing.

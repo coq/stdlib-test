@@ -29,6 +29,7 @@ theories/funind/Recdef.v
 theories/ltac/Ltac.v
 theories/micromega/Ztac.v
 theories/micromega/DeclConstant.v
+theories/micromega/DeclConstantZ.v
 theories/micromega/Env.v
 theories/micromega/EnvRing.v
 theories/micromega/Fourier.v
