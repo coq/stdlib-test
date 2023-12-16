@@ -237,6 +237,7 @@ micromega/ZifyNat.v
 micromega/ZifyPow.v
 micromega/ZifyUint63.v
 micromega/ZArith_hints.v
+micromega/DeclConstantZ.v
 micromega/DeclConstant.v
 micromega/ZifySint63.v
 micromega/ZMicromega.v
