@@ -80,6 +80,21 @@ through the <tt>Require Import</tt> command.</p>
     theories/Bool/IfProp.v
   </dd>
 
+  <dt> <b>Structures</b>:
+    Basic "algebraic" structures: types with decidable equality and with order.
+    Common instances can be found in orders-ex.
+    More developped algebra can be found in the
+    <a href="https://github.com/math-comp/math-comp">mathematical components
+    library</a>.
+  </dt>
+  <dd>
+    theories/Structures/Equalities.v
+    theories/Structures/Orders.v
+    theories/Structures/OrdersTac.v
+    theories/Structures/OrdersFacts.v
+    theories/Structures/GenericMinMax.v
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -99,18 +114,6 @@ through the <tt>Require Import</tt> command.</p>
     theories/Logic/Epsilon.v
     theories/Logic/IndefiniteDescription.v
     theories/Logic/PropExtensionality.v
-  </dd>
-
-  <dt> <b>Structures</b>:
-    Algebraic structures (types with equality, with order, ...).
-    DecidableType* and OrderedType* are there only for compatibility.
-  </dt>
-  <dd>
-    theories/Structures/Equalities.v
-    theories/Structures/Orders.v
-    theories/Structures/OrdersTac.v
-    theories/Structures/OrdersFacts.v
-    theories/Structures/GenericMinMax.v
   </dd>
 
   <dt> <b>Structures Examples</b>:
