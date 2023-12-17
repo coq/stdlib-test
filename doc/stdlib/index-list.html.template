@@ -506,75 +506,14 @@ through the <tt>Require Import</tt> command.</p>
     theories/Numbers/Q/HexadecimalQ.v
   </dd>
 
-  <dt> <b>Wellfounded</b>:
-       Well-founded Relations
-  </dt>
-  <dd>
-    theories/Wellfounded/Disjoint_Union.v
-    theories/Wellfounded/Inclusion.v
-    theories/Wellfounded/Inverse_Image.v
-    theories/Wellfounded/Lexicographic_Exponentiation.v
-    theories/Wellfounded/Lexicographic_Product.v
-    theories/Wellfounded/Transitive_Closure.v
-    theories/Wellfounded/Union.v
-    theories/Wellfounded/Wellfounded.v
-    theories/Wellfounded/Well_Ordering.v
-  </dd>
-
-  <dt> <b>MSets</b>:
-    Modular implementation of finite sets using lists or
-    efficient trees. This is a modernization of FSets.
-  </dt>
-  <dd>
-    theories/MSets/MSetInterface.v
-    theories/MSets/MSetFacts.v
-    theories/MSets/MSetDecide.v
-    theories/MSets/MSetProperties.v
-    theories/MSets/MSetEqProperties.v
-    theories/MSets/MSetWeakList.v
-    theories/MSets/MSetList.v
-    theories/MSets/MSetGenTree.v
-    theories/MSets/MSetAVL.v
-    theories/MSets/MSetRBT.v
-    theories/MSets/MSetPositive.v
-    theories/MSets/MSetToFiniteSet.v
-    (theories/MSets/MSets.v)
-  </dd>
-
-  <dt> <b>FSets</b>:
-    Modular implementation of finite sets/maps using lists or
-    efficient trees. For sets, please consider the more
-    modern MSets.
-  </dt>
-  <dd>
-    theories/FSets/FSetInterface.v
-    theories/FSets/FSetBridge.v
-    theories/FSets/FSetFacts.v
-    theories/FSets/FSetDecide.v
-    theories/FSets/FSetProperties.v
-    theories/FSets/FSetEqProperties.v
-    theories/FSets/FSetList.v
-    theories/FSets/FSetWeakList.v
-    theories/FSets/FSetCompat.v
-    theories/FSets/FSetAVL.v
-    theories/FSets/FSetPositive.v
-    (theories/FSets/FSets.v)
-    theories/FSets/FSetToFiniteSet.v
-    theories/FSets/FMapInterface.v
-    theories/FSets/FMapWeakList.v
-    theories/FSets/FMapList.v
-    theories/FSets/FMapPositive.v
-    theories/FSets/FMapFacts.v
-    (theories/FSets/FMaps.v)
-    theories/FSets/FMapAVL.v
-    theories/FSets/FMapFullAVL.v
-  </dd>
-
   <dt> <b>Reals</b>:
-    Formalization of real numbers
+    Formalization of real numbers in namespace Stdlib.Reals.
+    Most of it can be loaded with From Stdlib Require Import Reals.
+    Also contains the micromega tactics, loadable with
+    From Stdlib Require Import Lra. and From Stdlib Require Import Psatz.
   </dt>
   <dd>
-    <dl> 
+    <dl>
   <dt> <b>Classical Reals</b>:
     Real numbers with excluded middle, total order and least upper bounds
   </dt>
@@ -658,7 +597,7 @@ through the <tt>Require Import</tt> command.</p>
     theories/Reals/Abstract/ConstructiveLimits.v
     theories/Reals/Abstract/ConstructiveMinMax.v
     theories/Reals/Abstract/ConstructivePower.v
-    theories/Reals/Abstract/ConstructiveSum.v 
+    theories/Reals/Abstract/ConstructiveSum.v
   </dd>
   <dt> <b>Constructive Cauchy Reals</b>:
     Cauchy sequences of rational numbers, implementation of the interface. EXPERIMENTAL
@@ -674,6 +613,70 @@ through the <tt>Require Import</tt> command.</p>
   </dd>
 
   </dl>
+  </dd>
+
+  <dt> <b>Wellfounded</b>:
+       Well-founded Relations
+  </dt>
+  <dd>
+    theories/Wellfounded/Disjoint_Union.v
+    theories/Wellfounded/Inclusion.v
+    theories/Wellfounded/Inverse_Image.v
+    theories/Wellfounded/Lexicographic_Exponentiation.v
+    theories/Wellfounded/Lexicographic_Product.v
+    theories/Wellfounded/Transitive_Closure.v
+    theories/Wellfounded/Union.v
+    theories/Wellfounded/Wellfounded.v
+    theories/Wellfounded/Well_Ordering.v
+  </dd>
+
+  <dt> <b>MSets</b>:
+    Modular implementation of finite sets using lists or
+    efficient trees. This is a modernization of FSets.
+  </dt>
+  <dd>
+    theories/MSets/MSetInterface.v
+    theories/MSets/MSetFacts.v
+    theories/MSets/MSetDecide.v
+    theories/MSets/MSetProperties.v
+    theories/MSets/MSetEqProperties.v
+    theories/MSets/MSetWeakList.v
+    theories/MSets/MSetList.v
+    theories/MSets/MSetGenTree.v
+    theories/MSets/MSetAVL.v
+    theories/MSets/MSetRBT.v
+    theories/MSets/MSetPositive.v
+    theories/MSets/MSetToFiniteSet.v
+    (theories/MSets/MSets.v)
+  </dd>
+
+  <dt> <b>FSets</b>:
+    Modular implementation of finite sets/maps using lists or
+    efficient trees. For sets, please consider the more
+    modern MSets.
+  </dt>
+  <dd>
+    theories/FSets/FSetInterface.v
+    theories/FSets/FSetBridge.v
+    theories/FSets/FSetFacts.v
+    theories/FSets/FSetDecide.v
+    theories/FSets/FSetProperties.v
+    theories/FSets/FSetEqProperties.v
+    theories/FSets/FSetList.v
+    theories/FSets/FSetWeakList.v
+    theories/FSets/FSetCompat.v
+    theories/FSets/FSetAVL.v
+    theories/FSets/FSetPositive.v
+    (theories/FSets/FSets.v)
+    theories/FSets/FSetToFiniteSet.v
+    theories/FSets/FMapInterface.v
+    theories/FSets/FMapWeakList.v
+    theories/FSets/FMapList.v
+    theories/FSets/FMapPositive.v
+    theories/FSets/FMapFacts.v
+    (theories/FSets/FMaps.v)
+    theories/FSets/FMapAVL.v
+    theories/FSets/FMapFullAVL.v
   </dd>
 
   <dt> <b>Compat</b>:

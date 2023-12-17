@@ -20,7 +20,7 @@ From Stdlib Require Import ZArith_base.
 From Stdlib Require Import Zcomplements.
 From Stdlib Require Import Lra.
 From Stdlib Require Import Ranalysis1.
-From Stdlib Require Import Rsqrt_def. 
+From Stdlib Require Import Rsqrt_def.
 From Stdlib Require Import PSeries_reg.
 From Stdlib Require Export Rtrigo1.
 From Stdlib Require Export Ratan.
