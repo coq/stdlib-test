@@ -68,6 +68,16 @@ through the <tt>Require Import</tt> command.</p>
     theories/Classes/All/DecidableClass.v
   </dd>
 
+  <dt> <b>Bool</b>:
+    Booleans (basic functions and results) in namespace Stdlib.Bool.
+  </dt>
+  <dd>
+    theories/Bool/Bool.v
+    theories/Bool/BoolEq.v
+    theories/Bool/DecBool.v
+    theories/Bool/IfProp.v
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -109,16 +119,6 @@ through the <tt>Require Import</tt> command.</p>
     theories/Structures/Ex/OrderedTypeAlt.v
     theories/Structures/Ex/OrderedTypeEx.v
     theories/Structures/Ex/BoolOrder.v
-  </dd>
-
-  <dt> <b>Bool</b>:
-       Booleans (basic functions and results)
-  </dt>
-  <dd>
-    theories/Bool/Bool.v
-    theories/Bool/BoolEq.v
-    theories/Bool/DecBool.v
-    theories/Bool/IfProp.v
   </dd>
 
   <dt> <b>Arith</b>:
