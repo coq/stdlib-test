@@ -9,7 +9,8 @@ through the <tt>Require Import</tt> command.</p>
 
 <dl>
   <dt> <b>Logic</b>:
-      Logic, dependent equality, extensionality, choice axioms
+    Logic, dependent equality, extensionality, choice axioms in namespace Stdlib.Logic.
+    Look at classical-logic for more elaborate results in namespace Stdlib.Logic.
   </dt>
   <dd>
     theories/Logic/Base/SetIsType.v

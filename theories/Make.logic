@@ -1,0 +1,23 @@
+Logic/Base/Adjointification.v
+Logic/Base/Eqdep_dec.v
+Logic/Base/JMeq.v
+Logic/Base/SetIsType.v
+Logic/Base/Berardi.v
+Logic/Base/ExtensionalFunctionRepresentative.v
+Logic/Base/ProofIrrelevanceFacts.v
+Logic/Base/StrictProp.v
+Logic/Base/ConstructiveEpsilon.v
+Logic/Base/ExtensionalityFacts.v
+Logic/Base/ProofIrrelevance.v
+Logic/Base/WeakFan.v
+Logic/Base/Decidable.v
+Logic/Base/FunctionalExtensionality.v
+Logic/Base/PropExtensionalityFacts.v
+Logic/Base/Eqdep.v
+Logic/Base/HLevels.v
+Logic/Base/PropFacts.v
+Logic/Base/EqdepFacts.v
+Logic/Base/Hurkens.v
+Logic/Base/RelationalChoice.v
+
+-Q Logic/Base Stdlib.Logic.Base.Stdlib.Logic

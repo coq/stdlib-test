@@ -4,6 +4,9 @@ all:
 install:
 	+$(MAKE) -C theories install
 
+build-% install-%:
+	+$(MAKE) -C theories $@
+
 # Make of individual .vo
 theories/%.vo:
 	+$(MAKE) -C theories ${@#theories/}

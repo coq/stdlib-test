@@ -6,10 +6,16 @@ COQMAKEFILEOPTIONS?=
 all: Makefile-all.coq
 	+$(MAKE) -f $< $(COQMAKEOPTIONS)
 
+build-%: Makefile-%.coq
+	+$(MAKE) -f $< $(COQMAKEOPTIONS)
+
 Makefile-%.coq: Make.%
 	$(COQMAKEFILE) $(COQMAKEFILEOPTIONS) -f $< -o $@
 
 install: Makefile-all.coq
+	+$(MAKE) -f $< $(COQMAKEOPTIONS) install
+
+install-%: Makefile-%.coq
 	+$(MAKE) -f $< $(COQMAKEOPTIONS) install
 
 # Make of individual .vo
