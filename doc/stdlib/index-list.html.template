@@ -48,6 +48,15 @@ through the <tt>Require Import</tt> command.</p>
     theories/Program/All/Combinators.v
   </dd>
 
+  <dt> <b>Relations</b>:
+    Relations (definitions and basic results) in namespace Stdlib.Relations.
+  </dt>
+  <dd>
+    theories/Relations/All/Relation_Operators.v
+    theories/Relations/All/Relations.v
+    theories/Relations/All/Operators_Properties.v
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -318,15 +327,6 @@ through the <tt>Require Import</tt> command.</p>
     (theories/Floats/Floats.v)
     </dd>
     </dl>
-  </dd>
-
-  <dt> <b>Relations</b>:
-       Relations (definitions and basic results)
-  </dt>
-  <dd>
-    theories/Relations/All/Relation_Operators.v
-    theories/Relations/All/Relations.v
-    theories/Relations/All/Operators_Properties.v
   </dd>
 
   <dt> <b>Sets</b>:
