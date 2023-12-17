@@ -1,0 +1,11 @@
+Wellfounded/Inclusion.v
+Wellfounded/Wellfounded.v
+Wellfounded/Union.v
+Wellfounded/Transitive_Closure.v
+Wellfounded/Well_Ordering.v
+Wellfounded/Inverse_Image.v
+Wellfounded/Disjoint_Union.v
+Wellfounded/Lexicographic_Product.v
+Wellfounded/Lexicographic_Exponentiation.v
+
+-Q Wellfounded Stdlib.Wellfounded
