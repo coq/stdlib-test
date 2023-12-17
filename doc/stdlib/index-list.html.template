@@ -172,6 +172,20 @@ through the <tt>Require Import</tt> command.</p>
     theories/Streams/StreamMemo.v
   </dd>
 
+  <dt> <b>PArith</b>:
+    Binary representation of positive integers for efficient computation
+    in namespace Stdlib.PArith. You may also want narith and zarith below
+    for N and Z built on top of positive.
+  </dt>
+  <dd>
+    theories/Numbers/Other/AltBinNotations.v
+    theories/PArith/BinPosDef.v
+    theories/PArith/BinPos.v
+    theories/PArith/Pnat.v
+    theories/PArith/POrderedType.v
+    (theories/PArith/PArith.v)
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -215,17 +229,6 @@ through the <tt>Require Import</tt> command.</p>
   </dt>
   <dd>
     (theories/Arith/All/Arith.v)
-  </dd>
-
-  <dt> <b>PArith</b>:
-    Binary positive integers
-  </dt>
-  <dd>
-    theories/PArith/BinPosDef.v
-    theories/PArith/BinPos.v
-    theories/PArith/Pnat.v
-    theories/PArith/POrderedType.v
-    (theories/PArith/PArith.v)
   </dd>
 
   <dt> <b>NArith</b>:
@@ -314,11 +317,6 @@ through the <tt>Require Import</tt> command.</p>
   </dt>
   <dd>
     <dl>
-    <dt> <b>&nbsp;&nbsp;Prelude</b>:
-    </dt>
-    <dd>
-    theories/Numbers/Other/AltBinNotations.v
-    </dd>
 
     <dt> <b>&nbsp;&nbsp;Cyclic</b>:
        Abstract and 63-bits-based cyclic arithmetic
