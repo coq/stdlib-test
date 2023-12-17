@@ -36,6 +36,18 @@ through the <tt>Require Import</tt> command.</p>
     theories/Logic/Base/Adjointification.v
   </dd>
 
+  <dt> <b>Program</b>:
+    Support for dependently-typed programming in namespace Stdlib.Program.
+  </dt>
+  <dd>
+    theories/Program/All/Subset.v
+    theories/Program/All/Equality.v
+    theories/Program/All/Syntax.v
+    theories/Program/All/WfExtensionality.v
+    theories/Program/All/Program.v
+    theories/Program/All/Combinators.v
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -586,18 +598,6 @@ through the <tt>Require Import</tt> command.</p>
   </dd>
 
   </dl>
-  </dd>
-
-  <dt> <b>Program</b>:
-    Support for dependently-typed programming
-  </dt>
-  <dd>
-    theories/Program/All/Subset.v
-    theories/Program/All/Equality.v
-    theories/Program/All/Syntax.v
-    theories/Program/All/WfExtensionality.v
-    theories/Program/All/Program.v
-    theories/Program/All/Combinators.v
   </dd>
 
   <dt> <b>Unicode</b>:

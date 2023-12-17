@@ -15,7 +15,7 @@
 *)
 
 From Stdlib.Program Require Import Basics.
-From Stdlib Require Export FunctionalExtensionality.
+From Stdlib.Logic Require Export FunctionalExtensionality.
 
 Open Scope program_scope.
 

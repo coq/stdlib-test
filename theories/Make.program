@@ -1,0 +1,8 @@
+Program/All/Syntax.v
+Program/All/Equality.v
+Program/All/Subset.v
+Program/All/WfExtensionality.v
+Program/All/Program.v
+Program/All/Combinators.v
+
+-Q Program/All Stdlib.Program.All.Stdlib.Program
