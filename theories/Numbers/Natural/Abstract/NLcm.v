@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import NAxioms NSub NDiv NGcd.
+From Stdlib Require Import NAxioms NSub NDiv NGcd.
 
 (** * Least Common Multiple *)
 

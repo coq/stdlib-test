@@ -18,9 +18,9 @@
 
 Set Implicit Arguments.
 
-Require Export Classical.   (* Axiomatize classical reasoning *)
-Require Export Description. (* Axiomatize constructive form of Church's iota *)
-Require Import ChoiceFacts.
+From Stdlib Require Export Classical.   (* Axiomatize classical reasoning *)
+From Stdlib Require Export Description. (* Axiomatize constructive form of Church's iota *)
+From Stdlib Require Import ChoiceFacts.
 
 Local Notation inhabited A := A (only parsing).
 

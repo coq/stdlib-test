@@ -8,8 +8,8 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export NAxioms.
-Require Import NMaxMin NParity NPow NSqrt NLog NDiv NDiv0 NGcd NLcm NLcm0 NBits.
+From Stdlib Require Export NAxioms.
+From Stdlib Require Import NMaxMin NParity NPow NSqrt NLog NDiv NDiv0 NGcd NLcm NLcm0 NBits.
 
 (** The two following functors summarize all known facts about N.
 

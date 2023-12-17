@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Permutation SetoidList.
+From Stdlib Require Import Permutation SetoidList.
 (* Set Universe Polymorphism. *)
 
 Set Implicit Arguments.

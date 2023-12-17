@@ -8,8 +8,8 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import PeanoNat.
-Require Arith_base.
+From Stdlib Require Import PeanoNat.
+From Stdlib Require Arith_base.
 
 (** N.B.: This file defines a dependently-type programming view of
 bounded integers. Another popular approach is to bundle integers with

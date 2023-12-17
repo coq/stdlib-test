@@ -10,7 +10,7 @@
 
 (** THIS FILE IS DEPRECATED. *)
 
-Require Export BinInt Zcompare Zorder.
+From Stdlib Require Export BinInt Zcompare Zorder.
 
 Local Open Scope Z_scope.
 

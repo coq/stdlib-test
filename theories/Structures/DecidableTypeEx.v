@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import DecidableType OrderedType OrderedTypeEx.
+From Stdlib Require Import DecidableType OrderedType OrderedTypeEx.
 Set Implicit Arguments.
 Unset Strict Implicit.
 

@@ -10,8 +10,8 @@
 
 Attributes deprecated(since="8.20").
 
-Require Export NumPrelude NZAxioms.
-Require Import NZBase NZOrder NZAddOrder PeanoNat.
+From Stdlib Require Export NumPrelude NZAxioms.
+From Stdlib Require Import NZBase NZOrder NZAddOrder PeanoNat.
 
 (** In this file, we investigate the shape of domains satisfying
     the [NZDomainSig] interface. In particular, we define a

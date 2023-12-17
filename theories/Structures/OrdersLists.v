@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export RelationPairs SetoidList Orders EqualitiesFacts.
+From Stdlib Require Export RelationPairs SetoidList Orders EqualitiesFacts.
 
 Set Implicit Arguments.
 Unset Strict Implicit.

@@ -10,7 +10,7 @@
 
 (** Properties of the greatest common divisor *)
 
-Require Import NAxioms NSub NZGcd.
+From Stdlib Require Import NAxioms NSub NZGcd.
 
 Module Type NGcdProp
  (Import A : NAxiomsSig')

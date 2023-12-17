@@ -8,13 +8,13 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Bool.
-Require Import Sumbool.
-Require Import Arith.
-Require Import BinPos.
-Require Import BinNat.
-Require Import Pnat.
-Require Import Nnat.
+From Stdlib Require Import Bool.
+From Stdlib Require Import Sumbool.
+From Stdlib Require Import Arith.
+From Stdlib Require Import BinPos.
+From Stdlib Require Import BinNat.
+From Stdlib Require Import Pnat.
+From Stdlib Require Import Nnat.
 
 Local Open Scope N_scope.
 

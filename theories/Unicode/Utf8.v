@@ -9,7 +9,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export Utf8_core.
+From Stdlib Require Export Utf8_core.
 
 (* Arithmetic *)
 Notation "x ≤ y" := (le x y) (at level 70, no associativity).

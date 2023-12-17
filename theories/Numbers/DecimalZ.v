@@ -13,7 +13,7 @@
     Proofs that conversions between decimal numbers and [Z]
     are bijections. *)
 
-Require Import Decimal DecimalFacts DecimalPos DecimalN ZArith.
+From Stdlib Require Import Decimal DecimalFacts DecimalPos DecimalN ZArith.
 
 Lemma of_to (z:Z) : Z.of_int (Z.to_int z) = z.
 Proof.

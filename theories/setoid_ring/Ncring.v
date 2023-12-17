@@ -10,12 +10,12 @@
 
 (* non commutative rings *)
 
-Require Import Setoid.
-Require Import BinPos.
-Require Import BinNat.
-Require Export Morphisms Setoid Bool.
-Require Export ZArith_base.
-Require Export Algebra_syntax.
+From Stdlib Require Import Setoid.
+From Stdlib Require Import BinPos.
+From Stdlib Require Import BinNat.
+From Stdlib Require Export Morphisms Setoid Bool.
+From Stdlib Require Export ZArith_base.
+From Stdlib Require Export Algebra_syntax.
 
 Set Implicit Arguments.
 

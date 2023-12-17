@@ -18,7 +18,7 @@
 (** The type [positive] and its constructors [xI] and [xO] and [xH]
     are now defined in [BinNums.v] *)
 
-Require Export BinNums BinNums.PosDef.
+From Stdlib Require Export BinNums BinNums.PosDef.
 
 Local Open Scope positive_scope.
 

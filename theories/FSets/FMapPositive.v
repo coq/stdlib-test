@@ -10,7 +10,7 @@
 
 (** * FMapPositive : an implementation of FMapInterface for [positive] keys. *)
 
-Require Import Bool OrderedType ZArith OrderedType OrderedTypeEx FMapInterface.
+From Stdlib Require Import Bool OrderedType ZArith OrderedType OrderedTypeEx FMapInterface.
 
 Set Implicit Arguments.
 Local Open Scope positive_scope.

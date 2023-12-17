@@ -8,8 +8,8 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import ZArith Uint63 SpecFloat PrimFloat FloatOps FloatAxioms.
-Require Import Psatz.
+From Stdlib Require Import ZArith Uint63 SpecFloat PrimFloat FloatOps FloatAxioms.
+From Stdlib Require Import Psatz.
 
 (** * Support results involving frexp and ldexp *)
 

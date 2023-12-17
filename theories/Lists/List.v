@@ -8,8 +8,8 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import PeanoNat.
-Require Export ListDef.
+From Stdlib Require Import PeanoNat.
+From Stdlib Require Export ListDef.
 
 Set Implicit Arguments.
 (* Set Universe Polymorphism. *)

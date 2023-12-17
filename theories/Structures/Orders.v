@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export Relations Morphisms Setoid Equalities.
+From Stdlib Require Export Relations Morphisms Setoid Equalities.
 Set Implicit Arguments.
 Unset Strict Implicit.
 

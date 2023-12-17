@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import QArith.
+From Stdlib Require Import QArith.
 Import Zdiv.
 
 (************)

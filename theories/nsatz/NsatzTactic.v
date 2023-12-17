@@ -18,19 +18,19 @@ Reification is done using type classes, defined in Ncring_tac.v
 
 *)
 
-Require Import List.
-Require Import Setoid.
-Require Import BinPos.
-Require Import BinList.
-Require Import Znumtheory.
-Require Export Morphisms Setoid Bool.
-Require Export Algebra_syntax.
-Require Export Ncring.
-Require Export Ncring_initial.
-Require Export Ncring_tac.
-Require Export Integral_domain.
-Require Import ZArith.
-Require Import Lia.
+From Stdlib Require Import List.
+From Stdlib Require Import Setoid.
+From Stdlib Require Import BinPos.
+From Stdlib Require Import BinList.
+From Stdlib Require Import Znumtheory.
+From Stdlib Require Export Morphisms Setoid Bool.
+From Stdlib Require Export Algebra_syntax.
+From Stdlib Require Export Ncring.
+From Stdlib Require Export Ncring_initial.
+From Stdlib Require Export Ncring_tac.
+From Stdlib Require Export Integral_domain.
+From Stdlib Require Import ZArith.
+From Stdlib Require Import Lia.
 
 Declare ML Module "nsatz_core_plugin:coq-core.plugins.nsatz_core".
 Declare ML Module "nsatz_plugin:coq-core.plugins.nsatz".
@@ -458,7 +458,7 @@ Tactic Notation "nsatz" "with"
   end.
 
 (* Rational numbers *)
-Require Import QArith.
+From Stdlib Require Import QArith.
 
 #[global]
 Instance Qops: (@Ring_ops Q 0%Q 1%Q Qplus Qmult Qminus Qopp Qeq).

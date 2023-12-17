@@ -23,9 +23,9 @@ N.B.: This library only offers a bit-level specification of floating-point
 arithmetic. For a more complete set of theorems, including links with real
 arithmetic, see the Flocq library {{https://flocq.gitlabpages.inria.fr/}} *)
 
-Require Export FloatClass.
-Require Export PrimFloat.
-Require Export SpecFloat.
-Require Export FloatOps.
-Require Export FloatAxioms.
-Require Export FloatLemmas.
+From Stdlib Require Export FloatClass.
+From Stdlib Require Export PrimFloat.
+From Stdlib Require Export SpecFloat.
+From Stdlib Require Export FloatOps.
+From Stdlib Require Export FloatAxioms.
+From Stdlib Require Export FloatLemmas.

@@ -8,12 +8,12 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import BinInt.
-Require Import Zeven.
-Require Import Zorder.
-Require Import Zcompare.
-Require Import ZArith_dec.
-Require Import Sumbool.
+From Stdlib Require Import BinInt.
+From Stdlib Require Import Zeven.
+From Stdlib Require Import Zorder.
+From Stdlib Require Import Zcompare.
+From Stdlib Require Import ZArith_dec.
+From Stdlib Require Import Sumbool.
 
 Local Open Scope Z_scope.
 

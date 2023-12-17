@@ -15,7 +15,7 @@
     It is now almost entirely made of compatibility formulations
     for results already present in BinInt.Z. *)
 
-Require Import BinInt.
+From Stdlib Require Import BinInt.
 
 Local Ltac Tauto.intuition_solver ::= auto with bool.
 

@@ -19,13 +19,13 @@
 (**    Lifts of basic operations for classical reals     *)
 (*********************************************************)
 
-Require Export ZArith_base.
-Require Import ClassicalDedekindReals.
-Require Import ConstructiveCauchyReals.
-Require Import ConstructiveCauchyRealsMult.
-Require Import ConstructiveRcomplete.
-Require Import ConstructiveLUB.
-Require Export Rdefinitions.
+From Stdlib Require Export ZArith_base.
+From Stdlib Require Import ClassicalDedekindReals.
+From Stdlib Require Import ConstructiveCauchyReals.
+From Stdlib Require Import ConstructiveCauchyRealsMult.
+From Stdlib Require Import ConstructiveRcomplete.
+From Stdlib Require Import ConstructiveLUB.
+From Stdlib Require Export Rdefinitions.
 Local Open Scope R_scope.
 
 (*********************************************************)

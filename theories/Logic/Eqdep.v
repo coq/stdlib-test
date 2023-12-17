@@ -21,7 +21,7 @@
     Intensional Type Theory, Habilitationsschrift, LMU München, 1993.
 *)
 
-Require Export EqdepFacts.
+From Stdlib Require Export EqdepFacts.
 
 Module Eq_rect_eq.
 

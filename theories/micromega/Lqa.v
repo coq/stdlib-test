@@ -14,12 +14,12 @@
 (*                                                                      *)
 (************************************************************************)
 
-Require Import QMicromega.
-Require Import QArith.
-Require Import RingMicromega.
-Require Import VarMap.
-Require Import DeclConstant.
-Require Stdlib.micromega.Tauto.
+From Stdlib Require Import QMicromega.
+From Stdlib Require Import QArith.
+From Stdlib Require Import RingMicromega.
+From Stdlib Require Import VarMap.
+From Stdlib Require Import DeclConstant.
+From Stdlib.micromega Require Tauto.
 Declare ML Module "micromega_core_plugin:coq-core.plugins.micromega_core".
 Declare ML Module "micromega_plugin:coq-core.plugins.micromega".
 

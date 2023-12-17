@@ -10,7 +10,7 @@
 
 (** Base-2 Logarithm *)
 
-Require Import NZAxioms NZMulOrder NZPow.
+From Stdlib Require Import NZAxioms NZMulOrder NZPow.
 
 (** Interface of a log2 function, then its specification on naturals *)
 

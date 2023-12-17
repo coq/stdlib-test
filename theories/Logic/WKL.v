@@ -22,10 +22,10 @@
     predicate. Original Weak Konig's Lemma is the instantiation of
     the lemma to a tree *)
 
-Require Import WeakFan List.
+From Stdlib Require Import WeakFan List.
 Import ListNotations.
 
-Require Import Arith.
+From Stdlib Require Import Arith.
 
 (** [is_path_from P n l] means that there exists a path of length [n]
     from [l] on which [P] does not hold *)
@@ -99,7 +99,7 @@ Fixpoint Y P (l:list bool) :=
       if b then exists n, inductively_barred_at P n (false::l) else infinite_from P (false::l)
   end.
 
-Require Import Compare_dec.
+From Stdlib Require Import Compare_dec.
 
 Lemma is_path_from_restrict : forall P n n' l, n <= n' ->
   is_path_from P n' l -> is_path_from P n l.

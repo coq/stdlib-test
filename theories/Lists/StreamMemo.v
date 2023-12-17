@@ -8,8 +8,8 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Eqdep_dec.
-Require Import Streams.
+From Stdlib Require Import Eqdep_dec.
+From Stdlib Require Import Streams.
 
 (** * Memoization *)
 
@@ -168,7 +168,7 @@ End DependentMemoFunction.
 (** An example with the memo function on factorial *)
 
 (*
-Require Import ZArith.
+From Stdlib Require Import ZArith.
 Open Scope Z_scope.
 
 Fixpoint tfact (n: nat) :=

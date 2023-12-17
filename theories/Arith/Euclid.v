@@ -8,9 +8,9 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import PeanoNat.
-Require Import Compare_dec.
-Require Import Wf_nat.
+From Stdlib Require Import PeanoNat.
+From Stdlib Require Import Compare_dec.
+From Stdlib Require Import Wf_nat.
 
 Local Open Scope nat_scope.
 

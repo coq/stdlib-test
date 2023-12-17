@@ -8,12 +8,12 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Rbase.
-Require Import Rtrigo1.
-Require Import Rfunctions.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import Rtrigo1.
+From Stdlib Require Import Rfunctions.
 
-Require Import Lra.
-Require Import Ranalysis_reg.
+From Stdlib Require Import Lra.
+From Stdlib Require Import Ranalysis_reg.
 
 Local Open Scope R_scope.
 

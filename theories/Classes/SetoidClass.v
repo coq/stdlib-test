@@ -19,11 +19,11 @@ Unset Strict Implicit.
 
 Generalizable Variables A.
 
-Require Import Stdlib.Program.Program.
+From Stdlib.Program Require Import Program.
 
-Require Import Relation_Definitions.
-Require Export Stdlib.Classes.RelationClasses.
-Require Export Stdlib.Classes.Morphisms.
+From Stdlib Require Import Relation_Definitions.
+From Stdlib.Classes Require Export RelationClasses.
+From Stdlib.Classes Require Export Morphisms.
 
 (** A setoid wraps an equivalence. *)
 

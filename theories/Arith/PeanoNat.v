@@ -10,7 +10,7 @@
 (*                      Evgeny Makarov, INRIA, 2007                     *)
 (************************************************************************)
 
-Require Import NAxioms NProperties OrdersFacts DecidableClass.
+From Stdlib Require Import NAxioms NProperties OrdersFacts DecidableClass.
 
 (** Implementation of [NAxiomsSig] by [nat] *)
 

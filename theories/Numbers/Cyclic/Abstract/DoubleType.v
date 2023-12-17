@@ -12,8 +12,8 @@
 
 Set Implicit Arguments.
 
-Require Import BinInt.
-Require Import CarryType.
+From Stdlib Require Import BinInt.
+From Stdlib Require Import CarryType.
 Local Open Scope Z_scope.
 
 Definition base digits := Z.pow 2 (Zpos digits).

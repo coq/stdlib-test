@@ -13,7 +13,7 @@
     Proofs that conversions between decimal numbers and [nat]
     are bijections. *)
 
-Require Import Decimal DecimalFacts Arith.
+From Stdlib Require Import Decimal DecimalFacts Arith.
 
 Module Unsigned.
 

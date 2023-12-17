@@ -33,7 +33,7 @@
     code after extraction.
 *)
 
-Require Import FSetInterface ZArith Int.
+From Stdlib Require Import FSetInterface ZArith Int.
 
 Set Implicit Arguments.
 Unset Strict Implicit.
@@ -41,7 +41,7 @@ Unset Strict Implicit.
 (** This is just a compatibility layer, the real implementation
     is now in [MSetAVL] *)
 
-Require FSetCompat MSetAVL Orders OrdersAlt.
+From Stdlib Require FSetCompat MSetAVL Orders OrdersAlt.
 
 Module IntMake (I:Int)(X: OrderedType) <: S with Module E := X.
  Module X' := OrdersAlt.Update_OT X.

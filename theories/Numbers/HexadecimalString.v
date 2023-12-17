@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Hexadecimal Ascii String.
+From Stdlib Require Import Hexadecimal Ascii String.
 
 (** * Conversion between hexadecimal numbers and Coq strings *)
 

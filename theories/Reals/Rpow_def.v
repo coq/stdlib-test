@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Rdefinitions.
+From Stdlib Require Import Rdefinitions.
 
 Fixpoint pow (r:R) (n:nat) : R :=
   match n with

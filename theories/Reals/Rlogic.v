@@ -15,7 +15,7 @@
 - Decidability of negated formulas.
 *)
 
-Require Import RIneq.
+From Stdlib Require Import RIneq.
 
 (** * Decidability of arithmetical statements *)
 

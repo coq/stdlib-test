@@ -8,13 +8,13 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Rbase.
-Require Import Rfunctions.
-Require Import Ranalysis_reg.
-Require Import Classical_Prop.
-Require Import List.
-Require Import RList.
-Require Import Lia Lra.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import Rfunctions.
+From Stdlib Require Import Ranalysis_reg.
+From Stdlib Require Import Classical_Prop.
+From Stdlib Require Import List.
+From Stdlib Require Import RList.
+From Stdlib Require Import Lia Lra.
 Local Open Scope R_scope.
 
 Set Implicit Arguments.

@@ -29,7 +29,7 @@
     [RawSets] via the use of a subset type (see (W)Raw2Sets below).
 *)
 
-Require Export Bool SetoidList RelationClasses Morphisms
+From Stdlib Require Export Bool SetoidList RelationClasses Morphisms
  RelationPairs Equalities Orders OrdersFacts.
 Set Implicit Arguments.
 Unset Strict Implicit.

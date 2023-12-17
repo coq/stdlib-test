@@ -8,5 +8,5 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export Field_theory.
-Require Export Field_tac.
+From Stdlib Require Export Field_theory.
+From Stdlib Require Export Field_tac.

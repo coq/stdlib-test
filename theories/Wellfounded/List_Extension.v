@@ -1,5 +1,5 @@
-Require Import List.
-Require Import Relation_Operators Operators_Properties.
+From Stdlib Require Import List.
+From Stdlib Require Import Relation_Operators Operators_Properties.
 Import ListNotations.
 
 (** Author: Andrej Dudenhefner *)

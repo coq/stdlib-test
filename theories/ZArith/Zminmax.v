@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Orders BinInt Zcompare Zorder.
+From Stdlib Require Import Orders BinInt Zcompare Zorder.
 
 (** THIS FILE IS DEPRECATED. *)
 

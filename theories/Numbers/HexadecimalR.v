@@ -13,9 +13,9 @@
     Proofs that conversions between hexadecimal numbers and [R]
     are bijections. *)
 
-Require Import Decimal DecimalFacts.
-Require Import Hexadecimal HexadecimalFacts HexadecimalPos HexadecimalZ.
-Require Import HexadecimalQ Rdefinitions.
+From Stdlib Require Import Decimal DecimalFacts.
+From Stdlib Require Import Hexadecimal HexadecimalFacts HexadecimalPos HexadecimalZ.
+From Stdlib Require Import HexadecimalQ Rdefinitions.
 
 Lemma of_IQmake_to_hexadecimal num den :
   match IQmake_to_hexadecimal num den with

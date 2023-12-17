@@ -16,7 +16,7 @@
     It is now almost entirely made of compatibility formulations
     for results already present in BinInt.Z. *)
 
-Require Export BinPos BinInt.
+From Stdlib Require Export BinPos BinInt.
 
 Local Open Scope Z_scope.
 

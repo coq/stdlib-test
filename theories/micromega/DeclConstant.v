@@ -24,7 +24,7 @@
     Proposal: for each type, the user declares using type-classes the set of allowed ground terms.
  *)
 
-Require Import List.
+From Stdlib Require Import List.
 
 (**  Declarative definition of constants.
      These are ground terms (without variables) of interest.
@@ -55,7 +55,7 @@ Instance GT_APP2 {T1 T2 T3: Type} (F : T1 -> T2 -> T3)
          GT A1 -> GT A2 -> GT (F A1 A2).
 Defined.
 
-Require Import QArith_base.
+From Stdlib Require Import QArith_base.
 
 #[global]
 Instance DO : DeclaredConstant O := {}.

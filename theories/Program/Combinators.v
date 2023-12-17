@@ -14,8 +14,8 @@
    Institution: LRI, CNRS UMR 8623 - University Paris Sud
 *)
 
-Require Import Stdlib.Program.Basics.
-Require Export FunctionalExtensionality.
+From Stdlib.Program Require Import Basics.
+From Stdlib Require Export FunctionalExtensionality.
 
 Open Scope program_scope.
 

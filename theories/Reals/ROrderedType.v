@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Rbase Equalities Orders OrdersTac.
+From Stdlib Require Import Rbase Equalities Orders OrdersTac.
 
 Local Open Scope R_scope.
 

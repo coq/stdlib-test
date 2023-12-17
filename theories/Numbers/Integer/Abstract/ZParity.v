@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Bool ZMulOrder NZParity.
+From Stdlib Require Import Bool ZMulOrder NZParity.
 
 (** Some more properties of [even] and [odd]. *)
 

@@ -1,1 +1,1 @@
-Require Export ZifyInst.
+From Stdlib Require Export ZifyInst.

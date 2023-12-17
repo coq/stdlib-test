@@ -12,8 +12,8 @@
    Each instance is registered using a Add 'class' 'name_of_instance'.
  *)
 
-Require Import Arith BinInt BinNat Znat Nnat.
-Require Import ZifyClasses.
+From Stdlib Require Import Arith BinInt BinNat Znat Nnat.
+From Stdlib Require Import ZifyClasses.
 Declare ML Module "zify_plugin:coq-core.plugins.zify".
 Local Open Scope Z_scope.
 

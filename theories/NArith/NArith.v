@@ -10,14 +10,14 @@
 
 (** Library for binary natural numbers *)
 
-Require Export BinNums.
-Require Export BinPos.
-Require Export BinNat.
-Require Export Nnat.
-Require Export Ndiv_def.
-Require Export Nsqrt_def.
-Require Export Ngcd_def.
-Require Export NArithRing.
+From Stdlib Require Export BinNums.
+From Stdlib Require Export BinPos.
+From Stdlib Require Export BinNat.
+From Stdlib Require Export Nnat.
+From Stdlib Require Export Ndiv_def.
+From Stdlib Require Export Nsqrt_def.
+From Stdlib Require Export Ngcd_def.
+From Stdlib Require Export NArithRing.
 
 (** [N] contains an [order] tactic for natural numbers *)
 

@@ -8,18 +8,18 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import ZArith_base.
-Require Import Zpow_def.
-Require Import BinInt.
-Require Import BinNat.
-Require Import Setoid.
-Require Import BinList.
-Require Import BinPos.
-Require Import BinNat.
-Require Import BinInt.
-Require Import Setoid.
-Require Export Ncring.
-Require Export Ncring_polynom.
+From Stdlib Require Import ZArith_base.
+From Stdlib Require Import Zpow_def.
+From Stdlib Require Import BinInt.
+From Stdlib Require Import BinNat.
+From Stdlib Require Import Setoid.
+From Stdlib Require Import BinList.
+From Stdlib Require Import BinPos.
+From Stdlib Require Import BinNat.
+From Stdlib Require Import BinInt.
+From Stdlib Require Import Setoid.
+From Stdlib Require Export Ncring.
+From Stdlib Require Export Ncring_polynom.
 
 Set Implicit Arguments.
 

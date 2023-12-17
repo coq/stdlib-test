@@ -26,14 +26,14 @@
 (* in Summer 1995. Several developments by E. Ledinot were an inspiration.  *)
 (****************************************************************************)
 
-Require Export Finite_sets.
-Require Export Constructive_sets.
-Require Export Classical.
-Require Export Classical_sets.
-Require Export Powerset.
-Require Export Powerset_facts.
-Require Export Powerset_Classical_facts.
-Require Export Finite_sets_facts.
+From Stdlib Require Export Finite_sets.
+From Stdlib Require Export Constructive_sets.
+From Stdlib Require Export Classical.
+From Stdlib Require Export Classical_sets.
+From Stdlib Require Export Powerset.
+From Stdlib Require Export Powerset_facts.
+From Stdlib Require Export Powerset_Classical_facts.
+From Stdlib Require Export Finite_sets_facts.
 
 Section Image.
   Variables U V : Type.

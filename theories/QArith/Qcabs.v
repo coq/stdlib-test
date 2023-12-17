@@ -12,7 +12,7 @@
 
 (** Contributed by Cédric Auger *)
 
-Require Import Qabs Qcanon.
+From Stdlib Require Import Qabs Qcanon.
 
 Lemma Qred_abs (x : Q) : Qred (Qabs x) = Qabs (Qred x).
 Proof.

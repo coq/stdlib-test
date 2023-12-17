@@ -12,9 +12,9 @@
 
     Nota: no check that [int] values aren't generating overflows *)
 
-Require Stdlib.extraction.Extraction.
+From Stdlib Require Extraction.
 
-Require Import Arith ZArith.
+From Stdlib Require Import Arith ZArith.
 
 Parameter int : Type.
 Parameter int_zero : int.

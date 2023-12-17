@@ -10,10 +10,10 @@
 
 (** Extraction of [nat] into Ocaml's [int] *)
 
-Require Stdlib.extraction.Extraction.
+From Stdlib Require Extraction.
 
-Require Import Arith EqNat Euclid.
-Require Import ExtrOcamlBasic.
+From Stdlib Require Import Arith EqNat Euclid.
+From Stdlib Require Import ExtrOcamlBasic.
 
 (** Disclaimer: trying to obtain efficient certified programs
     by extracting [nat] into [int] is definitively *not* a good idea:

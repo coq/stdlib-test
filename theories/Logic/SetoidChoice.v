@@ -31,12 +31,12 @@
 
 *)
 
-Require Export ClassicalChoice. (* classical logic, relational choice, unique choice *)
-Require Export ExtensionalFunctionRepresentative.
+From Stdlib Require Export ClassicalChoice. (* classical logic, relational choice, unique choice *)
+From Stdlib Require Export ExtensionalFunctionRepresentative.
 
-Require Import ChoiceFacts.
-Require Import ClassicalFacts.
-Require Import RelationClasses.
+From Stdlib Require Import ChoiceFacts.
+From Stdlib Require Import ClassicalFacts.
+From Stdlib Require Import RelationClasses.
 
 Theorem setoid_choice :
   forall A B,

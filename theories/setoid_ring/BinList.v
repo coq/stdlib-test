@@ -8,8 +8,8 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import BinPos.
-Require Export List.
+From Stdlib Require Import BinPos.
+From Stdlib Require Export List.
 Set Implicit Arguments.
 Local Open Scope positive_scope.
 

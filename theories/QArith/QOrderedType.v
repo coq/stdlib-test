@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import QArith_base Equalities Orders OrdersTac.
+From Stdlib Require Import QArith_base Equalities Orders OrdersTac.
 
 Local Open Scope Q_scope.
 

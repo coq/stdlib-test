@@ -20,7 +20,7 @@
 (** * Further extensions by Pierre Castéran                             *)
 (************************************************************************)
 
-Require Import Relation_Definitions.
+From Stdlib Require Import Relation_Definitions.
 
 (** ** Transitive closure *)
 

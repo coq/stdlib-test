@@ -10,7 +10,7 @@
 
 (** Square Root Function *)
 
-Require Import NZAxioms NZMulOrder.
+From Stdlib Require Import NZAxioms NZMulOrder.
 
 (** Interface of a sqrt function, then its specification on naturals *)
 

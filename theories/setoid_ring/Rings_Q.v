@@ -8,11 +8,11 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export Cring.
-Require Export Integral_domain.
+From Stdlib Require Export Cring.
+From Stdlib Require Export Integral_domain.
 
 (* Rational numbers *)
-Require Import QArith.
+From Stdlib Require Import QArith.
 
 #[global]
 Instance Qops: (@Ring_ops Q 0%Q 1%Q Qplus Qmult Qminus Qopp Qeq).

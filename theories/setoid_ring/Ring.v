@@ -8,11 +8,11 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Bool.
-Require Export Ring_theory.
-Require Export Ring_base.
-Require Export InitialRing.
-Require Export Ring_tac.
+From Stdlib Require Import Bool.
+From Stdlib Require Export Ring_theory.
+From Stdlib Require Export Ring_base.
+From Stdlib Require Export InitialRing.
+From Stdlib Require Export Ring_tac.
 
 Lemma BoolTheory :
   ring_theory false true xorb andb xorb (fun b:bool => b) (eq(A:=bool)).

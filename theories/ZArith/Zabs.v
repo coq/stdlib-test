@@ -16,13 +16,13 @@
     It is now almost entirely made of compatibility formulations
     for results already present in BinInt.Z. *)
 
-Require Import Arith_base.
-Require Import BinPos.
-Require Import BinInt.
-Require Import Zcompare.
-Require Import Zorder.
-Require Import Znat.
-Require Import ZArith_dec.
+From Stdlib Require Import Arith_base.
+From Stdlib Require Import BinPos.
+From Stdlib Require Import BinInt.
+From Stdlib Require Import Zcompare.
+From Stdlib Require Import Zorder.
+From Stdlib Require Import Znat.
+From Stdlib Require Import ZArith_dec.
 
 Local Open Scope Z_scope.
 

@@ -8,11 +8,11 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Sumbool.
+From Stdlib Require Import Sumbool.
 
-Require Import BinInt.
-Require Import Zorder.
-Require Import Zcompare.
+From Stdlib Require Import BinInt.
+From Stdlib Require Import Zorder.
+From Stdlib Require Import Zcompare.
 Local Open Scope Z_scope.
 
 (* begin hide *)

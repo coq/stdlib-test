@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import QArith_base Orders QOrderedType GenericMinMax.
+From Stdlib Require Import QArith_base Orders QOrderedType GenericMinMax.
 
 (** * Maximum and Minimum of two rational numbers *)
 

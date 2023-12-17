@@ -12,7 +12,7 @@
     allows building functions from the proof of their existence in any
     context; this is weaker than Church's iota operator *)
 
-Require Import ChoiceFacts.
+From Stdlib Require Import ChoiceFacts.
 
 Set Implicit Arguments.
 
