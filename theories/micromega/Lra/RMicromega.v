@@ -370,7 +370,7 @@ Proof.
     apply Q2R_opp.
 Qed.
 
-From Stdlib Require Import EnvRing.
+From Stdlib.micromega Require Import EnvRing.
 
 Definition INZ (n:N) : R :=
   match n with
