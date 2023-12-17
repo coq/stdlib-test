@@ -292,6 +292,14 @@ through the <tt>Require Import</tt> command.</p>
     theories/Numbers/Z/HexadecimalZ.v
   </dd>
 
+  <dt> <b>Unicode</b>:
+    Unicode-based alternative notations in namespace Stdlib.Unicode.
+  </dt>
+  <dd>
+    theories/Unicode/Utf8_core.v
+    theories/Unicode/Utf8.v
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -618,14 +626,6 @@ through the <tt>Require Import</tt> command.</p>
   </dd>
 
   </dl>
-  </dd>
-
-  <dt> <b>Unicode</b>:
-    Unicode-based notations
-  </dt>
-  <dd>
-    theories/Unicode/Utf8_core.v
-    theories/Unicode/Utf8.v
   </dd>
 
   <dt> <b>Compat</b>:
