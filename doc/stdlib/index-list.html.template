@@ -152,6 +152,27 @@ through the <tt>Require Import</tt> command.</p>
     theories/Classes/SetoidDec.v
   </dd>
 
+  <dt> <b>Lists</b>:
+    Polymorphic lists
+  </dt>
+  <dd>
+    theories/Lists/List.v
+    theories/Lists/ListDec.v
+    theories/Lists/ListSet.v
+    theories/Lists/ListTactics.v
+    theories/Numbers/NaryFunctions.v
+    theories/Logic/WKL.v
+    theories/Classes/EquivDec.v
+  </dd>
+
+  <dt> <b>Streams</b>:
+    Streams (infinite sequences)
+  </dt>
+  <dd>
+    theories/Streams/Streams.v
+    theories/Streams/StreamMemo.v
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -366,27 +387,6 @@ through the <tt>Require Import</tt> command.</p>
     theories/Sets/Relations_3_facts.v
     theories/Sets/Relations_3.v
     theories/Sets/Uniset.v
-  </dd>
-
-  <dt> <b>Lists</b>:
-    Polymorphic lists
-  </dt>
-  <dd>
-    theories/Lists/List.v
-    theories/Lists/ListDec.v
-    theories/Lists/ListSet.v
-    theories/Lists/ListTactics.v
-    theories/Logic/WKL.v
-    theories/Classes/EquivDec.v
-    theories/Numbers/NaryFunctions.v
-  </dd>
-
-  <dt> <b>Streams</b>:
-    Streams (infinite sequences)
-  </dt>
-  <dd>
-    theories/Streams/Streams.v
-    theories/Streams/StreamMemo.v
   </dd>
 
   <dt> <b>Vectors</b>:
