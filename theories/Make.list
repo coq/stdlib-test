@@ -1,0 +1,12 @@
+Lists/ListDec.v
+Lists/List.v
+Lists/ListSet.v
+Lists/ListTactics.v
+Numbers/Other/NaryFunctions.v
+Logic/Lists/WKL.v
+Classes/Lists/EquivDec.v
+
+-Q Lists Stdlib.Lists
+-Q Numbers/Other Stdlib.Numbers.Other.Stdlib.Numbers
+-Q Logic/Lists Stdlib.Logic.Lists.Stdlib.Logic
+-Q Classes/Lists Stdlib.Classes.Lists.Stdlib.Classes

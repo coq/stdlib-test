@@ -151,6 +151,27 @@ through the <tt>Require Import</tt> command.</p>
     theories/Classes/Arith/SetoidDec.v
   </dd>
 
+  <dt> <b>Lists</b>:
+    Polymorphic lists in namespace Stdlib.Lists.
+  </dt>
+  <dd>
+    theories/Lists/List.v
+    theories/Lists/ListDec.v
+    theories/Lists/ListSet.v
+    theories/Lists/ListTactics.v
+    theories/Numbers/Other/NaryFunctions.v
+    theories/Logic/Lists/WKL.v
+    theories/Classes/Lists/EquivDec.v
+  </dd>
+
+  <dt> <b>Streams</b>:
+    Streams (infinite sequences) in namespace Stdlib.Streams.
+  </dt>
+  <dd>
+    theories/Streams/Streams.v
+    theories/Streams/StreamMemo.v
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -296,7 +317,6 @@ through the <tt>Require Import</tt> command.</p>
     <dt> <b>&nbsp;&nbsp;Prelude</b>:
     </dt>
     <dd>
-    theories/Numbers/Other/NaryFunctions.v
     theories/Numbers/Other/AltBinNotations.v
     </dd>
 
@@ -373,26 +393,6 @@ through the <tt>Require Import</tt> command.</p>
     theories/Sets/Relations_3_facts.v
     theories/Sets/Relations_3.v
     theories/Sets/Uniset.v
-  </dd>
-
-  <dt> <b>Lists</b>:
-    Polymorphic lists
-  </dt>
-  <dd>
-    theories/Lists/List.v
-    theories/Lists/ListDec.v
-    theories/Lists/ListSet.v
-    theories/Lists/ListTactics.v
-    theories/Logic/Lists/WKL.v
-    theories/Classes/Lists/EquivDec.v
-  </dd>
-
-  <dt> <b>Streams</b>:
-    Streams (infinite sequences) in namespace Stdlib.Streams.
-  </dt>
-  <dd>
-    theories/Streams/Streams.v
-    theories/Streams/StreamMemo.v
   </dd>
 
   <dt> <b>Vectors</b>:
