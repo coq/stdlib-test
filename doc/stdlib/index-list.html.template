@@ -38,6 +38,19 @@ through the <tt>Require Import</tt> command.</p>
     theories/Logic/Adjointification.v
   </dd>
 
+  <dt> <b>Program</b>:
+    Support for dependently-typed programming
+    Beware that there are also Tactics.v and Wf.v files in Init.
+  </dt>
+  <dd>
+    theories/Program/Subset.v
+    theories/Program/Equality.v
+    theories/Program/Syntax.v
+    theories/Program/WfExtensionality.v
+    theories/Program/Program.v
+    theories/Program/Combinators.v
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -588,18 +601,6 @@ through the <tt>Require Import</tt> command.</p>
   </dd>
 
   </dl>
-  </dd>
-
-  <dt> <b>Program</b>:
-    Support for dependently-typed programming
-  </dt>
-  <dd>
-    theories/Program/Subset.v
-    theories/Program/Equality.v
-    theories/Program/Syntax.v
-    theories/Program/WfExtensionality.v
-    theories/Program/Program.v
-    theories/Program/Combinators.v
   </dd>
 
   <dt> <b>Unicode</b>:
