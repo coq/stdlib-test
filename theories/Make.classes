@@ -1,0 +1,7 @@
+Classes/All/CEquivalence.v
+Classes/All/DecidableClass.v
+Classes/All/Morphisms_Relations.v
+Classes/All/RelationPairs.v
+Classes/All/SetoidClass.v
+
+-Q Classes/All Stdlib.Classes.All.Stdlib.Classes

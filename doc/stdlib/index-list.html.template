@@ -57,6 +57,17 @@ through the <tt>Require Import</tt> command.</p>
     theories/Relations/All/Operators_Properties.v
   </dd>
 
+  <dt> <b>Classes</b>:
+    Classes in namespace Stdlib.Classes.
+  </dt>
+  <dd>
+    theories/Classes/All/Morphisms_Relations.v
+    theories/Classes/All/CEquivalence.v
+    theories/Classes/All/SetoidClass.v
+    theories/Classes/All/RelationPairs.v
+    theories/Classes/All/DecidableClass.v
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -355,16 +366,6 @@ through the <tt>Require Import</tt> command.</p>
     theories/Sets/Relations_3_facts.v
     theories/Sets/Relations_3.v
     theories/Sets/Uniset.v
-  </dd>
-
-  <dt> <b>Classes</b>:
-  </dt>
-  <dd>
-    theories/Classes/All/Morphisms_Relations.v
-    theories/Classes/All/CEquivalence.v
-    theories/Classes/All/SetoidClass.v
-    theories/Classes/All/RelationPairs.v
-    theories/Classes/All/DecidableClass.v
   </dd>
 
   <dt> <b>Lists</b>:
