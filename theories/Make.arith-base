@@ -1,0 +1,59 @@
+Arith/Base/Arith_base.v
+Arith/Base/Between.v
+Arith/Base/Bool_nat.v
+Arith/Base/Cantor.v
+Arith/Base/Compare.v
+Arith/Base/Compare_dec.v
+Arith/Base/EqNat.v
+Arith/Base/Euclid.v
+Arith/Base/Factorial.v
+Arith/Base/PeanoNat.v
+Arith/Base/Peano_dec.v
+Arith/Base/Wf_nat.v
+Arith/Base/Zerob.v
+Numbers/Other/NumPrelude.v
+Numbers/NatInt/NZBase.v
+Numbers/NatInt/NZOrder.v
+Numbers/NatInt/NZProperties.v
+Numbers/NatInt/NZDiv.v
+Numbers/NatInt/NZParity.v
+Numbers/NatInt/NZPow.v
+Numbers/NatInt/NZSqrt.v
+Numbers/NatInt/NZGcd.v
+Numbers/NatInt/NZBits.v
+Numbers/NatInt/NZDomain.v
+Numbers/NatInt/NZAxioms.v
+Numbers/NatInt/NZAddOrder.v
+Numbers/NatInt/NZMul.v
+Numbers/NatInt/NZLog.v
+Numbers/NatInt/NZAdd.v
+Numbers/NatInt/NZMulOrder.v
+Numbers/Natural/Abstract/NStrongRec.v
+Numbers/Natural/Abstract/NAdd.v
+Numbers/Natural/Abstract/NAxioms.v
+Numbers/Natural/Abstract/NDefOps.v
+Numbers/Natural/Abstract/NSqrt.v
+Numbers/Natural/Abstract/NDiv0.v
+Numbers/Natural/Abstract/NBits.v
+Numbers/Natural/Abstract/NGcd.v
+Numbers/Natural/Abstract/NParity.v
+Numbers/Natural/Abstract/NProperties.v
+Numbers/Natural/Abstract/NMaxMin.v
+Numbers/Natural/Abstract/NDiv.v
+Numbers/Natural/Abstract/NPow.v
+Numbers/Natural/Abstract/NAddOrder.v
+Numbers/Natural/Abstract/NLcm0.v
+Numbers/Natural/Abstract/NLog.v
+Numbers/Natural/Abstract/NMulOrder.v
+Numbers/Natural/Abstract/NIso.v
+Numbers/Natural/Abstract/NSub.v
+Numbers/Natural/Abstract/NBase.v
+Numbers/Natural/Abstract/NLcm.v
+Numbers/Natural/Abstract/NOrder.v
+Classes/Arith/SetoidDec.v
+
+-Q Arith/Base Stdlib.Arith.Base.Stdlib.Arith
+-Q Numbers/NatInt Stdlib.Numbers.NatInt
+-Q Numbers/Natural Stdlib.Numbers.Natural
+-Q Numbers/Other Stdlib.Numbers.Other.Stdlib.Numbers
+-Q Classes/Arith Stdlib.Classes.Arith.Stdlib.Classes
