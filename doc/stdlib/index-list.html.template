@@ -95,6 +95,63 @@ through the <tt>Require Import</tt> command.</p>
     theories/Structures/GenericMinMax.v
   </dd>
 
+  <dt> <b>Arith-base</b>:
+    Basic Peano Arithmetic.
+    Everything can be loaded with From Stdlib Require Import Arith_base.
+    To enjoy the ring and lia automatic tactic, you additionally need to load
+    arith below, using From Stdlib Require Import Arith Lia.
+  </dt>
+  <dd>
+    theories/Arith/PeanoNat.v
+    theories/Arith/Between.v
+    theories/Arith/Peano_dec.v
+    theories/Arith/Compare_dec.v
+    (theories/Arith/Arith_base.v)
+    theories/Arith/Compare.v
+    theories/Arith/EqNat.v
+    theories/Arith/Euclid.v
+    theories/Arith/Factorial.v
+    theories/Arith/Wf_nat.v
+    theories/Arith/Cantor.v
+    theories/Arith/Zerob.v
+    theories/Numbers/NumPrelude.v
+    theories/Numbers/NatInt/NZAdd.v
+    theories/Numbers/NatInt/NZAddOrder.v
+    theories/Numbers/NatInt/NZAxioms.v
+    theories/Numbers/NatInt/NZBase.v
+    theories/Numbers/NatInt/NZMul.v
+    theories/Numbers/NatInt/NZDiv.v
+    theories/Numbers/NatInt/NZMulOrder.v
+    theories/Numbers/NatInt/NZOrder.v
+    theories/Numbers/NatInt/NZParity.v
+    theories/Numbers/NatInt/NZPow.v
+    theories/Numbers/NatInt/NZSqrt.v
+    theories/Numbers/NatInt/NZLog.v
+    theories/Numbers/NatInt/NZGcd.v
+    theories/Numbers/NatInt/NZBits.v
+    theories/Numbers/Natural/Abstract/NAdd.v
+    theories/Numbers/Natural/Abstract/NAddOrder.v
+    theories/Numbers/Natural/Abstract/NAxioms.v
+    theories/Numbers/Natural/Abstract/NBase.v
+    theories/Numbers/Natural/Abstract/NMulOrder.v
+    theories/Numbers/Natural/Abstract/NOrder.v
+    theories/Numbers/Natural/Abstract/NStrongRec.v
+    theories/Numbers/Natural/Abstract/NSub.v
+    theories/Numbers/Natural/Abstract/NDiv.v
+    theories/Numbers/Natural/Abstract/NDiv0.v
+    theories/Numbers/Natural/Abstract/NMaxMin.v
+    theories/Numbers/Natural/Abstract/NParity.v
+    theories/Numbers/Natural/Abstract/NPow.v
+    theories/Numbers/Natural/Abstract/NSqrt.v
+    theories/Numbers/Natural/Abstract/NLog.v
+    theories/Numbers/Natural/Abstract/NGcd.v
+    theories/Numbers/Natural/Abstract/NLcm.v
+    theories/Numbers/Natural/Abstract/NLcm0.v
+    theories/Numbers/Natural/Abstract/NBits.v
+    theories/Numbers/Natural/Abstract/NProperties.v
+    theories/Classes/SetoidDec.v
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -136,21 +193,7 @@ through the <tt>Require Import</tt> command.</p>
     Basic Peano arithmetic
   </dt>
   <dd>
-    theories/Arith/PeanoNat.v
-    theories/Arith/Between.v
-    theories/Arith/Peano_dec.v
-    theories/Arith/Compare_dec.v
-    theories/Numbers/NumPrelude.v
-    (theories/Arith/Arith_base.v)
     (theories/Arith/Arith.v)
-    theories/Arith/Compare.v
-    theories/Arith/EqNat.v
-    theories/Arith/Euclid.v
-    theories/Arith/Factorial.v
-    theories/Arith/Wf_nat.v
-    theories/Arith/Cantor.v
-    theories/Arith/Zerob.v
-    theories/Classes/SetoidDec.v
   </dd>
 
   <dt> <b>PArith</b>:
@@ -250,26 +293,6 @@ through the <tt>Require Import</tt> command.</p>
   </dt>
   <dd>
     <dl>
-    <dt> <b>&nbsp;&nbsp;NatInt</b>:
-       Abstract mixed natural/integer/cyclic arithmetic
-    </dt>
-    <dd>
-    theories/Numbers/NatInt/NZAdd.v
-    theories/Numbers/NatInt/NZAddOrder.v
-    theories/Numbers/NatInt/NZAxioms.v
-    theories/Numbers/NatInt/NZBase.v
-    theories/Numbers/NatInt/NZMul.v
-    theories/Numbers/NatInt/NZDiv.v
-    theories/Numbers/NatInt/NZMulOrder.v
-    theories/Numbers/NatInt/NZOrder.v
-    theories/Numbers/NatInt/NZParity.v
-    theories/Numbers/NatInt/NZPow.v
-    theories/Numbers/NatInt/NZSqrt.v
-    theories/Numbers/NatInt/NZLog.v
-    theories/Numbers/NatInt/NZGcd.v
-    theories/Numbers/NatInt/NZBits.v
-    </dd>
-
     <dt> <b>&nbsp;&nbsp;Cyclic</b>:
        Abstract and 63-bits-based cyclic arithmetic
     </dt>
@@ -281,32 +304,6 @@ through the <tt>Require Import</tt> command.</p>
     theories/Numbers/Cyclic/Int63/Uint63.v
     theories/Numbers/Cyclic/Int63/Sint63.v
     theories/Numbers/Cyclic/Int63/Ring63.v
-    </dd>
-
-    <dt> <b>&nbsp;&nbsp;Natural</b>:
-       Abstract and 63-bits-words-based natural arithmetic
-    </dt>
-    <dd>
-    theories/Numbers/Natural/Abstract/NAdd.v
-    theories/Numbers/Natural/Abstract/NAddOrder.v
-    theories/Numbers/Natural/Abstract/NAxioms.v
-    theories/Numbers/Natural/Abstract/NBase.v
-    theories/Numbers/Natural/Abstract/NMulOrder.v
-    theories/Numbers/Natural/Abstract/NOrder.v
-    theories/Numbers/Natural/Abstract/NStrongRec.v
-    theories/Numbers/Natural/Abstract/NSub.v
-    theories/Numbers/Natural/Abstract/NDiv.v
-    theories/Numbers/Natural/Abstract/NDiv0.v
-    theories/Numbers/Natural/Abstract/NMaxMin.v
-    theories/Numbers/Natural/Abstract/NParity.v
-    theories/Numbers/Natural/Abstract/NPow.v
-    theories/Numbers/Natural/Abstract/NSqrt.v
-    theories/Numbers/Natural/Abstract/NLog.v
-    theories/Numbers/Natural/Abstract/NGcd.v
-    theories/Numbers/Natural/Abstract/NLcm.v
-    theories/Numbers/Natural/Abstract/NLcm0.v
-    theories/Numbers/Natural/Abstract/NBits.v
-    theories/Numbers/Natural/Abstract/NProperties.v
     </dd>
 
     <dt> <b>&nbsp;&nbsp;Integer</b>:
