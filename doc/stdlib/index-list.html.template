@@ -70,6 +70,16 @@ through the <tt>Require Import</tt> command.</p>
     theories/Classes/DecidableClass.v
   </dd>
 
+  <dt> <b>Bool</b>:
+    Booleans (basic functions and results)
+  </dt>
+  <dd>
+    theories/Bool/Bool.v
+    theories/Bool/BoolEq.v
+    theories/Bool/DecBool.v
+    theories/Bool/IfProp.v
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -117,16 +127,6 @@ through the <tt>Require Import</tt> command.</p>
     theories/Structures/OrderedTypeAlt.v
     theories/Structures/OrderedTypeEx.v
     theories/Structures/BoolOrder.v
-  </dd>
-
-  <dt> <b>Bool</b>:
-       Booleans (basic functions and results)
-  </dt>
-  <dd>
-    theories/Bool/Bool.v
-    theories/Bool/BoolEq.v
-    theories/Bool/DecBool.v
-    theories/Bool/IfProp.v
   </dd>
 
   <dt> <b>Arith</b>:
