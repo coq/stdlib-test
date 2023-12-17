@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import NAxioms NSub NZDiv.
+From Stdlib Require Import NAxioms NSub NZDiv.
 
 (** Properties of Euclidean Division *)
 

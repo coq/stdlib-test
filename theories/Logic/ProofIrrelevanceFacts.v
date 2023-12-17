@@ -10,7 +10,7 @@
 
 (** This defines the functor that build consequences of proof-irrelevance *)
 
-Require Export EqdepFacts.
+From Stdlib Require Export EqdepFacts.
 
 Module Type ProofIrrelevance.
 

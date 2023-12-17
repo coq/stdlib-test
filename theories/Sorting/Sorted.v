@@ -20,7 +20,7 @@
   The two notions are equivalent if the order is transitive.
 *)
 
-Require Import List Relations Relations_1.
+From Stdlib Require Import List Relations Relations_1.
 
 (* Set Universe Polymorphism. *)
 

@@ -8,9 +8,9 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Rbase Rfunctions SeqSeries Rtrigo_fun.
-Require Import Arith.Factorial.
-Require Import Lra Lia.
+From Stdlib Require Import Rbase Rfunctions SeqSeries Rtrigo_fun.
+From Stdlib Require Import Arith.Factorial.
+From Stdlib Require Import Lra Lia.
 Local Open Scope R_scope.
 
 (********************************)

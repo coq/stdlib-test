@@ -9,19 +9,19 @@
 (************************************************************************)
 (************************************************************************)
 
-Require Import PeanoNat.
-Require Import QArith_base.
-Require Import Qabs.
-Require Import ConstructiveReals.
-Require Import ConstructiveCauchyRealsMult.
-Require Import Logic.ConstructiveEpsilon.
-Require Import ConstructiveCauchyAbs.
-Require Import Lia.
-Require Import Lqa.
-Require Import Qpower.
-Require Import QExtra.
-Require Import PosExtra.
-Require Import ConstructiveExtra.
+From Stdlib Require Import PeanoNat.
+From Stdlib Require Import QArith_base.
+From Stdlib Require Import Qabs.
+From Stdlib Require Import ConstructiveReals.
+From Stdlib Require Import ConstructiveCauchyRealsMult.
+From Stdlib Require Import ConstructiveEpsilon.
+From Stdlib Require Import ConstructiveCauchyAbs.
+From Stdlib Require Import Lia.
+From Stdlib Require Import Lqa.
+From Stdlib Require Import Qpower.
+From Stdlib Require Import QExtra.
+From Stdlib Require Import PosExtra.
+From Stdlib Require Import ConstructiveExtra.
 
 (** Proof that Cauchy reals are Cauchy-complete.
 
@@ -403,7 +403,7 @@ Proof.
     unfold Qle, Qnum, Qden; ring_simplify. lia.
 Qed.
 
-Require Import Qminmax.
+From Stdlib Require Import Qminmax.
 
 Lemma CRealLt_QR_from_single_dist : forall (q : Q) (r : CReal) (n :Z),
     (2^n < seq r n - q)%Q

@@ -107,7 +107,7 @@ related to conformity to [rel_ls].
 
 (* Direct version *)
 
-Require Import Arith.
+From Stdlib Require Import Arith.
 
 Section ConstructiveIndefiniteGroundDescription_Direct.
 

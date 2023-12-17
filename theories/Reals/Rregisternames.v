@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Raxioms Rfunctions.
+From Stdlib Require Import Raxioms Rfunctions.
 
 (*****************************************************************)
 (**           Register names for use in plugins                  *)

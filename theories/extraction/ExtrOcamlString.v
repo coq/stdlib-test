@@ -10,9 +10,10 @@
 
 (* Extraction to Ocaml : special handling of ascii and strings *)
 
-Require Stdlib.extraction.Extraction.
+From Stdlib Require Extraction.
 
-Require Import Ascii String Stdlib.Strings.Byte.
-Require Export ExtrOcamlChar.
+From Stdlib Require Import Ascii String.
+From Stdlib.Strings Require Import Byte.
+From Stdlib Require Export ExtrOcamlChar.
 
 Extract Inductive string => "char list" [ "[]" "(::)" ].

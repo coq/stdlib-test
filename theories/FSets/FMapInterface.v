@@ -12,7 +12,7 @@
 
 (** This file proposes interfaces for finite maps *)
 
-Require Export Bool DecidableType OrderedType.
+From Stdlib Require Export Bool DecidableType OrderedType.
 Set Implicit Arguments.
 Unset Strict Implicit.
 

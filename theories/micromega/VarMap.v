@@ -15,8 +15,8 @@
 (*                                                                      *)
 (************************************************************************)
 
-Require Import BinInt.
-Require Import List.
+From Stdlib Require Import BinInt.
+From Stdlib Require Import List.
 Set Implicit Arguments.
 
 (*

@@ -11,7 +11,7 @@
 (************************************************************************)
 
 Attributes deprecated(since="8.20", note="use Stdlib.Numbers.NatInt.NZMulOrder instead").
-Require Export NZAxioms NZMulOrder.
+From Stdlib Require Export NZAxioms NZMulOrder.
 
 (** This functor summarizes all known facts about NZ.
     For the moment it is only an alias to [NZMulOrderProp], which

@@ -22,9 +22,9 @@
     with non computable functions. Especially it conflicts with the
     impredicativity of [Set], knowing that [true<>false] in [Set].  *)
 
-Require Export ClassicalUniqueChoice.
-Require Export RelationalChoice.
-Require Import ChoiceFacts.
+From Stdlib Require Export ClassicalUniqueChoice.
+From Stdlib Require Export RelationalChoice.
+From Stdlib Require Import ChoiceFacts.
 
 Set Implicit Arguments.
 

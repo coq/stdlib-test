@@ -10,14 +10,14 @@
 (*            Benjamin Gregoire, Laurent Thery, INRIA, 2007             *)
 (************************************************************************)
 
-Require Import Utf8.
-Require Export DoubleType.
-Require Import Lia.
-Require Import Zpow_facts.
-Require Import Zgcd_alt.
-Require ZArith.
+From Stdlib Require Import Utf8.
+From Stdlib Require Export DoubleType.
+From Stdlib Require Import Lia.
+From Stdlib Require Import Zpow_facts.
+From Stdlib Require Import Zgcd_alt.
+From Stdlib Require ZArith.
 Import Znumtheory.
-Require Export PrimInt63 Uint63Axioms.
+From Stdlib Require Export PrimInt63 Uint63Axioms.
 
 Notation int := int (only parsing).
 Notation lsl := lsl (only parsing).

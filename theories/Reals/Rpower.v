@@ -14,19 +14,19 @@
 (* Definitions of log and Rpower : R->R->R; main properties *)
 (************************************************************)
 
-Require Import Rbase.
-Require Import Rfunctions.
-Require Import SeqSeries.
-Require Import Rtrigo1.
-Require Import Ranalysis1.
-Require Import Exp_prop.
-Require Import Rsqrt_def.
-Require Import R_sqrt.
-Require Import Sqrt_reg.
-Require Import MVT.
-Require Import Ranalysis4.
-Require Import Lra.
-Require Import Arith.Factorial.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import Rfunctions.
+From Stdlib Require Import SeqSeries.
+From Stdlib Require Import Rtrigo1.
+From Stdlib Require Import Ranalysis1.
+From Stdlib Require Import Exp_prop.
+From Stdlib Require Import Rsqrt_def.
+From Stdlib Require Import R_sqrt.
+From Stdlib Require Import Sqrt_reg.
+From Stdlib Require Import MVT.
+From Stdlib Require Import Ranalysis4.
+From Stdlib Require Import Lra.
+From Stdlib Require Import Arith.Factorial.
 Local Open Scope R_scope.
 
 Definition P_Rmin_stt (P:R -> Prop) x y := Rmin_case x y P.

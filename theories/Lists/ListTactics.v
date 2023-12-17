@@ -8,8 +8,8 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import BinPosDef.
-Require Import List.
+From Stdlib Require Import BinPosDef.
+From Stdlib Require Import List.
 
 Ltac list_fold_right fcons fnil l :=
   match l with

@@ -8,13 +8,13 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export BinInt.
-Require Export ZArithRing.
-Require Export ZArith.BinInt.
-Require Export Morphisms Setoid Bool.
+From Stdlib Require Export BinInt.
+From Stdlib Require Export ZArithRing.
+From Stdlib Require Export ZArith.BinInt.
+From Stdlib Require Export Morphisms Setoid Bool.
 
-Require ZArith.Zcompare.
-Require ZArith_dec.
+From Stdlib Require ZArith.Zcompare.
+From Stdlib Require ZArith_dec.
 
 (** * Definition of [Q] and basic properties *)
 

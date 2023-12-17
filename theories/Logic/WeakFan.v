@@ -18,7 +18,7 @@
     [[Simpson99]] Stephen G. Simpson. Subsystems of second order
     arithmetic, Cambridge University Press, 1999 *)
 
-Require Import List.
+From Stdlib Require Import List.
 Import ListNotations.
 
 (** [inductively_barred P l] means that P eventually holds above l *)

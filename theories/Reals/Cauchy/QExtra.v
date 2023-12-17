@@ -1,11 +1,11 @@
-Require Import QArith.
-Require Import Qpower.
-Require Import Qabs.
-Require Import Qround.
-Require Import Zorder.
-Require Import Lia.
-Require Import Lqa. (* This is only used in a few places and could be avoided *)
-Require Import PosExtra.
+From Stdlib Require Import QArith.
+From Stdlib Require Import Qpower.
+From Stdlib Require Import Qabs.
+From Stdlib Require Import Qround.
+From Stdlib Require Import Zorder.
+From Stdlib Require Import Lia.
+From Stdlib Require Import Lqa. (* This is only used in a few places and could be avoided *)
+From Stdlib Require Import PosExtra.
 
 (** * Power of 2 open and closed upper and lower bounds for [q : Q] *)
 

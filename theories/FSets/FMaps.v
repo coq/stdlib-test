@@ -9,10 +9,10 @@
 (************************************************************************)
 
 
-Require Export OrderedType OrderedTypeEx OrderedTypeAlt.
-Require Export DecidableType DecidableTypeEx.
-Require Export FMapInterface.
-Require Export FMapPositive.
-Require Export FMapFacts.
-Require Export FMapWeakList.
-Require Export FMapList.
+From Stdlib Require Export OrderedType OrderedTypeEx OrderedTypeAlt.
+From Stdlib Require Export DecidableType DecidableTypeEx.
+From Stdlib Require Export FMapInterface.
+From Stdlib Require Export FMapPositive.
+From Stdlib Require Export FMapFacts.
+From Stdlib Require Export FMapWeakList.
+From Stdlib Require Export FMapList.

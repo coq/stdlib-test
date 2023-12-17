@@ -13,6 +13,6 @@
    BinInt. *)
 
 Declare ML Module "rocq-runtime.plugins.ring".
-Require Export Ring_theory.
-Require Export Ring_tac.
-Require Import InitialRing.
+From Stdlib Require Export Ring_theory.
+From Stdlib Require Export Ring_tac.
+From Stdlib Require Import InitialRing.

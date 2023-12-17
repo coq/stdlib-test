@@ -9,9 +9,9 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export BinNums.
-Require Import BinPos BinNat.
-Require Export BinNums.IntDef.
+From Stdlib Require Export BinNums.
+From Stdlib Require Import BinPos BinNat.
+From Stdlib Require Export BinNums.IntDef.
 
 Local Open Scope Z_scope.
 

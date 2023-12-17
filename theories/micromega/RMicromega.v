@@ -14,18 +14,18 @@
 (*                                                                      *)
 (************************************************************************)
 
-Require Import OrderedRing.
-Require Import QMicromega RingMicromega.
-Require Import Refl.
-Require Import Sumbool Raxioms Rfunctions RIneq Rpow_def.
-Require Import BinNat.
-Require Import QArith.
-Require Import Qfield.
-Require Import Qreals.
-Require Import DeclConstant.
-Require Import Znat.
+From Stdlib Require Import OrderedRing.
+From Stdlib Require Import QMicromega RingMicromega.
+From Stdlib Require Import Refl.
+From Stdlib Require Import Sumbool Raxioms Rfunctions RIneq Rpow_def.
+From Stdlib Require Import BinNat.
+From Stdlib Require Import QArith.
+From Stdlib Require Import Qfield.
+From Stdlib Require Import Qreals.
+From Stdlib Require Import DeclConstant.
+From Stdlib Require Import Znat.
 
-Require Setoid.
+From Stdlib Require Setoid.
 
 Definition Rsrt : ring_theory R0 R1 Rplus Rmult Rminus Ropp (@eq R).
 Proof.
@@ -370,7 +370,7 @@ Proof.
     apply Q2R_opp.
 Qed.
 
-Require Import EnvRing.
+From Stdlib Require Import EnvRing.
 
 Definition INZ (n:N) : R :=
   match n with
@@ -491,7 +491,7 @@ Definition RWitness := Psatz Q.
 
 Definition RWeakChecker := check_normalised_formulas 0%Q 1%Q Qplus Qmult  Qeq_bool Qle_bool.
 
-Require Import List.
+From Stdlib Require Import List.
 
 Lemma RWeakChecker_sound :   forall (l : list (NFormula Q)) (cm : RWitness),
   RWeakChecker l cm = true ->
@@ -505,7 +505,7 @@ Proof.
   exact H.
 Qed.
 
-Require Import Stdlib.micromega.Tauto.
+From Stdlib.micromega Require Import Tauto.
 
 Definition Rnormalise := @cnf_normalise Q 0%Q 1%Q Qplus Qmult Qminus Qopp Qeq_bool Qle_bool.
 Definition Rnegate := @cnf_negate Q 0%Q 1%Q Qplus Qmult Qminus Qopp Qeq_bool Qle_bool.

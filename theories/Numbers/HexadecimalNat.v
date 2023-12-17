@@ -13,7 +13,7 @@
     Proofs that conversions between hexadecimal numbers and [nat]
     are bijections. *)
 
-Require Import Hexadecimal HexadecimalFacts Arith.
+From Stdlib Require Import Hexadecimal HexadecimalFacts Arith.
 
 Module Unsigned.
 

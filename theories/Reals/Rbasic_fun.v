@@ -13,8 +13,8 @@
 (*                                                       *)
 (*********************************************************)
 
-Require Import Rdefinitions Raxioms RIneq.
-Require Import R_Ifp.
+From Stdlib Require Import Rdefinitions Raxioms RIneq.
+From Stdlib Require Import R_Ifp.
 Local Open Scope R_scope.
 
 Implicit Type r : R.

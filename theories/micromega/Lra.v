@@ -14,13 +14,13 @@
 (*                                                                      *)
 (************************************************************************)
 
-Require Import RMicromega.
-Require Import QMicromega.
-Require Import Rdefinitions.
-Require Import RingMicromega.
-Require Import VarMap.
-Require Stdlib.micromega.Tauto.
-Require Import Rregisternames.
+From Stdlib Require Import RMicromega.
+From Stdlib Require Import QMicromega.
+From Stdlib Require Import Rdefinitions.
+From Stdlib Require Import RingMicromega.
+From Stdlib Require Import VarMap.
+From Stdlib.micromega Require Tauto.
+From Stdlib Require Import Rregisternames.
 
 Declare ML Module "rocq-runtime.plugins.micromega".
 

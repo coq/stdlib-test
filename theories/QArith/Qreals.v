@@ -8,8 +8,8 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Rdefinitions Raxioms RIneq.
-Require Export QArith_base.
+From Stdlib Require Import Rdefinitions Raxioms RIneq.
+From Stdlib Require Export QArith_base.
 
 (** Injection of rational numbers into real numbers. *)
 

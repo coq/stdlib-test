@@ -5,7 +5,7 @@ From Stdlib Require Export PrimStringAxioms.
 From Stdlib.micromega Require Import Lia.
 From Stdlib.micromega Require Import ZifyUint63.
 From Stdlib.micromega Require Import Zify.
-Require Import Stdlib.Numbers.Cyclic.Int63.Ring63.
+From Stdlib Require Import Ring63.
 From Stdlib Require Import ZArith.
 
 #[local] Open Scope Z_scope.

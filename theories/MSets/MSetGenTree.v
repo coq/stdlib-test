@@ -29,8 +29,8 @@
      - min_elt max_elt choose
 *)
 
-Require Import Orders OrdersFacts MSetInterface PeanoNat.
-Require Arith. (* contains deprecated dependencies *)
+From Stdlib Require Import Orders OrdersFacts MSetInterface PeanoNat.
+From Stdlib Require Arith. (* contains deprecated dependencies *)
 Local Open Scope list_scope.
 Local Open Scope lazy_bool_scope.
 

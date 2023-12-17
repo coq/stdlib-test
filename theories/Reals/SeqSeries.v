@@ -8,20 +8,20 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Rbase.
-Require Import Rfunctions.
-Require Export Rseries.
-Require Export SeqProp.
-Require Export Rcomplete.
-Require Export PartSum.
-Require Export AltSeries.
-Require Export Binomial.
-Require Export Rsigma.
-Require Export Rprod.
-Require Export Cauchy_prod.
-Require Export Alembert.
-Require Import Lra.
-Require Import Compare_dec.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import Rfunctions.
+From Stdlib Require Export Rseries.
+From Stdlib Require Export SeqProp.
+From Stdlib Require Export Rcomplete.
+From Stdlib Require Export PartSum.
+From Stdlib Require Export AltSeries.
+From Stdlib Require Export Binomial.
+From Stdlib Require Export Rsigma.
+From Stdlib Require Export Rprod.
+From Stdlib Require Export Cauchy_prod.
+From Stdlib Require Export Alembert.
+From Stdlib Require Import Lra.
+From Stdlib Require Import Compare_dec.
 Local Open Scope R_scope.
 
 (**********)

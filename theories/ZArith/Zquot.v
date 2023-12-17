@@ -8,8 +8,8 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import BinNat BinInt Nnat Znat Lia ZArithRing Zdiv Morphisms.
-Require Zeven.
+From Stdlib Require Import BinNat BinInt Nnat Znat Lia ZArithRing Zdiv Morphisms.
+From Stdlib Require Zeven.
 
 Local Open Scope Z_scope.
 

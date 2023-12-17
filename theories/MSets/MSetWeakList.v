@@ -13,7 +13,7 @@
 (** This file proposes an implementation of the non-dependent
     interface [MSetWeakInterface.S] using lists without redundancy. *)
 
-Require Import MSetInterface.
+From Stdlib Require Import MSetInterface.
 Set Implicit Arguments.
 Unset Strict Implicit.
 

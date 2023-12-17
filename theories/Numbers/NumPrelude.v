@@ -10,7 +10,7 @@
 (*                      Evgeny Makarov, INRIA, 2007                     *)
 (************************************************************************)
 
-Require Export Setoid Morphisms Morphisms_Prop.
+From Stdlib Require Export Setoid Morphisms Morphisms_Prop.
 
 Set Implicit Arguments.
 

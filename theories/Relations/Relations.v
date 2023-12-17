@@ -8,9 +8,9 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export Relation_Definitions.
-Require Export Relation_Operators.
-Require Export Operators_Properties.
+From Stdlib Require Export Relation_Definitions.
+From Stdlib Require Export Relation_Operators.
+From Stdlib Require Export Operators_Properties.
 
 Lemma inverse_image_of_equivalence :
   forall (A B:Type) (f:A -> B) (r:relation B),

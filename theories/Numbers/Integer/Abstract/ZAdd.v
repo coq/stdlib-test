@@ -10,7 +10,7 @@
 (*                      Evgeny Makarov, INRIA, 2007                     *)
 (************************************************************************)
 
-Require Export ZBase.
+From Stdlib Require Export ZBase.
 
 Module ZAddProp (Import Z : ZAxiomsMiniSig').
 Include ZBaseProp Z.

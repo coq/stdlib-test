@@ -14,7 +14,7 @@
     stronger than the axiom of choice (which cannot be used outside
     the context of a theorem proof). *)
 
-Require Import ChoiceFacts.
+From Stdlib Require Import ChoiceFacts.
 
 Set Implicit Arguments.
 

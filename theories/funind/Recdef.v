@@ -8,10 +8,10 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export Stdlib.funind.FunInd.
-Require Import PeanoNat.
-Require Compare_dec.
-Require Wf_nat.
+From Stdlib Require Export FunInd.
+From Stdlib Require Import PeanoNat.
+From Stdlib Require Compare_dec.
+From Stdlib Require Wf_nat.
 
 Section Iter.
 Variable A : Type.

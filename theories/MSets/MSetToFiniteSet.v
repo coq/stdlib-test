@@ -10,8 +10,8 @@
 
 (** * Finite sets library : conversion to old [Finite_sets] *)
 
-Require Import Ensembles Finite_sets.
-Require Import MSetInterface MSetProperties OrdersEx.
+From Stdlib Require Import Ensembles Finite_sets.
+From Stdlib Require Import MSetInterface MSetProperties OrdersEx.
 
 (** * Going from [MSets] with usual Leibniz equality
     to the good old [Ensembles] and [Finite_sets] theory. *)

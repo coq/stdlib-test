@@ -10,8 +10,8 @@
 (*                      Evgeny Makarov, INRIA, 2007                     *)
 (************************************************************************)
 
-Require Import Setoid.
-Require Import Ring.
+From Stdlib Require Import Setoid.
+From Stdlib Require Import Ring.
 
 (** Generic properties of ordered rings on a setoid equality *)
 

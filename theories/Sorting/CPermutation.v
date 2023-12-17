@@ -17,7 +17,7 @@ For example: [CPermutation [a1;a2;a3;a4;a5] [a4;a5;a1;a2;a3]]
 Note: Terminology does not seem to be strongly fixed in English. For the record, it is "permutations circulaires" in French.
 *)
 
-Require Import List Permutation Morphisms PeanoNat.
+From Stdlib Require Import List Permutation Morphisms PeanoNat.
 Import ListNotations. (* For notations [] and [a;b;c] *)
 Set Implicit Arguments.
 

@@ -11,13 +11,13 @@
 (*  A <X1,...,Xn>: non commutative polynomials on a commutative ring A *)
 
 Set Implicit Arguments.
-Require Import Setoid.
-Require Import BinList.
-Require Import BinPos.
-Require Import BinNat.
-Require Import BinInt.
-Require Export Ring_polynom. (* n'utilise que PExpr *)
-Require Export Ncring.
+From Stdlib Require Import Setoid.
+From Stdlib Require Import BinList.
+From Stdlib Require Import BinPos.
+From Stdlib Require Import BinNat.
+From Stdlib Require Import BinInt.
+From Stdlib Require Export Ring_polynom. (* n'utilise que PExpr *)
+From Stdlib Require Export Ncring.
 
 #[local] Create HintDb rsimpl.
 

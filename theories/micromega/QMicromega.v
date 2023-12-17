@@ -14,11 +14,11 @@
 (*                                                                      *)
 (************************************************************************)
 
-Require Import OrderedRing.
-Require Import RingMicromega.
-Require Import Refl.
-Require Import QArith.
-Require Import Qfield.
+From Stdlib Require Import OrderedRing.
+From Stdlib Require Import RingMicromega.
+From Stdlib Require Import Refl.
+From Stdlib Require Import QArith.
+From Stdlib Require Import Qfield.
 
 Lemma Qsor : SOR 0 1 Qplus Qmult Qminus Qopp Qeq  Qle Qlt.
 Proof.
@@ -62,7 +62,7 @@ Qed.
 
 
 (*Definition Zeval_expr :=  eval_pexpr 0 Z.add Z.mul Z.sub Z.opp  (fun x => x) (fun x => Z.of_N x) (Z.pow).*)
-Require Import EnvRing.
+From Stdlib Require Import EnvRing.
 
 Fixpoint Qeval_expr (env: PolEnv Q) (e: PExpr Q) : Q :=
   match e with
@@ -210,7 +210,7 @@ Register QWitness as micromega.QWitness.type.
 
 Definition QWeakChecker := check_normalised_formulas 0 1 Qplus Qmult Qeq_bool Qle_bool.
 
-Require Import List.
+From Stdlib Require Import List.
 
 Lemma QWeakChecker_sound :   forall (l : list (NFormula Q)) (cm : QWitness),
   QWeakChecker l cm = true ->
@@ -224,7 +224,7 @@ Proof.
   exact H.
 Qed.
 
-Require Import Stdlib.micromega.Tauto.
+From Stdlib.micromega Require Import Tauto.
 
 Definition Qnormalise := @cnf_normalise Q 0 1 Qplus Qmult Qminus Qopp Qeq_bool Qle_bool.
 

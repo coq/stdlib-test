@@ -16,7 +16,7 @@
     (typically : when measuring the height of an AVL tree).
 *)
 
-Require Import BinInt.
+From Stdlib Require Import BinInt.
 Declare Scope Int_scope.
 Delimit Scope Int_scope with I.
 Local Open Scope Int_scope.

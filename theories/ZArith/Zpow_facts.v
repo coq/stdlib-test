@@ -8,8 +8,8 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import BinInt Znat ZArithRing Lia Wf_Z Zcomplements Zdiv Znumtheory.
-Require Export Zpower.
+From Stdlib Require Import BinInt Znat ZArithRing Lia Wf_Z Zcomplements Zdiv Znumtheory.
+From Stdlib Require Export Zpower.
 Local Open Scope Z_scope.
 
 (** Properties of the power function over [Z] *)

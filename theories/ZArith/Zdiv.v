@@ -13,8 +13,8 @@
 
 (** Initial Contribution by Claude Marché and Xavier Urbain *)
 
-Require Export BinInt.
-Require Import Wf_Z Zbool ZArithRing Zcomplements Setoid Morphisms.
+From Stdlib Require Export BinInt.
+From Stdlib Require Import Wf_Z Zbool ZArithRing Zcomplements Setoid Morphisms.
 Local Open Scope Z_scope.
 
 (** The definition of the division is now in [BinIntDef], the initial

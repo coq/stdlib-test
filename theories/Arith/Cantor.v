@@ -10,7 +10,7 @@
 
 (** Implementation of the Cantor pairing and its inverse function *)
 
-Require Import PeanoNat Lia.
+From Stdlib Require Import PeanoNat Lia.
 
 (** Bijections between [nat * nat] and [nat] *)
 

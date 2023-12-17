@@ -8,10 +8,10 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Rdefinitions Raxioms RIneq.
-Require Import Rbasic_fun.
-Require Import ArithRing.
-Require Import PeanoNat.
+From Stdlib Require Import Rdefinitions Raxioms RIneq.
+From Stdlib Require Import Rbasic_fun.
+From Stdlib Require Import ArithRing.
+From Stdlib Require Import PeanoNat.
 
 Local Open Scope Z_scope.
 Local Open Scope R_scope.

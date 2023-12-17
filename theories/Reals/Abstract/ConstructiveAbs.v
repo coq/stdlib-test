@@ -9,9 +9,9 @@
 (************************************************************************)
 (************************************************************************)
 
-Require Import QArith.
-Require Import Qabs.
-Require Import ConstructiveReals.
+From Stdlib Require Import QArith.
+From Stdlib Require Import Qabs.
+From Stdlib Require Import ConstructiveReals.
 
 Local Open Scope ConstructiveReals.
 

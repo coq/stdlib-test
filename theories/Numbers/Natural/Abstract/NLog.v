@@ -10,7 +10,7 @@
 
 (** Base-2 Logarithm Properties *)
 
-Require Import NAxioms NSub NPow NParity NZLog.
+From Stdlib Require Import NAxioms NSub NPow NParity NZLog.
 
 Module Type NLog2Prop
  (A : NAxiomsSig)

@@ -8,10 +8,10 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Stdlib.Arith.EqNat.
-Require Import Stdlib.NArith.BinNat.
-Require Import Stdlib.NArith.Nnat.
-Require Export Stdlib.Init.Byte.
+From Stdlib.Arith Require Import EqNat.
+From Stdlib.NArith Require Import BinNat.
+From Stdlib.NArith Require Import Nnat.
+From Stdlib.Init Require Export Byte.
 
 Local Set Implicit Arguments.
 

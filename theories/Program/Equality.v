@@ -10,9 +10,9 @@
 
 (** Tactics related to (dependent) equality and proof irrelevance. *)
 
-Require Export JMeq.
+From Stdlib Require Export JMeq.
 
-Require Import Stdlib.Program.Tactics.
+From Stdlib.Program Require Import Tactics.
 
 Ltac is_ground_goal :=
   match goal with
@@ -59,7 +59,7 @@ Ltac simpl_one_dep_JMeq :=
   ltac:(fun H => let H' := fresh "H" in
     assert (H' := JMeq_eq H)).
 
-Require Import Eqdep.
+From Stdlib Require Import Eqdep.
 
 (** Simplify dependent equality using sigmas to equality of the second projections if possible.
    Uses UIP. *)

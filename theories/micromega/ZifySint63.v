@@ -1,6 +1,6 @@
-Require Import ZArith.
-Require Import Sint63.
-Require Import ZifyBool.
+From Stdlib Require Import ZArith.
+From Stdlib Require Import Sint63.
+From Stdlib Require Import ZifyBool.
 Import ZifyClasses.
 
 Lemma to_Z_bounded (x : int) :

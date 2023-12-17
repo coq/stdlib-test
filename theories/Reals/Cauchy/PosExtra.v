@@ -1,6 +1,6 @@
-Require Import PArith.
-Require Import ZArith.
-Require Import Lia.
+From Stdlib Require Import PArith.
+From Stdlib Require Import ZArith.
+From Stdlib Require Import Lia.
 
 Lemma Pos_pow_1_r: forall p : positive,
   (1^p = 1)%positive.

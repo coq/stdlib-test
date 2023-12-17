@@ -70,7 +70,7 @@ Structure R := {
  *)
 
 
-Require Import QArith Qabs Qround.
+From Stdlib Require Import QArith Qabs Qround.
 
 Definition isLinearOrder {X : Set} (Xlt : X -> X -> Set) : Set
   := (forall x y:X, Xlt x y -> Xlt y x -> False)

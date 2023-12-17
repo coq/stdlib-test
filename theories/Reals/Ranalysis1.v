@@ -8,10 +8,10 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Rbase.
-Require Import Rfunctions.
-Require Export Rlimit.
-Require Export Rderiv.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import Rfunctions.
+From Stdlib Require Export Rlimit.
+From Stdlib Require Export Rderiv.
 Local Open Scope R_scope.
 Implicit Type f : R -> R.
 

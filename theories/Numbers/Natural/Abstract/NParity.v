@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Bool NSub NZParity.
+From Stdlib Require Import Bool NSub NZParity.
 
 (** Some additional properties of [even], [odd]. *)
 

@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import BinNat.
+From Stdlib Require Import BinNat.
 
 (** Obsolete file, see [BinNat] now,
     only compatibility notations remain here. *)

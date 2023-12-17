@@ -8,13 +8,13 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Rbase.
-Require Import Rfunctions.
-Require Import Rseries.
-Require Import SeqProp.
-Require Import PartSum.
-Require Import Lra.
-Require Import Compare_dec.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import Rfunctions.
+From Stdlib Require Import Rseries.
+From Stdlib Require Import SeqProp.
+From Stdlib Require Import PartSum.
+From Stdlib Require Import Lra.
+From Stdlib Require Import Compare_dec.
 
 Local Open Scope R_scope.
 

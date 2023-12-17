@@ -14,15 +14,15 @@
 (*                                                                      *)
 (************************************************************************)
 
-Require Import List.
-Require Import Bool.
-Require Import OrderedRing.
-Require Import RingMicromega.
-Require Import ZCoeff.
-Require Import Refl.
-Require Import BinInt.
-Require InitialRing.
-Require Import micromega.Tauto.
+From Stdlib Require Import List.
+From Stdlib Require Import Bool.
+From Stdlib Require Import OrderedRing.
+From Stdlib Require Import RingMicromega.
+From Stdlib Require Import ZCoeff.
+From Stdlib Require Import Refl.
+From Stdlib Require Import BinInt.
+From Stdlib Require InitialRing.
+From Stdlib.micromega Require Import Tauto.
 Local Open Scope Z_scope.
 
 Ltac flatten_bool :=
@@ -66,7 +66,7 @@ Qed.
 
 
 
-Require Import EnvRing.
+From Stdlib Require Import EnvRing.
 
 Lemma Zsor : SOR 0 1 Z.add Z.mul Z.sub Z.opp (@eq Z) Z.le Z.lt.
 Proof.
@@ -398,7 +398,8 @@ Qed.
 
 
 
-Require Import Stdlib.micromega.Tauto BinNums.
+From Stdlib.micromega Require Import Tauto.
+From Stdlib Require Import BinNums.
 
 Definition cnf_of_list {T: Type} (tg : T) (l : list (NFormula Z)) :=
   List.fold_right (fun x acc =>
@@ -506,7 +507,7 @@ Definition ZweakTautoChecker (w: list ZWitness) (f : BFormula (Formula Z) Tauto.
 
 (* To get a complete checker, the proof format has to be enriched *)
 
-Require Import Zdiv.
+From Stdlib Require Import Zdiv.
 Local Open Scope Z_scope.
 
 Definition ceiling (a b:Z) : Z :=
@@ -517,7 +518,7 @@ Definition ceiling (a b:Z) : Z :=
     end.
 
 
-Require Import Znumtheory.
+From Stdlib Require Import Znumtheory.
 
 Lemma Zdivide_ceiling : forall a b, (b | a) -> ceiling a b = Z.div a b.
 Proof.
@@ -558,7 +559,7 @@ Qed.
 
 (** NB: narrow_interval_upper_bound is Zdiv.Zdiv_le_lower_bound *)
 
-Require Import QArith.
+From Stdlib Require Import QArith.
 
 Inductive ZArithProof :=
 | DoneProof
@@ -585,7 +586,7 @@ Register ExProof     as micromega.ZArithProof.ExProof.
    - b is the constant
    - a is the gcd of the other coefficient.
 *)
-Require Import Znumtheory.
+From Stdlib Require Import Znumtheory.
 
 Definition isZ0 (x:Z) :=
   match x with
@@ -1082,7 +1083,7 @@ Fixpoint bdepth (pf : ZArithProof) : nat :=
     | ExProof _ p   => S (bdepth p)
   end.
 
-Require Import PeanoNat Wf_nat.
+From Stdlib Require Import PeanoNat Wf_nat.
 
 Lemma in_bdepth : forall l a b  y, In y l ->  ltof ZArithProof bdepth y (EnumProof a b  l).
 Proof.
@@ -1792,7 +1793,7 @@ Open Scope Z_scope.
 Definition make_impl := Refl.make_impl.
 Definition make_conj := Refl.make_conj.
 
-Require VarMap.
+From Stdlib Require VarMap.
 
 (*Definition varmap_type := VarMap.t Z. *)
 Definition env := PolEnv Z.

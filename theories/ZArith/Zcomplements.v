@@ -8,13 +8,14 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import ZArithRing.
-Require Import BinInt.
-Require Import Znat.
-Require Import Wf_nat.
+From Stdlib Require Import ZArithRing.
+From Stdlib Require Import BinInt.
+From Stdlib Require Import Znat.
+From Stdlib Require Import Wf_nat.
+From Stdlib Require Zabs Wf_Z.
+From Stdlib Require Zeven.
+
 Local Open Scope Z_scope.
-Require Zabs Wf_Z.
-Require Zeven.
 
 (**********************************************************************)
 (** About parity *)
@@ -118,7 +119,7 @@ Qed.
 (**********************************************************************)
 (** A list length in Z, tail recursive.  *)
 
-Require Import List.
+From Stdlib Require Import List.
 
 Fixpoint Zlength_aux (acc:Z) (A:Type) (l:list A) : Z :=
   match l with

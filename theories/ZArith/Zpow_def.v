@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import BinInt Ring_theory.
+From Stdlib Require Import BinInt Ring_theory.
 Local Open Scope Z_scope.
 
 (** * Power functions over [Z] *)

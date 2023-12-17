@@ -8,11 +8,11 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import BinInt.
-Require Import BinNat.
-Require Import Setoid.
-Require Import Ring_theory.
-Require Import Ring_polynom.
+From Stdlib Require Import BinInt.
+From Stdlib Require Import BinNat.
+From Stdlib Require Import Setoid.
+From Stdlib Require Import Ring_theory.
+From Stdlib Require Import Ring_polynom.
 Import List.
 
 Set Implicit Arguments.

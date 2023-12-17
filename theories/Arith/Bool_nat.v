@@ -9,9 +9,9 @@
 (************************************************************************)
 
 Attributes deprecated(since="8.20").
-Require Export Compare_dec.
-Require Export Peano_dec.
-Require Import Sumbool.
+From Stdlib Require Export Compare_dec.
+From Stdlib Require Export Peano_dec.
+From Stdlib Require Import Sumbool.
 
 #[local]
 Set Warnings "-deprecated".

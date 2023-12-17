@@ -9,12 +9,12 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Peano_dec.
-Require Import Compare_dec.
-Require Import Rbase.
-Require Import Rfunctions.
-Require Import Rseries.
-Require Import Rcomplete.
+From Stdlib Require Import Peano_dec.
+From Stdlib Require Import Compare_dec.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import Rfunctions.
+From Stdlib Require Import Rseries.
+From Stdlib Require Import Rcomplete.
 Local Open Scope R_scope.
 
 Lemma tech1 :

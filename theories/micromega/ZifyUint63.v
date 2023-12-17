@@ -1,6 +1,6 @@
-Require Import ZArith.
-Require Import Uint63.
-Require Import ZifyBool.
+From Stdlib Require Import ZArith.
+From Stdlib Require Import Uint63.
+From Stdlib Require Import ZifyBool.
 Import ZifyClasses.
 
 Lemma to_Z_bounded : forall x, (0 <= to_Z x < 9223372036854775808)%Z.

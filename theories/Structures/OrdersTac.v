@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Setoid Morphisms Basics Equalities Orders.
+From Stdlib Require Import Setoid Morphisms Basics Equalities Orders.
 Set Implicit Arguments.
 
 (** * The order tactic *)

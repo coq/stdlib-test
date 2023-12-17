@@ -9,9 +9,9 @@
 (************************************************************************)
 
 Set Implicit Arguments.
-Require Import Ring_polynom.
-Require Export ListTactics.
-Require Import InitialRing.
+From Stdlib Require Import Ring_polynom.
+From Stdlib Require Export ListTactics.
+From Stdlib Require Import InitialRing.
 Declare ML Module "rocq-runtime.plugins.ring".
 
 (* adds a definition t' on the normal form of t and an hypothesis id

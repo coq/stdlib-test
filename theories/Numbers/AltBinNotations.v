@@ -31,7 +31,7 @@
     method, trading efficiency against a larger ML trust base relying
     on bigint.ml. *)
 
-Require Import BinNums.
+From Stdlib Require Import BinNums.
 
 (** [positive] *)
 
