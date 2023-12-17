@@ -1,0 +1,7 @@
+Structures/Def/GenericMinMax.v
+Structures/Def/Equalities.v
+Structures/Def/Orders.v
+Structures/Def/OrdersFacts.v
+Structures/Def/OrdersTac.v
+
+-Q Structures/Def Stdlib.Structures.Def.Stdlib.Structures

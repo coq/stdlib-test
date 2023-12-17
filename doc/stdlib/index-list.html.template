@@ -78,6 +78,21 @@ through the <tt>Require Import</tt> command.</p>
     theories/Bool/IfProp.v
   </dd>
 
+  <dt> <b>Structures</b>:
+    Basic "algebraic" structures: types with decidable equality and with order
+    in namespace Stdlib.Structures. Common instances can be found in orders-ex.
+    More developped algebra can be found in the
+    <a href="https://github.com/math-comp/math-comp">mathematical components
+    library</a>.
+  </dt>
+  <dd>
+    theories/Structures/Def/Equalities.v
+    theories/Structures/Def/Orders.v
+    theories/Structures/Def/OrdersTac.v
+    theories/Structures/Def/OrdersFacts.v
+    theories/Structures/Def/GenericMinMax.v
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -104,11 +119,6 @@ through the <tt>Require Import</tt> command.</p>
        DecidableType* and OrderedType* are there only for compatibility.
   </dt>
   <dd>
-    theories/Structures/Def/Equalities.v
-    theories/Structures/Def/Orders.v
-    theories/Structures/Def/OrdersTac.v
-    theories/Structures/Def/OrdersFacts.v
-    theories/Structures/Def/GenericMinMax.v
     theories/Structures/Ex/EqualitiesFacts.v
     theories/Structures/Ex/OrdersAlt.v
     theories/Structures/Ex/OrdersEx.v
