@@ -10,20 +10,20 @@
 
 (** Library for manipulating integers based on binary encoding *)
 
-Require Export ZArith_base.
+From Stdlib Require Export ZArith_base.
 
 (** Extra definitions *)
 
-Require Export Zpow_def.
+From Stdlib Require Export Zpow_def.
 
 (** Extra modules using [Ring]. *)
 
-Require Export OmegaLemmas.
-Require Export PreOmega.
-Require Export ZArith_hints.
-Require Export Zcomplements.
-Require Export Zpower.
-Require Export Zdiv.
-Require Export Zbitwise.
+From Stdlib Require Export OmegaLemmas.
+From Stdlib Require Export PreOmega.
+From Stdlib Require Export ZArith_hints.
+From Stdlib Require Export Zcomplements.
+From Stdlib Require Export Zpower.
+From Stdlib Require Export Zdiv.
+From Stdlib Require Export Zbitwise.
 
 Export ZArithRing.

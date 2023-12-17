@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Zpow_facts Qfield Qreduction.
+From Stdlib Require Import Zpow_facts Qfield Qreduction.
 
 (** * Properties of Qpower_positive *)
 

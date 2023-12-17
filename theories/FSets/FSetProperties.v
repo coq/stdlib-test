@@ -16,8 +16,8 @@
     [In x s] instead of [mem x s=true],
     [Equal s s'] instead of [equal s s'=true], etc. *)
 
-Require Export FSetInterface.
-Require Import PeanoNat DecidableTypeEx FSetFacts FSetDecide.
+From Stdlib Require Export FSetInterface.
+From Stdlib Require Import PeanoNat DecidableTypeEx FSetFacts FSetDecide.
 Set Implicit Arguments.
 Unset Strict Implicit.
 

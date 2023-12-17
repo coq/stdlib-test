@@ -18,29 +18,29 @@ Reification is done using type classes, defined in Ncring_tac.v
 
 *)
 
-Require Import List.
-Require Import Setoid.
-Require Import BinPos.
-Require Import BinList.
-Require Import Znumtheory.
-Require Export Morphisms Setoid Bool.
-Require Export Algebra_syntax.
-Require Export Ncring.
-Require Export Ncring_initial.
-Require Export Ncring_tac.
-Require Export Integral_domain.
-Require Import DiscrR.
-Require Import ZArith.
-Require Import Lia.
+From Stdlib Require Import List.
+From Stdlib Require Import Setoid.
+From Stdlib Require Import BinPos.
+From Stdlib Require Import BinList.
+From Stdlib Require Import Znumtheory.
+From Stdlib Require Export Morphisms Setoid Bool.
+From Stdlib Require Export Algebra_syntax.
+From Stdlib Require Export Ncring.
+From Stdlib Require Export Ncring_initial.
+From Stdlib Require Export Ncring_tac.
+From Stdlib Require Export Integral_domain.
+From Stdlib Require Import DiscrR.
+From Stdlib Require Import ZArith.
+From Stdlib Require Import Lia.
 
-Require Export NsatzTactic.
+From Stdlib Require Export NsatzTactic.
 (** Make use of [discrR] in [nsatz] *)
 Ltac nsatz_internal_discrR ::= discrR.
 
 (* Real numbers *)
-Require Export Rbase.
-Require Export Rfunctions.
-Require Import RealField.
+From Stdlib Require Export Rbase.
+From Stdlib Require Export Rfunctions.
+From Stdlib Require Import RealField.
 
 Lemma Rsth : Setoid_Theory R (@eq R).
 constructor;red;intros;subst;trivial.

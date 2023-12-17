@@ -13,7 +13,7 @@
     Proofs that conversions between hexadecimal numbers and [Z]
     are bijections. *)
 
-Require Import Hexadecimal HexadecimalFacts HexadecimalPos HexadecimalN ZArith.
+From Stdlib Require Import Hexadecimal HexadecimalFacts HexadecimalPos HexadecimalN ZArith.
 
 Lemma of_to (z:Z) : Z.of_hex_int (Z.to_hex_int z) = z.
 Proof.

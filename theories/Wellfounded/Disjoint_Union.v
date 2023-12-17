@@ -12,7 +12,7 @@
     From : Constructing Recursion Operators in Type Theory
            L. Paulson  JSC (1986) 2, 325-355 *)
 
-Require Import Relation_Operators.
+From Stdlib Require Import Relation_Operators.
 
 Section Wf_Disjoint_Union.
   Variables A B : Type.

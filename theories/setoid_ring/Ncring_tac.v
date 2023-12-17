@@ -8,17 +8,17 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import List.
-Require Import Setoid.
-Require Import BinPos.
-Require Import BinList.
-Require Import Znumtheory.
-Require Export Morphisms Setoid Bool.
-Require Import ZArith.
-Require Import Algebra_syntax.
-Require Export Ncring.
-Require Import Ncring_polynom.
-Require Import Ncring_initial.
+From Stdlib Require Import List.
+From Stdlib Require Import Setoid.
+From Stdlib Require Import BinPos.
+From Stdlib Require Import BinList.
+From Stdlib Require Import Znumtheory.
+From Stdlib Require Export Morphisms Setoid Bool.
+From Stdlib Require Import ZArith.
+From Stdlib Require Import Algebra_syntax.
+From Stdlib Require Export Ncring.
+From Stdlib Require Import Ncring_polynom.
+From Stdlib Require Import Ncring_initial.
 
 
 Set Implicit Arguments.

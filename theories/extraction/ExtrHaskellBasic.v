@@ -1,6 +1,6 @@
 (** Extraction to Haskell : use of basic Haskell types *)
 
-Require Stdlib.extraction.Extraction.
+From Stdlib Require Extraction.
 
 Extract Inductive bool => "Prelude.Bool" [ "Prelude.True" "Prelude.False" ].
 Extract Inductive option => "Prelude.Maybe" [ "Prelude.Just" "Prelude.Nothing" ].

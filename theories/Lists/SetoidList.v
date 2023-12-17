@@ -8,9 +8,9 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export List.
-Require Export Sorted.
-Require Export Setoid Basics Morphisms.
+From Stdlib Require Export List.
+From Stdlib Require Export Sorted.
+From Stdlib Require Export Setoid Basics Morphisms.
 Set Implicit Arguments.
 Unset Strict Implicit.
 (* Set Universe Polymorphism. *)

@@ -8,20 +8,20 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Rbase.
-Require Import Rfunctions.
-Require Import SeqSeries.
-Require Export Rtrigo_fun.
-Require Export Rtrigo_def.
-Require Export Rtrigo_alt.
-Require Export Cos_rel.
-Require Export Cos_plus.
-Require Import ZArith_base.
-Require Import Zcomplements.
-Require Import Lra.
-Require Import Ranalysis1.
-Require Import Rsqrt_def. 
-Require Import PSeries_reg.
-Require Export Rtrigo1.
-Require Export Ratan.
-Require Export Machin.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import Rfunctions.
+From Stdlib Require Import SeqSeries.
+From Stdlib Require Export Rtrigo_fun.
+From Stdlib Require Export Rtrigo_def.
+From Stdlib Require Export Rtrigo_alt.
+From Stdlib Require Export Cos_rel.
+From Stdlib Require Export Cos_plus.
+From Stdlib Require Import ZArith_base.
+From Stdlib Require Import Zcomplements.
+From Stdlib Require Import Lra.
+From Stdlib Require Import Ranalysis1.
+From Stdlib Require Import Rsqrt_def. 
+From Stdlib Require Import PSeries_reg.
+From Stdlib Require Export Rtrigo1.
+From Stdlib Require Export Ratan.
+From Stdlib Require Export Machin.

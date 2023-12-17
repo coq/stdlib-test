@@ -26,9 +26,9 @@
 (* in Summer 1995. Several developments by E. Ledinot were an inspiration.  *)
 (****************************************************************************)
 
-Require Export Ensembles.
-Require Export Relations_1.
-Require Export Partial_Order.
+From Stdlib Require Export Ensembles.
+From Stdlib Require Export Relations_1.
+From Stdlib Require Export Partial_Order.
 
 Section Bounds.
   Variable U : Type.

@@ -9,7 +9,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import BinPos PeanoNat.
+From Stdlib Require Import BinPos PeanoNat.
 
 (** Properties of the injection from binary positive numbers
     to Peano natural numbers *)

@@ -13,8 +13,8 @@
 
 (** Initial Contribution by Claude Marché and Xavier Urbain *)
 
-Require Export ZArith_base.
-Require Import Zbool ZArithRing Zcomplements Setoid Morphisms.
+From Stdlib Require Export ZArith_base.
+From Stdlib Require Import Zbool ZArithRing Zcomplements Setoid Morphisms.
 Local Open Scope Z_scope.
 
 (** The definition of the division is now in [BinIntDef], the initial

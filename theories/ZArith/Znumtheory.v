@@ -8,11 +8,11 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import ZArith_base.
-Require Import ZArithRing.
-Require Import Zcomplements.
-Require Import Zdiv.
-Require Import Wf_nat.
+From Stdlib Require Import ZArith_base.
+From Stdlib Require Import ZArithRing.
+From Stdlib Require Import Zcomplements.
+From Stdlib Require Import Zdiv.
+From Stdlib Require Import Wf_nat.
 
 (** For compatibility reasons, this Open Scope isn't local as it should *)
 

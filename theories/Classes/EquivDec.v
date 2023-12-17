@@ -16,15 +16,15 @@
 
 (** Export notations. *)
 
-Require Export Stdlib.Classes.Equivalence.
+From Stdlib.Classes Require Export Equivalence.
 
 (** The [DecidableSetoid] class asserts decidability of a [Setoid].
    It can be useful in proofs to reason more classically. *)
 
-Require Import Stdlib.Logic.Decidable.
-Require Import Stdlib.Bool.Bool.
-Require Import Stdlib.Arith.Peano_dec.
-Require Import Stdlib.Program.Program.
+From Stdlib.Logic Require Import Decidable.
+From Stdlib.Bool Require Import Bool.
+From Stdlib.Arith Require Import Peano_dec.
+From Stdlib.Program Require Import Program.
 
 Generalizable Variables A B R.
 
@@ -135,7 +135,7 @@ Program Instance bool_function_eqdec `(EqDec A eq) : EqDec (bool -> A) eq :=
     destruct x ; auto.
   Qed.
 
-Require Import List.
+From Stdlib Require Import List.
 
 #[global]
 Program Instance list_eqdec `(eqa : EqDec A eq) : EqDec (list A) eq :=

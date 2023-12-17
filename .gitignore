@@ -97,6 +97,8 @@ test-suite/Datatypes.mli
 test-suite/bug_10796.ml
 test-suite/bug_10796.mli
 test-suite/**/*.time
+theories/Makefile-*.coq
+theories/Makefile-*.coq.conf
 
 # `nix build` (through flake) symlink
 result

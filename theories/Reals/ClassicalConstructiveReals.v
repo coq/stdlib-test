@@ -21,15 +21,15 @@
     This allows to apply results from constructive reals to
     classical reals. *)
 
-Require Import QArith_base.
-Require Import Rdefinitions.
-Require Import Raxioms.
-Require Import ConstructiveReals.
-Require Import ConstructiveCauchyReals.
-Require Import ConstructiveCauchyRealsMult.
-Require Import ConstructiveRcomplete.
-Require Import ConstructiveCauchyAbs.
-Require Import ConstructiveRealsMorphisms.
+From Stdlib Require Import QArith_base.
+From Stdlib Require Import Rdefinitions.
+From Stdlib Require Import Raxioms.
+From Stdlib Require Import ConstructiveReals.
+From Stdlib Require Import ConstructiveCauchyReals.
+From Stdlib Require Import ConstructiveCauchyRealsMult.
+From Stdlib Require Import ConstructiveRcomplete.
+From Stdlib Require Import ConstructiveCauchyAbs.
+From Stdlib Require Import ConstructiveRealsMorphisms.
 
 Local Open Scope R_scope.
 

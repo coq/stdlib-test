@@ -9,9 +9,9 @@
 (************************************************************************)
 
 
-Require Export List.
-Require Export Bintree.
-Require Import Bool BinPos.
+From Stdlib Require Export List.
+From Stdlib Require Export Bintree.
+From Stdlib Require Import Bool BinPos.
 
 Declare ML Module "rtauto_plugin:coq-core.plugins.rtauto".
 

@@ -8,12 +8,12 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export Cring.
-Require Export Integral_domain.
+From Stdlib Require Export Cring.
+From Stdlib Require Export Integral_domain.
 
 (* Real numbers *)
-Require Import Reals.
-Require Import RealField.
+From Stdlib Require Import Reals.
+From Stdlib Require Import RealField.
 
 Lemma Rsth : Setoid_Theory R (@eq R).
 constructor;red;intros;subst;trivial.

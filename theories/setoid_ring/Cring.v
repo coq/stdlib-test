@@ -8,18 +8,18 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export List.
-Require Import Setoid.
-Require Import BinPos.
-Require Import BinList.
-Require Import Znumtheory.
-Require Export Morphisms Setoid Bool.
-Require Import ZArith_base.
-Require Export Algebra_syntax.
-Require Export Ncring.
-Require Export Ncring_initial.
-Require Export Ncring_tac.
-Require Import InitialRing.
+From Stdlib Require Export List.
+From Stdlib Require Import Setoid.
+From Stdlib Require Import BinPos.
+From Stdlib Require Import BinList.
+From Stdlib Require Import Znumtheory.
+From Stdlib Require Export Morphisms Setoid Bool.
+From Stdlib Require Import ZArith_base.
+From Stdlib Require Export Algebra_syntax.
+From Stdlib Require Export Ncring.
+From Stdlib Require Export Ncring_initial.
+From Stdlib Require Export Ncring_tac.
+From Stdlib Require Import InitialRing.
 
 Class Cring {R:Type}`{Rr:Ring R} := 
  cring_mul_comm: forall x y:R, x * y == y * x.

@@ -13,7 +13,7 @@
 (** This file proposes an implementation of the non-dependent
     interface [MSetInterface.S] using strictly ordered list. *)
 
-Require Export MSetInterface OrdersFacts OrdersLists.
+From Stdlib Require Export MSetInterface OrdersFacts OrdersLists.
 Set Implicit Arguments.
 Unset Strict Implicit.
 
@@ -890,7 +890,7 @@ End Make.
 
 (** For this specific implementation, eq coincides with Leibniz equality *)
 
-Require Eqdep_dec.
+From Stdlib Require Eqdep_dec.
 
 Module Type OrderedTypeWithLeibniz.
   Include OrderedType.

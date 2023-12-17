@@ -15,8 +15,8 @@
 (*                                                                      *)
 (************************************************************************)
 
-Require Import ZArith_base.
-Require Import List.
+From Stdlib Require Import ZArith_base.
+From Stdlib Require Import List.
 Set Implicit Arguments.
 
 (* 

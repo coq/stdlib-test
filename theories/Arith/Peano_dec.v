@@ -8,8 +8,8 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Decidable PeanoNat.
-Require Eqdep_dec.
+From Stdlib Require Import Decidable PeanoNat.
+From Stdlib Require Eqdep_dec.
 Local Open Scope nat_scope.
 
 Implicit Types m n x y : nat.

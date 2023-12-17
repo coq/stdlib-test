@@ -15,18 +15,18 @@
 (**          Definition of the sum functions            *)
 (*                                                      *)
 (********************************************************)
-Require Export ArithRing.
+From Stdlib Require Export ArithRing.
 
-Require Import Rdefinitions Raxioms RIneq.
-Require Export Rpow_def.
-Require Export R_Ifp.
-Require Export Rbasic_fun.
-Require Export R_sqr.
-Require Export SplitAbsolu.
-Require Export SplitRmult.
-Require Export ArithProp.
-Require Import Zpower.
-Require Import Ztac.
+From Stdlib Require Import Rdefinitions Raxioms RIneq.
+From Stdlib Require Export Rpow_def.
+From Stdlib Require Export R_Ifp.
+From Stdlib Require Export Rbasic_fun.
+From Stdlib Require Export R_sqr.
+From Stdlib Require Export SplitAbsolu.
+From Stdlib Require Export SplitRmult.
+From Stdlib Require Export ArithProp.
+From Stdlib Require Import Zpower.
+From Stdlib Require Import Ztac.
 Local Open Scope nat_scope.
 Local Open Scope R_scope.
 

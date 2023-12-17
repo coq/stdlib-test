@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import BinInt Znat.
+From Stdlib Require Import BinInt Znat.
 Local Open Scope Z_scope.
 
 (** Factorization lemmas *)

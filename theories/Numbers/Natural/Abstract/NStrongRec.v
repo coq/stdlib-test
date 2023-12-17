@@ -13,7 +13,7 @@
 (** This file defined the strong (course-of-value, well-founded) recursion
 and proves its properties *)
 
-Require Export NSub.
+From Stdlib Require Export NSub.
 
 Ltac f_equiv' := repeat (repeat f_equiv; try intros ? ? ?; auto).
 

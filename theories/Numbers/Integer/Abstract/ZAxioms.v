@@ -10,8 +10,8 @@
 (*                      Evgeny Makarov, INRIA, 2007                     *)
 (************************************************************************)
 
-Require Export NZAxioms.
-Require Import Bool NZParity NZPow NZSqrt NZLog NZGcd NZDiv NZBits.
+From Stdlib Require Export NZAxioms.
+From Stdlib Require Import Bool NZParity NZPow NZSqrt NZLog NZGcd NZDiv NZBits.
 
 (** We obtain integers by postulating that successor of predecessor
     is identity. *)

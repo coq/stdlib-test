@@ -10,7 +10,7 @@
 
 (** Compatibility file for making Coq act similar to Coq v8.18 *)
 
-Require Export Stdlib.Compat.Coq819.
+From Stdlib.Compat Require Export Coq819.
 
 (* Restore broken behavior of [zify] reported in COQBUG(https://github.com/coq/coq/issues/17936) *)
 From Stdlib Require Import Arith BinInt BinNat Znat Nnat PreOmega.

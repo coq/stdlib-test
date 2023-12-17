@@ -8,8 +8,8 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Rdefinitions Raxioms RIneq.
-Require Import Rbasic_fun.
+From Stdlib Require Import Rdefinitions Raxioms RIneq.
+From Stdlib Require Import Rbasic_fun.
 Local Open Scope R_scope.
 
 (****************************************************)

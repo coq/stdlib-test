@@ -9,12 +9,12 @@
 (************************************************************************)
 
 
-Require Import Stdlib.Reals.Rdefinitions.
-Require Import Stdlib.Reals.Raxioms.
-Require Import Rfunctions.
-Require Import Stdlib.Reals.RIneq.
-Require Import Stdlib.Logic.FinFun.
-Require Import Stdlib.Logic.ConstructiveEpsilon.
+From Stdlib.Reals Require Import Rdefinitions.
+From Stdlib.Reals Require Import Raxioms.
+From Stdlib Require Import Rfunctions.
+From Stdlib.Reals Require Import RIneq.
+From Stdlib Require Import FinFun.
+From Stdlib.Logic Require Import ConstructiveEpsilon.
 
 
 Definition enumeration (A : Type) (u : nat -> A) (v : A -> nat) : Prop :=

@@ -12,8 +12,8 @@
 
 (** Order properties of [bool]  *)
 
-Require Export Bool.
-Require Import Orders.
+From Stdlib Require Export Bool.
+From Stdlib Require Import Orders.
 Import BoolNotations.
 Local Ltac Tauto.intuition_solver ::= auto with typeclass_instances relations.
 

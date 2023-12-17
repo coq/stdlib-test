@@ -8,11 +8,11 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Rbase.
-Require Import Rfunctions.
-Require Import SeqSeries.
-Require Import Rtrigo_def.
-Require Import Lia Lra.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import Rfunctions.
+From Stdlib Require Import SeqSeries.
+From Stdlib Require Import Rtrigo_def.
+From Stdlib Require Import Lia Lra.
 Local Open Scope R_scope.
 
 Definition A1 (x:R) (N:nat) : R :=

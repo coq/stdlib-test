@@ -10,7 +10,7 @@
 (*                      Evgeny Makarov, INRIA, 2007                     *)
 (************************************************************************)
 
-Require Export ZMul.
+From Stdlib Require Export ZMul.
 
 Module ZOrderProp (Import Z : ZAxiomsMiniSig').
 Include ZMulProp Z.

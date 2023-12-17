@@ -10,8 +10,8 @@
 
 (** * Finite sets library : conversion to old [Finite_sets] *)
 
-Require Import Ensembles Finite_sets.
-Require Import FSetInterface FSetProperties OrderedTypeEx DecidableTypeEx.
+From Stdlib Require Import Ensembles Finite_sets.
+From Stdlib Require Import FSetInterface FSetProperties OrderedTypeEx DecidableTypeEx.
 
 (** * Going from [FSets] with usual Leibniz equality
     to the good old [Ensembles] and [Finite_sets] theory. *)

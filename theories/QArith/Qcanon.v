@@ -8,10 +8,10 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Field.
-Require Import QArith.
-Require Import Znumtheory.
-Require Import Eqdep_dec.
+From Stdlib Require Import Field.
+From Stdlib Require Import QArith.
+From Stdlib Require Import Znumtheory.
+From Stdlib Require Import Eqdep_dec.
 
 (** [Qc] : A canonical representation of rational numbers.
    based on the setoid representation [Q]. *)

@@ -12,7 +12,8 @@
 (** Contributed by Laurent Théry (INRIA);
     Adapted to Coq V8 by the Coq Development Team *)
 
-Require Import Bool BinPos BinNat PeanoNat Nnat Stdlib.Strings.Byte.
+From Stdlib Require Import Bool BinPos BinNat PeanoNat Nnat.
+From Stdlib.Strings Require Import Byte.
 Import IfNotations.
 
 (** * Definition of ascii characters *)

@@ -8,8 +8,8 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Bool Basics OrdersTac.
-Require Export Orders.
+From Stdlib Require Import Bool Basics OrdersTac.
+From Stdlib Require Export Orders.
 
 Set Implicit Arguments.
 Unset Strict Implicit.

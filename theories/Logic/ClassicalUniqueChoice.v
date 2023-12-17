@@ -25,7 +25,7 @@
     Proceedings of TYPES 2002, Lecture Notes in Computer Science 2646,
     Springer Verlag.  *)
 
-Require Export Classical.
+From Stdlib Require Export Classical.
 
 Axiom
   dependent_unique_choice :
@@ -46,7 +46,7 @@ Qed.
 
 
 (** The following proof comes from [[ChicliPottierSimpson02]] *)
-Require Import Setoid.
+From Stdlib Require Import Setoid.
 
 Theorem classic_set_in_prop_context :
   forall C:Prop, ((forall P:Prop, {P} + {~ P}) -> C) -> C.

@@ -8,9 +8,9 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export Ring.
-Require Import ZArith_base.
-Require Import Zpow_def.
+From Stdlib Require Export Ring.
+From Stdlib Require Import ZArith_base.
+From Stdlib Require Import Zpow_def.
 
 Import InitialRing.
 

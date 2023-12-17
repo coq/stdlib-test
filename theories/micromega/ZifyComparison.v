@@ -8,9 +8,9 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Bool ZArith.
-Require Import Zify ZifyClasses.
-Require Import Lia.
+From Stdlib Require Import Bool ZArith.
+From Stdlib Require Import Zify ZifyClasses.
+From Stdlib Require Import Lia.
 Local Open Scope Z_scope.
 
 (** [Z_of_comparison] is the injection function for comparison *)

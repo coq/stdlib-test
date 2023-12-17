@@ -16,9 +16,9 @@ Notation not_eq_sym := not_eq_sym (only parsing).
 
 Implicit Types m n p q : nat.
 
-Require Import Arith_base.
-Require Import Peano_dec.
-Require Import Compare_dec.
+From Stdlib Require Import Arith_base.
+From Stdlib Require Import Peano_dec.
+From Stdlib Require Import Compare_dec.
 
 Definition le_or_le_S := le_le_S_dec.
 
@@ -55,4 +55,4 @@ Proof.
   symmetry; apply Nat.add_0_r.
 Qed.
 
-Require Export Wf_nat.
+From Stdlib Require Export Wf_nat.

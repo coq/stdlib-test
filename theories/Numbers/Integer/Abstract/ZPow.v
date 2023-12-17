@@ -10,7 +10,7 @@
 
 (** Properties of the power function *)
 
-Require Import Bool ZAxioms ZMulOrder ZParity ZSgnAbs NZPow.
+From Stdlib Require Import Bool ZAxioms ZMulOrder ZParity ZSgnAbs NZPow.
 
 Module Type ZPowProp
  (Import A : ZAxiomsSig')

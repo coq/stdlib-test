@@ -2,13 +2,13 @@
  * Special handling of ascii and strings for extraction to Haskell.
  *)
 
-Require Stdlib.extraction.Extraction.
+From Stdlib Require Extraction.
 
-Require Import Ascii.
-Require Import String.
-Require Import Stdlib.Strings.Byte.
+From Stdlib Require Import Ascii.
+From Stdlib Require Import String.
+From Stdlib.Strings Require Import Byte.
 
-Require Export ExtrHaskellBasic.
+From Stdlib Require Export ExtrHaskellBasic.
 
 (**
  * At the moment, Coq's extraction has no way to add extra import
@@ -54,7 +54,7 @@ Extract Inlined Constant Ascii.ascii_of_byte => "(\x -> x)".
 Extract Inlined Constant Ascii.byte_of_ascii => "(\x -> x)".
 
 (*
-Require Import ExtrHaskellBasic.
+From Stdlib Require Import ExtrHaskellBasic.
 Definition test := "ceci est un test"%string.
 Definition test2 := List.map (option_map Byte.to_nat) (List.map Byte.of_nat (List.seq 0 256)).
 Definition test3 := List.map ascii_of_nat (List.seq 0 256).

@@ -8,10 +8,10 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export BinNums.
-Require Import BinPos RelationClasses Morphisms Setoid
+From Stdlib Require Export BinNums.
+From Stdlib Require Import BinPos RelationClasses Morphisms Setoid
  Equalities OrdersFacts GenericMinMax Bool NAxioms NMaxMin NProperties.
-Require BinNatDef.
+From Stdlib Require BinNatDef.
 
 (**********************************************************************)
 (** * Binary natural numbers, operations and properties *)

@@ -13,9 +13,9 @@
 (**
 Author: Arnaud Spiwack (+ Pierre Letouzey)
 *)
-Require Import CyclicAxioms.
-Require Export ZArith.
-Require Export Uint63.
+From Stdlib Require Import CyclicAxioms.
+From Stdlib Require Export ZArith.
+From Stdlib Require Export Uint63.
 Import Zpow_facts.
 Import Utf8.
 Import Lia.

@@ -11,8 +11,8 @@
 
 (** Binary Integers (Pierre Crégut, CNET, Lannion, France) *)
 
-Require Export Arith_base.
-Require Import BinPos BinInt BinNat Pnat Nnat.
+From Stdlib Require Export Arith_base.
+From Stdlib Require Import BinPos BinInt BinNat Pnat Nnat.
 
 Local Open Scope Z_scope.
 

@@ -14,7 +14,8 @@
     f injective <-> f bijective <-> f surjective. *)
 
 #[local] Set Warnings "-stdlib-vector".
-Require Import List PeanoNat Compare_dec EqNat Decidable ListDec. Require Fin.
+From Stdlib Require Import List PeanoNat Compare_dec EqNat Decidable ListDec.
+From Stdlib Require Fin.
 Set Implicit Arguments.
 
 (** General definitions *)

@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Nnat ZArith_base Lia ZArithRing Zdiv Morphisms.
+From Stdlib Require Import Nnat ZArith_base Lia ZArithRing Zdiv Morphisms.
 
 Local Open Scope Z_scope.
 

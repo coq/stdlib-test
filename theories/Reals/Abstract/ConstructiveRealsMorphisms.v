@@ -28,11 +28,11 @@
     WARNING: this file is experimental and likely to change in future releases.
 *)
 
-Require Import QArith.
-Require Import Qabs.
-Require Import ConstructiveReals.
-Require Import ConstructiveLimits.
-Require Import ConstructiveAbs.
+From Stdlib Require Import QArith.
+From Stdlib Require Import Qabs.
+From Stdlib Require Import ConstructiveReals.
+From Stdlib Require Import ConstructiveLimits.
+From Stdlib Require Import ConstructiveAbs.
 
 Local Open Scope ConstructiveReals.
 

@@ -8,13 +8,13 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Rbase.
-Require Import Rfunctions.
-Require Import SeqSeries.
-Require Import Rtrigo1.
-Require Import Ranalysis1.
-Require Import PSeries_reg.
-Require Import Lia Lra.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import Rfunctions.
+From Stdlib Require Import SeqSeries.
+From Stdlib Require Import Rtrigo1.
+From Stdlib Require Import Ranalysis1.
+From Stdlib Require Import PSeries_reg.
+From Stdlib Require Import Lia Lra.
 Local Open Scope nat_scope.
 Local Open Scope R_scope.
 

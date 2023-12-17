@@ -14,13 +14,13 @@
    Institution: LRI, CNRS UMR 8623 - University Paris Sud
 *)
 
-Require Import Stdlib.Program.Basics.
-Require Import Stdlib.Program.Tactics.
+From Stdlib.Program Require Import Basics.
+From Stdlib.Program Require Import Tactics.
 
-Require Import Stdlib.Classes.Init.
-Require Import Relation_Definitions.
-Require Export Stdlib.Classes.CRelationClasses.
-Require Import Stdlib.Classes.CMorphisms.
+From Stdlib.Classes Require Import Init.
+From Stdlib Require Import Relation_Definitions.
+From Stdlib.Classes Require Export CRelationClasses.
+From Stdlib.Classes Require Import CMorphisms.
 
 Set Implicit Arguments.
 Unset Strict Implicit.

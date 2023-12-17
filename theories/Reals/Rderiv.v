@@ -13,11 +13,11 @@
 (*                                                       *)
 (*********************************************************)
 
-Require Import Rbase.
-Require Import Rfunctions.
-Require Import Rlimit.
-Require Import Lra.
-Require Import Lia.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import Rfunctions.
+From Stdlib Require Import Rlimit.
+From Stdlib Require Import Lra.
+From Stdlib Require Import Lia.
 Local Open Scope R_scope.
 
 (*********)

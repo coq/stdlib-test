@@ -12,6 +12,6 @@
 
 (** Classical Logic *)
 
-Require Export Classical_Prop.
-Require Export Classical_Pred_Type.
+From Stdlib Require Export Classical_Prop.
+From Stdlib Require Export Classical_Pred_Type.
 

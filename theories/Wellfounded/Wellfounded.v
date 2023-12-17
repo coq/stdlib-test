@@ -8,12 +8,12 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export Disjoint_Union.
-Require Export Inclusion.
-Require Export Inverse_Image.
-Require Export Lexicographic_Exponentiation.
-Require Export Lexicographic_Product.
-Require Export Transitive_Closure.
-Require Export Union.
-Require Export Well_Ordering.
+From Stdlib Require Export Disjoint_Union.
+From Stdlib Require Export Inclusion.
+From Stdlib Require Export Inverse_Image.
+From Stdlib Require Export Lexicographic_Exponentiation.
+From Stdlib Require Export Lexicographic_Product.
+From Stdlib Require Export Transitive_Closure.
+From Stdlib Require Export Union.
+From Stdlib Require Export Well_Ordering.
 

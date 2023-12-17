@@ -17,8 +17,8 @@
     [mem x s=true] instead of [In x s],
     [equal s s'=true] instead of [Equal s s'], etc. *)
 
-Require Import MSetProperties Zerob Sumbool Lia DecidableTypeEx.
-Require  FSetEqProperties.
+From Stdlib Require Import MSetProperties Zerob Sumbool Lia DecidableTypeEx.
+From Stdlib Require  FSetEqProperties.
 
 
 Module WEqPropertiesOn (Import E:DecidableType)(M:WSetsOn E).

@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import ZAxioms ZMulOrder GenericMinMax.
+From Stdlib Require Import ZAxioms ZMulOrder GenericMinMax.
 
 (** * Properties of minimum and maximum specific to integer numbers *)
 

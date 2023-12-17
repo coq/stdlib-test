@@ -8,9 +8,9 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Ring.
+From Stdlib Require Ring.
 Import Ring_polynom Ring_tac Ring_theory InitialRing Setoid List Morphisms.
-Require Import ZArith_base.
+From Stdlib Require Import ZArith_base.
 Set Implicit Arguments.
 (* Set Universe Polymorphism. *)
 

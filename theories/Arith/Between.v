@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import PeanoNat.
+From Stdlib Require Import PeanoNat.
 
 Local Open Scope nat_scope.
 

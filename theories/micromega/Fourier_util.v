@@ -1,5 +1,5 @@
-Require Export Rbase.
-Require Import Lra.
+From Stdlib Require Export Rbase.
+From Stdlib Require Import Lra.
 
 Local Open Scope R_scope.
 

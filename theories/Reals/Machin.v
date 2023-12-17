@@ -8,17 +8,17 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Lia.
-Require Import Lra.
-Require Import Rbase.
-Require Import Rtrigo1.
-Require Import Ranalysis_reg.
-Require Import Rfunctions.
-Require Import AltSeries.
-Require Import Rseries.
-Require Import SeqProp.
-Require Import PartSum.
-Require Import Ratan.
+From Stdlib Require Import Lia.
+From Stdlib Require Import Lra.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import Rtrigo1.
+From Stdlib Require Import Ranalysis_reg.
+From Stdlib Require Import Rfunctions.
+From Stdlib Require Import AltSeries.
+From Stdlib Require Import Rseries.
+From Stdlib Require Import SeqProp.
+From Stdlib Require Import PartSum.
+From Stdlib Require Import Ratan.
 
 Local Open Scope R_scope.
 

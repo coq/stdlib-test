@@ -13,9 +13,9 @@
 (*                                                       *)
 (*********************************************************)
 
-Require Import Rbase.
-Require Import Rfunctions.
-Require Import Lra.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import Rfunctions.
+From Stdlib Require Import Lra.
 Local Open Scope R_scope.
 
 (*******************************)

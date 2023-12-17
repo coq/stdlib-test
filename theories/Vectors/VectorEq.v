@@ -19,8 +19,8 @@ Attributes warn(cats="stdlib vector", note="Using Vector.t is known to be techni
 *)
 
 #[local] Set Warnings "-stdlib-vector".
-Require Import VectorDef.
-Require Import VectorSpec.
+From Stdlib Require Import VectorDef.
+From Stdlib Require Import VectorSpec.
 Import VectorNotations.
 
 Section BEQ.

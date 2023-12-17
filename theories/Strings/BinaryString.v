@@ -8,8 +8,8 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Ascii String.
-Require Import BinNums.
+From Stdlib Require Import Ascii String.
+From Stdlib Require Import BinNums.
 Import BinNatDef.
 Import BinIntDef.
 Import BinPosDef.

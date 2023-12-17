@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export Rdefinitions.
-Require Export Raxioms.
-Require Export RIneq.
-Require Export DiscrR.
+From Stdlib Require Export Rdefinitions.
+From Stdlib Require Export Raxioms.
+From Stdlib Require Export RIneq.
+From Stdlib Require Export DiscrR.

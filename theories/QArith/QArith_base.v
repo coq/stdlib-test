@@ -8,10 +8,10 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export ZArith_base.
-Require Export ZArithRing.
-Require Export ZArith.BinInt.
-Require Export Morphisms Setoid Bool.
+From Stdlib Require Export ZArith_base.
+From Stdlib Require Export ZArithRing.
+From Stdlib Require Export ZArith.BinInt.
+From Stdlib Require Export Morphisms Setoid Bool.
 
 (** * Definition of [Q] and basic properties *)
 

@@ -8,23 +8,23 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Rbase.
-Require Import Rfunctions.
-Require Import Rtrigo.
-Require Import SeqSeries.
-Require Export Ranalysis1.
-Require Export Ranalysis2.
-Require Export Ranalysis3.
-Require Export Rtopology.
-Require Export MVT.
-Require Export PSeries_reg.
-Require Export Exp_prop.
-Require Export Rtrigo_reg.
-Require Export Rsqrt_def.
-Require Export R_sqrt.
-Require Export Rtrigo_calc.
-Require Export Rgeom.
-Require Export Sqrt_reg.
-Require Export Ranalysis4.
-Require Export Rpower.
-Require Export Ranalysis_reg.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import Rfunctions.
+From Stdlib Require Import Rtrigo.
+From Stdlib Require Import SeqSeries.
+From Stdlib Require Export Ranalysis1.
+From Stdlib Require Export Ranalysis2.
+From Stdlib Require Export Ranalysis3.
+From Stdlib Require Export Rtopology.
+From Stdlib Require Export MVT.
+From Stdlib Require Export PSeries_reg.
+From Stdlib Require Export Exp_prop.
+From Stdlib Require Export Rtrigo_reg.
+From Stdlib Require Export Rsqrt_def.
+From Stdlib Require Export R_sqrt.
+From Stdlib Require Export Rtrigo_calc.
+From Stdlib Require Export Rgeom.
+From Stdlib Require Export Sqrt_reg.
+From Stdlib Require Export Ranalysis4.
+From Stdlib Require Export Rpower.
+From Stdlib Require Export Ranalysis_reg.

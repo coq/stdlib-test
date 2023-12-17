@@ -8,10 +8,10 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import PeanoNat.
-Require Import BinNat.
-Require Import Nnat.
-Require Export Ring.
+From Stdlib Require Import PeanoNat.
+From Stdlib Require Import BinNat.
+From Stdlib Require Import Nnat.
+From Stdlib Require Export Ring.
 Set Implicit Arguments.
 
 Lemma natSRth : semi_ring_theory O (S O) plus mult (@eq nat).

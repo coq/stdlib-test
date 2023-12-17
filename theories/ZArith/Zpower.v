@@ -8,8 +8,8 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Wf_nat ZArith_base Zcomplements.
-Require Export Zpow_def.
+From Stdlib Require Import Wf_nat ZArith_base Zcomplements.
+From Stdlib Require Export Zpow_def.
 Local Open Scope Z_scope.
 
 (** * Power functions over [Z] *)

@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Orders Rbase Rbasic_fun ROrderedType GenericMinMax.
+From Stdlib Require Import Orders Rbase Rbasic_fun ROrderedType GenericMinMax.
 
 Local Ltac Tauto.intuition_solver ::= auto with real.
 

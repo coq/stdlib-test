@@ -1,9 +1,9 @@
 (** Extraction of [Z] into Haskell's [Int] *)
 
-Require Stdlib.extraction.Extraction.
+From Stdlib Require Extraction.
 
-Require Import ZArith.
-Require Import ExtrHaskellZNum.
+From Stdlib Require Import ZArith.
+From Stdlib Require Import ExtrHaskellZNum.
 
 (**
  * Disclaimer: trying to obtain efficient certified programs

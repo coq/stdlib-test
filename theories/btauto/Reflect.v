@@ -1,4 +1,4 @@
-Require Import Bool DecidableClass Algebra Ring PArith Lia.
+From Stdlib Require Import Bool DecidableClass Algebra Ring PArith Lia.
 
 Section Bool.
 

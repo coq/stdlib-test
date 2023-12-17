@@ -8,10 +8,10 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import ZArith.
+From Stdlib Require Import ZArith.
 Import Znumtheory.
-Require Export Uint63 Sint63Axioms.
-Require Import Lia.
+From Stdlib Require Export Uint63 Sint63Axioms.
+From Stdlib Require Import Lia.
 
 Notation min_int := Sint63Axioms.min_int (only parsing).
 Notation to_Z := Sint63Axioms.to_Z (only parsing).

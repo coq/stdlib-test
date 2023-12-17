@@ -12,8 +12,8 @@
     Useful to bootstrap lia.
  *)
 
-Require Import ZArithRing.
-Require Import ZArith_base.
+From Stdlib Require Import ZArithRing.
+From Stdlib Require Import ZArith_base.
 Local Open Scope Z_scope.
 
 Lemma eq_incl :

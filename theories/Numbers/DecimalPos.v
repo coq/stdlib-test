@@ -13,7 +13,7 @@
     Proofs that conversions between decimal numbers and [positive]
     are bijections. *)
 
-Require Import Decimal DecimalFacts PArith NArith.
+From Stdlib Require Import Decimal DecimalFacts PArith NArith.
 
 Module Unsigned.
 

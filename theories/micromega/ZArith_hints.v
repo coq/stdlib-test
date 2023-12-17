@@ -7,7 +7,7 @@
 (*         *     GNU Lesser General Public License Version 2.1          *)
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
-Require Import Lia.
+From Stdlib Require Import Lia.
 Import ZArith_base.
 
 #[global]
@@ -15,7 +15,7 @@ Hint Resolve Z.le_refl Z.add_comm Z.add_assoc Z.mul_comm Z.mul_assoc Z.add_0_l
   Z.add_0_r Z.mul_1_l Z.add_opp_diag_l Z.add_opp_diag_r Z.mul_add_distr_r
   Z.mul_add_distr_l: zarith.
 
-Require Export Zhints.
+From Stdlib Require Export Zhints.
 
 #[global]
 Hint Extern 10 (_ = _ :>nat) => abstract lia: zarith.

@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import DecidableClass.
+From Stdlib Require Import DecidableClass.
 
 (** The type [bool] is defined in the prelude as
 [[
