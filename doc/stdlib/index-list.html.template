@@ -60,6 +60,16 @@ through the <tt>Require Import</tt> command.</p>
     theories/Relations/Operators_Properties.v
   </dd>
 
+  <dt> <b>Classes</b>:
+  </dt>
+  <dd>
+    theories/Classes/Morphisms_Relations.v
+    theories/Classes/CEquivalence.v
+    theories/Classes/SetoidClass.v
+    theories/Classes/RelationPairs.v
+    theories/Classes/DecidableClass.v
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -356,16 +366,6 @@ through the <tt>Require Import</tt> command.</p>
     theories/Sets/Relations_3_facts.v
     theories/Sets/Relations_3.v
     theories/Sets/Uniset.v
-  </dd>
-
-  <dt> <b>Classes</b>:
-  </dt>
-  <dd>
-    theories/Classes/Morphisms_Relations.v
-    theories/Classes/CEquivalence.v
-    theories/Classes/SetoidClass.v
-    theories/Classes/RelationPairs.v
-    theories/Classes/DecidableClass.v
   </dd>
 
   <dt> <b>Lists</b>:
