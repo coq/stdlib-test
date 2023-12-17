@@ -680,14 +680,9 @@ through the <tt>Require Import</tt> command.</p>
     theories/Wellfounded/Well_Ordering.v
   </dd>
 
-  <dt> <b>Setoids</b>:
-  </dt>
-  <dd>
-    theories/Setoids/Setoid.v
-  </dd>
-
   <dt> <b>Compat</b>:
     Compatibility wrappers for previous versions of Coq
+    in namespace Stdlib.Compat.
   </dt>
   <dd>
     theories/Compat/AdmitAxiom.v
