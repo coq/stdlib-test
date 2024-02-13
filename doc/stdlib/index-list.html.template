@@ -105,6 +105,7 @@ through the <tt>Require Import</tt> command.</p>
     theories/Arith/Wf_nat.v
     theories/Arith/Cantor.v
     theories/Arith/Zerob.v
+    theories/Classes/Arith/SetoidDec.v
   </dd>
 
   <dt> <b>PArith</b>:
@@ -312,9 +313,9 @@ through the <tt>Require Import</tt> command.</p>
        Relations (definitions and basic results)
   </dt>
   <dd>
-    theories/Relations/Relation_Operators.v
-    theories/Relations/Relations.v
-    theories/Relations/Operators_Properties.v
+    theories/Relations/All/Relation_Operators.v
+    theories/Relations/All/Relations.v
+    theories/Relations/All/Operators_Properties.v
   </dd>
 
   <dt> <b>Sets</b>:
@@ -348,13 +349,11 @@ through the <tt>Require Import</tt> command.</p>
   <dt> <b>Classes</b>:
   </dt>
   <dd>
-    theories/Classes/Morphisms_Relations.v
-    theories/Classes/CEquivalence.v
-    theories/Classes/EquivDec.v
-    theories/Classes/SetoidClass.v
-    theories/Classes/SetoidDec.v
-    theories/Classes/RelationPairs.v
-    theories/Classes/DecidableClass.v
+    theories/Classes/All/Morphisms_Relations.v
+    theories/Classes/All/CEquivalence.v
+    theories/Classes/All/SetoidClass.v
+    theories/Classes/All/RelationPairs.v
+    theories/Classes/All/DecidableClass.v
   </dd>
 
   <dt> <b>Lists</b>:
@@ -366,6 +365,7 @@ through the <tt>Require Import</tt> command.</p>
     theories/Lists/ListSet.v
     theories/Lists/ListTactics.v
     theories/Logic/Lists/WKL.v
+    theories/Classes/Lists/EquivDec.v
   </dd>
 
   <dt> <b>Streams</b>:
@@ -589,12 +589,12 @@ through the <tt>Require Import</tt> command.</p>
     Support for dependently-typed programming
   </dt>
   <dd>
-    theories/Program/Subset.v
-    theories/Program/Equality.v
-    theories/Program/Syntax.v
-    theories/Program/WfExtensionality.v
-    theories/Program/Program.v
-    theories/Program/Combinators.v
+    theories/Program/All/Subset.v
+    theories/Program/All/Equality.v
+    theories/Program/All/Syntax.v
+    theories/Program/All/WfExtensionality.v
+    theories/Program/All/Program.v
+    theories/Program/All/Combinators.v
   </dd>
 
   <dt> <b>Unicode</b>:

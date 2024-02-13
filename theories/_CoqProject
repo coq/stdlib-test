@@ -1,7 +1,9 @@
 -Q Arith Stdlib.Arith
 -Q Array Stdlib.Array
 -Q Bool Stdlib.Bool
--Q Classes Stdlib.Classes
+-Q Classes/All Stdlib.Classes.All.Stdlib.Classes
+-Q Classes/Arith Stdlib.Classes.Arith.Stdlib.Classes
+-Q Classes/Lists Stdlib.Classes.Lists.Stdlib.Classes
 -Q Compat Stdlib.Compat
 -Q FSets Stdlib.FSets
 -Q Floats Stdlib.Floats
@@ -13,10 +15,10 @@
 -Q NArith Stdlib.NArith
 -Q Numbers Stdlib.Numbers
 -Q PArith Stdlib.PArith
--Q Program Stdlib.Program
+-Q Program/All Stdlib.Program.All.Stdlib.Program
 -Q QArith Stdlib.QArith
 -Q Reals Stdlib.Reals
--Q Relations Stdlib.Relations
+-Q Relations/All Stdlib.Relations.All.Stdlib.Relations
 -Q Sets Stdlib.Sets
 -Q Sorting Stdlib.Sorting
 -Q Streams Stdlib.Streams

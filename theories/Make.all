@@ -84,13 +84,13 @@ Structures/OrdersTac.v
 Structures/BoolOrder.v
 Floats/Floats.v
 Floats/FloatLemmas.v
-Classes/Morphisms_Relations.v
-Classes/RelationPairs.v
-Classes/SetoidDec.v
-Classes/SetoidClass.v
-Classes/CEquivalence.v
-Classes/EquivDec.v
-Classes/DecidableClass.v
+Classes/All/Morphisms_Relations.v
+Classes/All/RelationPairs.v
+Classes/All/SetoidClass.v
+Classes/All/CEquivalence.v
+Classes/All/DecidableClass.v
+Classes/Arith/SetoidDec.v
+Classes/Lists/EquivDec.v
 MSets/MSetList.v
 MSets/MSetDecide.v
 MSets/MSets.v
@@ -358,9 +358,9 @@ Reals/Rlogic.v
 Reals/SeqProp.v
 Reals/Qreals.v
 Reals/Nsatz.v
-Relations/Relation_Operators.v
-Relations/Operators_Properties.v
-Relations/Relations.v
+Relations/All/Relation_Operators.v
+Relations/All/Operators_Properties.v
+Relations/All/Relations.v
 Sorting/SetoidList.v
 Sorting/SetoidPermutation.v
 Sorting/Heap.v
@@ -455,12 +455,12 @@ PArith/BinPos.v
 PArith/PArith.v
 PArith/BinPosDef.v
 Array/PArray.v
-Program/Syntax.v
-Program/Equality.v
-Program/Subset.v
-Program/WfExtensionality.v
-Program/Program.v
-Program/Combinators.v
+Program/All/Syntax.v
+Program/All/Equality.v
+Program/All/Subset.v
+Program/All/WfExtensionality.v
+Program/All/Program.v
+Program/All/Combinators.v
 FSets/FMapInterface.v
 FSets/FSetInterface.v
 FSets/FSetWeakList.v
@@ -506,7 +506,9 @@ nsatz/NsatzTactic.v
 -Q Arith Stdlib.Arith
 -Q Array Stdlib.Array
 -Q Bool Stdlib.Bool
--Q Classes Stdlib.Classes
+-Q Classes/All Stdlib.Classes.All.Stdlib.Classes
+-Q Classes/Arith Stdlib.Classes.Arith.Stdlib.Classes
+-Q Classes/Lists Stdlib.Classes.Lists.Stdlib.Classes
 -Q Compat Stdlib.Compat
 -Q FSets Stdlib.FSets
 -Q Floats Stdlib.Floats
@@ -518,10 +520,10 @@ nsatz/NsatzTactic.v
 -Q NArith Stdlib.NArith
 -Q Numbers Stdlib.Numbers
 -Q PArith Stdlib.PArith
--Q Program Stdlib.Program
+-Q Program/All Stdlib.Program.All.Stdlib.Program
 -Q QArith Stdlib.QArith
 -Q Reals Stdlib.Reals
--Q Relations Stdlib.Relations
+-Q Relations/All Stdlib.Relations.All.Stdlib.Relations
 -Q Sets Stdlib.Sets
 -Q Sorting Stdlib.Sorting
 -Q Streams Stdlib.Streams
