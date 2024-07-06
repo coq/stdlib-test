@@ -172,7 +172,7 @@ VSUBSYSTEMS := prerequisite success failure bugs bugs-nocoqchk output output-coq
   coqdoc ssr $(wildcard primitive/*) ltac2 coqchk
 
 # All subsystems
-SUBSYSTEMS := $(VSUBSYSTEMS) misc ide ide coqchk output-coqchk coqwc coq-makefile precomputed-time-tests tools $(UNIT_TESTS)
+SUBSYSTEMS := $(VSUBSYSTEMS) misc ide ide coqchk output-coqchk coqwc coq-makefile precomputed-time-tests $(UNIT_TESTS)
 
 # EJGA: This seems dangerous as first target...
 .csdp.cache: .csdp.cache.test-suite
@@ -271,7 +271,6 @@ summary:
 	  $(call summary_dir, "Coq makefile", coq-makefile); \
 	  $(call summary_dir, "Precomputed time tests", precomputed-time-tests); \
 	  $(call summary_dir, "Coqdoc tests", coqdoc); \
-	  $(call summary_dir, "tools/ tests", tools); \
 	  $(call summary_dir, "Unit tests", unit-tests); \
 	  $(call summary_dir, "Ltac2 tests", ltac2); \
 	  nb_success=`grep -e $(log_success) -r . -l --include="*.log" --exclude-dir=logs | wc -l`; \
@@ -773,23 +772,3 @@ $(addsuffix .log,$(wildcard coqdoc/*.v)): %.v.log: %.v %.html.out %.tex.out $(PR
 	    $(FAIL); \
 	  fi; \
 	} > "$@"
-
-# tools/
-
-tools: $(patsubst %/run.sh,%.log,$(wildcard tools/*/run.sh))
-
-tools/%.log : tools/%/run.sh
-	@echo "TEST      tools/$*"
-	$(HIDE)(\
-	  export COQBIN=$(BIN);\
-	  cd tools/$* && \
-	  bash run.sh 2>&1; \
-	if [ $$? = 0 ]; then \
-	    echo $(log_success); \
-	    echo "    $<...Ok"; \
-	  else \
-	    echo $(log_failure); \
-	    echo "    $<...Error!"; \
-	    $(FAIL); \
-	  fi; \
-	) > "$@"
