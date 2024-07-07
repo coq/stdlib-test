@@ -174,7 +174,6 @@ The standard library is composed of the following subdirectories:</p>
     theories/QArith/Qring.v
     theories/QArith/Qfield.v
     (theories/QArith/QArith.v)
-    theories/QArith/Qreals.v
     theories/QArith/Qcanon.v
     theories/QArith/Qcabs.v
     theories/QArith/Qround.v
@@ -570,6 +569,7 @@ The standard library is composed of the following subdirectories:</p>
     theories/Reals/Cauchy/ConstructiveCauchyReals.v
     theories/Reals/Cauchy/ConstructiveCauchyRealsMult.v
     theories/Reals/Cauchy/ConstructiveCauchyAbs.v
+    theories/Reals/Qreals.v
   </dd>
 
   </dl>
