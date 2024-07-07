@@ -378,6 +378,37 @@ through the <tt>Require Import</tt> command.</p>
     theories/Logic/Classical/PropExtensionality.v
   </dd>
 
+  <dt> <b>Sets</b>:
+    Classical sets. This is known to be outdated. More modern alternatives
+    can be found in coq-mathcomp-ssreflect (for finite sets)
+    and coq-mathcomp-classical (for classical sets) or coq-stdpp.
+    Namespace Stdlib.Sets.
+  </dt>
+  <dd>
+    theories/Sets/Classical_sets.v
+    theories/Sets/Constructive_sets.v
+    theories/Sets/Cpo.v
+    theories/Sets/Ensembles.v
+    theories/Sets/Finite_sets_facts.v
+    theories/Sets/Finite_sets.v
+    theories/Sets/Image.v
+    theories/Sets/Infinite_sets.v
+    theories/Sets/Integers.v
+    theories/Sets/Multiset.v
+    theories/Sets/Partial_Order.v
+    theories/Sets/Permut.v
+    theories/Sets/Powerset_Classical_facts.v
+    theories/Sets/Powerset_facts.v
+    theories/Sets/Powerset.v
+    theories/Sets/Relations_1_facts.v
+    theories/Sets/Relations_1.v
+    theories/Sets/Relations_2_facts.v
+    theories/Sets/Relations_2.v
+    theories/Sets/Relations_3_facts.v
+    theories/Sets/Relations_3.v
+    theories/Sets/Uniset.v
+  </dd>
+
   <dt> <b>Structures</b>:
        Algebraic structures (types with equality, with order, ...).
        DecidableType* and OrderedType* are there only for compatibility.
@@ -429,34 +460,6 @@ through the <tt>Require Import</tt> command.</p>
     (theories/Floats/Floats.v)
     </dd>
     </dl>
-  </dd>
-
-  <dt> <b>Sets</b>:
-       Sets (classical, constructive, finite, infinite, powerset, etc.)
-  </dt>
-  <dd>
-    theories/Sets/Classical_sets.v
-    theories/Sets/Constructive_sets.v
-    theories/Sets/Cpo.v
-    theories/Sets/Ensembles.v
-    theories/Sets/Finite_sets_facts.v
-    theories/Sets/Finite_sets.v
-    theories/Sets/Image.v
-    theories/Sets/Infinite_sets.v
-    theories/Sets/Integers.v
-    theories/Sets/Multiset.v
-    theories/Sets/Partial_Order.v
-    theories/Sets/Permut.v
-    theories/Sets/Powerset_Classical_facts.v
-    theories/Sets/Powerset_facts.v
-    theories/Sets/Powerset.v
-    theories/Sets/Relations_1_facts.v
-    theories/Sets/Relations_1.v
-    theories/Sets/Relations_2_facts.v
-    theories/Sets/Relations_2.v
-    theories/Sets/Relations_3_facts.v
-    theories/Sets/Relations_3.v
-    theories/Sets/Uniset.v
   </dd>
 
   <dt> <b>Sorting</b>:
