@@ -218,8 +218,6 @@ Lists/Streams.v
 Lists/List.v
 Lists/StreamMemo.v
 Lists/ListSet.v
-Lists/SetoidList.v
-Lists/SetoidPermutation.v
 Lists/ListTactics.v
 micromega/ZifyN.v
 micromega/QMicromega.v
@@ -361,6 +359,8 @@ Reals/Qreals.v
 Relations/Relation_Operators.v
 Relations/Operators_Properties.v
 Relations/Relations.v
+Sorting/SetoidList.v
+Sorting/SetoidPermutation.v
 Sorting/Heap.v
 Sorting/CPermutation.v
 Sorting/Mergesort.v
