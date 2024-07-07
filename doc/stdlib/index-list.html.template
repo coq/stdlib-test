@@ -316,6 +316,19 @@ through the <tt>Require Import</tt> command.</p>
     theories/Numbers/Cyclic/Int63/Ring63.v
   </dd>
 
+  <dt> <b>Floats</b>:
+    Efficient machine floating-point arithmetic
+    Interface to hardware floating-point arithmetic for efficient computations.
+    This offers a basic model of floating-point arithmetic but is not very
+    usable alone. Look at the coq-flocq package for an actual model of
+    floating-point arithmetic, including links to Stdlib reals and the current
+    Floats. Namespace Stdlib.Floats
+  </dt>
+  <dd>
+    theories/Floats/FloatLemmas.v
+    (theories/Floats/Floats.v)
+  </dd>
+
   <dt> <b>Primitive Arrays</b>:
     Persistent native arrays in namespace Stdlib.Array.
     Enables efficient computations with arrays.
@@ -468,22 +481,6 @@ through the <tt>Require Import</tt> command.</p>
     theories/QArith/Base/Qminmax.v
     theories/Numbers/Q/DecimalQ.v
     theories/Numbers/Q/HexadecimalQ.v
-  </dd>
-
-  <dt> <b>Numbers</b>:
-    An experimental modular architecture for arithmetic
-  </dt>
-  <dd>
-    <dl>
-
-    <dt> <b>&nbsp;&nbsp;Floats</b>:
-       Floating-point arithmetic
-    </dt>
-    <dd>
-    theories/Floats/FloatLemmas.v
-    (theories/Floats/Floats.v)
-    </dd>
-    </dl>
   </dd>
 
   <dt> <b>Wellfounded</b>:
