@@ -46,7 +46,6 @@ through the <tt>Require Import</tt> command.</p>
     theories/Logic/ExtensionalityFacts.v
     theories/Logic/WeakFan.v
     theories/Logic/WKL.v
-    theories/Logic/FinFun.v
     theories/Logic/PropFacts.v
     theories/Logic/HLevels.v
     theories/Logic/Adjointification.v
@@ -83,7 +82,6 @@ through the <tt>Require Import</tt> command.</p>
     theories/Bool/DecBool.v
     theories/Bool/IfProp.v
     theories/Bool/Zerob.v
-    theories/Bool/Bvector.v
   </dd>
 
   <dt> <b>Arith</b>:
@@ -378,6 +376,8 @@ through the <tt>Require Import</tt> command.</p>
     theories/Vectors/VectorSpec.v
     theories/Vectors/VectorEq.v
     (theories/Vectors/Vector.v)
+    theories/Vectors/FinFun.v
+    theories/Vectors/Bvector.v
   </dd>
 
   <dt> <b>Sorting</b>:
