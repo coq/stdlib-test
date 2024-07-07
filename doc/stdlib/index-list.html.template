@@ -200,6 +200,49 @@ through the <tt>Require Import</tt> command.</p>
     (theories/NArith/NArith.v)
   </dd>
 
+  <dt> <b>ZArith-base</b>:
+    Basic binary integers in namespace Stdlib.ZArith.
+  </dt>
+  <dd>
+    theories/Numbers/Integer/Abstract/ZAdd.v
+    theories/Numbers/Integer/Abstract/ZAddOrder.v
+    theories/Numbers/Integer/Abstract/ZAxioms.v
+    theories/Numbers/Integer/Abstract/ZBase.v
+    theories/Numbers/Integer/Abstract/ZLt.v
+    theories/Numbers/Integer/Abstract/ZMul.v
+    theories/Numbers/Integer/Abstract/ZMulOrder.v
+    theories/Numbers/Integer/Abstract/ZSgnAbs.v
+    theories/Numbers/Integer/Abstract/ZMaxMin.v
+    theories/Numbers/Integer/Abstract/ZParity.v
+    theories/Numbers/Integer/Abstract/ZPow.v
+    theories/Numbers/Integer/Abstract/ZGcd.v
+    theories/Numbers/Integer/Abstract/ZLcm.v
+    theories/Numbers/Integer/Abstract/ZBits.v
+    theories/Numbers/Integer/Abstract/ZProperties.v
+    theories/Numbers/Integer/Abstract/ZDivFloor.v
+    theories/Numbers/Integer/Abstract/ZDivTrunc.v
+    theories/ZArith/Base/BinIntDef.v
+    theories/ZArith/Base/BinInt.v
+    theories/ZArith/Base/Zorder.v
+    theories/ZArith/Base/Zcompare.v
+    theories/ZArith/Base/Zeuclid.v
+    theories/ZArith/Base/Znat.v
+    theories/ZArith/Base/Zmin.v
+    theories/ZArith/Base/Zmax.v
+    theories/ZArith/Base/Zminmax.v
+    theories/ZArith/Base/Zabs.v
+    theories/ZArith/Base/Zeven.v
+    theories/ZArith/Base/auxiliary.v
+    theories/ZArith/Base/ZArith_dec.v
+    theories/ZArith/Base/Zbool.v
+    theories/ZArith/Base/Zmisc.v
+    theories/ZArith/Base/Wf_Z.v
+    theories/ZArith/Base/Zhints.v
+    (theories/ZArith/Base/ZArith_base.v)
+    theories/ZArith/Base/Zpow_alt.v
+    theories/ZArith/Base/Int.v
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -249,27 +292,8 @@ through the <tt>Require Import</tt> command.</p>
        Binary integers
   </dt>
   <dd>
-    theories/ZArith/Base/BinIntDef.v
-    theories/ZArith/Base/BinInt.v
-    theories/ZArith/Base/Zorder.v
-    theories/ZArith/Base/Zcompare.v
-    theories/ZArith/Base/Zeuclid.v
-    theories/ZArith/Base/Znat.v
-    theories/ZArith/Base/Zmin.v
-    theories/ZArith/Base/Zmax.v
-    theories/ZArith/Base/Zminmax.v
-    theories/ZArith/Base/Zabs.v
-    theories/ZArith/Base/Zeven.v
-    theories/ZArith/Base/auxiliary.v
-    theories/ZArith/Base/ZArith_dec.v
-    theories/ZArith/Base/Zbool.v
-    theories/ZArith/Base/Zmisc.v
-    theories/ZArith/Base/Wf_Z.v
-    theories/ZArith/Base/Zhints.v
-    (theories/ZArith/Base/ZArith_base.v)
     theories/ZArith/Ring/Zcomplements.v
     theories/ZArith/Ring/Zpow_def.v
-    theories/ZArith/Base/Zpow_alt.v
     theories/ZArith/All/Zpower.v
     theories/ZArith/Ring/Zdiv.v
     theories/ZArith/All/Zquot.v
@@ -277,7 +301,6 @@ through the <tt>Require Import</tt> command.</p>
     theories/ZArith/All/Zgcd_alt.v
     theories/ZArith/All/Zwf.v
     theories/ZArith/Ring/Znumtheory.v
-    theories/ZArith/Base/Int.v
     theories/ZArith/All/Zpow_facts.v
     theories/ZArith/All/Zbitwise.v
     theories/Numbers/Z/DecimalFacts.v
@@ -329,30 +352,6 @@ through the <tt>Require Import</tt> command.</p>
     theories/Numbers/Cyclic/Int63/Uint63.v
     theories/Numbers/Cyclic/Int63/Sint63.v
     theories/Numbers/Cyclic/Int63/Ring63.v
-    </dd>
-
-    <dt> <b>&nbsp;&nbsp;Integer</b>:
-       Abstract and concrete (especially 63-bits-words-based) integer
-       arithmetic
-    </dt>
-    <dd>
-    theories/Numbers/Integer/Abstract/ZAdd.v
-    theories/Numbers/Integer/Abstract/ZAddOrder.v
-    theories/Numbers/Integer/Abstract/ZAxioms.v
-    theories/Numbers/Integer/Abstract/ZBase.v
-    theories/Numbers/Integer/Abstract/ZLt.v
-    theories/Numbers/Integer/Abstract/ZMul.v
-    theories/Numbers/Integer/Abstract/ZMulOrder.v
-    theories/Numbers/Integer/Abstract/ZSgnAbs.v
-    theories/Numbers/Integer/Abstract/ZMaxMin.v
-    theories/Numbers/Integer/Abstract/ZParity.v
-    theories/Numbers/Integer/Abstract/ZPow.v
-    theories/Numbers/Integer/Abstract/ZGcd.v
-    theories/Numbers/Integer/Abstract/ZLcm.v
-    theories/Numbers/Integer/Abstract/ZBits.v
-    theories/Numbers/Integer/Abstract/ZProperties.v
-    theories/Numbers/Integer/Abstract/ZDivFloor.v
-    theories/Numbers/Integer/Abstract/ZDivTrunc.v
     </dd>
 
     <dt> <b>&nbsp;&nbsp;Floats</b>:

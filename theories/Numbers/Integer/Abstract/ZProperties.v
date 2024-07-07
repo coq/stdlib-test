@@ -8,8 +8,8 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-From Stdlib Require Export ZAxioms ZMaxMin ZSgnAbs ZParity ZPow ZDivTrunc ZDivFloor
- ZGcd ZLcm NZLog NZSqrt ZBits.
+From Stdlib Require Export ZAxioms ZMaxMin ZSgnAbs ZParity ZPow
+ ZDivTrunc ZDivFloor ZGcd ZLcm NZLog NZSqrt ZBits.
 
 (** The two following functors summarize all known facts about N.
 
