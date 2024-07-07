@@ -443,6 +443,13 @@ through the <tt>Require Import</tt> command.</p>
     theories/Structures/Ex/BoolOrder.v
   </dd>
 
+  <dt> <b>Primitive Strings</b>
+    Native string type in namespace Stdlib.Strings.
+  </dt>
+  <dd>
+    theories/Strings/PString.v
+  </dd>
+
   <dt> <b>QArith</b>:
     Rational numbers
   </dt>
@@ -658,12 +665,5 @@ through the <tt>Require Import</tt> command.</p>
     theories/Compat/Coq819.v
     theories/Compat/Coq820.v
     theories/Compat/Coq821.v
-  </dd>
-
-  <dt> <b>Primitive strings</b>
-    Native string type
-  </dt>
-  <dd>
-    theories/Strings/PString.v
   </dd>
 </dl>
