@@ -104,18 +104,18 @@ MSets/MSetRBT.v
 MSets/MSetPositive.v
 MSets/MSetToFiniteSet.v
 MSets/MSetEqProperties.v
-QArith/Qreduction.v
-QArith/Qfield.v
-QArith/Qminmax.v
-QArith/QOrderedType.v
-QArith/Qcabs.v
-QArith/Qround.v
-QArith/Qring.v
-QArith/Qpower.v
-QArith/Qabs.v
-QArith/QArith.v
-QArith/QArith_base.v
-QArith/Qcanon.v
+QArith/Base/Qreduction.v
+QArith/Base/Qminmax.v
+QArith/Base/QOrderedType.v
+QArith/Base/QArith_base.v
+QArith/Field/Qfield.v
+QArith/Field/Qround.v
+QArith/Field/Qring.v
+QArith/Field/Qpower.v
+QArith/Field/Qcanon.v
+QArith/All/Qcabs.v
+QArith/All/Qabs.v
+QArith/All/QArith.v
 Numbers/Z/DecimalFacts.v
 Numbers/Z/HexadecimalFacts.v
 Numbers/Z/DecimalN.v
@@ -530,7 +530,9 @@ nsatz/NsatzTactic.v
 -Q Numbers/Z Stdlib.Numbers.Z.Stdlib.Numbers
 -Q PArith Stdlib.PArith
 -Q Program/All Stdlib.Program.All.Stdlib.Program
--Q QArith Stdlib.QArith
+-Q QArith/All Stdlib.QArith.All.Stdlib.QArith
+-Q QArith/Base Stdlib.QArith.Base.Stdlib.QArith
+-Q QArith/Field Stdlib.QArith.Field.Stdlib.QArith
 -Q Reals Stdlib.Reals
 -Q Relations/All Stdlib.Relations.All.Stdlib.Relations
 -Q Sets Stdlib.Sets

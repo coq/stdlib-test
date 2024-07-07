@@ -185,18 +185,18 @@ through the <tt>Require Import</tt> command.</p>
     Rational numbers
   </dt>
   <dd>
-    theories/QArith/QArith_base.v
-    theories/QArith/Qabs.v
-    theories/QArith/Qpower.v
-    theories/QArith/Qreduction.v
-    theories/QArith/Qring.v
-    theories/QArith/Qfield.v
-    (theories/QArith/QArith.v)
-    theories/QArith/Qcanon.v
-    theories/QArith/Qcabs.v
-    theories/QArith/Qround.v
-    theories/QArith/QOrderedType.v
-    theories/QArith/Qminmax.v
+    theories/QArith/Base/QArith_base.v
+    theories/QArith/All/Qabs.v
+    theories/QArith/Field/Qpower.v
+    theories/QArith/Base/Qreduction.v
+    theories/QArith/Field/Qring.v
+    theories/QArith/Field/Qfield.v
+    (theories/QArith/All/QArith.v)
+    theories/QArith/Field/Qcanon.v
+    theories/QArith/All/Qcabs.v
+    theories/QArith/Field/Qround.v
+    theories/QArith/Base/QOrderedType.v
+    theories/QArith/Base/Qminmax.v
     theories/Numbers/Q/DecimalQ.v
     theories/Numbers/Q/HexadecimalQ.v
   </dd>

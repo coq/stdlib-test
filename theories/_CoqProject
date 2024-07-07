@@ -25,7 +25,9 @@
 -Q Numbers/Z Stdlib.Numbers.Z.Stdlib.Numbers
 -Q PArith Stdlib.PArith
 -Q Program/All Stdlib.Program.All.Stdlib.Program
--Q QArith Stdlib.QArith
+-Q QArith/All Stdlib.QArith.All.Stdlib.QArith
+-Q QArith/Base Stdlib.QArith.Base.Stdlib.QArith
+-Q QArith/Field Stdlib.QArith.Field.Stdlib.QArith
 -Q Reals Stdlib.Reals
 -Q Relations/All Stdlib.Relations.All.Stdlib.Relations
 -Q Sets Stdlib.Sets
