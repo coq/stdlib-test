@@ -341,6 +341,21 @@ through the <tt>Require Import</tt> command.</p>
     theories/Vectors/Bvector.v
   </dd>
 
+  <dt> <b>Strings</b>
+    Implementation of string as list of ASCII characters,
+    in namespace Stdlib.Strings.
+  </dt>
+  <dd>
+    theories/Strings/Byte.v
+    theories/Strings/Ascii.v
+    theories/Strings/String.v
+    theories/Strings/BinaryString.v
+    theories/Strings/HexString.v
+    theories/Strings/OctalString.v
+    theories/Numbers/Strings/DecimalString.v
+    theories/Numbers/Strings/HexadecimalString.v
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -521,20 +536,6 @@ through the <tt>Require Import</tt> command.</p>
     (theories/FSets/FMaps.v)
     theories/FSets/FMapAVL.v
     theories/FSets/FMapFullAVL.v
-  </dd>
-
-  <dt> <b>Strings</b>
-    Implementation of string as list of ascii characters
-  </dt>
-  <dd>
-    theories/Strings/Byte.v
-    theories/Strings/Ascii.v
-    theories/Strings/String.v
-    theories/Strings/BinaryString.v
-    theories/Strings/HexString.v
-    theories/Strings/OctalString.v
-    theories/Numbers/Strings/DecimalString.v
-    theories/Numbers/Strings/HexadecimalString.v
   </dd>
 
   <dt> <b>Reals</b>:

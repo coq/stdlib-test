@@ -1,0 +1,11 @@
+Strings/HexString.v
+Strings/Ascii.v
+Strings/String.v
+Strings/OctalString.v
+Strings/Byte.v
+Strings/BinaryString.v
+Numbers/Strings/DecimalString.v
+Numbers/Strings/HexadecimalString.v
+
+-Q Strings Stdlib.Strings
+-Q Numbers/Strings Stdlib.Numbers.Strings.Stdlib.Numbers
