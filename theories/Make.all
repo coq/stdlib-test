@@ -390,43 +390,43 @@ NArith/Ndec.v
 NArith/Ngcd_def.v
 NArith/NArith.v
 NArith/Nsqrt_def.v
-Logic/IndefiniteDescription.v
-Logic/ProofIrrelevance.v
-Logic/Hurkens.v
-Logic/Classical_Pred_Type.v
-Logic/Eqdep.v
-Logic/Classical_Prop.v
-Logic/HLevels.v
-Logic/ExtensionalityFacts.v
-Logic/ClassicalFacts.v
-Logic/JMeq.v
-Logic/Berardi.v
-Logic/Classical.v
-Logic/ProofIrrelevanceFacts.v
-Logic/PropExtensionalityFacts.v
-Logic/Decidable.v
-Logic/Epsilon.v
-Logic/ClassicalChoice.v
-Logic/Description.v
-Logic/Eqdep_dec.v
-Logic/Adjointification.v
-Logic/ClassicalEpsilon.v
-Logic/PropFacts.v
-Logic/ChoiceFacts.v
-Logic/StrictProp.v
-Logic/WKL.v
-Logic/ConstructiveEpsilon.v
-Logic/PropExtensionality.v
-Logic/ClassicalDescription.v
-Logic/FunctionalExtensionality.v
-Logic/EqdepFacts.v
-Logic/RelationalChoice.v
-Logic/WeakFan.v
-Logic/ExtensionalFunctionRepresentative.v
-Logic/ClassicalUniqueChoice.v
-Logic/SetoidChoice.v
-Logic/SetIsType.v
-Logic/Diaconescu.v
+Logic/Classical/IndefiniteDescription.v
+Logic/Base/ProofIrrelevance.v
+Logic/Base/Hurkens.v
+Logic/Classical/Classical_Pred_Type.v
+Logic/Base/Eqdep.v
+Logic/Classical/Classical_Prop.v
+Logic/Base/HLevels.v
+Logic/Base/ExtensionalityFacts.v
+Logic/Classical/ClassicalFacts.v
+Logic/Base/JMeq.v
+Logic/Base/Berardi.v
+Logic/Classical/Classical.v
+Logic/Base/ProofIrrelevanceFacts.v
+Logic/Base/PropExtensionalityFacts.v
+Logic/Base/Decidable.v
+Logic/Classical/Epsilon.v
+Logic/Classical/ClassicalChoice.v
+Logic/Classical/Description.v
+Logic/Base/Eqdep_dec.v
+Logic/Base/Adjointification.v
+Logic/Classical/ClassicalEpsilon.v
+Logic/Base/PropFacts.v
+Logic/Classical/ChoiceFacts.v
+Logic/Base/StrictProp.v
+Logic/Lists/WKL.v
+Logic/Base/ConstructiveEpsilon.v
+Logic/Classical/PropExtensionality.v
+Logic/Classical/ClassicalDescription.v
+Logic/Base/FunctionalExtensionality.v
+Logic/Base/EqdepFacts.v
+Logic/Base/RelationalChoice.v
+Logic/Base/WeakFan.v
+Logic/Base/ExtensionalFunctionRepresentative.v
+Logic/Classical/ClassicalUniqueChoice.v
+Logic/Classical/SetoidChoice.v
+Logic/Base/SetIsType.v
+Logic/Classical/Diaconescu.v
 Sets/Partial_Order.v
 Sets/Multiset.v
 Sets/Uniset.v
@@ -511,7 +511,9 @@ nsatz/NsatzTactic.v
 -Q FSets Stdlib.FSets
 -Q Floats Stdlib.Floats
 -Q Lists Stdlib.Lists
--Q Logic Stdlib.Logic
+-Q Logic/Base Stdlib.Logic.Base.Stdlib.Logic
+-Q Logic/Classical Stdlib.Logic.Classical.Stdlib.Logic
+-Q Logic/Lists Stdlib.Logic.Lists.Stdlib.Logic
 -Q MSets Stdlib.MSets
 -Q NArith Stdlib.NArith
 -Q Numbers Stdlib.Numbers

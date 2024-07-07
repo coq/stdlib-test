@@ -6,7 +6,9 @@
 -Q FSets Stdlib.FSets
 -Q Floats Stdlib.Floats
 -Q Lists Stdlib.Lists
--Q Logic Stdlib.Logic
+-Q Logic/Base Stdlib.Logic.Base.Stdlib.Logic
+-Q Logic/Classical Stdlib.Logic.Classical.Stdlib.Logic
+-Q Logic/Lists Stdlib.Logic.Lists.Stdlib.Logic
 -Q MSets Stdlib.MSets
 -Q NArith Stdlib.NArith
 -Q Numbers Stdlib.Numbers
