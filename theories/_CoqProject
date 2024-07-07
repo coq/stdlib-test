@@ -50,4 +50,6 @@
 -Q nsatz Stdlib.nsatz
 -Q omega Stdlib.omega
 -Q rtauto Stdlib.rtauto
--Q setoid_ring Stdlib.setoid_ring
+-Q setoid_ring/Q Stdlib.setoid_ring.Q.Stdlib.setoid_ring
+-Q setoid_ring/R Stdlib.setoid_ring.R.Stdlib.setoid_ring
+-Q setoid_ring/Z Stdlib.setoid_ring.Z.Stdlib.setoid_ring

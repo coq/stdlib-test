@@ -29,30 +29,30 @@ ZArith/Base/auxiliary.v
 ZArith/Base/Int.v
 ZArith/Base/Zminmax.v
 ZArith/Base/Znat.v
-setoid_ring/Ncring_polynom.v
-setoid_ring/Rings_Z.v
-setoid_ring/Ncring_initial.v
-setoid_ring/Field_theory.v
-setoid_ring/Ring_polynom.v
-setoid_ring/ZArithRing.v
-setoid_ring/RealField.v
-setoid_ring/Integral_domain.v
-setoid_ring/Ring_base.v
-setoid_ring/BinList.v
-setoid_ring/Ncring.v
-setoid_ring/Ring.v
-setoid_ring/Algebra_syntax.v
-setoid_ring/Rings_R.v
-setoid_ring/Field_tac.v
-setoid_ring/Rings_Q.v
-setoid_ring/Field.v
-setoid_ring/InitialRing.v
-setoid_ring/Cring.v
-setoid_ring/Ncring_tac.v
-setoid_ring/Ring_tac.v
-setoid_ring/ArithRing.v
-setoid_ring/NArithRing.v
-setoid_ring/Ring_theory.v
+setoid_ring/Z/Ncring_polynom.v
+setoid_ring/Z/Rings_Z.v
+setoid_ring/Z/Ncring_initial.v
+setoid_ring/Q/Field_theory.v
+setoid_ring/Z/Ring_polynom.v
+setoid_ring/Z/ZArithRing.v
+setoid_ring/R/RealField.v
+setoid_ring/Z/Integral_domain.v
+setoid_ring/Z/Ring_base.v
+setoid_ring/Z/BinList.v
+setoid_ring/Z/Ncring.v
+setoid_ring/Z/Ring.v
+setoid_ring/Z/Algebra_syntax.v
+setoid_ring/R/Rings_R.v
+setoid_ring/Q/Field_tac.v
+setoid_ring/Q/Rings_Q.v
+setoid_ring/Q/Field.v
+setoid_ring/Z/InitialRing.v
+setoid_ring/Z/Cring.v
+setoid_ring/Z/Ncring_tac.v
+setoid_ring/Z/Ring_tac.v
+setoid_ring/Z/ArithRing.v
+setoid_ring/Z/NArithRing.v
+setoid_ring/Z/Ring_theory.v
 Arith/Base/EqNat.v
 Arith/Base/Compare.v
 Arith/Base/PeanoNat.v
@@ -555,4 +555,6 @@ nsatz/NsatzTactic.v
 -Q nsatz Stdlib.nsatz
 -Q omega Stdlib.omega
 -Q rtauto Stdlib.rtauto
--Q setoid_ring Stdlib.setoid_ring
+-Q setoid_ring/Q Stdlib.setoid_ring.Q.Stdlib.setoid_ring
+-Q setoid_ring/R Stdlib.setoid_ring.R.Stdlib.setoid_ring
+-Q setoid_ring/Z Stdlib.setoid_ring.Z.Stdlib.setoid_ring
