@@ -370,7 +370,6 @@ Sorting/Sorting.v
 Sorting/Permutation.v
 Sorting/Sorted.v
 Bool/IfProp.v
-Bool/Bvector.v
 Bool/Bool.v
 Bool/BoolOrder.v
 Bool/Zerob.v
@@ -425,7 +424,6 @@ Logic/RelationalChoice.v
 Logic/WeakFan.v
 Logic/ExtensionalFunctionRepresentative.v
 Logic/ClassicalUniqueChoice.v
-Logic/FinFun.v
 Logic/SetoidChoice.v
 Logic/SetIsType.v
 Logic/Diaconescu.v
@@ -489,6 +487,8 @@ Vectors/VectorDef.v
 Vectors/Vector.v
 Vectors/Fin.v
 Vectors/VectorSpec.v
+Vectors/FinFun.v
+Vectors/Bvector.v
 derive/Derive.v
 funind/FunInd.v
 funind/Recdef.v
