@@ -108,7 +108,6 @@ QArith/Qminmax.v
 QArith/QOrderedType.v
 QArith/Qcabs.v
 QArith/Qround.v
-QArith/Qreals.v
 QArith/Qring.v
 QArith/Qpower.v
 QArith/Qabs.v
@@ -358,6 +357,7 @@ Reals/Rminmax.v
 Reals/Rpow_def.v
 Reals/Rlogic.v
 Reals/SeqProp.v
+Reals/Qreals.v
 Relations/Relation_Operators.v
 Relations/Operators_Properties.v
 Relations/Relations.v
