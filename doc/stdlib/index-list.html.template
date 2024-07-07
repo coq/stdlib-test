@@ -61,21 +61,21 @@ through the <tt>Require Import</tt> command.</p>
        DecidableType* and OrderedType* are there only for compatibility.
   </dt>
   <dd>
-    theories/Structures/Equalities.v
-    theories/Structures/EqualitiesFacts.v
-    theories/Structures/Orders.v
-    theories/Structures/OrdersTac.v
-    theories/Structures/OrdersAlt.v
-    theories/Structures/OrdersEx.v
-    theories/Structures/OrdersFacts.v
-    theories/Structures/OrdersLists.v
-    theories/Structures/GenericMinMax.v
-    theories/Structures/DecidableType.v
-    theories/Structures/DecidableTypeEx.v
-    theories/Structures/OrderedType.v
-    theories/Structures/OrderedTypeAlt.v
-    theories/Structures/OrderedTypeEx.v
-    theories/Structures/BoolOrder.v
+    theories/Structures/Def/Equalities.v
+    theories/Structures/Def/Orders.v
+    theories/Structures/Def/OrdersTac.v
+    theories/Structures/Def/OrdersFacts.v
+    theories/Structures/Def/GenericMinMax.v
+    theories/Structures/Ex/EqualitiesFacts.v
+    theories/Structures/Ex/OrdersAlt.v
+    theories/Structures/Ex/OrdersEx.v
+    theories/Structures/Ex/OrdersLists.v
+    theories/Structures/Ex/DecidableType.v
+    theories/Structures/Ex/DecidableTypeEx.v
+    theories/Structures/Ex/OrderedType.v
+    theories/Structures/Ex/OrderedTypeAlt.v
+    theories/Structures/Ex/OrderedTypeEx.v
+    theories/Structures/Ex/BoolOrder.v
   </dd>
 
   <dt> <b>Bool</b>:

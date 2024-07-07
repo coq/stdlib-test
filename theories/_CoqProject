@@ -31,7 +31,8 @@
 -Q Sorting Stdlib.Sorting
 -Q Streams Stdlib.Streams
 -Q Strings Stdlib.Strings
--Q Structures Stdlib.Structures
+-Q Structures/Def Stdlib.Structures.Def.Stdlib.Structures
+-Q Structures/Ex Stdlib.Structures.Ex.Stdlib.Structures
 -Q Unicode Stdlib.Unicode
 -Q Vectors Stdlib.Vectors
 -Q Wellfounded Stdlib.Wellfounded

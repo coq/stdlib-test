@@ -67,21 +67,21 @@ Arith/Compare_dec.v
 Arith/Bool_nat.v
 Arith/Peano_dec.v
 Arith/Zerob.v
-Structures/GenericMinMax.v
-Structures/Equalities.v
-Structures/OrderedTypeAlt.v
-Structures/OrdersEx.v
-Structures/EqualitiesFacts.v
-Structures/Orders.v
-Structures/OrdersFacts.v
-Structures/DecidableType.v
-Structures/OrderedTypeEx.v
-Structures/OrdersAlt.v
-Structures/OrdersLists.v
-Structures/DecidableTypeEx.v
-Structures/OrderedType.v
-Structures/OrdersTac.v
-Structures/BoolOrder.v
+Structures/Def/GenericMinMax.v
+Structures/Def/Equalities.v
+Structures/Def/Orders.v
+Structures/Def/OrdersFacts.v
+Structures/Def/OrdersTac.v
+Structures/Ex/OrderedTypeAlt.v
+Structures/Ex/OrdersEx.v
+Structures/Ex/EqualitiesFacts.v
+Structures/Ex/DecidableType.v
+Structures/Ex/OrderedTypeEx.v
+Structures/Ex/OrdersAlt.v
+Structures/Ex/OrdersLists.v
+Structures/Ex/DecidableTypeEx.v
+Structures/Ex/OrderedType.v
+Structures/Ex/BoolOrder.v
 Floats/Floats.v
 Floats/FloatLemmas.v
 Classes/All/Morphisms_Relations.v
@@ -536,7 +536,8 @@ nsatz/NsatzTactic.v
 -Q Sorting Stdlib.Sorting
 -Q Streams Stdlib.Streams
 -Q Strings Stdlib.Strings
--Q Structures Stdlib.Structures
+-Q Structures/Def Stdlib.Structures.Def.Stdlib.Structures
+-Q Structures/Ex Stdlib.Structures.Ex.Stdlib.Structures
 -Q Unicode Stdlib.Unicode
 -Q Vectors Stdlib.Vectors
 -Q Wellfounded Stdlib.Wellfounded
