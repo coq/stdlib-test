@@ -1,34 +1,34 @@
-ZArith/Zpower.v
-ZArith/Zpow_def.v
-ZArith/Znumtheory.v
-ZArith/Zquot.v
-ZArith/Zmin.v
-ZArith/ZArith_dec.v
-ZArith/Zeven.v
-ZArith/BinIntDef.v
-ZArith/Zorder.v
-ZArith/Zabs.v
-ZArith/ZArith_base.v
-ZArith/BinInt.v
-ZArith/Zdiv.v
-ZArith/Zpow_facts.v
-ZArith/Zpow_alt.v
-ZArith/Zcomplements.v
-ZArith/Zgcd_alt.v
-ZArith/Zeuclid.v
-ZArith/Zmisc.v
-ZArith/Zmax.v
-ZArith/Wf_Z.v
-ZArith/Zwf.v
-ZArith/Zbool.v
-ZArith/ZArith.v
-ZArith/Zbitwise.v
-ZArith/Zhints.v
-ZArith/Zcompare.v
-ZArith/auxiliary.v
-ZArith/Int.v
-ZArith/Zminmax.v
-ZArith/Znat.v
+ZArith/All/Zpower.v
+ZArith/Ring/Zpow_def.v
+ZArith/Ring/Znumtheory.v
+ZArith/All/Zquot.v
+ZArith/Base/Zmin.v
+ZArith/Base/ZArith_dec.v
+ZArith/Base/Zeven.v
+ZArith/Base/BinIntDef.v
+ZArith/Base/Zorder.v
+ZArith/Base/Zabs.v
+ZArith/Base/ZArith_base.v
+ZArith/Base/BinInt.v
+ZArith/Ring/Zdiv.v
+ZArith/All/Zpow_facts.v
+ZArith/Base/Zpow_alt.v
+ZArith/Ring/Zcomplements.v
+ZArith/All/Zgcd_alt.v
+ZArith/Base/Zeuclid.v
+ZArith/Base/Zmisc.v
+ZArith/Base/Zmax.v
+ZArith/Base/Wf_Z.v
+ZArith/All/Zwf.v
+ZArith/Base/Zbool.v
+ZArith/All/ZArith.v
+ZArith/All/Zbitwise.v
+ZArith/Base/Zhints.v
+ZArith/Base/Zcompare.v
+ZArith/Base/auxiliary.v
+ZArith/Base/Int.v
+ZArith/Base/Zminmax.v
+ZArith/Base/Znat.v
 setoid_ring/Ncring_polynom.v
 setoid_ring/Rings_Z.v
 setoid_ring/Ncring_initial.v
@@ -542,7 +542,9 @@ nsatz/NsatzTactic.v
 -Q Unicode Stdlib.Unicode
 -Q Vectors Stdlib.Vectors
 -Q Wellfounded Stdlib.Wellfounded
--Q ZArith Stdlib.ZArith
+-Q ZArith/All Stdlib.ZArith.All.Stdlib.ZArith
+-Q ZArith/Base Stdlib.ZArith.Base.Stdlib.ZArith
+-Q ZArith/Ring Stdlib.ZArith.Ring.Stdlib.ZArith
 -Q btauto Stdlib.btauto
 -Q derive Stdlib.derive
 -Q extraction Stdlib.extraction

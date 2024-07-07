@@ -37,7 +37,9 @@
 -Q Unicode Stdlib.Unicode
 -Q Vectors Stdlib.Vectors
 -Q Wellfounded Stdlib.Wellfounded
--Q ZArith Stdlib.ZArith
+-Q ZArith/All Stdlib.ZArith.All.Stdlib.ZArith
+-Q ZArith/Base Stdlib.ZArith.Base.Stdlib.ZArith
+-Q ZArith/Ring Stdlib.ZArith.Ring.Stdlib.ZArith
 -Q btauto Stdlib.btauto
 -Q derive Stdlib.derive
 -Q extraction Stdlib.extraction
