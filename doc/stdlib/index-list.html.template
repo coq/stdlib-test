@@ -355,7 +355,7 @@ through the <tt>Require Import</tt> command.</p>
   </dd>
 
   <dt> <b>Classical Logic</b>:
-      Classical logic, dependent equality, extensionality, choice axioms
+    Classical logic, dependent equality, extensionality, choice axioms
   </dt>
   <dd>
     theories/Logic/Classical_Pred_Type.v
