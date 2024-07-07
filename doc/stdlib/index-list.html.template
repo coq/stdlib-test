@@ -161,18 +161,18 @@ through the <tt>Require Import</tt> command.</p>
     theories/ZArith/Zmisc.v
     theories/ZArith/Wf_Z.v
     theories/ZArith/Zhints.v
+    theories/ZArith/Zpow_alt.v
+    theories/ZArith/Int.v
     (theories/ZArith/ZArith_base.v)
     theories/ZArith/Zcomplements.v
     theories/ZArith/Zpow_def.v
-    theories/ZArith/Zpow_alt.v
-    theories/ZArith/Zpower.v
     theories/ZArith/Zdiv.v
+    theories/ZArith/Znumtheory.v
+    theories/ZArith/Zpower.v
     theories/ZArith/Zquot.v
     (theories/ZArith/ZArith.v)
     theories/ZArith/Zgcd_alt.v
     theories/ZArith/Zwf.v
-    theories/ZArith/Znumtheory.v
-    theories/ZArith/Int.v
     theories/ZArith/Zpow_facts.v
     theories/ZArith/Zbitwise.v
     theories/Numbers/DecimalFacts.v

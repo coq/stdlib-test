@@ -18,6 +18,9 @@ TO_FLATTEN="\
   Numbers/Z \
   Structures/Def \
   Structures/Ex \
+  ZArith/All \
+  ZArith/Base \
+  ZArith/Ring \
 "
 
 DIRS=$(for d in ${TO_FLATTEN} ; do echo ${d%/*} ; done | uniq)
