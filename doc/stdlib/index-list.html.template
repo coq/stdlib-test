@@ -192,17 +192,17 @@ through the <tt>Require Import</tt> command.</p>
   </dt>
   <dd>
     theories/QArith/QArith_base.v
-    theories/QArith/Qabs.v
-    theories/QArith/Qpower.v
     theories/QArith/Qreduction.v
-    theories/QArith/Qring.v
-    theories/QArith/Qfield.v
-    (theories/QArith/QArith.v)
-    theories/QArith/Qcanon.v
-    theories/QArith/Qcabs.v
-    theories/QArith/Qround.v
     theories/QArith/QOrderedType.v
     theories/QArith/Qminmax.v
+    theories/QArith/Qpower.v
+    theories/QArith/Qring.v
+    theories/QArith/Qfield.v
+    theories/QArith/Qcanon.v
+    theories/QArith/Qround.v
+    theories/QArith/Qabs.v
+    (theories/QArith/QArith.v)
+    theories/QArith/Qcabs.v
     theories/Numbers/DecimalQ.v
     theories/Numbers/HexadecimalQ.v
   </dd>

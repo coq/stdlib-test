@@ -16,6 +16,9 @@ TO_FLATTEN="\
   Numbers/R \
   Numbers/Strings \
   Numbers/Z \
+  QArith/All \
+  QArith/Base \
+  QArith/Field \
   Structures/Def \
   Structures/Ex \
   ZArith/All \
