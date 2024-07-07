@@ -80,7 +80,6 @@ The standard library is composed of the following subdirectories:</p>
     theories/Bool/BoolEq.v
     theories/Bool/DecBool.v
     theories/Bool/IfProp.v
-    theories/Bool/Zerob.v
   </dd>
 
   <dt> <b>Arith</b>:
@@ -99,6 +98,7 @@ The standard library is composed of the following subdirectories:</p>
     theories/Arith/Factorial.v
     theories/Arith/Wf_nat.v
     theories/Arith/Cantor.v
+    theories/Arith/Zerob.v
   </dd>
 
   <dt> <b>PArith</b>:
