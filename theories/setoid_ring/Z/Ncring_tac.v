@@ -14,7 +14,6 @@ From Stdlib Require Import BinPos.
 From Stdlib Require Import BinList.
 From Stdlib Require Import Znumtheory.
 From Stdlib Require Export Morphisms Setoid Bool.
-From Stdlib Require Import ZArith.
 From Stdlib Require Import Algebra_syntax.
 From Stdlib Require Export Ncring.
 From Stdlib Require Import Ncring_polynom.

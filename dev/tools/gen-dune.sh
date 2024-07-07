@@ -24,6 +24,9 @@ TO_FLATTEN="\
   ZArith/All \
   ZArith/Base \
   ZArith/Ring \
+  setoid_ring/Q \
+  setoid_ring/R \
+  setoid_ring/Z \
 "
 
 DIRS=$(for d in ${TO_FLATTEN} ; do echo ${d%/*} ; done | uniq)
