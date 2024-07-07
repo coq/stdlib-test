@@ -243,6 +243,16 @@ through the <tt>Require Import</tt> command.</p>
     theories/ZArith/Int.v
   </dd>
 
+  <dt> <b>Ring</b>:
+    Ring tactic.
+  </dt>
+  <dd>
+    theories/ZArith/Zcomplements.v
+    theories/ZArith/Zpow_def.v
+    theories/ZArith/Zdiv.v
+    theories/ZArith/Znumtheory.v
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -291,15 +301,11 @@ through the <tt>Require Import</tt> command.</p>
        Binary integers
   </dt>
   <dd>
-    theories/ZArith/Zcomplements.v
-    theories/ZArith/Zpow_def.v
     theories/ZArith/Zpower.v
-    theories/ZArith/Zdiv.v
     theories/ZArith/Zquot.v
     (theories/ZArith/ZArith.v)
     theories/ZArith/Zgcd_alt.v
     theories/ZArith/Zwf.v
-    theories/ZArith/Znumtheory.v
     theories/ZArith/Zpow_facts.v
     theories/ZArith/Zbitwise.v
     theories/Numbers/DecimalFacts.v
