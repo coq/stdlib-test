@@ -1,6 +1,8 @@
 #!/bin/sh
 
 TO_FLATTEN="\
+  Arith/All \
+  Arith/Base \
   Classes/All \
   Classes/Arith \
   Classes/Lists \

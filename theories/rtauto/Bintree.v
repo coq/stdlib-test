@@ -384,4 +384,4 @@ Arguments Full_map [A B f] S _.
 Notation "hyps \ A" := (push A hyps) (at level 72,left associativity).
 
 (* TODO #14736 for compatibility only, should be removed after deprecation *)
-From Stdlib Require Arith.EqNat.
+From Stdlib.Arith Require EqNat.

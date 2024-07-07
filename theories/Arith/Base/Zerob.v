@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-From Stdlib Require Import Arith.
+From Stdlib Require Import Arith_base.
 From Stdlib Require Import Bool.
 
 Local Open Scope nat_scope.
