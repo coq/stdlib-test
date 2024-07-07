@@ -438,6 +438,13 @@ through the <tt>Require Import</tt> command.</p>
     theories/Structures/BoolOrder.v
   </dd>
 
+  <dt> <b>Primitive Strings</b>
+    Native string type
+  </dt>
+  <dd>
+    theories/Strings/PString.v
+  </dd>
+
   <dt> <b>QArith</b>:
     Rational numbers
   </dt>
@@ -652,12 +659,5 @@ through the <tt>Require Import</tt> command.</p>
   <dd>
     theories/Compat/AdmitAxiom.v
     theories/Compat/Stdlib818.v
-  </dd>
-
-  <dt> <b>Primitive strings</b>
-    Native string type
-  </dt>
-  <dd>
-    theories/Strings/PString.v
   </dd>
 </dl>
