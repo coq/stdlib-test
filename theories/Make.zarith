@@ -1,0 +1,30 @@
+Numbers/Natural/Binary/NBinary.v
+ZArith/All/Zpower.v
+ZArith/All/Zquot.v
+ZArith/All/Zpow_facts.v
+ZArith/All/Zgcd_alt.v
+ZArith/All/Zwf.v
+ZArith/All/ZArith.v
+ZArith/All/Zbitwise.v
+Numbers/Integer/Binary/ZBinary.v
+Numbers/Integer/NatPairs/ZNatPairs.v
+Numbers/Z/DecimalN.v
+Numbers/Z/DecimalNat.v
+Numbers/Z/DecimalZ.v
+Numbers/Z/DecimalFacts.v
+Numbers/Z/DecimalPos.v
+Numbers/Z/HexadecimalN.v
+Numbers/Z/HexadecimalNat.v
+Numbers/Z/HexadecimalZ.v
+Numbers/Z/HexadecimalFacts.v
+Numbers/Z/HexadecimalPos.v
+btauto/Algebra.v
+btauto/Reflect.v
+btauto/Btauto.v
+
+-Q ZArith/All Stdlib.ZArith.All.Stdlib.ZArith
+-Q Numbers/Natural/Binary Stdlib.Numbers.Natural.Binary
+-Q Numbers/Integer/Binary Stdlib.Numbers.Integer.Binary
+-Q Numbers/Integer/NatPairs Stdlib.Numbers.Integer.NatPairs
+-Q Numbers/Z Stdlib.Numbers.Z.Stdlib.Numbers
+-Q btauto Stdlib.btauto

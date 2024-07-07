@@ -260,6 +260,38 @@ through the <tt>Require Import</tt> command.</p>
     (theories/Arith/All/Arith.v)
   </dd>
 
+  <dt> <b>ZArith</b>:
+    Binary encoding of integers in namespace Stdlib.ZArith.
+    This binary encoding was initially developped to enable efficient
+    computations, compared to the unary encoding of nat. Proofs were then added
+    making the types usable for mathematical proofs, although this was not
+    the initial intent. If even-more efficient computations are needed, look
+    at the primitive-int package below for 63 bits machine arithmetic
+    or the coq-bignums package for arbitrary precision machine arithmetic.
+    Everything can be imported with From Stdlib Require Import ZArith.
+    Also contains the migromega tactic that can be loaded with
+    From Stdlib Require Import Lia.
+  </dt>
+  <dd>
+    theories/ZArith/All/Zpower.v
+    theories/ZArith/All/Zquot.v
+    (theories/ZArith/All/ZArith.v)
+    theories/ZArith/All/Zgcd_alt.v
+    theories/ZArith/All/Zwf.v
+    theories/ZArith/All/Zpow_facts.v
+    theories/ZArith/All/Zbitwise.v
+    theories/Numbers/Z/DecimalFacts.v
+    theories/Numbers/Z/DecimalNat.v
+    theories/Numbers/Z/DecimalPos.v
+    theories/Numbers/Z/DecimalN.v
+    theories/Numbers/Z/DecimalZ.v
+    theories/Numbers/Z/HexadecimalFacts.v
+    theories/Numbers/Z/HexadecimalNat.v
+    theories/Numbers/Z/HexadecimalPos.v
+    theories/Numbers/Z/HexadecimalN.v
+    theories/Numbers/Z/HexadecimalZ.v
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -296,29 +328,6 @@ through the <tt>Require Import</tt> command.</p>
     theories/Structures/Ex/OrderedTypeAlt.v
     theories/Structures/Ex/OrderedTypeEx.v
     theories/Structures/Ex/BoolOrder.v
-  </dd>
-
-  <dt> <b>ZArith</b>:
-       Binary integers
-  </dt>
-  <dd>
-    theories/ZArith/All/Zpower.v
-    theories/ZArith/All/Zquot.v
-    (theories/ZArith/All/ZArith.v)
-    theories/ZArith/All/Zgcd_alt.v
-    theories/ZArith/All/Zwf.v
-    theories/ZArith/All/Zpow_facts.v
-    theories/ZArith/All/Zbitwise.v
-    theories/Numbers/Z/DecimalFacts.v
-    theories/Numbers/Z/DecimalNat.v
-    theories/Numbers/Z/DecimalPos.v
-    theories/Numbers/Z/DecimalN.v
-    theories/Numbers/Z/DecimalZ.v
-    theories/Numbers/Z/HexadecimalFacts.v
-    theories/Numbers/Z/HexadecimalNat.v
-    theories/Numbers/Z/HexadecimalPos.v
-    theories/Numbers/Z/HexadecimalN.v
-    theories/Numbers/Z/HexadecimalZ.v
   </dd>
 
   <dt> <b>QArith</b>:
