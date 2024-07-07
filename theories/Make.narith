@@ -1,0 +1,10 @@
+NArith/BinNatDef.v
+NArith/BinNat.v
+NArith/Nnat.v
+NArith/Ndiv_def.v
+NArith/Ndec.v
+NArith/Ngcd_def.v
+NArith/Nsqrt_def.v
+NArith/NArith.v
+
+-Q NArith Stdlib.NArith

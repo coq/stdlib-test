@@ -186,6 +186,20 @@ through the <tt>Require Import</tt> command.</p>
     (theories/PArith/PArith.v)
   </dd>
 
+  <dt> <b>NArith</b>:
+    Binary natural numbers in namespace Stdlib.NArith.
+  </dt>
+  <dd>
+    theories/NArith/BinNatDef.v
+    theories/NArith/BinNat.v
+    theories/NArith/Nnat.v
+    theories/NArith/Ndec.v
+    theories/NArith/Ndiv_def.v
+    theories/NArith/Ngcd_def.v
+    theories/NArith/Nsqrt_def.v
+    (theories/NArith/NArith.v)
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -229,20 +243,6 @@ through the <tt>Require Import</tt> command.</p>
   </dt>
   <dd>
     (theories/Arith/All/Arith.v)
-  </dd>
-
-  <dt> <b>NArith</b>:
-    Binary natural numbers
-  </dt>
-  <dd>
-    theories/NArith/BinNatDef.v
-    theories/NArith/BinNat.v
-    theories/NArith/Nnat.v
-    theories/NArith/Ndec.v
-    theories/NArith/Ndiv_def.v
-    theories/NArith/Ngcd_def.v
-    theories/NArith/Nsqrt_def.v
-    (theories/NArith/NArith.v)
   </dd>
 
   <dt> <b>ZArith</b>:
