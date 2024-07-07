@@ -57,19 +57,25 @@ through the <tt>Require Import</tt> command.</p>
   </dd>
 
   <dt> <b>Structures</b>:
-       Algebraic structures (types with equality, with order, ...).
-       DecidableType* and OrderedType* are there only for compatibility.
+    Algebraic structures (types with equality, with order, ...).
+    DecidableType* and OrderedType* are there only for compatibility.
   </dt>
   <dd>
     theories/Structures/Equalities.v
-    theories/Structures/EqualitiesFacts.v
     theories/Structures/Orders.v
     theories/Structures/OrdersTac.v
+    theories/Structures/OrdersFacts.v
+    theories/Structures/GenericMinMax.v
+  </dd>
+
+  <dt> <b>Structures Examples</b>:
+    Instances fo the above structures.
+  </dt>
+  <dd>
+    theories/Structures/EqualitiesFacts.v
     theories/Structures/OrdersAlt.v
     theories/Structures/OrdersEx.v
-    theories/Structures/OrdersFacts.v
     theories/Structures/OrdersLists.v
-    theories/Structures/GenericMinMax.v
     theories/Structures/DecidableType.v
     theories/Structures/DecidableTypeEx.v
     theories/Structures/OrderedType.v
