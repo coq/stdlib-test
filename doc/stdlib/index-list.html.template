@@ -300,6 +300,22 @@ through the <tt>Require Import</tt> command.</p>
     theories/Unicode/Utf8.v
   </dd>
 
+  <dt> <b>Primitive Integers</b>:
+    Interface for hardware integers (63 rather than 64 bits due to OCaml
+    garbage collector). This enables very efficient arithmetic, for developing
+    tactics for proofs by reflection for instance.
+    Namespace Stdlib.Numbers.Cyclic.
+  </dt>
+  <dd>
+    theories/Numbers/Cyclic/Abstract/CyclicAxioms.v
+    theories/Numbers/Cyclic/Abstract/NZCyclic.v
+    theories/Numbers/Cyclic/Abstract/DoubleType.v
+    theories/Numbers/Cyclic/Int63/Cyclic63.v
+    theories/Numbers/Cyclic/Int63/Uint63.v
+    theories/Numbers/Cyclic/Int63/Sint63.v
+    theories/Numbers/Cyclic/Int63/Ring63.v
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -363,19 +379,6 @@ through the <tt>Require Import</tt> command.</p>
   </dt>
   <dd>
     <dl>
-
-    <dt> <b>&nbsp;&nbsp;Cyclic</b>:
-       Abstract and 63-bits-based cyclic arithmetic
-    </dt>
-    <dd>
-    theories/Numbers/Cyclic/Abstract/CyclicAxioms.v
-    theories/Numbers/Cyclic/Abstract/NZCyclic.v
-    theories/Numbers/Cyclic/Abstract/DoubleType.v
-    theories/Numbers/Cyclic/Int63/Cyclic63.v
-    theories/Numbers/Cyclic/Int63/Uint63.v
-    theories/Numbers/Cyclic/Int63/Sint63.v
-    theories/Numbers/Cyclic/Int63/Ring63.v
-    </dd>
 
     <dt> <b>&nbsp;&nbsp;Floats</b>:
        Floating-point arithmetic

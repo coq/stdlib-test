@@ -1,0 +1,12 @@
+Numbers/Cyclic/Int63/Sint63.v
+Numbers/Cyclic/Int63/Cyclic63.v
+Numbers/Cyclic/Int63/Uint63.v
+Numbers/Cyclic/Int63/Ring63.v
+Numbers/Cyclic/Abstract/NZCyclic.v
+Numbers/Cyclic/Abstract/DoubleType.v
+Numbers/Cyclic/Abstract/CyclicAxioms.v
+micromega/Int63/ZifyUint63.v
+micromega/Int63/ZifySint63.v
+
+-Q Numbers/Cyclic Stdlib.Numbers.Cyclic
+-Q micromega/Int63 Stdlib.micromega.Int63.Stdlib.micromega
