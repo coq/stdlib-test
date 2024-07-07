@@ -253,6 +253,13 @@ through the <tt>Require Import</tt> command.</p>
     theories/ZArith/Ring/Znumtheory.v
   </dd>
 
+  <dt> <b>Arith</b>:
+    Basic Peano arithmetic in namespace Stdlib.Arith.
+  </dt>
+  <dd>
+    (theories/Arith/All/Arith.v)
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -289,13 +296,6 @@ through the <tt>Require Import</tt> command.</p>
     theories/Structures/Ex/OrderedTypeAlt.v
     theories/Structures/Ex/OrderedTypeEx.v
     theories/Structures/Ex/BoolOrder.v
-  </dd>
-
-  <dt> <b>Arith</b>:
-    Basic Peano arithmetic
-  </dt>
-  <dd>
-    (theories/Arith/All/Arith.v)
   </dd>
 
   <dt> <b>ZArith</b>:
