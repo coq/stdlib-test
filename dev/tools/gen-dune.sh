@@ -24,6 +24,11 @@ TO_FLATTEN="\
   ZArith/All \
   ZArith/Base \
   ZArith/Ring \
+  micromega/Int63 \
+  micromega/Lia \
+  micromega/Lqa \
+  micromega/Lra \
+  micromega/Zify \
   setoid_ring/Q \
   setoid_ring/R \
   setoid_ring/Z \

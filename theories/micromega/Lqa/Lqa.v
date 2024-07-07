@@ -15,7 +15,7 @@
 (************************************************************************)
 
 From Stdlib Require Import QMicromega.
-From Stdlib Require Import QArith.
+From Stdlib Require Import QArith_base.
 From Stdlib Require Import RingMicromega.
 From Stdlib Require Import VarMap.
 From Stdlib Require Import DeclConstant.
