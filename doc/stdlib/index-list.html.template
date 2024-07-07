@@ -324,6 +324,23 @@ through the <tt>Require Import</tt> command.</p>
     theories/Array/PArray.v
   </dd>
 
+  <dt> <b>Vectors</b>:
+    Dependent datastructures storing their length in namespace Stdlib.Vectors.
+    This is known to be technically difficult to use. It is often much better
+    to use a dependent pair with a list and a proof about its length,
+    as provided by the tuple type in package coq-mathcomp-ssreflect,
+    allowing almost transparent mixing with lists.
+  </dt>
+  <dd>
+    theories/Vectors/Fin.v
+    theories/Vectors/VectorDef.v
+    theories/Vectors/VectorSpec.v
+    theories/Vectors/VectorEq.v
+    (theories/Vectors/Vector.v)
+    theories/Vectors/FinFun.v
+    theories/Vectors/Bvector.v
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -424,19 +441,6 @@ through the <tt>Require Import</tt> command.</p>
     theories/Sets/Relations_3_facts.v
     theories/Sets/Relations_3.v
     theories/Sets/Uniset.v
-  </dd>
-
-  <dt> <b>Vectors</b>:
-    Dependent datastructures storing their length
-  </dt>
-  <dd>
-    theories/Vectors/Fin.v
-    theories/Vectors/VectorDef.v
-    theories/Vectors/VectorSpec.v
-    theories/Vectors/VectorEq.v
-    (theories/Vectors/Vector.v)
-    theories/Vectors/FinFun.v
-    theories/Vectors/Bvector.v
   </dd>
 
   <dt> <b>Sorting</b>:
