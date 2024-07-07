@@ -92,19 +92,20 @@ through the <tt>Require Import</tt> command.</p>
     Basic Peano arithmetic
   </dt>
   <dd>
-    theories/Arith/PeanoNat.v
-    theories/Arith/Between.v
-    theories/Arith/Peano_dec.v
-    theories/Arith/Compare_dec.v
-    (theories/Arith/Arith_base.v)
-    (theories/Arith/Arith.v)
-    theories/Arith/Compare.v
-    theories/Arith/EqNat.v
-    theories/Arith/Euclid.v
-    theories/Arith/Factorial.v
-    theories/Arith/Wf_nat.v
-    theories/Arith/Cantor.v
-    theories/Arith/Zerob.v
+    theories/Arith/Base/PeanoNat.v
+    theories/Arith/Base/Between.v
+    theories/Arith/Base/Bool_nat.v
+    theories/Arith/Base/Peano_dec.v
+    theories/Arith/Base/Compare_dec.v
+    (theories/Arith/Base/Arith_base.v)
+    (theories/Arith/All/Arith.v)
+    theories/Arith/Base/Compare.v
+    theories/Arith/Base/EqNat.v
+    theories/Arith/Base/Euclid.v
+    theories/Arith/Base/Factorial.v
+    theories/Arith/Base/Wf_nat.v
+    theories/Arith/Base/Cantor.v
+    theories/Arith/Base/Zerob.v
     theories/Classes/Arith/SetoidDec.v
   </dd>
 

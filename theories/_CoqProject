@@ -1,4 +1,5 @@
--Q Arith Stdlib.Arith
+-Q Arith/All Stdlib.Arith.All.Stdlib.Arith
+-Q Arith/Base Stdlib.Arith.Base.Stdlib.Arith
 -Q Array Stdlib.Array
 -Q Bool Stdlib.Bool
 -Q Classes/All Stdlib.Classes.All.Stdlib.Classes

@@ -53,20 +53,20 @@ setoid_ring/Ring_tac.v
 setoid_ring/ArithRing.v
 setoid_ring/NArithRing.v
 setoid_ring/Ring_theory.v
-Arith/EqNat.v
-Arith/Compare.v
-Arith/PeanoNat.v
-Arith/Arith_base.v
-Arith/Cantor.v
-Arith/Euclid.v
-Arith/Arith.v
-Arith/Factorial.v
-Arith/Between.v
-Arith/Wf_nat.v
-Arith/Compare_dec.v
-Arith/Bool_nat.v
-Arith/Peano_dec.v
-Arith/Zerob.v
+Arith/Base/EqNat.v
+Arith/Base/Compare.v
+Arith/Base/PeanoNat.v
+Arith/Base/Arith_base.v
+Arith/Base/Cantor.v
+Arith/Base/Euclid.v
+Arith/Base/Factorial.v
+Arith/Base/Between.v
+Arith/Base/Wf_nat.v
+Arith/Base/Compare_dec.v
+Arith/Base/Bool_nat.v
+Arith/Base/Peano_dec.v
+Arith/Base/Zerob.v
+Arith/All/Arith.v
 Structures/Def/GenericMinMax.v
 Structures/Def/Equalities.v
 Structures/Def/Orders.v
@@ -503,7 +503,8 @@ Wellfounded/Lexicographic_Product.v
 Wellfounded/Lexicographic_Exponentiation.v
 nsatz/NsatzTactic.v
 
--Q Arith Stdlib.Arith
+-Q Arith/All Stdlib.Arith.All.Stdlib.Arith
+-Q Arith/Base Stdlib.Arith.Base.Stdlib.Arith
 -Q Array Stdlib.Array
 -Q Bool Stdlib.Bool
 -Q Classes/All Stdlib.Classes.All.Stdlib.Classes
