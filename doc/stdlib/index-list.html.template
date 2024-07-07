@@ -409,6 +409,22 @@ through the <tt>Require Import</tt> command.</p>
     theories/Sets/Uniset.v
   </dd>
 
+  <dt> <b>Sorting</b>:
+    Axiomatizations of sorts in namespace Stdlib.Sorting.
+  </dt>
+  <dd>
+    theories/Sorting/SetoidList.v
+    theories/Sorting/SetoidPermutation.v
+    theories/Sorting/Heap.v
+    theories/Sorting/Permutation.v
+    theories/Sorting/Sorting.v
+    theories/Sorting/PermutEq.v
+    theories/Sorting/PermutSetoid.v
+    theories/Sorting/Mergesort.v
+    theories/Sorting/Sorted.v
+    theories/Sorting/CPermutation.v
+  </dd>
+
   <dt> <b>Structures</b>:
        Algebraic structures (types with equality, with order, ...).
        DecidableType* and OrderedType* are there only for compatibility.
@@ -460,22 +476,6 @@ through the <tt>Require Import</tt> command.</p>
     (theories/Floats/Floats.v)
     </dd>
     </dl>
-  </dd>
-
-  <dt> <b>Sorting</b>:
-    Axiomatizations of sorts
-  </dt>
-  <dd>
-    theories/Sorting/SetoidList.v
-    theories/Sorting/SetoidPermutation.v
-    theories/Sorting/Heap.v
-    theories/Sorting/Permutation.v
-    theories/Sorting/Sorting.v
-    theories/Sorting/PermutEq.v
-    theories/Sorting/PermutSetoid.v
-    theories/Sorting/Mergesort.v
-    theories/Sorting/Sorted.v
-    theories/Sorting/CPermutation.v
   </dd>
 
   <dt> <b>Wellfounded</b>:
