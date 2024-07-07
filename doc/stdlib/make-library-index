@@ -15,6 +15,7 @@ echo -n "Building file index-list.prehtml... "
 LIBDIRS=$(find theories/* -type d ! -name .coq-native)
 
 for k in $LIBDIRS; do
+    [ -f ${k}/dune ] && grep -q "include_subdirs no" ${k}/dune && continue
     BASE_PREFIX="Stdlib."
     d=$(basename "$k")
     for j in "$k"/*.v; do

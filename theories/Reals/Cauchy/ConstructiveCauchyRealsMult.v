@@ -15,7 +15,7 @@
 *)
 
 From Stdlib Require Import QArith Qabs Qround Qpower.
-From Stdlib Require Import Logic.ConstructiveEpsilon.
+From Stdlib.Logic Require Import ConstructiveEpsilon.
 From Stdlib Require Export ConstructiveCauchyReals.
 From Stdlib Require CMorphisms.
 From Stdlib Require Import Lia.

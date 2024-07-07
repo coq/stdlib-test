@@ -12,7 +12,8 @@ refman-html:
 	dune build --root . --no-buffer @refman-html
 
 stdlib-html:
-	dune build --root . @stdlib-html
+	dune build -p coq-stdlib @install
+	dune build @stdlib-html
 
 # Ideally this would be generated from .nix/config.nix, currently obtained with
 # % grep -B1 "needs:" .github/workflows/nix-action-coq-master.yml | grep -v "\-\-" | grep -v "needs:" | sed -e 's/:/ \\/;s/  /  ci-/'

@@ -13,7 +13,7 @@ From Stdlib Require Import QArith.
 From Stdlib Require Import Qpower.
 From Stdlib Require Import Qabs.
 From Stdlib Require Import Qround.
-From Stdlib Require Import Logic.ConstructiveEpsilon.
+From Stdlib.Logic Require Import ConstructiveEpsilon.
 From Stdlib Require CMorphisms.
 From Stdlib Require Import Lia.
 From Stdlib Require Import Lqa.

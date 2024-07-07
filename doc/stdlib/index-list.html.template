@@ -9,46 +9,51 @@ through the <tt>Require Import</tt> command.</p>
 
 <dl>
   <dt> <b>Logic</b>:
-      Classical logic, dependent equality, extensionality, choice axioms
+      Logic, dependent equality, extensionality, choice axioms
   </dt>
   <dd>
     theories/Logic/SetIsType.v
     theories/Logic/StrictProp.v
-    theories/Logic/Classical_Pred_Type.v
-    theories/Logic/Classical_Prop.v
-    (theories/Logic/Classical.v)
-    theories/Logic/ClassicalFacts.v
     theories/Logic/Decidable.v
     theories/Logic/Eqdep_dec.v
     theories/Logic/EqdepFacts.v
     theories/Logic/Eqdep.v
     theories/Logic/JMeq.v
-    theories/Logic/ChoiceFacts.v
     theories/Logic/RelationalChoice.v
-    theories/Logic/ClassicalChoice.v
-    theories/Logic/ClassicalDescription.v
-    theories/Logic/ClassicalEpsilon.v
-    theories/Logic/ClassicalUniqueChoice.v
-    theories/Logic/SetoidChoice.v
     theories/Logic/Berardi.v
-    theories/Logic/Diaconescu.v
     theories/Logic/Hurkens.v
     theories/Logic/ProofIrrelevance.v
     theories/Logic/ProofIrrelevanceFacts.v
     theories/Logic/ConstructiveEpsilon.v
-    theories/Logic/Description.v
-    theories/Logic/Epsilon.v
-    theories/Logic/IndefiniteDescription.v
-    theories/Logic/PropExtensionality.v
     theories/Logic/PropExtensionalityFacts.v
     theories/Logic/FunctionalExtensionality.v
     theories/Logic/ExtensionalFunctionRepresentative.v
     theories/Logic/ExtensionalityFacts.v
     theories/Logic/WeakFan.v
-    theories/Logic/WKL.v
     theories/Logic/PropFacts.v
     theories/Logic/HLevels.v
     theories/Logic/Adjointification.v
+  </dd>
+
+  <dt> <b>Classical Logic</b>:
+      Classical logic, dependent equality, extensionality, choice axioms
+  </dt>
+  <dd>
+    theories/Logic/Classical_Pred_Type.v
+    theories/Logic/Classical_Prop.v
+    (theories/Logic/Classical.v)
+    theories/Logic/ClassicalFacts.v
+    theories/Logic/ChoiceFacts.v
+    theories/Logic/ClassicalChoice.v
+    theories/Logic/ClassicalDescription.v
+    theories/Logic/ClassicalEpsilon.v
+    theories/Logic/ClassicalUniqueChoice.v
+    theories/Logic/SetoidChoice.v
+    theories/Logic/Diaconescu.v
+    theories/Logic/Description.v
+    theories/Logic/Epsilon.v
+    theories/Logic/IndefiniteDescription.v
+    theories/Logic/PropExtensionality.v
   </dd>
 
   <dt> <b>Structures</b>:
@@ -360,6 +365,7 @@ through the <tt>Require Import</tt> command.</p>
     theories/Lists/ListDec.v
     theories/Lists/ListSet.v
     theories/Lists/ListTactics.v
+    theories/Logic/WKL.v
   </dd>
 
   <dt> <b>Streams</b>:

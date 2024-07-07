@@ -11,7 +11,7 @@
 
 From Stdlib.Program Require Import Utils.
 From Stdlib.Program Require Import Equality.
-From Stdlib Require Export ProofIrrelevance.
+From Stdlib.Logic Require Export ProofIrrelevance.
 
 Local Open Scope program_scope.
 
