@@ -316,6 +316,14 @@ through the <tt>Require Import</tt> command.</p>
     theories/Numbers/Cyclic/Int63/Ring63.v
   </dd>
 
+  <dt> <b>Primitive Arrays</b>:
+    Persistent native arrays in namespace Stdlib.Array.
+    Enables efficient computations with arrays.
+  </dt>
+  <dd>
+    theories/Array/PArray.v
+  </dd>
+
   <dt> <b>Classical Logic</b>:
       Classical logic, dependent equality, extensionality, choice axioms
   </dt>
@@ -640,13 +648,6 @@ through the <tt>Require Import</tt> command.</p>
     theories/Compat/Coq819.v
     theories/Compat/Coq820.v
     theories/Compat/Coq821.v
-  </dd>
-
-  <dt> <b>Array</b>:
-    Persistent native arrays
-  </dt>
-  <dd>
-    theories/Array/PArray.v
   </dd>
 
   <dt> <b>Primitive strings</b>
