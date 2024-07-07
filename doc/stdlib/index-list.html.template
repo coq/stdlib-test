@@ -357,7 +357,8 @@ through the <tt>Require Import</tt> command.</p>
   </dd>
 
   <dt> <b>Classical Logic</b>:
-      Classical logic, dependent equality, extensionality, choice axioms
+    Classical logic, dependent equality, extensionality, choice axioms
+    in namespace Stdlib.Logic.
   </dt>
   <dd>
     theories/Logic/Classical/Classical_Pred_Type.v

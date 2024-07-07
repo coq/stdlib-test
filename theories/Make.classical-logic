@@ -1,0 +1,17 @@
+Logic/Classical/IndefiniteDescription.v
+Logic/Classical/Classical_Pred_Type.v
+Logic/Classical/Classical_Prop.v
+Logic/Classical/ClassicalFacts.v
+Logic/Classical/Classical.v
+Logic/Classical/Epsilon.v
+Logic/Classical/ClassicalChoice.v
+Logic/Classical/Description.v
+Logic/Classical/ClassicalEpsilon.v
+Logic/Classical/ChoiceFacts.v
+Logic/Classical/PropExtensionality.v
+Logic/Classical/ClassicalDescription.v
+Logic/Classical/ClassicalUniqueChoice.v
+Logic/Classical/SetoidChoice.v
+Logic/Classical/Diaconescu.v
+
+-Q Logic/Classical Stdlib.Logic.Classical.Stdlib.Logic
