@@ -69,6 +69,7 @@ The standard library is composed of the following subdirectories:</p>
     theories/Structures/OrderedType.v
     theories/Structures/OrderedTypeAlt.v
     theories/Structures/OrderedTypeEx.v
+    theories/Structures/BoolOrder.v
   </dd>
 
   <dt> <b>Bool</b>:
@@ -77,7 +78,6 @@ The standard library is composed of the following subdirectories:</p>
   <dd>
     theories/Bool/Bool.v
     theories/Bool/BoolEq.v
-    theories/Bool/BoolOrder.v
     theories/Bool/DecBool.v
     theories/Bool/IfProp.v
     theories/Bool/Zerob.v
