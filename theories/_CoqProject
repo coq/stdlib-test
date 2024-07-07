@@ -46,7 +46,11 @@
 -Q derive Stdlib.derive
 -Q extraction Stdlib.extraction
 -Q funind Stdlib.funind
--Q micromega Stdlib.micromega
+-Q micromega/Int63 Stdlib.micromega.Int63.Stdlib.micromega
+-Q micromega/Lia Stdlib.micromega.Lia.Stdlib.micromega
+-Q micromega/Lqa Stdlib.micromega.Lqa.Stdlib.micromega
+-Q micromega/Lra Stdlib.micromega.Lra.Stdlib.micromega
+-Q micromega/Zify Stdlib.micromega.Zify.Stdlib.micromega
 -Q nsatz Stdlib.nsatz
 -Q omega Stdlib.omega
 -Q rtauto Stdlib.rtauto
