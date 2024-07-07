@@ -7,6 +7,13 @@ TO_FLATTEN="\
   Logic/Base \
   Logic/Classical \
   Logic/Lists \
+  Numbers/Arith \
+  Numbers/Lists \
+  Numbers/positive \
+  Numbers/Q \
+  Numbers/R \
+  Numbers/Strings \
+  Numbers/Z \
 "
 
 DIRS=$(for d in ${TO_FLATTEN} ; do echo ${d%/*} ; done | uniq)

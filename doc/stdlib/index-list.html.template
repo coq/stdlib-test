@@ -96,6 +96,7 @@ through the <tt>Require Import</tt> command.</p>
     theories/Arith/Between.v
     theories/Arith/Peano_dec.v
     theories/Arith/Compare_dec.v
+    theories/Numbers/NumPrelude.v
     (theories/Arith/Arith_base.v)
     (theories/Arith/Arith.v)
     theories/Arith/Compare.v
@@ -117,6 +118,7 @@ through the <tt>Require Import</tt> command.</p>
     theories/PArith/Pnat.v
     theories/PArith/POrderedType.v
     (theories/PArith/PArith.v)
+    theories/Numbers/AltBinNotations.v
   </dd>
 
   <dt> <b>NArith</b>:
@@ -167,6 +169,16 @@ through the <tt>Require Import</tt> command.</p>
     theories/ZArith/Int.v
     theories/ZArith/Zpow_facts.v
     theories/ZArith/Zbitwise.v
+    theories/Numbers/DecimalFacts.v
+    theories/Numbers/DecimalNat.v
+    theories/Numbers/DecimalPos.v
+    theories/Numbers/DecimalN.v
+    theories/Numbers/DecimalZ.v
+    theories/Numbers/HexadecimalFacts.v
+    theories/Numbers/HexadecimalNat.v
+    theories/Numbers/HexadecimalPos.v
+    theories/Numbers/HexadecimalN.v
+    theories/Numbers/HexadecimalZ.v
   </dd>
 
   <dt> <b>QArith</b>:
@@ -185,6 +197,8 @@ through the <tt>Require Import</tt> command.</p>
     theories/QArith/Qround.v
     theories/QArith/QOrderedType.v
     theories/QArith/Qminmax.v
+    theories/Numbers/DecimalQ.v
+    theories/Numbers/HexadecimalQ.v
   </dd>
 
   <dt> <b>Numbers</b>:
@@ -192,30 +206,6 @@ through the <tt>Require Import</tt> command.</p>
   </dt>
   <dd>
     <dl>
-    <dt> <b>&nbsp;&nbsp;Prelude</b>:
-    </dt>
-    <dd>
-    theories/Numbers/NumPrelude.v
-    theories/Numbers/NaryFunctions.v
-    theories/Numbers/AltBinNotations.v
-    theories/Numbers/DecimalFacts.v
-    theories/Numbers/DecimalNat.v
-    theories/Numbers/DecimalPos.v
-    theories/Numbers/DecimalN.v
-    theories/Numbers/DecimalZ.v
-    theories/Numbers/DecimalQ.v
-    theories/Numbers/DecimalR.v
-    theories/Numbers/DecimalString.v
-    theories/Numbers/HexadecimalFacts.v
-    theories/Numbers/HexadecimalNat.v
-    theories/Numbers/HexadecimalPos.v
-    theories/Numbers/HexadecimalN.v
-    theories/Numbers/HexadecimalZ.v
-    theories/Numbers/HexadecimalQ.v
-    theories/Numbers/HexadecimalR.v
-    theories/Numbers/HexadecimalString.v
-    </dd>
-
     <dt> <b>&nbsp;&nbsp;NatInt</b>:
        Abstract mixed natural/integer/cyclic arithmetic
     </dt>
@@ -366,6 +356,7 @@ through the <tt>Require Import</tt> command.</p>
     theories/Lists/ListTactics.v
     theories/Logic/WKL.v
     theories/Classes/EquivDec.v
+    theories/Numbers/NaryFunctions.v
   </dd>
 
   <dt> <b>Streams</b>:
@@ -480,6 +471,8 @@ through the <tt>Require Import</tt> command.</p>
     theories/Strings/BinaryString.v
     theories/Strings/HexString.v
     theories/Strings/OctalString.v
+    theories/Numbers/DecimalString.v
+    theories/Numbers/HexadecimalString.v
   </dd>
 
   <dt> <b>Reals</b>:
@@ -581,6 +574,8 @@ through the <tt>Require Import</tt> command.</p>
     theories/Reals/Cauchy/ConstructiveCauchyRealsMult.v
     theories/Reals/Cauchy/ConstructiveCauchyAbs.v
     theories/Reals/Qreals.v
+    theories/Numbers/DecimalR.v
+    theories/Numbers/HexadecimalR.v
   </dd>
 
   </dl>

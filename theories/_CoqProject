@@ -16,7 +16,13 @@
 -Q Numbers/Integer Stdlib.Numbers.Integer
 -Q Numbers/NatInt Stdlib.Numbers.NatInt
 -Q Numbers/Natural Stdlib.Numbers.Natural
--Q Numbers Stdlib.Numbers
+-Q Numbers/Arith Stdlib.Numbers
+-Q Numbers/Lists Stdlib.Numbers
+-Q Numbers/positive Stdlib.Numbers
+-Q Numbers/Q Stdlib.Numbers
+-Q Numbers/R Stdlib.Numbers
+-Q Numbers/Strings Stdlib.Numbers
+-Q Numbers/Z Stdlib.Numbers
 -Q PArith Stdlib.PArith
 -Q Program Stdlib.Program
 -Q QArith Stdlib.QArith
