@@ -7,7 +7,7 @@
 (*         *     GNU Lesser General Public License Version 2.1          *)
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
-From Stdlib Require Import Bool ZArith.
+From Stdlib Require Import Bool Arith_base BinInt BinNat Znat.
 From Stdlib Require Import Zify ZifyClasses.
 From Stdlib Require Import ZifyInst.
 Local Open Scope Z_scope.

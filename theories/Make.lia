@@ -1,0 +1,27 @@
+omega/OmegaLemmas.v
+omega/PreOmega.v
+micromega/Zify/ZifyN.v
+micromega/Zify/ZifyComparison.v
+micromega/Zify/ZifyClasses.v
+micromega/Zify/ZifyNat.v
+micromega/Zify/ZifyPow.v
+micromega/Zify/ZifyBool.v
+micromega/Zify/Zify.v
+micromega/Zify/ZifyInst.v
+micromega/Lia/DeclConstantZ.v
+micromega/Lia/OrderedRing.v
+micromega/Lia/Tauto.v
+micromega/Lia/Env.v
+micromega/Lia/Refl.v
+micromega/Lia/ZArith_hints.v
+micromega/Lia/ZMicromega.v
+micromega/Lia/EnvRing.v
+micromega/Lia/Lia.v
+micromega/Lia/VarMap.v
+micromega/Lia/Ztac.v
+micromega/Lia/ZCoeff.v
+micromega/Lia/RingMicromega.v
+
+-Q omega Stdlib.omega
+-Q micromega/Zify Stdlib.micromega.Zify.Stdlib.micromega
+-Q micromega/Lia Stdlib.micromega.Lia.Stdlib.micromega
