@@ -167,6 +167,16 @@ through the <tt>Require Import</tt> command.</p>
     theories/ZArith/Int.v
     theories/ZArith/Zpow_facts.v
     theories/ZArith/Zbitwise.v
+    theories/Numbers/Z/DecimalFacts.v
+    theories/Numbers/Z/DecimalNat.v
+    theories/Numbers/Z/DecimalPos.v
+    theories/Numbers/Z/DecimalN.v
+    theories/Numbers/Z/DecimalZ.v
+    theories/Numbers/Z/HexadecimalFacts.v
+    theories/Numbers/Z/HexadecimalNat.v
+    theories/Numbers/Z/HexadecimalPos.v
+    theories/Numbers/Z/HexadecimalN.v
+    theories/Numbers/Z/HexadecimalZ.v
   </dd>
 
   <dt> <b>QArith</b>:
@@ -185,6 +195,8 @@ through the <tt>Require Import</tt> command.</p>
     theories/QArith/Qround.v
     theories/QArith/QOrderedType.v
     theories/QArith/Qminmax.v
+    theories/Numbers/Q/DecimalQ.v
+    theories/Numbers/Q/HexadecimalQ.v
   </dd>
 
   <dt> <b>Numbers</b>:
@@ -195,25 +207,9 @@ through the <tt>Require Import</tt> command.</p>
     <dt> <b>&nbsp;&nbsp;Prelude</b>:
     </dt>
     <dd>
-    theories/Numbers/NumPrelude.v
-    theories/Numbers/NaryFunctions.v
-    theories/Numbers/AltBinNotations.v
-    theories/Numbers/DecimalFacts.v
-    theories/Numbers/DecimalNat.v
-    theories/Numbers/DecimalPos.v
-    theories/Numbers/DecimalN.v
-    theories/Numbers/DecimalZ.v
-    theories/Numbers/DecimalQ.v
-    theories/Numbers/DecimalR.v
-    theories/Numbers/DecimalString.v
-    theories/Numbers/HexadecimalFacts.v
-    theories/Numbers/HexadecimalNat.v
-    theories/Numbers/HexadecimalPos.v
-    theories/Numbers/HexadecimalN.v
-    theories/Numbers/HexadecimalZ.v
-    theories/Numbers/HexadecimalQ.v
-    theories/Numbers/HexadecimalR.v
-    theories/Numbers/HexadecimalString.v
+    theories/Numbers/Other/NumPrelude.v
+    theories/Numbers/Other/NaryFunctions.v
+    theories/Numbers/Other/AltBinNotations.v
     </dd>
 
     <dt> <b>&nbsp;&nbsp;NatInt</b>:
@@ -479,6 +475,8 @@ through the <tt>Require Import</tt> command.</p>
     theories/Strings/BinaryString.v
     theories/Strings/HexString.v
     theories/Strings/OctalString.v
+    theories/Numbers/Strings/DecimalString.v
+    theories/Numbers/Strings/HexadecimalString.v
   </dd>
 
   <dt> <b>Reals</b>:
@@ -580,6 +578,8 @@ through the <tt>Require Import</tt> command.</p>
     theories/Reals/Cauchy/ConstructiveCauchyRealsMult.v
     theories/Reals/Cauchy/ConstructiveCauchyAbs.v
     theories/Reals/Qreals.v
+    theories/Numbers/R/DecimalR.v
+    theories/Numbers/R/HexadecimalR.v
   </dd>
 
   </dl>

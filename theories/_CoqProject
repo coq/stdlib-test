@@ -13,7 +13,15 @@
 -Q Logic/Lists Stdlib.Logic.Lists.Stdlib.Logic
 -Q MSets Stdlib.MSets
 -Q NArith Stdlib.NArith
--Q Numbers Stdlib.Numbers
+-Q Numbers/Cyclic Stdlib.Numbers.Cyclic
+-Q Numbers/Integer Stdlib.Numbers.Integer
+-Q Numbers/NatInt Stdlib.Numbers.NatInt
+-Q Numbers/Natural Stdlib.Numbers.Natural
+-Q Numbers/Other Stdlib.Numbers.Other.Stdlib.Numbers
+-Q Numbers/Q Stdlib.Numbers.Q.Stdlib.Numbers
+-Q Numbers/R Stdlib.Numbers.R.Stdlib.Numbers
+-Q Numbers/Strings Stdlib.Numbers.Strings.Stdlib.Numbers
+-Q Numbers/Z Stdlib.Numbers.Z.Stdlib.Numbers
 -Q PArith Stdlib.PArith
 -Q Program/All Stdlib.Program.All.Stdlib.Program
 -Q QArith Stdlib.QArith

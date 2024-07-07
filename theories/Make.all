@@ -116,12 +116,23 @@ QArith/Qabs.v
 QArith/QArith.v
 QArith/QArith_base.v
 QArith/Qcanon.v
-Numbers/DecimalN.v
-Numbers/DecimalNat.v
-Numbers/HexadecimalNat.v
-Numbers/HexadecimalQ.v
-Numbers/NaryFunctions.v
-Numbers/DecimalZ.v
+Numbers/Z/DecimalFacts.v
+Numbers/Z/HexadecimalFacts.v
+Numbers/Z/DecimalN.v
+Numbers/Z/HexadecimalN.v
+Numbers/Z/DecimalNat.v
+Numbers/Z/HexadecimalNat.v
+Numbers/Z/DecimalPos.v
+Numbers/Z/HexadecimalPos.v
+Numbers/Z/DecimalZ.v
+Numbers/Z/HexadecimalZ.v
+Numbers/Q/DecimalQ.v
+Numbers/Q/HexadecimalQ.v
+Numbers/R/DecimalR.v
+Numbers/R/HexadecimalR.v
+Numbers/Strings/DecimalString.v
+Numbers/Strings/HexadecimalString.v
+Numbers/Other/NaryFunctions.v
 Numbers/Cyclic/Int63/Sint63.v
 Numbers/Cyclic/Int63/Cyclic63.v
 Numbers/Cyclic/Int63/Uint63.v
@@ -149,11 +160,7 @@ Numbers/Integer/Abstract/ZLt.v
 Numbers/Integer/Abstract/ZLcm.v
 Numbers/Integer/Abstract/ZBase.v
 Numbers/Integer/Abstract/ZBits.v
-Numbers/DecimalQ.v
-Numbers/NumPrelude.v
-Numbers/HexadecimalR.v
-Numbers/HexadecimalZ.v
-Numbers/HexadecimalN.v
+Numbers/Other/NumPrelude.v
 Numbers/Natural/Binary/NBinary.v
 Numbers/Natural/Abstract/NStrongRec.v
 Numbers/Natural/Abstract/NAdd.v
@@ -177,13 +184,7 @@ Numbers/Natural/Abstract/NSub.v
 Numbers/Natural/Abstract/NBase.v
 Numbers/Natural/Abstract/NLcm.v
 Numbers/Natural/Abstract/NOrder.v
-Numbers/HexadecimalFacts.v
-Numbers/DecimalFacts.v
-Numbers/HexadecimalPos.v
-Numbers/DecimalPos.v
-Numbers/AltBinNotations.v
-Numbers/DecimalString.v
-Numbers/HexadecimalString.v
+Numbers/Other/AltBinNotations.v
 Numbers/NatInt/NZBase.v
 Numbers/NatInt/NZOrder.v
 Numbers/NatInt/NZProperties.v
@@ -200,7 +201,6 @@ Numbers/NatInt/NZMul.v
 Numbers/NatInt/NZLog.v
 Numbers/NatInt/NZAdd.v
 Numbers/NatInt/NZMulOrder.v
-Numbers/DecimalR.v
 btauto/Algebra.v
 btauto/Reflect.v
 btauto/Btauto.v
@@ -518,7 +518,15 @@ nsatz/NsatzTactic.v
 -Q Logic/Lists Stdlib.Logic.Lists.Stdlib.Logic
 -Q MSets Stdlib.MSets
 -Q NArith Stdlib.NArith
--Q Numbers Stdlib.Numbers
+-Q Numbers/Cyclic Stdlib.Numbers.Cyclic
+-Q Numbers/Integer Stdlib.Numbers.Integer
+-Q Numbers/NatInt Stdlib.Numbers.NatInt
+-Q Numbers/Natural Stdlib.Numbers.Natural
+-Q Numbers/Other Stdlib.Numbers.Other.Stdlib.Numbers
+-Q Numbers/Q Stdlib.Numbers.Q.Stdlib.Numbers
+-Q Numbers/R Stdlib.Numbers.R.Stdlib.Numbers
+-Q Numbers/Strings Stdlib.Numbers.Strings.Stdlib.Numbers
+-Q Numbers/Z Stdlib.Numbers.Z.Stdlib.Numbers
 -Q PArith Stdlib.PArith
 -Q Program/All Stdlib.Program.All.Stdlib.Program
 -Q QArith Stdlib.QArith
