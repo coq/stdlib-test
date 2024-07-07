@@ -425,9 +425,10 @@ through the <tt>Require Import</tt> command.</p>
     theories/Sorting/CPermutation.v
   </dd>
 
-  <dt> <b>Structures</b>:
-       Algebraic structures (types with equality, with order, ...).
-       DecidableType* and OrderedType* are there only for compatibility.
+  <dt> <b>Structure Instances</b>:
+    Instances of order structures from Structures above.
+    DecidableType* and OrderedType* are there only for compatibility.
+    Namespace Stdlib.Structures.
   </dt>
   <dd>
     theories/Structures/Ex/EqualitiesFacts.v
