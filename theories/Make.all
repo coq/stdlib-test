@@ -80,6 +80,7 @@ Structures/OrdersLists.v
 Structures/DecidableTypeEx.v
 Structures/OrderedType.v
 Structures/OrdersTac.v
+Structures/BoolOrder.v
 Floats/Floats.v
 Floats/FloatLemmas.v
 Classes/Morphisms_Relations.v
@@ -371,7 +372,6 @@ Sorting/Permutation.v
 Sorting/Sorted.v
 Bool/IfProp.v
 Bool/Bool.v
-Bool/BoolOrder.v
 Bool/Zerob.v
 Bool/DecBool.v
 Bool/BoolEq.v
