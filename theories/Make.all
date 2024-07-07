@@ -66,6 +66,7 @@ Arith/Wf_nat.v
 Arith/Compare_dec.v
 Arith/Bool_nat.v
 Arith/Peano_dec.v
+Arith/Zerob.v
 Structures/GenericMinMax.v
 Structures/Equalities.v
 Structures/OrderedTypeAlt.v
@@ -372,7 +373,6 @@ Sorting/Permutation.v
 Sorting/Sorted.v
 Bool/IfProp.v
 Bool/Bool.v
-Bool/Zerob.v
 Bool/DecBool.v
 Bool/BoolEq.v
 Strings/HexString.v
