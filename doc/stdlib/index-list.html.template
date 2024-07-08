@@ -463,22 +463,30 @@ through the <tt>Require Import</tt> command.</p>
     theories/Strings/PString.v
   </dd>
 
+  <dt> <b>QArith-base</b>:
+    Basic binary rational numbers in namespace Stdlib.QArith.
+    Look at qarith below for more functionalities with the field
+    and Lqa tactics.
+  </dt>
+  <dd>
+    theories/QArith/Base/QArith_base.v
+    theories/QArith/Base/Qreduction.v
+    theories/QArith/Base/QOrderedType.v
+    theories/QArith/Base/Qminmax.v
+  </dd>
+
   <dt> <b>QArith</b>:
     Rational numbers
   </dt>
   <dd>
-    theories/QArith/Base/QArith_base.v
     theories/QArith/All/Qabs.v
     theories/QArith/Field/Qpower.v
-    theories/QArith/Base/Qreduction.v
     theories/QArith/Field/Qring.v
     theories/QArith/Field/Qfield.v
     (theories/QArith/All/QArith.v)
     theories/QArith/Field/Qcanon.v
     theories/QArith/All/Qcabs.v
     theories/QArith/Field/Qround.v
-    theories/QArith/Base/QOrderedType.v
-    theories/QArith/Base/Qminmax.v
     theories/Numbers/Q/DecimalQ.v
     theories/Numbers/Q/HexadecimalQ.v
   </dd>
