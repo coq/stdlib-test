@@ -458,22 +458,30 @@ through the <tt>Require Import</tt> command.</p>
     theories/Strings/PString.v
   </dd>
 
-  <dt> <b>QArith</b>:
-    Rational numbers
+  <dt> <b>QArith-base</b>:
+    Basic binary rational numbers.
+    Look at qarith below for more functionalities with the field
+    and Lqa tactics.
   </dt>
   <dd>
     theories/QArith/QArith_base.v
     theories/QArith/Qreduction.v
     theories/QArith/QOrderedType.v
     theories/QArith/Qminmax.v
+  </dd>
+
+  <dt> <b>QArith</b>:
+    Rational numbers
+  </dt>
+  <dd>
+    theories/QArith/Qabs.v
     theories/QArith/Qpower.v
     theories/QArith/Qring.v
     theories/QArith/Qfield.v
-    theories/QArith/Qcanon.v
-    theories/QArith/Qround.v
-    theories/QArith/Qabs.v
     (theories/QArith/QArith.v)
+    theories/QArith/Qcanon.v
     theories/QArith/Qcabs.v
+    theories/QArith/Qround.v
     theories/Numbers/DecimalQ.v
     theories/Numbers/HexadecimalQ.v
   </dd>
