@@ -470,18 +470,24 @@ through the <tt>Require Import</tt> command.</p>
     theories/QArith/Qminmax.v
   </dd>
 
+  <dt> <b>Field</b>:
+    Field tactic.
+  </dt>
+  <dd>
+    theories/QArith/Qpower.v
+    theories/QArith/Qring.v
+    theories/QArith/Qfield.v
+    theories/QArith/Qcanon.v
+    theories/QArith/Qround.v
+  </dd>
+
   <dt> <b>QArith</b>:
     Rational numbers
   </dt>
   <dd>
     theories/QArith/Qabs.v
-    theories/QArith/Qpower.v
-    theories/QArith/Qring.v
-    theories/QArith/Qfield.v
     (theories/QArith/QArith.v)
-    theories/QArith/Qcanon.v
     theories/QArith/Qcabs.v
-    theories/QArith/Qround.v
     theories/Numbers/DecimalQ.v
     theories/Numbers/HexadecimalQ.v
   </dd>
