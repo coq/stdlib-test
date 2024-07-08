@@ -62,7 +62,7 @@ Qed.
 
 
 (*Definition Zeval_expr :=  eval_pexpr 0 Z.add Z.mul Z.sub Z.opp  (fun x => x) (fun x => Z.of_N x) (Z.pow).*)
-From Stdlib Require Import EnvRing.
+From Stdlib.micromega Require Import EnvRing.
 
 Fixpoint Qeval_expr (env: PolEnv Q) (e: PExpr Q) : Q :=
   match e with
