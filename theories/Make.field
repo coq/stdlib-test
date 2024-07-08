@@ -1,0 +1,12 @@
+QArith/Field/Qfield.v
+QArith/Field/Qround.v
+QArith/Field/Qring.v
+QArith/Field/Qpower.v
+QArith/Field/Qcanon.v
+setoid_ring/Q/Field_theory.v
+setoid_ring/Q/Field_tac.v
+setoid_ring/Q/Rings_Q.v
+setoid_ring/Q/Field.v
+
+-Q QArith/Field Stdlib.QArith.Field.Stdlib.QArith
+-Q setoid_ring/Q Stdlib.setoid_ring.Q.Stdlib.setoid_ring
