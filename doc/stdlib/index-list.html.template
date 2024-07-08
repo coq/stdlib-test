@@ -487,7 +487,16 @@ through the <tt>Require Import</tt> command.</p>
   </dd>
 
   <dt> <b>QArith</b>:
-    Rational numbers
+    Binary rational numbers in namespace Stdlib.QArith, made on top of zarith.
+    Those enable efficient computations in arbitrary precision exact rational
+    arithmetic. Those rationals are known to be difficult to use for
+    mathematical proofs because there is no canonical representation
+    (2/3 and 4/6 are not equal for instance). For even more efficient
+    computation, look at the coq-bignums package which uses machine integers.
+    For mathematical proofs, the rat type of the coq-mathcomp-algebra package
+    are much more comfortable, although they don't enjoy efficient computation
+    (coq-coqeal offers a refinement with coq-bignums that enables to enjoy
+    both aspects).
   </dt>
   <dd>
     theories/QArith/All/Qabs.v
