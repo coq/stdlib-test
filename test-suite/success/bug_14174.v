@@ -1,5 +1,5 @@
 (** Check that we avoid an extraction error that came up in PR #14174 in metacoq *)
-Require Import Stdlib.extraction.ExtrOcamlBasic.
+From Stdlib Require Import ExtrOcamlBasic.
 Module A.
   Include Stdlib.Init.Specif.
 End A.

@@ -17,11 +17,11 @@
 (* Used to generate micromega.ml *)
 
 From Stdlib Require Extraction.
-From Stdlib Require Import ZMicromega.
-From Stdlib Require Import QMicromega.
-From Stdlib Require Import RMicromega.
-From Stdlib Require Import VarMap.
-From Stdlib Require Import RingMicromega.
+From Stdlib.micromega Require Import ZMicromega.
+From Stdlib.micromega Require Import QMicromega.
+From Stdlib.micromega Require Import RMicromega.
+From Stdlib.micromega Require Import VarMap.
+From Stdlib.micromega Require Import RingMicromega.
 From Stdlib Require Import NArith.
 From Stdlib Require Import QArith.
 

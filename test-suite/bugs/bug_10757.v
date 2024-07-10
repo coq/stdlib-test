@@ -1,4 +1,4 @@
-Require Import Program Extraction ExtrOcamlBasic.
+From Stdlib Require Import Program Extraction ExtrOcamlBasic.
 Print sig.
 Section FIXPOINT.
 
