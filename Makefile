@@ -11,7 +11,10 @@ theories/%.vo:
 refman-html:
 	dune build --root . --no-buffer @refman-html
 
-stdlib-html:
+doc/stdlib/depends.png: doc/stdlib/depends
+	dot -Tpng $< -o $@
+
+stdlib-html: doc/stdlib/depends.png
 	dune build -p coq-stdlib @install
 	dune build @stdlib-html
 

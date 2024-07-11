@@ -5,6 +5,8 @@
 It provides a set of modules directly available
 through the <tt>Require Import</tt> command.</p>
 
+<img src="depends.png">
+
 <p>The standard library is composed of the following subdirectories:</p>
 
 <dl>
