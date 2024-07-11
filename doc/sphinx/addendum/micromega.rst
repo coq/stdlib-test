@@ -8,12 +8,12 @@ Micromega: solvers for arithmetic goals over ordered rings
 Short description of the tactics
 --------------------------------
 
-The Psatz module (``Require Import Psatz``) gives access to several
+The Psatz module (``From Stdlib Require Import Psatz``) gives access to several
 tactics for solving arithmetic goals over :math:`\mathbb{Q}`,
 :math:`\mathbb{R}`, and :math:`\mathbb{Z}` but also :g:`nat` and
 :g:`N`.  It is also possible to get only the tactics for integers by
-``Require Import Lia``, only for rationals by ``Require Import Lqa``
-or only for reals by ``Require Import Lra``.
+``From Stdlib Require Import Lia``, only for rationals by ``From Stdlib Require Import Lqa``
+or only for reals by ``From Stdlib Require Import Lra``.
 
 + :tacn:`lia` is a decision procedure for linear integer arithmetic;
 + :tacn:`nia` is an incomplete proof procedure for integer non-linear
@@ -21,7 +21,7 @@ or only for reals by ``Require Import Lra``.
 + :tacn:`lra` is a decision procedure for linear (real or rational) arithmetic;
 + :tacn:`nra` is an incomplete proof procedure for non-linear (real or
   rational) arithmetic;
-+ :tacn:`psatz` ``D n``
++ :tacn:`psatz one_term` ``D n``
   is an incomplete proof procedure for non-linear arithmetic.
   ``D`` is :math:`\mathbb{Z}` or :math:`\mathbb{Q}` or :math:`\mathbb{R}` and
   ``n`` is an optional integer limiting the proof search depth.
@@ -33,7 +33,7 @@ or only for reals by ``Require Import Lra``.
 
 .. opt:: Dump Arith
 
-   This :term:`option` (unset by default) may be set to a file path where
+   This option (unset by default) may be set to a file path where
    debug info will be written.
 
 .. cmd:: Show Lia Profile
@@ -44,15 +44,15 @@ or only for reals by ``Require Import Lra``.
 
 .. flag:: Lia Cache
 
-   This :term:`flag` (set by default) instructs :tacn:`lia` to cache its results in the file `.lia.cache`
+   This flag (set by default) instructs :tacn:`lia` to cache its results in the file `.lia.cache`
 
 .. flag:: Nia Cache
 
-   This :term:`flag` (set by default) instructs :tacn:`nia` to cache its results in the file `.nia.cache`
+   This flag (set by default) instructs :tacn:`nia` to cache its results in the file `.nia.cache`
 
 .. flag:: Nra Cache
 
-   This :term:`flag` (set by default) instructs :tacn:`nra` to cache its results in the file `.nra.cache`
+   This flag (set by default) instructs :tacn:`nra` to cache its results in the file `.nra.cache`
 
 
 The tactics solve propositional formulas parameterized by atomic
@@ -93,7 +93,7 @@ following expressions:
    c ::= R0 | R1 | Rmult c c | Rplus c c | Rminus c c | IZR z | Q2R q | Rdiv c c | Rinv c
 
 where `z` is a constant in :math:`\mathbb{Z}` and `q` is a constant in :math:`\mathbb{Q}`.
-This includes :n:`@number` written using the decimal notation, *i.e.*, ``c%R``.
+This includes :n:`number` written using the decimal notation, *i.e.*, ``c%R``.
 
 
 *Positivstellensatz* refutations
@@ -159,12 +159,12 @@ For each conjunct :math:`C_i`, the tactic calls an oracle which searches for
    The deductive power of :tacn:`lra` overlaps with the one of :tacn:`field`
    tactic *e.g.*, :math:`x = 10 * x / 10` is solved by :tacn:`lra`.
 
-.. tacn:: xlra_Q @ltac_expr
-          xlra_R @ltac_expr
+.. tacn:: xlra_Q ltac_expr
+          xlra_R ltac_expr
 
    For internal use only (it may change without notice).
 
-.. tacn:: wlra_Q @ident @one_term
+.. tacn:: wlra_Q ident one_term
 
    For advanced users interested in deriving tactics for specific needs.
    See the :ref:`example below <lra_example>` and comments in
@@ -240,11 +240,11 @@ Our current oracle tries to find an expression :math:`e` with a small range
 with an equation :math:`e = i` for :math:`i \in [c_1,c_2]` and recursively search for
 a proof.
 
-.. tacn:: xlia @ltac_expr
+.. tacn:: xlia ltac_expr
 
    For internal use only (it may change without notice).
 
-.. tacn:: wlia @ident @one_term
+.. tacn:: wlia ident one_term
 
    For advanced users interested in deriving tactics for specific needs.
    See the :ref:`example below <lra_example>` and comments in
@@ -270,12 +270,12 @@ a proof.
 After this pre-processing, the linear prover of :tacn:`lra` searches for a
 proof by abstracting monomials by variables.
 
-.. tacn:: xnra_Q @ltac_expr
-          xnra_R @ltac_expr
+.. tacn:: xnra_Q ltac_expr
+          xnra_R ltac_expr
 
    For internal use only (it may change without notice).
 
-.. tacn:: wnra_Q @ident @one_term
+.. tacn:: wnra_Q ident one_term
 
    For advanced users interested in deriving tactics for specific needs.
    See the :ref:`example below <lra_example>` and comments in
@@ -290,11 +290,11 @@ proof by abstracting monomials by variables.
    It performs a pre-processing similar to :tacn:`nra`. The obtained goal is
    solved using the linear integer prover :tacn:`lia`.
 
-.. tacn:: xnia @ltac_expr
+.. tacn:: xnia ltac_expr
 
    For internal use only (it may change without notice).
 
-.. tacn:: wnia @ident @one_term
+.. tacn:: wnia ident one_term
 
    For advanced users interested in deriving tactics for specific needs.
    See the :ref:`example below <lra_example>` and comments in
@@ -303,10 +303,10 @@ proof by abstracting monomials by variables.
 `psatz`: a proof procedure for non-linear arithmetic
 ----------------------------------------------------
 
-.. tacn:: psatz @one_term {? @nat_or_var }
+.. tacn:: psatz one_term {? nat_or_var }
 
    This tactic explores the *Cone* by increasing degrees – hence the
-   depth parameter :token:`nat_or_var`. In theory, such a proof search is complete – if the
+   depth parameter :n:`nat_or_var`. In theory, such a proof search is complete – if the
    goal is provable the search eventually stops. Unfortunately, the
    external oracle is using numeric (approximate) optimization techniques
    that might miss a refutation.
@@ -317,7 +317,7 @@ proof by abstracting monomials by variables.
 .. needs csdp
 .. coqdoc::
 
-   Require Import ZArith Psatz.
+   Fro Stdlib Require Import ZArith Psatz.
    Open Scope Z_scope.
    Goal forall x, -x^2 >= 0 -> x - 1 >= 0 -> False.
    intro x.
@@ -330,19 +330,19 @@ and :math:`p_2 := x - 1`. By construction, this expression
 belongs to :math:`\mathit{Cone}({p_1, p_2})`. Moreover, by running :tacn:`ring` we
 obtain :math:`-1`. Thus, by Theorem :ref:`Psatz <psatz_thm>`, the goal is valid.
 
-.. tacn:: xsos_Q @ltac_expr
-          xsos_R @ltac_expr
-          xsos_Z @ltac_expr
-          xpsatz_Q @nat_or_var @ltac_expr
-          xpsatz_R @nat_or_var @ltac_expr
-          xpsatz_Z @nat_or_var @ltac_expr
+.. tacn:: xsos_Q ltac_expr
+          xsos_R ltac_expr
+          xsos_Z ltac_expr
+          xpsatz_Q nat_or_var ltac_expr
+          xpsatz_R nat_or_var ltac_expr
+          xpsatz_Z nat_or_var ltac_expr
 
    For internal use only (it may change without notice).
 
-.. tacn:: wsos_Q @ident @one_term
-          wsos_Z @ident @one_term
-          wpsatz_Q @nat_or_var @ident @one_term
-          wpsatz_Z @nat_or_var @ident @one_term
+.. tacn:: wsos_Q ident one_term
+          wsos_Z ident one_term
+          wpsatz_Q nat_or_var ident one_term
+          wpsatz_Z nat_or_var ident one_term
 
    For advanced users interested in deriving tactics for specific needs.
    See the :ref:`example below <lra_example>` and comments in
@@ -380,7 +380,7 @@ obtain :math:`-1`. Thus, by Theorem :ref:`Psatz <psatz_thm>`, the goal is valid.
    The :tacn:`zify` tactic can be extended with new types and operators by declaring and registering new typeclass instances using the following commands.
    The typeclass declarations can be found in the module ``ZifyClasses`` and the default instances can be found in the module ``ZifyInst``.
 
-.. cmd:: Add Zify @add_zify @qualid
+.. cmd:: Add Zify add_zify qualid
 
    .. insertprodn add_zify add_zify
 
@@ -389,12 +389,12 @@ obtain :math:`-1`. Thus, by Theorem :ref:`Psatz <psatz_thm>`, the goal is valid.
       | {| PropOp | PropBinOp | PropUOp | Saturate }
 
    Registers an instance of the specified typeclass.
-   The typeclass type (e.g. :g:`BinOp Z.mul` or :g:`BinRel (@eq Z)`) has the additional constraint that
+   The typeclass type (e.g. :g:`BinOp Z.mul` or :g:`BinRel (eq Z)`) has the additional constraint that
    the non-implicit argument (here, :g:`Z.mul` or :g:`(@eq Z)`)
-   is either a :n:`@reference` (here, :g:`Z.mul`) or the application of a :n:`@reference` (here, :g:`@eq`) to a sequence of :n:`@one_term`.
+   is either a :n:`reference` (here, :g:`Z.mul`) or the application of a :n:`reference` (here, :g:`eq`) to a sequence of :n:`one_term`.
 
-   This command supports attributes :attr:`local`, :attr:`export` and :attr:`global`.
-   In sections only :attr:`local` is supported, outside sections the default is :attr:`global`.
+   This command supports attributes ``local``, ``export`` and ``global``.
+   In sections only ``local`` is supported, outside sections the default is ``global``.
 
 .. cmd:: Show Zify @show_zify
 
@@ -408,7 +408,7 @@ obtain :math:`-1`. Thus, by Theorem :ref:`Psatz <psatz_thm>`, the goal is valid.
    :g:`Z`, :g:`nat`, :g:`positive` and :g:`N`.
 
 .. tacn:: zify_elim_let
-          zify_iter_let @ltac_expr
+          zify_iter_let ltac_expr
           zify_iter_specs
           zify_op
           zify_saturate
@@ -423,7 +423,7 @@ obtain :math:`-1`. Thus, by Theorem :ref:`Psatz <psatz_thm>`, the goal is valid.
 
   .. coqtop:: in
 
-    Require Import QArith Lqa. #[local] Open Scope Q_scope.
+    From Stdlib Require Import QArith Lqa. #[local] Open Scope Q_scope.
 
     Lemma example_lra x y : x + 2 * y <= 4 -> 2 * x + y <= 4 -> x + y < 3.
     Proof.

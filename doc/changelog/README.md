@@ -9,9 +9,6 @@ should get a changelog entry.
 Compatibility-breaking changes should always get a changelog entry,
 which should explain what compatibility breakage is to expect.
 
-Pull requests changing the ML API in significant ways should add an
-entry in [`dev/doc/changes.md`](../../dev/doc/changes.md).
-
 ## How to add an entry? ##
 
 Run `./dev/tools/make-changelog.sh`: it will ask you for your PR

@@ -16,34 +16,35 @@ to any of the three.
 
    Before using any of the commands or options described in this chapter,
    the extraction framework should first be loaded explicitly
-   via ``Require Extraction``, or via the more robust
-   ``From Stdlib Require Extraction``.
+   via ``From Stdlib Require Extraction``.
 
 .. coqtop:: in
 
-   Require Extraction.
+   From Stdlib Require Extraction.
 
 Generating ML Code
 -------------------
 
 .. note::
 
-  In the following, a qualified identifier :token:`qualid`
-  can be used to refer to any kind of Coq global "object" : :term:`constant`,
+  In the following, a qualified identifier :n:`qualid`
+  can be used to refer to any kind of Coq global "object" : constant,
   inductive type, inductive constructor or module name.
 
-.. cmd:: Extraction @qualid
-         Recursive Extraction {+ @qualid }
-         Extraction @string {+ @qualid }
+.. cmd:: Extraction qualid
+         Recursive Extraction {+ qualid }
+         Extraction string {+ qualid }
+   :name:`Extraction`
+   :name:`Recursive Extraction`
 
    The first two forms display the extracted term(s) in Coq as a convenient preview
    of the extracted term(s):
 
-   - the first form extracts :n:`@qualid` and displays the resulting term;
-   - the second form extracts the listed :n:`@qualid`\s and all their
+   - the first form extracts :n:`qualid` and displays the resulting term;
+   - the second form extracts the listed :n:`qualid`\s and all their
      dependencies, and displays the resulting terms.
 
-   The third form produces a single extraction file named :n:`@string`
+   The third form produces a single extraction file named :n:`string`
    for all the specified objects and all of their dependencies.
 
    Global and local identifiers are renamed as needed to fulfill the syntactic
@@ -55,36 +56,36 @@ produced in the current working directory. It is possible to inspect what
 is the current directory with the command :cmd:`Pwd` and to change it with
 the command :cmd:`Cd`.
   
-.. cmd:: Extraction Library @ident
+.. cmd:: Extraction Library ident
 
-   Extraction of the whole Coq library :n:`@ident.v` to an ML module
-   :n:`@ident.ml`. In case of name clash, identifiers are here renamed
+   Extraction of the whole Coq library :n:`ident.v` to an ML module
+   :n:`ident.ml`. In case of name clash, identifiers are here renamed
    using prefixes ``coq_``  or ``Coq_`` to ensure a session-independent
    renaming.
 
-.. cmd:: Recursive Extraction Library @ident
+.. cmd:: Recursive Extraction Library ident
 
-   Extraction of the Coq library :n:`@ident.v` and all other modules
-   :n:`@ident.v` depends on.
+   Extraction of the Coq library :n:`ident.v` and all other modules
+   :n:`ident.v` depends on.
 
-.. cmd:: Separate Extraction {+ @qualid }
+.. cmd:: Separate Extraction {+ qualid }
 
    Recursive extraction of all the mentioned objects and all
-   their dependencies, just as :n:`Extraction @string {+ @qualid }`,
+   their dependencies, just as :n:`Extraction string {+ qualid }`,
    but instead of producing one monolithic file, this command splits
    the produced code in separate ML files, one per corresponding Coq
    ``.v`` file. This command is hence quite similar to
-   :cmd:`Recursive Extraction Library`, except that only the needed
+   :cmd:`Recursive Extraction Library ident`, except that only the needed
    parts of Coq libraries are extracted instead of the whole.
    The naming convention in case of name clash is the same one as
-   :cmd:`Extraction Library`: identifiers are here renamed using prefixes
+   :cmd:`Extraction Library ident`: identifiers are here renamed using prefixes
    ``coq_``  or ``Coq_``.
 
 The following command is meant to help automatic testing of
 the extraction, see for instance the ``test-suite`` directory
 in the Coq sources.
 
-.. cmd:: Extraction TestCompile {+ @qualid }
+.. cmd:: Extraction TestCompile {+ qualid }
 
    All the mentioned objects and all their dependencies are extracted
    to a temporary OCaml file, just as in ``Extraction "file"``. Then
@@ -101,16 +102,15 @@ in the Coq sources.
    This command displays the current working directory (where the extracted
    files are produced).
 
-.. cmd:: Cd {? @string }
+.. cmd:: Cd {? string }
 
    .. deprecated:: 8.20
 
-      Use the command line option :n:`-output-directory` instead (see
-      :ref:`command-line-options`), or the :opt:`Extraction Output Directory`
-      option.
+      Use the command line option :n:`-output-directory`,
+      or the :opt:`Extraction Output Directory string` option.
 
-   If :n:`@string` is specified, changes the current directory according to
-   :token:`string` which can be any valid path.  Otherwise, it displays the
+   If :n:`string` is specified, changes the current directory according to
+   :n:`string` which can be any valid path.  Otherwise, it displays the
    current directory as :cmd:`Pwd` does.
 
 Extraction Options
@@ -148,7 +148,7 @@ wants to generate an OCaml program. The optimizations can be split in two
 groups: the type-preserving ones (essentially constant inlining and
 reductions) and the non-type-preserving ones (some function
 abstractions of dummy types are removed when it is deemed safe in order
-to have more elegant types). Therefore some :term:`constants <constant>` may not appear in the
+to have more elegant types). Therefore some constants may not appear in the
 resulting monolithic OCaml program. In the case of modular extraction,
 even if some inlining is done, the inlined constants are nevertheless
 printed, to ensure session-independent programs.
@@ -162,14 +162,14 @@ and commands:
 
 .. flag:: Extraction Optimize
 
-   Default is on. This :term:`flag` controls all type-preserving optimizations made on
+   Default is on. This flag controls all type-preserving optimizations made on
    the ML terms (mostly reduction of dummy beta/iota redexes, but also
    simplifications on Cases, etc). Turn this flag off if you want a
    ML term as close as possible to the Coq term.
 
 .. flag:: Extraction Conservative Types
 
-   Default is off. This :term:`flag` controls the non-type-preserving optimizations
+   Default is off. This flag controls the non-type-preserving optimizations
    made on ML terms (which try to avoid function abstraction of dummy
    types). Turn this flag on to make sure that ``e:t``
    implies that ``e':t'`` where ``e'`` and ``t'`` are the extracted
@@ -181,13 +181,13 @@ and commands:
    produces a singleton type (i.e. a type with only one constructor, and
    only one argument to this constructor), the inductive structure is
    removed and this type is seen as an alias to the inner type.
-   The typical example is ``sig``. This :term:`flag` allows disabling this
+   The typical example is ``sig``. This flag allows disabling this
    optimization when one wishes to preserve the inductive structure of types.
 
 .. flag:: Extraction AutoInline
 
-   Default is off. When enabled, the extraction mechanism inlines the :term:`bodies <body>` of
-   some defined :term:`constants <constant>`, according to some heuristics
+   Default is off. When enabled, the extraction mechanism inlines the bodies of
+   some defined constants, according to some heuristics
    like size of bodies, uselessness of some arguments, etc.
 
    Even when this flag is off, recursors (`_rect` and `_rec` schemes, such as `nat_rect`), projections, and a few
@@ -195,12 +195,12 @@ and commands:
    behaviour) and well founded recursion combinators are still
    automatically inlined.
 
-.. cmd:: Extraction Inline {+ @qualid }
+.. cmd:: Extraction Inline {+ qualid }
 
-   In addition to the automatic inline feature, the :term:`constants <constant>`
+   In addition to the automatic inline feature, the constant
    mentioned by this command will always be inlined during extraction.
 
-.. cmd:: Extraction NoInline {+ @qualid }
+.. cmd:: Extraction NoInline {+ qualid }
 
    Conversely, the constants mentioned by this command will
    never be inlined during extraction.
@@ -217,24 +217,24 @@ and commands:
 
 **Inlining and printing of a constant declaration:**
 
-The user can explicitly ask for a :term:`constant` to be extracted by two means:
+The user can explicitly ask for a constant to be extracted by two means:
 
   * by mentioning it on the extraction command line
 
-  * by extracting the whole Coq module of this :term:`constant`.
+  * by extracting the whole Coq module of this constant.
 
-In both cases, the declaration of this :term:`constant` will be present in the
-produced file. But this same :term:`constant` may or may not be inlined in
+In both cases, the declaration of this constant will be present in the
+produced file. But this same constant may or may not be inlined in
 the following terms, depending on the automatic/custom inlining mechanism.  
 
-For the :term:`constants <constant>` non-explicitly required but needed for dependency
+For the constant non-explicitly required but needed for dependency
 reasons, there are two cases: 
 
   * If an inlining decision is taken, whether automatically or not,
-    all occurrences of this :term:`constant` are replaced by its extracted :term:`body`,
-    and this :term:`constant` is not declared in the generated file.
+    all occurrences of this constant are replaced by its extracted body,
+    and this constant is not declared in the generated file.
 
-  * If no inlining decision is taken, the :term:`constant` is normally
+  * If no inlining decision is taken, the constant is normally
     declared in the produced file. 
 
 Extra elimination of useless arguments
@@ -245,24 +245,24 @@ code elimination performed during extraction, in a way which
 is independent but complementary to the main elimination
 principles of extraction (logical parts and types).
 
-.. cmd:: Extraction Implicit @qualid [ {* {| @ident | @integer } } ]
+.. cmd:: Extraction Implicit qualid [ {* {| ident | integer } } ]
 
    Declares some arguments of
-   :token:`qualid` as implicit, meaning that they are useless in extracted code.
+   :n:`qualid` as implicit, meaning that they are useless in extracted code.
    The extracted code will omit these arguments.
-   Here :token:`qualid` can be
-   any function or inductive constructor, and the :token:`ident`\s are
+   Here :n:`qualid` can be
+   any function or inductive constructor, and the :n:`ident`\s are
    the names of the useless arguments.  Arguments can can also be
-   identified positionally by :token:`integer`\s starting from 1.
+   identified positionally by :n:`integer`\s starting from 1.
 
 When an actual extraction takes place, an error is normally raised if the
-:cmd:`Extraction Implicit` declarations cannot be honored, that is
+``Extraction Implicit`` declarations cannot be honored, that is
 if any of the implicit arguments still occurs in the final code.
 This behavior can be relaxed via the following flag:
 
 .. flag:: Extraction SafeImplicits
 
-   Default is on. When this :term:`flag` is off, a warning is emitted
+   Default is on. When this flag is off, a warning is emitted
    instead of an error if some implicit arguments still occur in the
    final code of an extraction. This way, the extracted code may be
    obtained nonetheless and reviewed manually to locate the source of the issue
@@ -285,11 +285,11 @@ a closed term, and of course the system cannot guess the program which
 realizes an axiom.  Therefore, it is possible to tell the system
 what ML term corresponds to a given axiom. 
 
-.. cmd:: Extract Constant @qualid {* @string__tv } => {| @ident | @string }
+.. cmd:: Extract Constant qualid {* string__tv } => {| ident | string }
 
-   Give an ML extraction for the given :term:`constant`.
+   Give an ML extraction for the given constant.
 
-   :n:`@string__tv`
+   :n:`string__tv`
      If the type scheme axiom is an arity (a sequence of products followed
      by a sort), then some type
      variables have to be given (as quoted strings).
@@ -317,24 +317,24 @@ what ML term corresponds to a given axiom.
       fact, the strings containing realizing code are just copied to the
       extracted files.
 
-.. cmd:: Extract Inlined Constant @qualid => {| @ident | @string }
+.. cmd:: Extract Inlined Constant qualid => {| ident | string }
 
    Same as the previous one, except that the given ML terms will
    be inlined everywhere instead of being declared via a ``let``.
 
    .. note::
-      This command is sugar for an :cmd:`Extract Constant` followed
+      This command is sugar for an ``Extract Constant`` followed
       by a :cmd:`Extraction Inline`. Hence a :cmd:`Reset Extraction Inline`
       will have an effect on the realized and inlined axiom.
 
-   .. exn:: The term @qualid is already defined as foreign custom constant.
+   .. exn:: The term qualid is already defined as foreign custom constant.
 
-      The :n:`@qualid` was previously used in a
-      :cmd:`Extract Foreign Constant` command. Using :cmd:`Extract Inlined Constant`
-      for :n:`@qualid` would override this command.
+      The :n:`qualid` was previously used in a
+      :cmd:`Extract Foreign Constant qualid` command. Using ``Extract Inlined Constant``
+      for :n:`qualid` would override this command.
 
 
-Realizing an axiom via :cmd:`Extract Constant` is only useful in the
+Realizing an axiom via :cmd:`Extract Constant qualid` is only useful in the
 case of an informative axiom (of sort ``Type`` or ``Set``). A logical axiom
 has no computational content and hence will not appear in extracted
 terms. But a warning is nonetheless issued if extraction encounters a
@@ -354,22 +354,22 @@ The system also provides a mechanism to specify ML terms for inductive
 types and constructors. For instance, the user may want to use the ML
 native boolean type instead of the Coq one. The syntax is the following:
 
-.. cmd:: Extract Inductive @qualid => {| @ident | @string } [ {* {| @ident | @string } } ] {? @string__match }
+.. cmd:: Extract Inductive qualid => {| ident | string } [ {* {| ident | string } } ] {? string__match }
 
    Give an ML extraction for the given inductive type. You must specify
-   extractions for the type itself (the initial :n:`{| @ident | @string }`) and all its
-   constructors (the :n:`[ {* {| @ident | @string } } ]`). In this form,
+   extractions for the type itself (the initial :n:`{| ident | string }`) and all its
+   constructors (the :n:`[ {* {| ident | string } } ]`). In this form,
    the ML extraction must be an ML inductive datatype, and the native
    pattern matching of the language will be used.
 
-   When the initial :n:`{| @ident | @string }` matches the name of the type of characters or strings
+   When the initial :n:`{| ident | string }` matches the name of the type of characters or strings
    (``char`` and ``string`` for OCaml, ``Prelude.Char`` and ``Prelude.String``
    for Haskell), extraction of literals is handled in a specialized way, so as
    to generate literals in the target language. This feature requires the type
-   designated by :n:`@qualid` to be registered as the standard char or string type,
-   using the :cmd:`Register` command.
+   designated by :n:`qualid` to be registered as the standard char or string type,
+   using the ``Register`` command.
 
-   :n:`@string__match`
+   :n:`string__match`
      Indicates how to
      perform pattern matching over this inductive type. In this form,
      the ML extraction could be an arbitrary type.
@@ -384,7 +384,7 @@ native boolean type instead of the Coq one. The syntax is the following:
      into OCaml ``int``, the code to be provided has type:
      ``(unit->'a)->(int->'a)->int->'a``.
 
-   .. caution:: As for :cmd:`Extract Constant`, this command should be used with care:
+   .. caution:: As for :cmd:`Extract Constant qualid`, this command should be used with care:
 
      * The ML code provided by the user is currently **not** checked at all by
        extraction, even for syntax errors.
@@ -402,7 +402,7 @@ native boolean type instead of the Coq one. The syntax is the following:
        ML type is an efficient representation. For instance, when extracting
        ``nat`` to OCaml ``int``, the function ``Nat.mul`` stays quadratic.
        It might be interesting to associate this translation with
-       some specific :cmd:`Extract Constant` when primitive counterparts exist.
+       some specific :cmd:`Extract Constant qualid` when primitive counterparts exist.
 
 Typical examples are the following:
 
@@ -441,18 +441,18 @@ OCaml code with C code, the linker needs to know
    * which C functions will be called by the ML code (external)
    * which ML functions shall be accessible by the C code (callbacks)
 
-.. cmd:: Extract Foreign Constant @qualid => @string
+.. cmd:: Extract Foreign Constant qualid => string
 
-   Like :cmd:`Extract Constant`, except that the referenced ML terms
+   Like :cmd:`Extract Constant qualid`, except that the referenced ML terms
    will be declared in the form
 
-   ``external`` :n:`@qualid` ``: ML type =`` ":n:`@string`".
+   ``external`` :n:`qualid` ``: ML type =`` ":n:`string`".
 
    For example:
 
    .. coqtop:: in
 
-      Require Extraction.
+      From Stdlib Require Extraction.
       Require Stdlib.extraction.ExtrOcamlNatInt.
       Axiom f : nat -> nat -> nat.
       Extract Foreign Constant f => "f_impl".
@@ -463,7 +463,7 @@ OCaml code with C code, the linker needs to know
 
    .. caution::
 
-      * The external function name :n:`@string` is not checked in any way.
+      * The external function name :n:`string` is not checked in any way.
 
       * The user must ensure that the C functions given to realize the axioms have
         the expected or compatible types. In fact, the strings containing realizing
@@ -475,33 +475,33 @@ OCaml code with C code, the linker needs to know
 
    .. exn:: Extract Foreign Constant is supported only for functions.
 
-      This error is thrown if :n:`@qualid` is of sort ``Type`` as external functions only
+      This error is thrown if :n:`qualid` is of sort ``Type`` as external functions only
       work for functions.
 
-   .. exn:: The term @qualid is already defined as inline custom constant.
+   .. exn:: The term qualid is already defined as inline custom constant.
 
-      The :n:`@qualid` was previously used in a
-      :cmd:`Extract Inlined Constant` command. Using :cmd:`Extract Foreign Constant`
-      for :n:`@qualid` would override this command.
+      The :n:`qualid` was previously used in a
+      :cmd:`Extract Inlined Constant qualid` command. Using :cmd:`Extract Foreign Constant qualid`
+      for :n:`qualid` would override this command.
 
-.. cmd:: Extract Callback {? @string } @qualid
+.. cmd:: Extract Callback {? string } qualid
 
-   This command makes sure that after extracting the :term:`constants <constant>`
-   specified by :n:`@qualid`, a constant ML function will be generated that
-   registers :n:`@qualid` as callback, callable by :n:`@string`.
+   This command makes sure that after extracting the constant
+   specified by :n:`qualid`, a constant ML function will be generated that
+   registers :n:`qualid` as callback, callable by :n:`string`.
    This is done by declaring a function
-   ``let _ = Callback.register`` ":n:`@string`" :n:`@qualid`.
+   ``let _ = Callback.register`` ":n:`string`" :n:`qualid`.
 
-   This expression signals OCaml that the given ML function :n:`@qualid` shall be
-   accessible via the alias :n:`@string`, when calling from C/C++.
-   If no alias is specified, it is set to the string representation of :n:`@qualid`.
+   This expression signals OCaml that the given ML function :n:`qualid` shall be
+   accessible via the alias :n:`string`, when calling from C/C++.
+   If no alias is specified, it is set to the string representation of :n:`qualid`.
 
    .. caution::
-      * The optional alias :n:`@string` is currently **not** checked in any way.
+      * The optional alias :n:`string` is currently **not** checked in any way.
 
       * The user must ensure that the callback aliases are
         unique, i.e. when multiple modules expose a callback, the user should make
-        sure that no two :n:`@qualid` share the same alias.
+        sure that no two :n:`qualid` share the same alias.
 
    .. note::
       Using Extract Callback has no impact on the rest of the synthesised code since
@@ -516,7 +516,7 @@ OCaml code with C code, the linker needs to know
 .. cmd:: Print Extraction Foreign
 
    Prints the current set of custom foreign functions
-   declared by the command :cmd:`Extract Foreign Constant` together with its
+   declared by the command :cmd:`Extract Foreign Constant qualid` together with its
    associated foreign ML function name.
 
 .. .. cmd:: Reset Extraction Foreign
@@ -527,20 +527,20 @@ OCaml code with C code, the linker needs to know
 .. cmd:: Print Extraction Callback
 
    Prints the map of callbacks
-   declared by the command :cmd:`Extract Callback`,
-   showing the :token:`qualid` and callback alias
-   :token:`string` (if specified) for each callback.
+   declared by the command ``Extract Callback``,
+   showing the :n:`qualid` and callback alias
+   :n:`string` (if specified) for each callback.
 
 .. cmd:: Reset Extraction Callback
 
    Resets the the map recording the callbacks
-   declared by the command :cmd:`Extract Callback`.
+   declared by the command ``Extract Callback``.
 
 
 Avoiding conflicts with existing filenames
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When using :cmd:`Extraction Library`, the names of the extracted files
+When using :cmd:`Extraction Library ident`, the names of the extracted files
 directly depend on the names of the Coq files. It may happen that
 these filenames are in conflict with already existing files, 
 either in the standard library of the target language or in other
@@ -548,7 +548,7 @@ code that is meant to be linked with the extracted code.
 For instance the module ``List`` exists both in Coq and in OCaml.
 It is possible to instruct the extraction not to use particular filenames.
 
-.. cmd:: Extraction Blacklist {+ @ident }
+.. cmd:: Extraction Blacklist {+ ident }
 
    Instruct the extraction to avoid using these names as filenames
    for extracted code.
@@ -567,15 +567,15 @@ For OCaml, a typical use of these commands is
 Additional settings
 ~~~~~~~~~~~~~~~~~~~
 
-.. opt:: Extraction File Comment @string
+.. opt:: Extraction File Comment string
 
-   This :term:`option` provides a comment that is
+   This option provides a comment that is
    included at the beginning of the output files.
 
-.. opt:: Extraction Flag @natural
+.. opt:: Extraction Flag natural
 
-   This :term:`option` controls which optimizations are used during extraction, providing a finer-grained
-   control than :flag:`Extraction Optimize`.  The bits of :token:`natural` are used as a bit mask.
+   This option controls which optimizations are used during extraction, providing a finer-grained
+   control than ``Extraction Optimize``.  The bits of :n:`natural` are used as a bit mask.
    Keeping an option off keeps the extracted ML more similar to the Coq term.
    Values are:
 
@@ -607,13 +607,13 @@ Additional settings
 
 .. flag:: Extraction TypeExpand
 
-   If this :term:`flag` is set, fully expand Coq types in ML.  See the Coq source code to learn more.
+   If this flag is set, fully expand Coq types in ML.  See the Coq source code to learn more.
 
-.. opt:: Extraction Output Directory @string
+.. opt:: Extraction Output Directory string
 
    Sets the directory where extracted files will be written. If not set,
    files will be written to the directory specified by the command line
-   option :n:`-output-directory`, if set (see :ref:`command-line-options`) and
+   option :n:`-output-directory`, if set and
    otherwise, the current directory.  Use :cmd:`Pwd` to display the current directory.
 
 Differences between Coq and ML type systems
@@ -701,8 +701,8 @@ We can now extract this program to OCaml:
 
 .. coqtop:: reset all
 
-   Require Extraction.
-   Require Import Euclid Wf_nat.
+   From Stdlib Require Extraction.
+   From Stdlib Require Import Euclid Wf_nat.
    Extraction Inline gt_wf_rec lt_wf_rec induction_ltof2.
    Recursive Extraction eucl_dev.
 
@@ -744,7 +744,7 @@ It is easier to test on OCaml integers::
    - : int * int = (11, 8)
 
 Note that these ``nat_of_int`` and ``int_of_nat`` are now
-available via a mere ``Require Import ExtrOcamlIntConv`` and then
+available via a mere ``From Stdlib Require Import ExtrOcamlIntConv`` and then
 adding these functions to the list of functions to extract. This file
 ``ExtrOcamlIntConv.v`` and some others in ``plugins/extraction/``
 are meant to help building concrete program via extraction.

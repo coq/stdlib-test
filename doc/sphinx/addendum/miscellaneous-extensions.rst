@@ -7,29 +7,29 @@ of program refinements. To use the Derive extension it must first be
 required with ``Require Stdlib.derive.Derive``. When the extension is loaded,
 it provides the following command:
 
-.. cmd:: Derive @ident__1 SuchThat @one_term As @ident__2
+.. cmd:: Derive ident__1 SuchThat one_term As ident__2
 
-   :n:`@ident__1` can appear in :n:`@one_term`. This command opens a new proof
-   presenting the user with a goal for :n:`@one_term` in which the name :n:`@ident__1` is
+   :n:`ident__1` can appear in :n:`one_term`. This command opens a new proof
+   presenting the user with a goal for :n:`one_term` in which the name :n:`ident__1` is
    bound to an existential variable :g:`?x` (formally, there are other goals
    standing for the existential variables but they are shelved, as
-   described in :tacn:`shelve`).
+   described in ``shelve``).
 
-   When the proof ends two :term:`constants <constant>` are defined:
+   When the proof ends two constants are defined:
 
-   + The first one is named :n:`@ident__1` and is defined as the proof of the
+   + The first one is named :n:`ident__1` and is defined as the proof of the
      shelved goal (which is also the value of :g:`?x`). It is always
      transparent.
-   + The second one is named :n:`@ident__2`. It has type :n:`@type`, and its :term:`body` is
+   + The second one is named :n:`ident__2`. It has type :n:`type`, and its body is
      the proof of the initially visible goal. It is opaque if the proof
-     ends with :cmd:`Qed`, and transparent if the proof ends with :cmd:`Defined`.
+     ends with ``Qed``, and transparent if the proof ends with ``Defined``.
 
 .. example::
 
   .. coqtop:: all
 
      Require Stdlib.derive.Derive.
-     Require Import PeanoNat.
+     From Stdlib Require Import PeanoNat.
 
      Section P.
 
