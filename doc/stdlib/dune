@@ -14,7 +14,7 @@
 (rule
   (targets (dir html))
   (alias stdlib-html)
-  (package coq-doc)
+  (package coq-stdlib-doc)
   (deps
    ; This will be replaced soon by `theories/**/*.v` soon, thanks to rgrinberg
    (source_tree %{project_root}/theories)
