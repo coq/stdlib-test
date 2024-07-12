@@ -368,7 +368,7 @@ through the <tt>Require Import</tt> command.</p>
   </dd>
 
   <dt> <b>Streams</b>:
-    Streams (infinite sequences)
+    Streams (infinite sequences) in namespace Stdlib.Streams.
   </dt>
   <dd>
     theories/Streams/Streams.v
