@@ -358,6 +358,7 @@ Reals/Rpow_def.v
 Reals/Rlogic.v
 Reals/SeqProp.v
 Reals/Qreals.v
+Reals/Nsatz.v
 Relations/Relation_Operators.v
 Relations/Operators_Properties.v
 Relations/Relations.v
@@ -501,7 +502,6 @@ Wellfounded/Inverse_Image.v
 Wellfounded/Disjoint_Union.v
 Wellfounded/Lexicographic_Product.v
 Wellfounded/Lexicographic_Exponentiation.v
-nsatz/Nsatz.v
 nsatz/NsatzTactic.v
 
 -Q Arith Stdlib.Arith
