@@ -216,11 +216,11 @@ omega/PreOmega.v
 Unicode/Utf8_core.v
 Unicode/Utf8.v
 Lists/ListDec.v
-Lists/Streams.v
 Lists/List.v
-Lists/StreamMemo.v
 Lists/ListSet.v
 Lists/ListTactics.v
+Streams/Streams.v
+Streams/StreamMemo.v
 micromega/ZifyN.v
 micromega/QMicromega.v
 micromega/MExtraction.v
@@ -523,6 +523,7 @@ nsatz/NsatzTactic.v
 -Q Relations Stdlib.Relations
 -Q Sets Stdlib.Sets
 -Q Sorting Stdlib.Sorting
+-Q Streams Stdlib.Streams
 -Q Strings Stdlib.Strings
 -Q Structures Stdlib.Structures
 -Q Unicode Stdlib.Unicode

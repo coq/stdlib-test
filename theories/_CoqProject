@@ -17,6 +17,7 @@
 -Q Relations Stdlib.Relations
 -Q Sets Stdlib.Sets
 -Q Sorting Stdlib.Sorting
+-Q Streams Stdlib.Streams
 -Q Strings Stdlib.Strings
 -Q Structures Stdlib.Structures
 -Q Unicode Stdlib.Unicode
