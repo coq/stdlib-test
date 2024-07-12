@@ -61,7 +61,6 @@ theories/micromega/ZifyClasses.v
 theories/micromega/ZifyPow.v
 theories/micromega/Zify.v
 theories/nsatz/NsatzTactic.v
-theories/nsatz/Nsatz.v
 theories/omega/OmegaLemmas.v
 theories/omega/PreOmega.v
 theories/quote/Quote.v
@@ -98,6 +97,7 @@ theories/ssr/ssrsetoid.v
 theories/Reals/Cauchy/ConstructiveExtra.v
 theories/Reals/Cauchy/PosExtra.v
 theories/Reals/Cauchy/QExtra.v
+theories/Reals/Nsatz.v
 theories/Numbers/Natural/Binary/NBinary.v
 theories/Numbers/Integer/Binary/ZBinary.v
 theories/Numbers/Integer/NatPairs/ZNatPairs.v
