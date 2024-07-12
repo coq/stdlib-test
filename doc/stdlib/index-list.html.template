@@ -615,24 +615,10 @@ through the <tt>Require Import</tt> command.</p>
   </dl>
   </dd>
 
-  <dt> <b>Wellfounded</b>:
-       Well-founded Relations
-  </dt>
-  <dd>
-    theories/Wellfounded/Disjoint_Union.v
-    theories/Wellfounded/Inclusion.v
-    theories/Wellfounded/Inverse_Image.v
-    theories/Wellfounded/Lexicographic_Exponentiation.v
-    theories/Wellfounded/Lexicographic_Product.v
-    theories/Wellfounded/Transitive_Closure.v
-    theories/Wellfounded/Union.v
-    theories/Wellfounded/Wellfounded.v
-    theories/Wellfounded/Well_Ordering.v
-  </dd>
-
   <dt> <b>MSets</b>:
     Modular implementation of finite sets using lists or
     efficient trees. This is a modernization of FSets.
+    Namespace Stdlib.MSets.
   </dt>
   <dd>
     theories/MSets/MSetInterface.v
@@ -653,7 +639,7 @@ through the <tt>Require Import</tt> command.</p>
   <dt> <b>FSets</b>:
     Modular implementation of finite sets/maps using lists or
     efficient trees. For sets, please consider the more
-    modern MSets.
+    modern MSets. Namespace Stdlib.FSets.
   </dt>
   <dd>
     theories/FSets/FSetInterface.v
@@ -677,6 +663,21 @@ through the <tt>Require Import</tt> command.</p>
     (theories/FSets/FMaps.v)
     theories/FSets/FMapAVL.v
     theories/FSets/FMapFullAVL.v
+  </dd>
+
+  <dt> <b>Wellfounded</b>:
+       Well-founded Relations
+  </dt>
+  <dd>
+    theories/Wellfounded/Disjoint_Union.v
+    theories/Wellfounded/Inclusion.v
+    theories/Wellfounded/Inverse_Image.v
+    theories/Wellfounded/Lexicographic_Exponentiation.v
+    theories/Wellfounded/Lexicographic_Product.v
+    theories/Wellfounded/Transitive_Closure.v
+    theories/Wellfounded/Union.v
+    theories/Wellfounded/Wellfounded.v
+    theories/Wellfounded/Well_Ordering.v
   </dd>
 
   <dt> <b>Compat</b>:
