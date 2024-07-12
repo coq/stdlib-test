@@ -44,7 +44,8 @@
 -Q ZArith/Ring Stdlib.ZArith.Ring.Stdlib.ZArith
 -Q btauto Stdlib.btauto
 -Q derive Stdlib.derive
--Q extraction Stdlib.extraction
+-Q extraction/All Stdlib.extraction.All.Stdlib.extraction
+-Q extraction/Base Stdlib.extraction.Base.Stdlib.extraction
 -Q funind Stdlib.funind
 -Q micromega/Int63 Stdlib.micromega.Int63.Stdlib.micromega
 -Q micromega/Lia Stdlib.micromega.Lia.Stdlib.micromega

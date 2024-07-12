@@ -252,28 +252,28 @@ micromega/Zify/ZifyInst.v
 micromega/Lia/Ztac.v
 micromega/Lia/ZCoeff.v
 micromega/Lia/RingMicromega.v
-extraction/Extraction.v
-extraction/ExtrHaskellZInteger.v
-extraction/ExtrHaskellZInt.v
-extraction/ExtrHaskellNatNum.v
-extraction/ExtrHaskellString.v
-extraction/ExtrOcamlZInt.v
-extraction/ExtrOcamlNativeString.v
-extraction/ExtrOCamlFloats.v
-extraction/ExtrOcamlNatBigInt.v
-extraction/ExtrOcamlZBigInt.v
-extraction/ExtrOcamlNatInt.v
-extraction/ExtrHaskellNatInt.v
-extraction/ExtrOcamlString.v
-extraction/ExtrOCamlPString.v
-extraction/ExtrHaskellZNum.v
-extraction/ExtrOcamlChar.v
-extraction/ExtrOCamlPArray.v
-extraction/ExtrOcamlBasic.v
-extraction/ExtrOcamlIntConv.v
-extraction/ExtrOCamlInt63.v
-extraction/ExtrHaskellBasic.v
-extraction/ExtrHaskellNatInteger.v
+extraction/Base/Extraction.v
+extraction/All/ExtrHaskellZInteger.v
+extraction/All/ExtrHaskellZInt.v
+extraction/All/ExtrHaskellNatNum.v
+extraction/All/ExtrHaskellString.v
+extraction/All/ExtrOcamlZInt.v
+extraction/All/ExtrOcamlNativeString.v
+extraction/All/ExtrOCamlFloats.v
+extraction/All/ExtrOcamlNatBigInt.v
+extraction/All/ExtrOcamlZBigInt.v
+extraction/All/ExtrOcamlNatInt.v
+extraction/All/ExtrHaskellNatInt.v
+extraction/All/ExtrOcamlString.v
+extraction/All/ExtrOCamlPString.v
+extraction/All/ExtrHaskellZNum.v
+extraction/All/ExtrOcamlChar.v
+extraction/All/ExtrOCamlPArray.v
+extraction/All/ExtrOcamlBasic.v
+extraction/All/ExtrOcamlIntConv.v
+extraction/All/ExtrOCamlInt63.v
+extraction/All/ExtrHaskellBasic.v
+extraction/All/ExtrHaskellNatInteger.v
 Reals/Rtrigo_facts.v
 Reals/Ranalysis2.v
 Reals/Rbase.v
@@ -549,7 +549,8 @@ nsatz/NsatzTactic.v
 -Q ZArith/Ring Stdlib.ZArith.Ring.Stdlib.ZArith
 -Q btauto Stdlib.btauto
 -Q derive Stdlib.derive
--Q extraction Stdlib.extraction
+-Q extraction/All Stdlib.extraction.All.Stdlib.extraction
+-Q extraction/Base Stdlib.extraction.Base.Stdlib.extraction
 -Q funind Stdlib.funind
 -Q micromega/Int63 Stdlib.micromega.Int63.Stdlib.micromega
 -Q micromega/Lia Stdlib.micromega.Lia.Stdlib.micromega

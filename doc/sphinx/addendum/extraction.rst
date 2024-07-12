@@ -453,7 +453,7 @@ OCaml code with C code, the linker needs to know
    .. coqtop:: in
 
       From Stdlib Require Extraction.
-      Require Stdlib.extraction.ExtrOcamlNatInt.
+      From Stdlib Require ExtrOcamlNatInt.
       Axiom f : nat -> nat -> nat.
       Extract Foreign Constant f => "f_impl".
 
