@@ -1,6 +1,6 @@
 (* @eladrion's example for issue #18212 *)
 
-From Stdlib Require Extraction.
+Require TestSuite.extraction.
 
 (* Define an axiomatic function. *)
 Axiom ax_fun : nat -> nat.

@@ -1,6 +1,6 @@
 (** Extraction : tests of optimizations of pattern matching *)
 
-Require Stdlib.extraction.Extraction.
+Require TestSuite.extraction.
 
 (** First, a few basic tests *)
 

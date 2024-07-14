@@ -1,6 +1,6 @@
 
-Require Extraction.
-Require Import List.
+Require TestSuite.extraction.
+Require Import ListDef.
 
 Section Test.
 Variable A : Type.

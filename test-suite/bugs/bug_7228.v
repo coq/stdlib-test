@@ -1,4 +1,4 @@
-Require Extraction.
+Require TestSuite.extraction.
 Set Extraction Conservative Types.
 
 Inductive data := Data : forall (T:Type), T -> data.

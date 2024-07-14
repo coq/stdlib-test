@@ -1,4 +1,4 @@
-Require Extraction.
+Require TestSuite.extraction.
 
 Extraction Language OCaml.
 Set Extraction KeepSingleton.

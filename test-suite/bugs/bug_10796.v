@@ -1,4 +1,4 @@
-Require Extraction.
+Require TestSuite.extraction.
 
 Module Example.
 

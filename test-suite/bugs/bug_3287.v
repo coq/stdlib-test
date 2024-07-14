@@ -1,4 +1,4 @@
-Require Stdlib.extraction.Extraction.
+Require TestSuite.extraction.
 
 Module Foo.
 (* Definition foo := (I,I). *)

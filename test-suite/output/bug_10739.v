@@ -1,4 +1,4 @@
-Require Extraction.
+Require TestSuite.extraction.
 
 Definition f := 0.
 Module M.

@@ -1,4 +1,4 @@
-Require Extraction.
+Require TestSuite.extraction.
 
 Inductive t (sig: list nat) :=
 | T (k: nat).

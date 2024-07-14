@@ -1,4 +1,4 @@
-From Stdlib Require Import Extraction.
+Require Import TestSuite.extraction.
 
 Set Warnings "-extraction-inside-module".
 

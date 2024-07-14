@@ -1,4 +1,4 @@
-From Stdlib Require Extraction.
+Require TestSuite.extraction.
 
 (** Testing extraction of stdlib Empty_set *)
 

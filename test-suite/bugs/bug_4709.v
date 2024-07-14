@@ -2,7 +2,7 @@
 (** Bug 4709 https://coq.inria.fr/bug/4709
     Extraction wasn't reducing primitive projections in types. *)
 
-Require Extraction.
+Require TestSuite.extraction.
 
 Set Primitive Projections.
 

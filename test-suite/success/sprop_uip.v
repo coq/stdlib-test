@@ -149,6 +149,6 @@ Module HoTTStyle.
 End HoTTStyle.
 
 (* check that extraction doesn't fall apart on matches with special reduction *)
-Require Extraction.
+Require TestSuite.extraction.
 
 Extraction seq_rect.

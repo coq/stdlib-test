@@ -1,6 +1,6 @@
 (* @herbelin's example for issue #6212 *)
 
-Require Import Extraction.
+Require Import TestSuite.extraction.
 Inductive I := C : bool -> bool -> I.
 Definition test := C true false.
 

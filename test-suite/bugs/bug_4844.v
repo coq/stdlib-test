@@ -35,7 +35,7 @@ Inductive box (t : SomeType) := Box : ST t + ST t -> box t.
 Definition boxed_semilogic : box SomeTrue :=
  Box SomeTrue semilogic.
 
-Require Extraction.
+Require TestSuite.extraction.
 Extraction Language Haskell.
 Recursive Extraction semilogic' boxed_semilogic.
 (* Warning! To fully check that this bug is still closed,

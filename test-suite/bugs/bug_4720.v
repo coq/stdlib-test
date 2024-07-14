@@ -37,7 +37,7 @@ End WithModPriv.
    were all causing Anomaly or Assert Failure. This should be fixed now.
 *)
 
-Require Extraction.
+Require TestSuite.extraction.
 
 Recursive Extraction WithMod.
 

@@ -1,5 +1,5 @@
-From Stdlib Require BinNat.
-From Stdlib Require Extraction.
+From Stdlib Require NatDef.
+Require TestSuite.extraction.
 
 (* Define axiomatic functions. *)
 Axiom ax_fun : nat -> nat.

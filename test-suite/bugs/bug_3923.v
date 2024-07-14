@@ -1,4 +1,4 @@
-Require Stdlib.extraction.Extraction.
+Require TestSuite.extraction.
 
 Module Type TRIVIAL.
 Parameter t:Type.

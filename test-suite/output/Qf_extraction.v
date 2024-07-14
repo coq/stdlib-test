@@ -1,4 +1,4 @@
-Require Import Extraction.
+Require Import TestSuite.extraction.
 
 Module nat. End nat.
 

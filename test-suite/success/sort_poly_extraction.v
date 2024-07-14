@@ -1,4 +1,4 @@
-Require Extraction.
+Require TestSuite.extraction.
 
 Set Universe Polymorphism.
 Definition foo@{s| |} := tt.

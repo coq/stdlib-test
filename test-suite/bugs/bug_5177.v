@@ -17,6 +17,6 @@ Module MakeA(MT: T): A MT with Definition t1 := nat.
   Definition bar (m: MT.t) (x:t1) := x.
 End MakeA.
 
-Require Extraction.
+Require TestSuite.extraction.
 Recursive Extraction MakeA.
 Extraction TestCompile MakeA.

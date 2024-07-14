@@ -1,6 +1,6 @@
 (** Miscellaneous tests on the ocaml extraction *)
 
-Require Import Extraction.
+Require Import TestSuite.extraction.
 Extraction Language OCaml.
 
 (** Extraction at toplevel *)

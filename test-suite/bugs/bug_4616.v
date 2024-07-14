@@ -1,4 +1,4 @@
-Require Stdlib.extraction.Extraction.
+Require TestSuite.extraction.
 
 Set Primitive Projections.
 Record Foo' := Foo { foo : Type }.
