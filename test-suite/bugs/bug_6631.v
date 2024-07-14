@@ -1,4 +1,4 @@
-Require Import Stdlib.derive.Derive.
+Require Import TestSuite.derive.
 
 Derive f SuchThat (f = 1 + 1) As feq.
 Proof.

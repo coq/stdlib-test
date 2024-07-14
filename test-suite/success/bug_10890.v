@@ -1,4 +1,4 @@
-Require Import Derive.
+Require Import TestSuite.derive.
 
 Derive foo SuchThat (foo = foo :> nat) As bar.
 Proof.
