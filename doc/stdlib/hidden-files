@@ -37,7 +37,6 @@ theories/micromega/Fourier_util.v
 theories/micromega/Lia.v
 theories/micromega/Lqa.v
 theories/micromega/Lra.v
-theories/micromega/MExtraction.v
 theories/micromega/OrderedRing.v
 theories/micromega/Psatz.v
 theories/micromega/QMicromega.v

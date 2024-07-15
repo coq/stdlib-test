@@ -223,7 +223,6 @@ Streams/Streams.v
 Streams/StreamMemo.v
 micromega/ZifyN.v
 micromega/QMicromega.v
-micromega/MExtraction.v
 micromega/ZifyComparison.v
 micromega/Lra.v
 micromega/OrderedRing.v
