@@ -2,7 +2,7 @@ Require Import Program.
 
 Require Import Stdlib.Strings.String.
 Require Import Stdlib.Strings.Ascii.
-Require Import Stdlib.Numbers.BinNums.
+Require Import Stdlib.BinNums.BinNums.
 
 Set Implicit Arguments.
 Set Strict Implicit.
