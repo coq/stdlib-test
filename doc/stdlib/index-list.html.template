@@ -40,6 +40,7 @@ through the <tt>Require Import</tt> command.</p>
 
   <dt> <b>Program</b>:
     Support for dependently-typed programming in namespace Stdlib.Program.
+    Beware that there are also Tactics.v and Wf.v files in Init.
   </dt>
   <dd>
     theories/Program/All/Subset.v
@@ -359,6 +360,7 @@ through the <tt>Require Import</tt> command.</p>
   <dt> <b>Strings</b>
     Implementation of string as list of ASCII characters,
     in namespace Stdlib.Strings.
+    Beware that there is also a Byte.v file in Init.
   </dt>
   <dd>
     theories/Strings/Byte.v
