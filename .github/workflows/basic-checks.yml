@@ -12,3 +12,5 @@ jobs:
       uses: actions/checkout@v4
     - name: Check consistency of files in Makefiles
       run: dev/tools/check-make-sync.sh
+    - name: Check for duplicate files
+      run: dev/tools/check-duplicate-files.sh
