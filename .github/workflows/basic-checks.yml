@@ -1,0 +1,14 @@
+name: Basic checks
+on:
+  pull_request:
+  push:
+    branches:
+    - master
+jobs:
+  basic-checks:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Check consistency of files in Makefiles
+      run: dev/tools/check-make-sync.sh
