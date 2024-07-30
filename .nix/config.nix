@@ -200,6 +200,7 @@ with builtins; with (import <nixpkgs> {}).lib;
       stdlib-html.job = true;
       stdlib-refman-html.job = true;
       stdlib-test.job = true;
+      stdlib-subcomponents.job = true;
       coq-elpi.override.version = "proux01:stdlib_repo";
       coq-elpi-test.override.version = "proux01:stdlib_repo";
       metacoq.override.version = "proux01:stdlib_repo";
