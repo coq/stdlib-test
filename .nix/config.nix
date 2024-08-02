@@ -198,6 +198,8 @@ with builtins; with (import <nixpkgs> {}).lib;
     // { fiat-crypto-legacy.override.version = "sp2019latest";
          tlc.override.version = "master-for-coq-ci";
          smtcoq-trakt.override.version = "with-trakt-coq-master";
+    } // {
+      stdlib-test.job = true;
     };
   in {
     "coq-master".coqPackages = common-bundles // {
