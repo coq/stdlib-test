@@ -1,7 +1,0 @@
-(library
- (name derive_plugin)
- (public_name coq-core.plugins.derive)
- (synopsis "Coq's derive plugin")
- (libraries coq-core.vernac))
-
-(coq.pp (modules g_derive))

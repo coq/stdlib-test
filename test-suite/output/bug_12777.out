@@ -1,3 +1,0 @@
-Notation tt' := tt
-
-Inductive unit : Set :=  tt : unit.

@@ -1,2 +1,0 @@
-Lemma foo: True.
-Proof.
