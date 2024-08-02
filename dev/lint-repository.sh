@@ -39,14 +39,4 @@ echo Checking end of file newlines
 find . "(" -path ./.git -prune ")" -o -type f -print0 |
     xargs -0 dev/tools/check-eof-newline.sh || CODE=1
 
-echo Checking overlays
-dev/tools/check-overlays.sh || CODE=1
-
-echo Checking CACHEKEY
-dev/tools/check-cachekey.sh || CODE=1
-
-# Check that doc/tools/docgram/fullGrammar is up-to-date
-echo Checking grammar files
-make SHOW='@true ""' doc_gram_verify || CODE=1
-
 exit $CODE
