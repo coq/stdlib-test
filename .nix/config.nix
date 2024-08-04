@@ -197,6 +197,7 @@ with builtins; with (import <nixpkgs> {}).lib;
          tlc.override.version = "master-for-coq-ci";
          smtcoq-trakt.override.version = "with-trakt-coq-master";
     } // {
+      stdlib-html.job = true;
       stdlib-refman-html.job = true;
       stdlib-test.job = true;
       coq-elpi.override.version = "proux01:stdlib_repo";
