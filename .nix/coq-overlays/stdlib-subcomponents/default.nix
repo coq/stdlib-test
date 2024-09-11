@@ -1,7 +1,7 @@
 # CI job to test that we don't break the subcomponent structure of the stdlib,
 # as described in the graph doc/stdlib/depends
 
-{ stdlib }:
+{ stdlib, coqPackages }:
 
 let
   # stdlib subcomponents with their dependencies
@@ -54,7 +54,7 @@ let
   stdlib_ = component: let
     pname = "stdlib-${component}";
     stdlib-deps = map stdlib_ components.${component};
-    in stdlib.overrideAttrs ({
+    in coqPackages.lib.overrideCoqDerivation ({
       inherit pname;
       propagatedBuildInputs = stdlib-deps;
     } // (if component != "all" then {
@@ -67,5 +67,5 @@ let
       installPhase = ''
         echo "nothing left to install"
       '';
-    }));
+    })) stdlib;
 in stdlib_ "all"

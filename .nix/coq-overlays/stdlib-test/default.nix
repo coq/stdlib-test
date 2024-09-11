@@ -1,6 +1,9 @@
-{ rsync, coq, stdlib }:
+{ rsync, coq, stdlib, coqPackages }:
 
-stdlib.overrideAttrs {
+coqPackages.lib.overrideCoqDerivation {
+
+  pname = "stdlib-test";
+
   propagatedBuildInputs = [ rsync stdlib ]
     ++ (with coq.ocamlPackages; [ ocaml findlib zarith ]);
 
@@ -11,4 +14,4 @@ stdlib.overrideAttrs {
   installPhase = ''
     echo "nothing to install"
   '';
-}
+} stdlib

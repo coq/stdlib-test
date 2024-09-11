@@ -5537,7 +5537,8 @@ jobs:
       run: NIXPKGS_ALLOW_UNFREE=1 nix-build --no-out-link --argstr bundle "coq-master"
         --argstr job "stdlib"
   stdlib-html:
-    needs: []
+    needs:
+    - coq
     runs-on: ubuntu-latest
     steps:
     - name: Determine which commit to initially checkout
@@ -5580,11 +5581,17 @@ jobs:
         \ > /dev/null)\necho $nb_dry_run\necho status=$(echo $nb_dry_run | grep \"\
         built:\" | sed \"s/.*/built/\") >> $GITHUB_OUTPUT\n"
     - if: steps.stepCheck.outputs.status == 'built'
+      name: 'Building/fetching previous CI target: coq'
+      run: NIXPKGS_ALLOW_UNFREE=1 nix-build --no-out-link --argstr bundle "coq-master"
+        --argstr job "coq"
+    - if: steps.stepCheck.outputs.status == 'built'
       name: Building/fetching current CI target
       run: NIXPKGS_ALLOW_UNFREE=1 nix-build --no-out-link --argstr bundle "coq-master"
         --argstr job "stdlib-html"
   stdlib-refman-html:
-    needs: []
+    needs:
+    - coq
+    - stdlib
     runs-on: ubuntu-latest
     steps:
     - name: Determine which commit to initially checkout
@@ -5627,11 +5634,20 @@ jobs:
         \ 2>&1 > /dev/null)\necho $nb_dry_run\necho status=$(echo $nb_dry_run | grep\
         \ \"built:\" | sed \"s/.*/built/\") >> $GITHUB_OUTPUT\n"
     - if: steps.stepCheck.outputs.status == 'built'
+      name: 'Building/fetching previous CI target: coq'
+      run: NIXPKGS_ALLOW_UNFREE=1 nix-build --no-out-link --argstr bundle "coq-master"
+        --argstr job "coq"
+    - if: steps.stepCheck.outputs.status == 'built'
+      name: 'Building/fetching previous CI target: stdlib'
+      run: NIXPKGS_ALLOW_UNFREE=1 nix-build --no-out-link --argstr bundle "coq-master"
+        --argstr job "stdlib"
+    - if: steps.stepCheck.outputs.status == 'built'
       name: Building/fetching current CI target
       run: NIXPKGS_ALLOW_UNFREE=1 nix-build --no-out-link --argstr bundle "coq-master"
         --argstr job "stdlib-refman-html"
   stdlib-subcomponents:
-    needs: []
+    needs:
+    - coq
     runs-on: ubuntu-latest
     steps:
     - name: Determine which commit to initially checkout
@@ -5674,11 +5690,17 @@ jobs:
         \ 2>&1 > /dev/null)\necho $nb_dry_run\necho status=$(echo $nb_dry_run | grep\
         \ \"built:\" | sed \"s/.*/built/\") >> $GITHUB_OUTPUT\n"
     - if: steps.stepCheck.outputs.status == 'built'
+      name: 'Building/fetching previous CI target: coq'
+      run: NIXPKGS_ALLOW_UNFREE=1 nix-build --no-out-link --argstr bundle "coq-master"
+        --argstr job "coq"
+    - if: steps.stepCheck.outputs.status == 'built'
       name: Building/fetching current CI target
       run: NIXPKGS_ALLOW_UNFREE=1 nix-build --no-out-link --argstr bundle "coq-master"
         --argstr job "stdlib-subcomponents"
   stdlib-test:
-    needs: []
+    needs:
+    - coq
+    - stdlib
     runs-on: ubuntu-latest
     steps:
     - name: Determine which commit to initially checkout
@@ -5720,6 +5742,14 @@ jobs:
         \ bundle \"coq-master\" --argstr job \"stdlib-test\" \\\n   --dry-run 2>&1\
         \ > /dev/null)\necho $nb_dry_run\necho status=$(echo $nb_dry_run | grep \"\
         built:\" | sed \"s/.*/built/\") >> $GITHUB_OUTPUT\n"
+    - if: steps.stepCheck.outputs.status == 'built'
+      name: 'Building/fetching previous CI target: coq'
+      run: NIXPKGS_ALLOW_UNFREE=1 nix-build --no-out-link --argstr bundle "coq-master"
+        --argstr job "coq"
+    - if: steps.stepCheck.outputs.status == 'built'
+      name: 'Building/fetching previous CI target: stdlib'
+      run: NIXPKGS_ALLOW_UNFREE=1 nix-build --no-out-link --argstr bundle "coq-master"
+        --argstr job "stdlib"
     - if: steps.stepCheck.outputs.status == 'built'
       name: Building/fetching current CI target
       run: NIXPKGS_ALLOW_UNFREE=1 nix-build --no-out-link --argstr bundle "coq-master"

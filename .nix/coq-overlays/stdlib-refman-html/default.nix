@@ -1,7 +1,9 @@
-{ antlr4_9, python311, coq, stdlib }:
+{ antlr4_9, python311, coq, stdlib, coqPackages }:
 
-stdlib.overrideAttrs (o: {
-  buildInputs = o.buildInputs ++ [ coq.ocamlPackages.ocaml coq.ocamlPackages.dune_3 stdlib ]
+coqPackages.lib.overrideCoqDerivation {
+  pname = "stdlib-refman-html";
+
+  overrideBuildInputs = stdlib.buildInputs ++ [ coq.ocamlPackages.ocaml coq.ocamlPackages.dune_3 stdlib ]
   ++ [
     # Sphinx doc dependencies
     (python311.withPackages
@@ -16,4 +18,4 @@ stdlib.overrideAttrs (o: {
     echo "nothing to install"
     touch $out
   '';
-})
+} stdlib
