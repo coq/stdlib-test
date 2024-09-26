@@ -353,15 +353,21 @@ through the <tt>Require Import</tt> command.</p>
   </dd>
 
   <dt> <b>Lists</b>:
-    Polymorphic lists, Streams (infinite sequences)
+    Polymorphic lists
   </dt>
   <dd>
     theories/Lists/List.v
     theories/Lists/ListDec.v
     theories/Lists/ListSet.v
-    theories/Lists/Streams.v
-    theories/Lists/StreamMemo.v
     theories/Lists/ListTactics.v
+  </dd>
+
+  <dt> <b>Streams</b>:
+    Streams (infinite sequences)
+  </dt>
+  <dd>
+    theories/Streams/Streams.v
+    theories/Streams/StreamMemo.v
   </dd>
 
   <dt> <b>Vectors</b>:
