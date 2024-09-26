@@ -1,6 +1,9 @@
 #!/bin/sh
 
 TO_FLATTEN="\
+  Classes/All \
+  Classes/Arith \
+  Classes/Lists \
   Logic/Base \
   Logic/Classical \
   Logic/Lists \

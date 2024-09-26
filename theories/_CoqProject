@@ -1,7 +1,9 @@
 -Q Arith Stdlib.Arith
 -Q Array Stdlib.Array
 -Q Bool Stdlib.Bool
--Q Classes Stdlib.Classes
+-Q Classes/All Stdlib.Classes
+-Q Classes/Arith Stdlib.Classes
+-Q Classes/Lists Stdlib.Classes
 -Q FSets Stdlib.FSets
 -Q Floats Stdlib.Floats
 -Q Lists Stdlib.Lists

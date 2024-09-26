@@ -105,6 +105,7 @@ through the <tt>Require Import</tt> command.</p>
     theories/Arith/Wf_nat.v
     theories/Arith/Cantor.v
     theories/Arith/Zerob.v
+    theories/Classes/SetoidDec.v
   </dd>
 
   <dt> <b>PArith</b>:
@@ -350,9 +351,7 @@ through the <tt>Require Import</tt> command.</p>
   <dd>
     theories/Classes/Morphisms_Relations.v
     theories/Classes/CEquivalence.v
-    theories/Classes/EquivDec.v
     theories/Classes/SetoidClass.v
-    theories/Classes/SetoidDec.v
     theories/Classes/RelationPairs.v
     theories/Classes/DecidableClass.v
   </dd>
@@ -366,6 +365,7 @@ through the <tt>Require Import</tt> command.</p>
     theories/Lists/ListSet.v
     theories/Lists/ListTactics.v
     theories/Logic/WKL.v
+    theories/Classes/EquivDec.v
   </dd>
 
   <dt> <b>Streams</b>:
