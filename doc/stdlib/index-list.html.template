@@ -11,7 +11,8 @@ through the <tt>Require Import</tt> command.</p>
 
 <dl>
   <dt> <b>Logic</b>:
-      Logic, dependent equality, extensionality, choice axioms
+    Logic, dependent equality, extensionality, choice axioms.
+    Look at classical-logic for more elaborate results.
   </dt>
   <dd>
     theories/Logic/SetIsType.v
