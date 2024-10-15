@@ -1,6 +1,0 @@
-
-default:
-  interruptible: false
-  timeout: 1h
-  tags:
-    - not-a-real-tag

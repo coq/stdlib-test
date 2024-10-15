@@ -1,5 +1,0 @@
-(library
- (name gramlib)
- (public_name coq-core.gramlib)
- (modules_without_implementation plexing)
- (libraries coq-core.lib))
