@@ -1,7 +1,0 @@
-META.coq-test-suite
--Q theories Quotation
--I src
-
-src/quotation.mlg
-src/quotation_plugin.mlpack
-theories/quotation.v

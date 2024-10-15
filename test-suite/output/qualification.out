@@ -1,7 +1,0 @@
-File "./output/qualification.v", line 20, characters 0-7:
-Error: Signature components for field test do not match: expected type
-"qualification.M2.t = qualification.M2.M.t" but found type
-"qualification.M2.t = qualification.M2.t".
-
-
-coqc exited with code 1

@@ -1,2 +1,0 @@
-forall f : nat -> Type, f x where x : nat := 1
-     : Type

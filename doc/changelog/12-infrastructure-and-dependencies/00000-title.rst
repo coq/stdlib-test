@@ -1,4 +1,0 @@
-
-Infrastructure and dependencies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
