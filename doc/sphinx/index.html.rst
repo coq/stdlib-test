@@ -19,6 +19,7 @@ Contents
 .. toctree::
    :caption: Appendix
 
+   changes
    zebibliography
 
 .. include:: license.rst
