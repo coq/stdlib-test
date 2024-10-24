@@ -8,14 +8,14 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Rbase.
-Require Import Ranalysis_reg.
-Require Import Rfunctions.
-Require Import Rseries.
-Require Import RiemannInt.
-Require Import SeqProp.
-Require Import Lia.
-Require Import Lra.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import Ranalysis_reg.
+From Stdlib Require Import Rfunctions.
+From Stdlib Require Import Rseries.
+From Stdlib Require Import RiemannInt.
+From Stdlib Require Import SeqProp.
+From Stdlib Require Import Lia.
+From Stdlib Require Import Lra.
 Local Open Scope R_scope.
 
 Local Ltac Tauto.intuition_solver ::= auto with rorders real.

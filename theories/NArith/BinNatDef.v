@@ -8,9 +8,9 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export BinNums.
-Require Import BinPos.
-Require Export BinNums.NatDef.
+From Stdlib Require Export BinNums.
+From Stdlib Require Import BinPos.
+From Stdlib Require Export BinNums.NatDef.
 
 Local Open Scope N_scope.
 

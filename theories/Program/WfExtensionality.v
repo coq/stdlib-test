@@ -10,9 +10,9 @@
 (** Reformulation of the Wf module using subsets where possible, providing
    the support for [Program]'s treatment of well-founded definitions. *)
 
-Require Import Stdlib.Init.Wf.
-Require Import Stdlib.Program.Utils.
-Require Import Stdlib.Program.Wf.
+From Stdlib.Init Require Import Wf.
+From Stdlib.Program Require Import Utils.
+From Stdlib.Program Require Import Wf.
 
 Local Open Scope program_scope.
 

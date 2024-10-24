@@ -14,12 +14,12 @@
    This file also contains the proof that classical reals are a
    quotient of constructive Cauchy reals. *)
 
-Require Export ZArith_base.
-Require Import QArith_base.
-Require Import ConstructiveCauchyReals.
-Require Import ConstructiveCauchyRealsMult.
-Require Import ConstructiveRcomplete.
-Require Import ClassicalDedekindReals.
+From Stdlib Require Export ZArith_base.
+From Stdlib Require Import QArith_base.
+From Stdlib Require Import ConstructiveCauchyReals.
+From Stdlib Require Import ConstructiveCauchyRealsMult.
+From Stdlib Require Import ConstructiveRcomplete.
+From Stdlib Require Import ClassicalDedekindReals.
 
 
 (* Declare primitive number notations for Scope R_scope *)

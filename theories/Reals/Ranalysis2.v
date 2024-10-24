@@ -8,10 +8,10 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Rbase.
-Require Import Rfunctions.
-Require Import Ranalysis1.
-Require Import Lra.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import Rfunctions.
+From Stdlib Require Import Ranalysis1.
+From Stdlib Require Import Lra.
 Local Open Scope R_scope.
 
 (**********)

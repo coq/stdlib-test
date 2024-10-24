@@ -10,9 +10,9 @@
 
 (** Author: Bruno Barras *)
 
-Require Import Relation_Operators.
-Require Import Relation_Definitions.
-Require Import Transitive_Closure.
+From Stdlib Require Import Relation_Operators.
+From Stdlib Require Import Relation_Definitions.
+From Stdlib Require Import Transitive_Closure.
 
 Section WfUnion.
   Variable A : Type.

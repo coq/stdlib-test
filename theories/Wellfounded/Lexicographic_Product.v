@@ -10,11 +10,11 @@
 
 (** Authors: Bruno Barras, Cristina Cornes *)
 
-Require Import EqdepFacts.
-Require Import Relation_Operators.
-Require Import Transitive_Closure.
-Require Import Inclusion.
-Require Import Inverse_Image.
+From Stdlib Require Import EqdepFacts.
+From Stdlib Require Import Relation_Operators.
+From Stdlib Require Import Transitive_Closure.
+From Stdlib Require Import Inclusion.
+From Stdlib Require Import Inverse_Image.
 
 (**  From : Constructing Recursion Operators in Type Theory
      L. Paulson  JSC (1986) 2, 325-355 *)

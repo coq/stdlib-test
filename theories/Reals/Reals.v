@@ -24,10 +24,10 @@
   - RCompute: for equalities with constants like ``10*10==100``
   - Reg: for goals like (continuity_pt ?1 ?2) or (derivable_pt ?1 ?2) *)
 
-Require Export Rbase.
-Require Export Rfunctions.
-Require Export SeqSeries.
-Require Export Rtrigo.
-Require Export Ranalysis.
-Require Export Integration.
-Require Import Fourier.
+From Stdlib Require Export Rbase.
+From Stdlib Require Export Rfunctions.
+From Stdlib Require Export SeqSeries.
+From Stdlib Require Export Rtrigo.
+From Stdlib Require Export Ranalysis.
+From Stdlib Require Export Integration.
+From Stdlib Require Import Fourier.

@@ -18,7 +18,7 @@
    Sandrine Blazy (used for building certified compilers).
 *)
 
-Require Import Bool PeanoNat BinPos OrderedType OrderedTypeEx FSetInterface.
+From Stdlib Require Import Bool PeanoNat BinPos OrderedType OrderedTypeEx FSetInterface.
 
 Set Implicit Arguments.
 Local Open Scope lazy_bool_scope.

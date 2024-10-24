@@ -8,9 +8,9 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import QArith Qabs.
-Require Import ConstructiveReals.
-Require Import ConstructiveAbs.
+From Stdlib Require Import QArith Qabs.
+From Stdlib Require Import ConstructiveReals.
+From Stdlib Require Import ConstructiveAbs.
 
 Local Open Scope ConstructiveReals.
 

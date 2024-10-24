@@ -4,6 +4,9 @@ all:
 install:
 	dune install --root . coq-stdlib
 
+build-% install-%:
+	+$(MAKE) -C theories $@
+
 # Make of individual .vo
 theories/%.vo:
 	dune build $@
@@ -11,8 +14,12 @@ theories/%.vo:
 refman-html:
 	dune build --root . --no-buffer @refman-html
 
-stdlib-html:
-	dune build --root . @stdlib-html
+doc/stdlib/depends.png: doc/stdlib/depends
+	dot -Tpng $< -o $@
+
+stdlib-html: doc/stdlib/depends.png
+	dune build -p coq-stdlib @install
+	dune build @stdlib-html
 
 # Ideally this would be generated from .nix/config.nix, currently obtained with
 # % grep -B1 "needs:" .github/workflows/nix-action-coq-master.yml | grep -v "\-\-" | grep -v "needs:" | sed -e 's/:/ \\/;s/  /  ci-/'

@@ -16,7 +16,7 @@
     consider implementations of finite sets with access in logarithmic
     time (e.g. MSetRBT.v which is based on red-black trees). *)
 
-Require Import List.
+From Stdlib Require Import List.
 
 Set Implicit Arguments.
 

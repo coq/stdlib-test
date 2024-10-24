@@ -8,12 +8,12 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import QArith Qabs.
-Require Import ConstructiveReals.
-Require Import ConstructiveRealsMorphisms.
-Require Import ConstructiveAbs.
-Require Import ConstructiveLimits.
-Require Import ConstructiveSum.
+From Stdlib Require Import QArith Qabs.
+From Stdlib Require Import ConstructiveReals.
+From Stdlib Require Import ConstructiveRealsMorphisms.
+From Stdlib Require Import ConstructiveAbs.
+From Stdlib Require Import ConstructiveLimits.
+From Stdlib Require Import ConstructiveSum.
 
 Local Open Scope ConstructiveReals.
 

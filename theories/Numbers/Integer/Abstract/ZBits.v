@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import
+From Stdlib Require Import
  Bool ZAxioms ZMulOrder ZPow ZDivFloor ZSgnAbs ZParity NZLog.
 
 (** Derived properties of bitwise operations *)

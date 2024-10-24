@@ -26,7 +26,7 @@
 (* in Summer 1995. Several developments by E. Ledinot were an inspiration.  *)
 (****************************************************************************)
 
-Require Export Ensembles.
+From Stdlib Require Export Ensembles.
 
 Section Ensembles_facts.
   Variable U : Type.

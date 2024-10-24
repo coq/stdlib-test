@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import ZAxioms ZMulOrder ZSgnAbs NZDiv.
+From Stdlib Require Import ZAxioms ZMulOrder ZSgnAbs NZDiv.
 
 (** * Euclidean Division for integers (Floor convention)
 

@@ -19,8 +19,8 @@ Attributes warn(cats="stdlib vector", note="Using Vector.t is known to be techni
 *)
 
 #[local] Set Warnings "-stdlib-vector".
-Require Fin List.
-Require Import VectorDef PeanoNat Eqdep_dec.
+From Stdlib Require Fin List.
+From Stdlib Require Import VectorDef PeanoNat Eqdep_dec.
 Import VectorNotations EqNotations.
 
 Definition cons_inj {A} {a1 a2} {n} {v1 v2 : t A n}

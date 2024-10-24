@@ -10,7 +10,7 @@
 
 (** Author: Bruno Barras *)
 
-Require Import Relation_Definitions.
+From Stdlib Require Import Relation_Definitions.
 
 Section WfInclusion.
   Variable A : Type.

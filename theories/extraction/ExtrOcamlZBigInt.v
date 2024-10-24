@@ -10,10 +10,10 @@
 
 (** Extraction of [positive], [N], and [Z], into Zarith's [Z.t] *)
 
-Require Stdlib.extraction.Extraction.
+From Stdlib Require Extraction.
 
-Require Import ZArith NArith.
-Require Import ExtrOcamlBasic.
+From Stdlib Require Import ZArith NArith.
+From Stdlib Require Import ExtrOcamlBasic.
 
 Extraction Blacklist Z Big_int_Z.
 
@@ -145,7 +145,7 @@ Extract Constant Z.shiftr => "Big_int_Z.(fun x y ->
   else shift_right_big_int x y)".
 
 (** Test:
-Require Import ZArith NArith.
+From Stdlib Require Import ZArith NArith.
 
 Extraction "/tmp/test.ml"
  Pos.add Pos.pred Pos.sub Pos.mul Pos.compare N.pred N.sub N.div N.modulo N.compare

@@ -10,7 +10,7 @@
 
 (** Greatest Common Divisor *)
 
-Require Import NZAxioms NZMulOrder.
+From Stdlib Require Import NZAxioms NZMulOrder.
 
 (** Interface of a gcd function, then its specification on naturals *)
 

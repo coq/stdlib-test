@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import BinPos BinNat.
+From Stdlib Require Import BinPos BinNat.
 Local Open Scope N_scope.
 
 (** Obsolete file, see [BinNat] now,

@@ -10,8 +10,8 @@
 
 (** Author: Bruno Barras *)
 
-Require Import Relation_Definitions.
-Require Import Relation_Operators.
+From Stdlib Require Import Relation_Definitions.
+From Stdlib Require Import Relation_Operators.
 
 Section Wf_Transitive_Closure.
   Variable A : Type.

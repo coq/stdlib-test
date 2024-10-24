@@ -17,7 +17,7 @@
 (** This file implements a decision procedure for a certain
     class of propositions involving finite sets.  *)
 
-Require Import Decidable Setoid DecidableTypeEx MSetFacts.
+From Stdlib Require Import Decidable Setoid DecidableTypeEx MSetFacts.
 
 (** First, a version for Weak Sets in functorial presentation *)
 
@@ -890,7 +890,7 @@ the above form:
 
 End WDecideOn.
 
-Require Import MSetInterface.
+From Stdlib Require Import MSetInterface.
 
 (** Now comes variants for self-contained weak sets and for full sets.
     For these variants, only one argument is necessary. Thanks to

@@ -12,12 +12,14 @@
 
     From : Constructing Recursion Operators in Type Theory
            L. Paulson  JSC (1986) 2, 325-355  *)
-Require Import List.
-Require Import Relation_Operators.
-Require Import Operators_Properties.
-Require Import Inverse_Image.
-Require Import Transitive_Closure.
-Require Import List_Extension.
+
+From Stdlib Require Import List.
+From Stdlib Require Import Relation_Operators.
+From Stdlib Require Import Operators_Properties.
+From Stdlib Require Import Inverse_Image.
+From Stdlib Require Import Transitive_Closure.
+From Stdlib Require Import List_Extension.
+
 Import ListNotations.
 
 Section Wf_Lexicographic_Exponentiation.

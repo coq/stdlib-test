@@ -12,9 +12,9 @@
 
 Attributes deprecated(since="8.20", note="Use Coq.NArith.BinNat instead.").
 
-Require Import BinPos.
-Require Export BinNat.
-Require Import NAxioms NProperties.
+From Stdlib Require Import BinPos.
+From Stdlib Require Export BinNat.
+From Stdlib Require Import NAxioms NProperties.
 
 Local Open Scope N_scope.
 
@@ -23,7 +23,7 @@ Local Open Scope N_scope.
 Module N <: NAxiomsSig := N.
 
 (*
-Require Import NDefOps.
+From Stdlib Require Import NDefOps.
 Module Import NBinaryDefOpsMod := NdefOpsPropFunct NBinaryAxiomsMod.
 
 (* Some fun comparing the efficiency of the generic log defined

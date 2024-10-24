@@ -8,6 +8,6 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export NewtonInt.
-Require Export RiemannInt_SF.
-Require Export RiemannInt.
+From Stdlib Require Export NewtonInt.
+From Stdlib Require Export RiemannInt_SF.
+From Stdlib Require Export RiemannInt.
