@@ -8,43 +8,34 @@ export NJOBS
 
 if which cygpath >/dev/null 2>&1; then OCAMLFINDSEP=\;; else OCAMLFINDSEP=:; fi
 
-# We can remove setting ROCQLIB and ROCQRUNTIMELIB from here, but better to
-# wait until we have merged the coq.boot patch so we can do this in a
-# more controlled way.
-if [ -n "${GITLAB_CI}" ];
-then
-    # Gitlab build, Coq installed into `_install_ci`
-    export COQBIN="$PWD/_install_ci/bin"
-    export OCAMLPATH="$PWD/_install_ci/lib$OCAMLFINDSEP$OCAMLPATH"
-    export PATH="$PWD/_install_ci/bin:$PATH"
-
-    # Where we install external binaries and ocaml libraries
-    # also generally used for dune install --prefix so needs to match coq's expected user-contrib path
-    CI_INSTALL_DIR="$PWD/_install_ci"
-
-    export CI_BRANCH="$CI_COMMIT_REF_NAME"
-    if [[ ${CI_BRANCH#pr-} =~ ^[0-9]*$ ]]
-    then
-        export CI_PULL_REQUEST="${CI_BRANCH#pr-}"
+if [ -z "${COQBIN}" ]; then
+    if $(which coqc) ; then
+        COQBIN=$(dirname $(which coqc))
+    else
+        echo "Please set COQBIN using \"export COQBIN=\$(dirname \$(which coqc))\""
+        exit 1
     fi
-elif [ -d "$PWD/_build/install/default/" ];
-then
-    # Full Dune build, we basically do what `dune exec --` does
-    export OCAMLPATH="$PWD/_build/install/default/lib/$OCAMLFINDSEP$OCAMLPATH"
-    export COQBIN="$PWD/_build/install/default/bin"
-    export ROCQLIB="$PWD/_build/install/default/lib/coq"
-    export ROCQRUNTIMELIB="$PWD/_build/install/default/lib/rocq-runtime"
-
-    CI_INSTALL_DIR="$PWD/_build/install/default/"
-
-    CI_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
-    export CI_BRANCH
 fi
 
 export PATH="$COQBIN:$PATH"
 
 # Coq's tools need an ending slash :S, we should fix them.
 export COQBIN="$COQBIN/"
+
+if [ -d "$PWD/_build/install/default/" ]; then
+    export OCAMLPATH="$PWD/_build/install/default/lib/$OCAMLFINDSEP$OCAMLPATH"
+    CONFIG_COQLIB=$(coqc -config | grep COQLIB | sed -e 's/COQLIB=//')
+    CONFIG_COQCORELIB=$(coqc -config | grep COQCORELIB | sed -e 's/COQCORELIB=//')
+    export COQLIB="$PWD/_build/install/default/lib/coq"
+    export COQCORELIB="$PWD/_build/install/default/lib/coq-core"
+    [ -d "${COQLIB}/theories" ] || cp -r "${CONFIG_COQLIB}/theories" "${COQLIB}/theories"
+    [ -d "${COQCORELIB}" ] || cp -r "${CONFIG_COQCORELIB}" "${COQCORELIB}"
+
+    CI_INSTALL_DIR="$PWD/_build/install/default/"
+
+    CI_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
+    export CI_BRANCH
+fi
 
 ls -l "$COQBIN"
 
