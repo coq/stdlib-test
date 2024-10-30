@@ -21,14 +21,14 @@ authors: ["The Rocq development team, INRIA, CNRS, and contributors"]
 license: "LGPL-2.1-only"
 homepage: "https://coq.inria.fr/"
 doc: "https://coq.github.io/doc/"
-bug-reports: "https://github.com/coq/coq/issues"
+bug-reports: "https://github.com/coq/stdlib/issues"
 depends: [
   "dune" {>= "3.8"}
   "rocq-runtime"
   "rocq-core" {= version}
   "odoc" {with-doc}
 ]
-dev-repo: "git+https://github.com/coq/coq.git"
+dev-repo: "git+https://github.com/coq/stdlib.git"
 build: [
   ["dune" "subst"] {dev}
   [

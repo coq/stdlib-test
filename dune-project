@@ -15,7 +15,7 @@
 (maintainers "The Rocq standard library development team")
 (authors "The Rocq development team, INRIA, CNRS, and contributors")
 ; This generates bug-reports and dev-repo
-(source (github coq/coq))
+(source (github coq/stdlib))
 (homepage https://coq.inria.fr/)
 (documentation "https://coq.github.io/doc/")
 (version dev)
