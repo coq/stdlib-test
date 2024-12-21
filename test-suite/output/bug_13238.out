@@ -1,4 +1,0 @@
-Ltac t1 x := replace (x x) with (x x)
-Ltac t2 x := case : x 
-Ltac t3 := by move ->
-Ltac t4 := congr True 

@@ -1,8 +1,0 @@
-(library
- (name protocol)
- (public_name coqide-server.protocol)
- (wrapped false)
- (modules_without_implementation interface)
- (libraries rocq-runtime.lib))
-
-(ocamllex xml_lexer)

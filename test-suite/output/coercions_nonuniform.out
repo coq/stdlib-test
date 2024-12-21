@@ -1,6 +1,0 @@
-File "./output/coercions_nonuniform.v", line 22, characters 0-21:
-Warning: f does not respect the uniform inheritance condition.
-[uniform-inheritance,coercions,default]
-File "./output/coercions_nonuniform.v", line 55, characters 0-17:
-Warning: f' does not respect the uniform inheritance condition.
-[uniform-inheritance,coercions,default]

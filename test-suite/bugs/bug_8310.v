@@ -1,1 +1,0 @@
-Check ltac:(apply Type).

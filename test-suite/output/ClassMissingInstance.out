@@ -1,6 +1,0 @@
-File "./output/ClassMissingInstance.v", line 7, characters 0-28:
-The command has indeed failed with message:
-Could not find an instance for the following existential variables:
-?arg_2 : Foo 1
-
-?arg_20 : Foo 2
