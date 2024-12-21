@@ -1,5 +1,0 @@
-{0 coq }
-
-The coq package is a virtual package gathering the main Coq packages.
-
-For the documentation of the OCaml API of Coq, see the {{: ../rocq-runtime/index.html } coq-core } package.

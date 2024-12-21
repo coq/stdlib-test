@@ -1,3 +1,0 @@
-{0 coq-doc }
-
-The coq-doc package only contains user documentation on the Coq proof assistant and no OCaml library.

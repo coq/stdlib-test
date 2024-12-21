@@ -1,9 +1,0 @@
-(library
- (name conf)
- (modules :standard \ configure)
- (libraries unix str))
-
-(executable
- (name configure)
- (modules configure)
- (libraries conf))
