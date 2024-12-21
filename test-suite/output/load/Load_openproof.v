@@ -1,1 +1,0 @@
-Lemma k : True.

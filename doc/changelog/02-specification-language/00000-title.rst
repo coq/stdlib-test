@@ -1,4 +1,0 @@
-
-Specification language, type inference
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-

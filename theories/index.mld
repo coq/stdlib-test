@@ -1,3 +1,0 @@
-{0 rocq-core }
-
-The rocq-core package only contains Coq theory files for the standard library and no OCaml libraries.

@@ -1,1 +1,0 @@
-Definition b := true.

@@ -1,2 +1,0 @@
-Ltac t := ltac2:(print (of_string "hi"))
-Ltac u := ident:(H)
