@@ -1,1 +1,0 @@
-Type forall A, A.

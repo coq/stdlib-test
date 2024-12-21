@@ -1,9 +1,0 @@
-(library
- (name tuto1_plugin)
- (public_name rocq-runtime.plugins.tutorial.p1)
- (libraries rocq-runtime.plugins.ltac))
-
-(rule
- (targets g_tuto1.ml)
- (deps (:mlg g_tuto1.mlg))
- (action (chdir %{project_root} (run rocq pp-mlg %{deps}))))

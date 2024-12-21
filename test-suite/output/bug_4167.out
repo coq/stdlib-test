@@ -1,4 +1,0 @@
-foo = foo
-     : Prop
-t1.(foo) = t2.(foo)
-     : Prop
