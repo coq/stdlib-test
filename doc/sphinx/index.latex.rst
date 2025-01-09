@@ -24,4 +24,5 @@ Appendix
 
 .. toctree::
 
+   changes
    zebibliography

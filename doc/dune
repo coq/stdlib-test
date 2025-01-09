@@ -1,3 +1,8 @@
+(rule
+ (targets unreleased.rst)
+ (deps (source_tree changelog))
+ (action (with-stdout-to %{targets} (bash "cat changelog/00-title.rst changelog/*/*.rst"))))
+
 (alias
  (name refman-deps)
  (deps
@@ -10,6 +15,7 @@
   (package rocq-stdlib)
   (source_tree sphinx)
   (source_tree tools/coqrst)
+  unreleased.rst
   (env_var SPHINXWARNOPT)))
 
 (rule
@@ -24,6 +30,7 @@
   (package rocq-stdlib)
   (source_tree sphinx)
   (source_tree tools/coqrst)
+  unreleased.rst
   (env_var SPHINXWARNOPT))
  (action
   (run env sphinx-build -q %{env:SPHINXWARNOPT=-W} -b html sphinx %{targets})))
@@ -41,6 +48,7 @@
   (package rocq-stdlib)
   (source_tree sphinx)
   (source_tree tools/coqrst)
+  unreleased.rst
   (env_var SPHINXWARNOPT))
  (action
   (progn
