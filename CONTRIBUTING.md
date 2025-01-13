@@ -770,5 +770,5 @@ documentation should be improved.
 [stdlib-doc]: https://coq.inria.fr/stdlib/
 [test-suite-README]: test-suite/README.md
 [user-overlays]: dev/ci/user-overlays
-[Zulip]:  https://coq.zulipchat.com
-[Zulip-dev]: https://coq.zulipchat.com/#narrow/stream/237656-Coq-devs.20.26.20plugin.20devs
+[Zulip]: https://coq.zulipchat.com/#narrow/channel/478197-Stdlib-users
+[Zulip-dev]: https://coq.zulipchat.com/#narrow/channel/478198-Stdlib-devs
