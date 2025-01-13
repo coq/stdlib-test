@@ -205,7 +205,7 @@ with builtins; with (import <nixpkgs> {}).lib;
     };
   in {
     "coq-master".coqPackages = common-bundles // {
-      coq.override.version = "proux01:stdlib_repo";
+      coq.override.version = "master";
       coq-tools.override.version = "proux01:coq_19955";
     };
     "coq-master".ocamlPackages = {
