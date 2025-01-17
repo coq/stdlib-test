@@ -32,7 +32,7 @@ cat > .wrappers/META.coq-core <<EOF
 package "kernel" (
   directory = "kernel"
   version = "dev"
-  description = "The Coq Kernel"
+  description = "The Rocq Kernel"
   requires = "dynlink rocq-runtime.boot rocq-runtime.lib rocq-runtime.vm"
   archive(byte) = "kernel.cma"
   archive(native) = "kernel.cmxa"

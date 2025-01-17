@@ -6,8 +6,8 @@ The Stdlib documentation includes
 - A Reference Manual
 - A document presenting the standard library
 
-The documentation of the latest released version is available on the Coq
-web site at [coq.inria.fr/documentation](http://coq.inria.fr/documentation).
+The documentation of the latest released version is available on the Rocq
+web site at [rocq-prover.org/docs](https://rocq-prover.org/docs).
 
 Additionally, you can view the reference manual for the development version
 at <https://coq.github.io/doc/master/refman/>, and the documentation of the
@@ -26,7 +26,7 @@ Dependencies
 
 ### HTML documentation
 
-To produce the complete documentation in HTML, you will need Coq dependencies
+To produce the complete documentation in HTML, you will need Rocq dependencies
 listed in [`INSTALL.md`](../INSTALL.md). Additionally, the Sphinx-based
 reference manual requires Python 3, and the following Python packages:
 
@@ -44,7 +44,7 @@ with `apt install python3-pip python3-setuptools` on Debian / Ubuntu) then run:
                  antlr4-python3-runtime==4.7.1 pexpect sphinxcontrib-bibtex
 
 Nix users should get the correct development environment to build the
-HTML documentation from Coq's [`default.nix`](../default.nix) (note this
+HTML documentation from Rocq's [`default.nix`](../default.nix) (note this
 doesn't include the LaTeX packages needed to build the full documentation).
 
 You can check the dependencies using the `doc/tools/coqrst/checkdeps.py` script.
