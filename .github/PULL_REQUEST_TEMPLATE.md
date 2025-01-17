@@ -17,11 +17,11 @@ Fixes / closes #????
 
 <!-- Pointers to relevant developer documentation:
 
-Contributing guide: https://github.com/coq-community/stdlib/blob/master/CONTRIBUTING.md
+Contributing guide: https://github.com/coq/stdlib/blob/master/CONTRIBUTING.md
 
-Changelog: https://github.com/coq-community/stdlib/blob/master/doc/changelog/README.md
+Changelog: https://github.com/coq/stdlib/blob/master/doc/changelog/README.md
 
-Building the doc: https://github.com/coq-community/stdlib/blob/master/doc/README.md
-Sphinx: https://github.com/coq-community/stdlib/blob/master/doc/sphinx/README.rst
+Building the doc: https://github.com/coq/stdlib/blob/master/doc/README.md
+Sphinx: https://github.com/coq/stdlib/blob/master/doc/sphinx/README.rst
 
-Overlays: https://github.com/coq-community/stdlib/blob/master/dev/doc/README-CI.md
+Overlays: https://github.com/coq/stdlib/blob/master/dev/doc/README-CI.md
