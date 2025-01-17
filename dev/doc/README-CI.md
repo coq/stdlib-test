@@ -14,7 +14,7 @@ install and setup Nix and Cachix.
 ### Rerunning a CI Task Locally
 
 You can take example of the files `.github/workflows/nix-action-coq-*.yml`
-For instance, to rerun iris for Coq master :
+For instance, to rerun iris for Rocq master :
 ```shell
 % nix-build --argstr bundle "coq-master" --argstr job iris
 ```
@@ -63,7 +63,7 @@ https://nixos.org/manual/nix/stable/ (I particularly recommend
 Nix is based on its own functional language:
 [Part IV. Writing Nix Expressions](https://nixos.org/manual/nix/stable/#chap-writing-nix-expressions)
 
-Specifics for Coq packages: [15.5. Coq and coq packages](https://nixos.org/manual/nixpkgs/unstable/#sec-language-coq)
+Specifics for Rocq packages: [15.5. Coq and coq packages](https://nixos.org/manual/nixpkgs/unstable/#sec-language-coq)
 
 ### Caching
 
@@ -86,7 +86,6 @@ not broken.
 ##### basic-checks
 
 Checks that the theories/Make.all and other theories/Make.* files are
-consistent. Also checks that no two sources files in the stdlib (+ Coq
+consistent. Also checks that no two sources files in the stdlib (+ Rocq
 prelude) have the same name (which could lead to conflict when doing
 `From Stdlib Require File.`). Some lint checks are also performed.
-

@@ -105,7 +105,7 @@ CI_VIRTUAL_TARGETS= \
 .PHONY: ci-all $(CI_TARGETS) $(CI_VIRTUAL_TARGETS)
 
 ci-help:
-	echo '*** Coq CI system, please specify a target to build.'
+	echo '*** Rocq CI system, please specify a target to build.'
 	false
 
 ci-all: $(CI_TARGETS)
