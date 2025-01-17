@@ -26,9 +26,12 @@ Dependencies
 
 ### HTML documentation
 
-To produce the complete documentation in HTML, you will need Rocq dependencies
-listed in [`INSTALL.md`](../INSTALL.md). Additionally, the Sphinx-based
-reference manual requires Python 3, and the following Python packages:
+If you have Nix installed, then the easiest way to get all the dependencies to
+build the refman is to run:
+
+    nix-shell --argstr job stdlib-refman-html
+
+Otherwise, you need to install (in another way) Python 3, and the following Python packages:
 
   - sphinx >= 4.5.0
   - sphinx_rtd_theme >= 1.0.0
@@ -37,17 +40,11 @@ reference manual requires Python 3, and the following Python packages:
   - pexpect >= 4.6.0
   - sphinxcontrib-bibtex >= 0.4.2
 
-To install them, you should first install pip and setuptools (for instance,
-with `apt install python3-pip python3-setuptools` on Debian / Ubuntu) then run:
+For instance, on Debian / Ubuntu, you can install pip and setuptools
+with `apt install python3-pip python3-setuptools` on Debian / Ubuntu then run:
 
     pip3 install sphinx sphinx_rtd_theme beautifulsoup4 \
                  antlr4-python3-runtime==4.7.1 pexpect sphinxcontrib-bibtex
-
-Nix users should get the correct development environment to build the
-HTML documentation from Rocq's [`default.nix`](../default.nix) (more
-precisely `nix-shell --argstr job stdlib-refman-html`, note this
-doesn't include the LaTeX packages needed to build the full
-documentation).
 
 You can check the dependencies using the `doc/tools/coqrst/checkdeps.py` script.
 
