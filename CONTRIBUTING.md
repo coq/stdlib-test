@@ -142,7 +142,7 @@ Being in this team will grant you the following access:
   idea for a new feature).
 - **Creating new labels:** if you feel a `part:` label is missing, do
   not hesitate to create it.  If you are not sure, you may discuss it
-  with other contributors and developers on [Zulip][Zulip-dev] first.
+  with other contributors and developers on [Zulip][Zulip] first.
 - **Closing issues:** if a bug cannot be reproduced anymore, is a
   duplicate, or should not be considered a bug report in the first
   place, you should close it.  When doing so, try putting an
@@ -703,7 +703,7 @@ before a change is ready on your side.
 When opening a draft PR, make sure to give it a descriptive enough
 title so that interested developers still notice it in their
 notification feed.  You may also advertise it by talking about it in
-our [developer chat][Zulip-dev].  If you know which developer would be
+our [chat][Zulip].  If you know which developer would be
 able to provide useful feedback to you, you may also ping them.
 
 ###### Turning a PR into draft mode ######
@@ -721,8 +721,7 @@ requests that were previously removed.
 
 We have a [Discourse forum][Discourse] (see in particular the [Rocq
 development][Discourse-development-category] category) and a [Zulip
-chat][Zulip] (see in particular the [Rocq devs & plugin devs][Zulip-dev]
-stream).  Feel free to join any of them and ask questions.
+chat][Zulip].  Feel free to join any of them and ask questions.
 People are generally happy to help and very reactive.
 
 Obviously, the issue tracker is also a good place to ask questions,
@@ -770,5 +769,4 @@ documentation should be improved.
 [stdlib-doc]: https://coq.inria.fr/stdlib/
 [test-suite-README]: test-suite/README.md
 [user-overlays]: dev/ci/user-overlays
-[Zulip]: https://coq.zulipchat.com/#narrow/channel/478197-Stdlib-users
-[Zulip-dev]: https://coq.zulipchat.com/#narrow/channel/478198-Stdlib-devs
+[Zulip]: https://coq.zulipchat.com/#narrow/channel/478198-Stdlib-devs-.26-users
