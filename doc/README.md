@@ -44,8 +44,10 @@ with `apt install python3-pip python3-setuptools` on Debian / Ubuntu) then run:
                  antlr4-python3-runtime==4.7.1 pexpect sphinxcontrib-bibtex
 
 Nix users should get the correct development environment to build the
-HTML documentation from Rocq's [`default.nix`](../default.nix) (note this
-doesn't include the LaTeX packages needed to build the full documentation).
+HTML documentation from Rocq's [`default.nix`](../default.nix) (more
+precisely `nix-shell --argstr job stdlib-refman-html`, note this
+doesn't include the LaTeX packages needed to build the full
+documentation).
 
 You can check the dependencies using the `doc/tools/coqrst/checkdeps.py` script.
 
