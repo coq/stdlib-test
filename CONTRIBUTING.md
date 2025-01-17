@@ -11,7 +11,7 @@ well.
 
 ## Table of contents ##
 
-- [Guide to contributing to the Standard Library of Rocq](#guide-to-contributing-to-the-standazrd-library-of-rocq)
+- [Guide to contributing to the Standard Library of Rocq](#guide-to-contributing-to-the-standard-library-of-rocq)
   - [Foreword](#foreword)
   - [Table of contents](#table-of-contents)
   - [Introduction](#introduction)
@@ -125,57 +125,6 @@ You can help a lot by:
 - using `git bisect` to find the commit that introduced a regression;
 - fixing the bug if you have an idea of how to do so (see the
   [following section](#code-changes)).
-
-Once you have some experience with the issue tracker, you can
-request to join the contributors team (any member of the
-maintainer team can give you access.
-Being in this team will grant you the following access:
-
-- **Updating labels:** every open issue and pull request should
-  ideally get one or several `kind:` and `part:` labels.  In
-  particular, valid issues should generally get either a `kind: bug`
-  (the reported behavior can indeed be considered a bug, this can be
-  completed with the `kind: anomaly`, and `kind: regression` labels),
-  `kind: documentation` (e.g. if a reported behavior is expected but
-  improperly documented), `kind: enhancement` (a request for
-  enhancement of an existing feature), or `kind: feature` label (an
-  idea for a new feature).
-- **Creating new labels:** if you feel a `part:` label is missing, do
-  not hesitate to create it.  If you are not sure, you may discuss it
-  with other contributors and developers on [Zulip][Zulip] first.
-- **Closing issues:** if a bug cannot be reproduced anymore, is a
-  duplicate, or should not be considered a bug report in the first
-  place, you should close it.  When doing so, try putting an
-  appropriate `resolved:` label to indicate the reason.  If the bug
-  has been fixed already, and you know in which version, you can add a
-  milestone to it, even a milestone that's already closed, instead of
-  a `resolved:` label.  When closing a duplicate issue, try to add all
-  the additional info that could be gathered to the original issue.
-- **Editing issue titles:** you may want to do so to better reflect
-  the current understanding of the underlying issue.
-- **Editing comments:** feel free to do so to fix typos and formatting
-  only (in particular, some old comments from the Bugzilla era or
-  before are not properly formatted).  You may also want to edit the
-  OP's initial comment (a.k.a. body of the issue) to better reflect
-  the current understanding of the issue, especially if the discussion
-  is long.  If you do so, only add to the original comment, and mark
-  it clearly with an `EDITED by @YourNickname:`.
-- **Hiding comments:** when the discussion has become too long, this
-  can be done to hide irrelevant comments (off-topic, outdated or
-  resolved sub-issues).
-- **Deleting things:** please don't delete any comment or issue, our
-  policy doesn't allow for comments to be deleted, unless done by the
-  community moderators.  You should hide them instead.  An audit log
-  is available to track deleted items if needed (but does not allow
-  recovering them).
-
-However, and contrary to most other repositories, it will not give you
-the ability to push new branches or tags to the repository. This is
-disabled because we prefer to use forks to work on feature branches.
-
-Yet to be fully specified: use of priority, difficulty, `help wanted`,
-and `good first issue` labels, milestones, assignments, and GitHub
-projects.
 
 ## Code changes ##
 
