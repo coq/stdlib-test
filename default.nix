@@ -5,7 +5,7 @@
 }@args:
 let auto = fetchGit {
   url = "https://github.com/proux01/coq-nix-toolbox.git";
-  ref = "stdlib-test";
+  ref = "stdlib-on-master";
   rev = import .nix/coq-nix-toolbox.nix;
 };
 in
