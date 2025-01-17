@@ -1740,13 +1740,15 @@ Notation Z0 := Z0 (only parsing).
 Notation Zpos := Zpos (only parsing).
 Notation Zneg := Zneg (only parsing).
 
-(** Compatibility lemmas. These could be notations,
-    but scope information would be lost.
-*)
+Section LocalNotations.
 
 Notation SYM1 lem := (fun n => eq_sym (lem n)).
 Notation SYM2 lem := (fun n m => eq_sym (lem n m)).
 Notation SYM3 lem := (fun n m p => eq_sym (lem n m p)).
+
+(** Compatibility lemmas. These could be notations,
+    but scope information would be lost.
+*)
 
 Lemma Zplus_assoc_reverse : forall n m p, n+m+p = n+(m+p).
 Proof (SYM3 Z.add_assoc).
@@ -1805,6 +1807,15 @@ Lemma Zpos_eq : forall p q, p = q -> Z.pos p = Z.pos q.
 Proof. congruence. Qed.
 Lemma Zpos_eq_iff : forall p q, p = q <-> Z.pos p = Z.pos q.
 Proof (fun p q => iff_sym (Pos2Z.inj_iff p q)).
+
+End LocalNotations.
+
+#[deprecated(since="9.0")]
+Notation SYM1 lem := (fun n => eq_sym (lem n)) (only parsing).
+#[deprecated(since="9.0")]
+Notation SYM2 lem := (fun n m => eq_sym (lem n m)) (only parsing).
+#[deprecated(since="9.0")]
+Notation SYM3 lem := (fun n m p => eq_sym (lem n m p)) (only parsing).
 
 #[global]
 Hint Immediate Zsucc_pred: zarith.
