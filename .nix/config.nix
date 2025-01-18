@@ -116,7 +116,6 @@ with builtins; with (import <nixpkgs> {}).lib;
       "coqprime"
       "coquelicot"
       "coqutil"
-      "coq-elpi"
       "coq-elpi-test"
       "ExtLib"
       "coq-hammer"
@@ -206,10 +205,9 @@ with builtins; with (import <nixpkgs> {}).lib;
   in {
     "coq-master".coqPackages = common-bundles // {
       coq.override.version = "master";
+      coq-elpi.override.version = "master";
+      coq-elpi.override.elpi-version = "2.0.7";
       coq-tools.override.version = "proux01:coq_19955";
-    };
-    "coq-master".ocamlPackages = {
-      elpi.override.version = "2.0.6";
     };
   };
 }
