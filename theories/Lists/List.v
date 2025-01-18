@@ -239,6 +239,14 @@ Section Facts.
     intro l; induction l; simpl; auto.
   Qed.
 
+  Lemma length_app_comm : forall l l' : list A, length (l++l') = length (l'++l).
+  Proof.
+    intros.
+    repeat rewrite length_app.
+    rewrite Nat.add_comm.
+    reflexivity.
+  Qed.
+
   Lemma last_length : forall (l : list A) a, length (l ++ [a]) = S (length l).
   Proof.
     intros ; rewrite length_app ; simpl.
