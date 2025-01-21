@@ -23,7 +23,13 @@ cat > .wrappers/coqdep <<EOF
 exec rocq dep "\$@"
 EOF
 
-chmod +x .wrappers/coqc .wrappers/coqdep
+cat > .wrappers/coqdoc <<EOF
+#!/bin/sh
+# hash = $rocqhash
+exec rocq doc "\$@"
+EOF
+
+chmod +x .wrappers/coqc .wrappers/coqdep .wrappers/coqdoc
 
 ln -s "$(ocamlfind query rocq-runtime.kernel)" .wrappers/kernel
 
