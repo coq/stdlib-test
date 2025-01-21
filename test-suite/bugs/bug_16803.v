@@ -65,7 +65,7 @@ Module Test2.
     exact I.
   Defined.
 
-  Fail Constraint mkrel.u0 < unZ2.u.
+  Fail Constraint mkrel.u0 < Z2.u.
 
 End Test2.
 
@@ -92,7 +92,7 @@ Module Test3.
     }.
   Add Zify BinRel Op_eq.
 
-  Constraint mkrel.u0 < unZ2.u.
+  Constraint mkrel.u0 < Z2.u.
 
   Theorem lia_refl_ex : forall (a b : Z2), a = a.
   Proof.
