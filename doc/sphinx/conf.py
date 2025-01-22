@@ -199,44 +199,46 @@ html_theme = 'sphinx_rtd_theme'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-PDF_URL = "https://github.com/coq/coq/releases/download/V{version}/coq-{version}-reference-manual.pdf"
+#PDF_URL = "https://github.com/coq/coq/releases/download/V{version}/coq-{version}-reference-manual.pdf"
 html_theme_options = {
     'collapse_navigation': False
 }
 html_context = {
     'display_github': True,
     'github_user': 'coq',
-    'github_repo': 'coq',
+    'github_repo': 'stdlib',
     'github_version': 'master',
     'conf_py_path': '/doc/sphinx/',
     # Versions and downloads listed in the versions menu (see _templates/versions.html)
     'versions': [
-        ("dev", "https://coq.inria.fr/doc/master/refman/"),
-        ("stable", "https://coq.inria.fr/refman/"),
-        ("8.20", "https://coq.inria.fr/doc/v8.20/refman/"),
-        ("8.19", "https://coq.inria.fr/doc/v8.19/refman/"),
-        ("8.18", "https://coq.inria.fr/doc/v8.18/refman/"),
-        ("8.17", "https://coq.inria.fr/doc/V8.17.1/refman/"),
-        ("8.16", "https://coq.inria.fr/doc/V8.16.1/refman/"),
-        ("8.15", "https://coq.inria.fr/doc/V8.15.2/refman/"),
-        ("8.14", "https://coq.inria.fr/doc/V8.14.1/refman/"),
-        ("8.13", "https://coq.inria.fr/doc/V8.13.2/refman/"),
-        ("8.12", "https://coq.inria.fr/doc/V8.12.2/refman/"),
-        ("8.11", "https://coq.inria.fr/doc/V8.11.2/refman/"),
-        ("8.10", "https://coq.inria.fr/doc/V8.10.2/refman/"),
-        ("8.9", "https://coq.inria.fr/doc/V8.9.1/refman/"),
-        ("8.8", "https://coq.inria.fr/doc/V8.8.2/refman/"),
-        ("8.7", "https://coq.inria.fr/doc/V8.7.2/refman/"),
-        ("8.6", "https://coq.inria.fr/doc/V8.6.1/refman/"),
-        ("8.5", "https://coq.inria.fr/doc/V8.5pl3/refman/"),
-        ("8.4", "https://coq.inria.fr/doc/V8.4pl6/refman/"),
-        ("8.3", "https://coq.inria.fr/doc/V8.3pl5/refman/"),
-        ("8.2", "https://coq.inria.fr/doc/V8.2pl3/refman/"),
-        ("8.1", "https://coq.inria.fr/doc/V8.1pl6/refman/"),
-        ("8.0", "https://coq.inria.fr/doc/V8.0/doc/")
+        ("dev", "https://rocq-prover.org/doc/master/refman-stdlib/"),
+        ("stable", "https://rocq-prover.org/refman-stdlib/"),
+        ("9.0", "https://rocq-prover.org/doc/v9.0/refman-stdlib/"),
+        ("8.20", "https://rocq-prover.org/doc/V8.20.1/refman/language/coq-library.html#the-standard-library"),
+        ("8.19", "https://rocq-prover.org/doc/V8.19.2/refman/language/coq-library.html#the-standard-library"),
+        ("8.18", "https://rocq-prover.org/doc/V8.18.0/refman/language/coq-library.html#the-standard-library"),
+        ("8.17", "https://rocq-prover.org/doc/V8.17.1/refman/language/coq-library.html#the-standard-library"),
+        ("8.16", "https://rocq-prover.org/doc/V8.16.1/refman/language/coq-library.html#the-standard-library"),
+        ("8.15", "https://rocq-prover.org/doc/V8.15.2/refman/language/coq-library.html#the-standard-library"),
+        ("8.14", "https://rocq-prover.org/doc/V8.14.1/refman/language/coq-library.html#the-standard-library"),
+        ("8.13", "https://rocq-prover.org/doc/V8.13.2/refman/language/coq-library.html#the-standard-library"),
+        ("8.12", "https://rocq-prover.org/doc/V8.12.2/refman/language/coq-library.html#the-standard-library"),
+        ("8.11", "https://rocq-prover.org/doc/V8.11.2/refman/language/coq-library.html#the-standard-library"),
+        ("8.10", "https://rocq-prover.org/doc/V8.10.2/refman/language/coq-library.html#the-standard-library"),
+        ("8.9", "https://rocq-prover.org/doc/V8.9.1/refman/language/coq-library.html#the-standard-library"),
+        ("8.8", "https://rocq-prover.org/doc/V8.8.2/refman/language/coq-library.html#the-standard-library"),
+        ("8.7", "https://rocq-prover.org/doc/V8.7.2/refman/stdlib.html"),
+        ("8.6", "https://rocq-prover.org/doc/V8.6.1/refman/stdlib.html"),
+        ("8.5", "https://rocq-prover.org/doc/V8.5pl3/refman/stdlib.html"),
+        ("8.4", "https://rocq-prover.org/doc/V8.4pl6/refman/stdlib.html"),
+        ("8.3", "https://rocq-prover.org/doc/V8.3pl5/refman/stdlib.html"),
+        ("8.2", "https://rocq-prover.org/doc/V8.2pl3/refman/stdlib.html"),
+        ("8.1", "https://rocq-prover.org/doc/V8.1pl6/refman/stdlib.html"),
+        ("8.0", "https://rocq-prover.org/doc/V8.0/doc/Reference-Manual005.html")
     ],
-    'downloads': ([("PDF", PDF_URL.format(version=version))]
-                  if is_a_released_version else [])
+    #'downloads': ([("PDF", PDF_URL.format(version=version))]
+    #              if is_a_released_version else [])
+    'downloads': []
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
