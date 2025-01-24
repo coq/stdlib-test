@@ -12,7 +12,9 @@ coqPackages.lib.overrideCoqDerivation {
     antlr4_9
   ];
 
-  buildFlags = [ "refman-html" ];
+  buildPhase = ''
+    dev/with-rocq-wrap.sh dune build --root . --no-buffer @refman-html ''${enableParallelBuilding:+-j $NIX_BUILD_CORES}
+  '';
 
   installPhase = ''
     echo "nothing to install"
