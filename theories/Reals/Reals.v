@@ -26,6 +26,7 @@
 
 Require Export Rbase.
 Require Export Rfunctions.
+Require Export Zfloor.
 Require Export SeqSeries.
 Require Export Rtrigo.
 Require Export Ranalysis.
