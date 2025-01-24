@@ -5,9 +5,13 @@ coqPackages.lib.overrideCoqDerivation {
 
   overrideBuildInputs = stdlib.buildInputs ++ [ graphviz ];
 
-  preBuild = ''
+  buildPhase = ''
     patchShebangs doc/stdlib/make-library-index
+    dev/with-rocq-wrap.sh dune build @stdlib-html ''${enableParallelBuilding:+-j $NIX_BUILD_CORES}
   '';
 
-  buildFlags = [ "stdlib-html" ];
+  installPhase = ''
+    echo "nothing to install"
+    touch $out
+  '';
 } stdlib
