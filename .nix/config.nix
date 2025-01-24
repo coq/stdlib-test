@@ -53,7 +53,7 @@ with builtins; with (import <nixpkgs> {}).lib;
 
   ## select an entry to build in the following `bundles` set
   ## defaults to "default"
-  default-bundle = "coq-9.0";
+  default-bundle = "rocq-9.0";
 
   ## write one `bundles.name` attribute set per
   ## alternative configuration
@@ -204,13 +204,13 @@ with builtins; with (import <nixpkgs> {}).lib;
       stdlib-test.job = true;
     };
   in {
-    "coq-master".coqPackages = common-bundles // {
+    "rocq-master".coqPackages = common-bundles // {
       coq.override.version = "master";
       coq-elpi.override.version = "master";
       coq-elpi.override.elpi-version = "2.0.7";
     };
-    "coq-9.0".coqPackages = common-bundles // {
-      coq.override.version = "v9.0";
+    "rocq-9.0".coqPackages = common-bundles // {
+      coq.override.version = "V9.0+rc1";
       coq-elpi.override.version = "master";
       coq-elpi.override.elpi-version = "2.0.7";
       # plugin pins, from v9.0 branch of Coq
@@ -237,6 +237,7 @@ with builtins; with (import <nixpkgs> {}).lib;
       smtcoq.override.version = "5c6033c906249fcf98a48b4112f6996053124514";
       smtcoq-trakt.override.version = "9392f7446a174b770110445c155a07b183cdca3d";
       stalmarck-tactic.override.version = "d32acd3c477c57b48dd92bdd96d53fb8fa628512";
+      unicoq.override.version = "a9b72f755539c0b3280e38e778a09e2b7519a51a";
       waterproof.override.version = "443f794ddc102309d00f1d512ab50b84fdc261aa";
     };
   };
