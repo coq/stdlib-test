@@ -17,7 +17,7 @@
 From Stdlib Require Import OrderedRing.
 From Stdlib Require Import RingMicromega.
 From Stdlib Require Import Refl.
-From Stdlib Require Import QArith.
+From Stdlib Require Import QArith_base.
 From Stdlib Require Import Qfield.
 
 Lemma Qsor : SOR 0 1 Qplus Qmult Qminus Qopp Qeq  Qle Qlt.
