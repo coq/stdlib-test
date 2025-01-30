@@ -9,7 +9,7 @@
 (************************************************************************)
 
 From Stdlib Require Import Field.
-From Stdlib Require Import QArith.
+From Stdlib Require Import QArith_base Qreduction.
 From Stdlib Require Import Znumtheory.
 From Stdlib Require Import Eqdep_dec.
 
