@@ -202,6 +202,7 @@ with builtins; with (import <nixpkgs> {}).lib;
       stdlib-html.job = true;
       stdlib-refman-html.job = true;
       stdlib-test.job = true;
+      stdlib-subcomponents.job = true;
     };
   in {
     "rocq-master".coqPackages = common-bundles // {

@@ -6,6 +6,9 @@ all:
 install:
 	$(DUNE) install --root . rocq-stdlib
 
+build-% install-%:
+	+$(MAKE) -C theories $@
+
 # Make of individual .vo
 theories/%.vo:
 	$(DUNE) build $@

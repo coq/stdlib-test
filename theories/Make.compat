@@ -1,0 +1,4 @@
+Compat/_All/AdmitAxiom.v
+Compat/_All/Stdlib818.v
+
+-Q Compat/_All Stdlib.Compat

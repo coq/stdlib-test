@@ -1,0 +1,5 @@
+micromega/_Lqa/QMicromega.v
+micromega/_Lqa/Lqa.v
+micromega/_Lqa/DeclConstant.v
+
+-Q micromega/_Lqa Stdlib.micromega

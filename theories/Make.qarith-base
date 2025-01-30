@@ -1,0 +1,6 @@
+QArith/_Base/Qreduction.v
+QArith/_Base/Qminmax.v
+QArith/_Base/QOrderedType.v
+QArith/_Base/QArith_base.v
+
+-Q QArith/_Base Stdlib.QArith

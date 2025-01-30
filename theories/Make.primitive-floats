@@ -1,0 +1,4 @@
+Floats/_All/Floats.v
+Floats/_All/FloatLemmas.v
+
+-Q Floats/_All Stdlib.Floats
