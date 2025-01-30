@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-From Stdlib Require Import Bool ZArith.
+From Stdlib Require Import Bool BinInt.
 From Stdlib Require Import Zify ZifyClasses.
 From Stdlib Require Import Lia.
 Local Open Scope Z_scope.
