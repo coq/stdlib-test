@@ -10,10 +10,10 @@ mkCoqDerivation {
 
   mlPlugin = true;
 
-  buildFlags = [ "test-suite" "examples" ];
+  useDune = true;
 
-  preBuild = ''
-    coq_makefile -f _CoqProject -o Makefile.coq
+  buildPhase = ''
+    dune build -p rocq-equations-tests,rocq-equations-examples
   '';
 
   installPhase = ''
