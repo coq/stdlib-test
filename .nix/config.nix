@@ -222,8 +222,8 @@ with builtins; with (import <nixpkgs> {}).lib;
       dpdgraph-test.override.version = "74ced1b11a8df8d4c04c3829fcf273aa63d2c493";
       coq-hammer.override.version = "31442e8178a5d85a9f57a323b65bf9f719ded8ec";
       coq-hammer-tactics.override.version = "31442e8178a5d85a9f57a323b65bf9f719ded8ec";
-      equations.override.version = "3431c88a7575a3972191c25809c563aafdc6414e";
-      equations-test.override.version = "3431c88a7575a3972191c25809c563aafdc6414e";
+      equations.override.version = "v1.3.1-9.0";
+      equations-test.override.version = "v1.3.1-9.0";
       fiat-parsers.job = false;  # broken
       metacoq.override.version = "17ba45ffc84d37e187ef87a55b840890f1d87f01";
       metacoq-test.override.version = "17ba45ffc84d37e187ef87a55b840890f1d87f01";
