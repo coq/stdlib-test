@@ -3,12 +3,17 @@
 (rule
  (targets index-list.html)
  (deps
-   make-library-index index-list.html.template hidden-files
+   make-library-index index-list.html.template hidden-files depends.svg
    (source_tree %{project_root}/theories))
  (action
   (chdir %{project_root}
    ; On windows run will fail
    (bash "doc/stdlib/make-library-index doc/stdlib/index-list.html doc/stdlib/hidden-files"))))
+
+(rule
+ (targets depends.svg)
+ (deps depends.dot)
+ (action (bash "dot -T svg depends.dot | sed -e 's/width=\".*\"/width=\"100%\"/' > depends.svg")))
 
 (rule
   (targets (dir html))
@@ -30,6 +35,7 @@
    (with-stdout-to
      _index.html
     (progn (cat %{header}) (cat index-list.html) (cat %{footer})))
+   (run cp depends.svg html/depends.svg)
    (run cp _index.html html/index.html))))
 
 ; Installable directories are not yet fully supported by Dune.  See

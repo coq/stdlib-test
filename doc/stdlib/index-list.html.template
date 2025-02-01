@@ -3,8 +3,11 @@
 
 <p>This is the index of the Rocq standard library.
 It provides a set of modules directly available
-through the <tt>Require Import Stdlib</tt> command.
-The standard library is composed of the following subdirectories:</p>
+through the <tt>From Stdlib Require Import</tt> command.</p>
+
+<!-- #include depends.svg -->
+
+<p>The standard library is composed of the following subdirectories:</p>
 
 <dl>
   <dt> <b>Logic</b>:
