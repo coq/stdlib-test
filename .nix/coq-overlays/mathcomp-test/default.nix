@@ -1,4 +1,4 @@
-{ mkCoqDerivation, mathcomp, version ? null }:
+{ mkCoqDerivation, coq, mathcomp, version ? null }:
 
 mkCoqDerivation {
   pname = "math-comp-test";
@@ -6,7 +6,7 @@ mkCoqDerivation {
   owner = "math-comp";
   inherit version;
 
-  propagatedBuildInputs = [ mathcomp ];
+  propagatedBuildInputs = [ mathcomp coq.ocamlPackages.ocaml ];
 
   buildFlags = [ "test-suite" ];
 
