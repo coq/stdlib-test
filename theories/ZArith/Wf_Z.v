@@ -8,12 +8,12 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import BinInt.
-Require Import Zcompare.
-Require Import Zorder.
-Require Import Znat.
-Require Import Zmisc.
-Require Import Wf_nat.
+From Stdlib Require Import BinInt.
+From Stdlib Require Import Zcompare.
+From Stdlib Require Import Zorder.
+From Stdlib Require Import Znat.
+From Stdlib Require Import Zmisc.
+From Stdlib Require Import Wf_nat.
 Local Open Scope Z_scope.
 
 (** Our purpose is to write an induction shema for {0,1,2,...}

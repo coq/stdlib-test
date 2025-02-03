@@ -26,9 +26,9 @@
 (* in Summer 1995. Several developments by E. Ledinot were an inspiration.  *)
 (****************************************************************************)
 
-Require Export Ensembles.
-Require Export Constructive_sets.
-Require Export Classical.
+From Stdlib Require Export Ensembles.
+From Stdlib Require Export Constructive_sets.
+From Stdlib Require Export Classical.
 
 Section Ensembles_classical.
   Variable U : Type.

@@ -10,7 +10,7 @@
 
 (** This file axiomatizes proof-irrelevance and derives some consequences *)
 
-Require Import ProofIrrelevanceFacts.
+From Stdlib Require Import ProofIrrelevanceFacts.
 
 Axiom proof_irrelevance : forall (P:Prop) (p1 p2:P), p1 = p2.
 

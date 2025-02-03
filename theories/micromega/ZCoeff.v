@@ -10,12 +10,12 @@
 (*                      Evgeny Makarov, INRIA, 2007                     *)
 (************************************************************************)
 
-Require Import OrderedRing.
-Require Import RingMicromega.
-Require Import BinInt.
-Require Import InitialRing.
-Require Import Setoid.
-Require Import ZArithRing.
+From Stdlib Require Import OrderedRing.
+From Stdlib Require Import RingMicromega.
+From Stdlib Require Import BinInt.
+From Stdlib Require Import InitialRing.
+From Stdlib Require Import Setoid.
+From Stdlib Require Import ZArithRing.
 
 Import OrderedRingSyntax.
 

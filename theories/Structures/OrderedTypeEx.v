@@ -8,11 +8,11 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import OrderedType.
-Require Import BinInt.
-Require Import PeanoNat Peano_dec Compare_dec.
-Require Import Ascii String.
-Require Import NArith Ndec.
+From Stdlib Require Import OrderedType.
+From Stdlib Require Import BinInt.
+From Stdlib Require Import PeanoNat Peano_dec Compare_dec.
+From Stdlib Require Import Ascii String.
+From Stdlib Require Import NArith Ndec.
 
 (** * Examples of Ordered Type structures. *)
 

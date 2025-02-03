@@ -21,12 +21,12 @@ Author: Pierre Letouzey
     here due to both its intrinsic interest and its use as reference
     point when proving gcd on Int31 numbers *)
 
-Require Import BinInt.
-Require Import Znat.
-Require Import ZArithRing.
-Require Import Zdiv.
-Require Import Znumtheory.
-Require Import Lia.
+From Stdlib Require Import BinInt.
+From Stdlib Require Import Znat.
+From Stdlib Require Import ZArithRing.
+From Stdlib Require Import Zdiv.
+From Stdlib Require Import Znumtheory.
+From Stdlib Require Import Lia.
 
 Open Scope Z_scope.
 

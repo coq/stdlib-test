@@ -25,15 +25,15 @@
 
 (** Lemmas involving positive and compare are not taken into account *)
 
-Require Import BinInt.
-Require Import Zorder.
-Require Import Zmin.
-Require Import Zabs.
-Require Import Zcompare.
-Require Import Znat.
-Require Import auxiliary.
-Require Import Zmisc.
-Require Import Wf_Z.
+From Stdlib Require Import BinInt.
+From Stdlib Require Import Zorder.
+From Stdlib Require Import Zmin.
+From Stdlib Require Import Zabs.
+From Stdlib Require Import Zcompare.
+From Stdlib Require Import Znat.
+From Stdlib Require Import auxiliary.
+From Stdlib Require Import Zmisc.
+From Stdlib Require Import Wf_Z.
 
 (************************************************************************)
 (** *                 Simplification lemmas                             *)

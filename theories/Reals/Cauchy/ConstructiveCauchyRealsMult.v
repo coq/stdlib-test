@@ -14,15 +14,15 @@
     WARNING: this file is experimental and likely to change in future releases.
 *)
 
-Require Import QArith Qabs Qround Qpower.
-Require Import Logic.ConstructiveEpsilon.
-Require Export ConstructiveCauchyReals.
-Require CMorphisms.
-Require Import Znat.
-Require Import Zorder.
-Require Import Lia.
-Require Import Lqa.
-Require Import QExtra.
+From Stdlib Require Import QArith Qabs Qround Qpower.
+From Stdlib Require Import ConstructiveEpsilon.
+From Stdlib Require Export ConstructiveCauchyReals.
+From Stdlib Require CMorphisms.
+From Stdlib Require Import Znat.
+From Stdlib Require Import Zorder.
+From Stdlib Require Import Lia.
+From Stdlib Require Import Lqa.
+From Stdlib Require Import QExtra.
 
 Local Open Scope CReal_scope.
 

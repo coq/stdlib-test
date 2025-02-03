@@ -15,10 +15,10 @@
 - Decidability of negated formulas.
 *)
 
-Require Import PeanoNat.
-Require Import Zabs.
-Require Import Zorder.
-Require Import RIneq.
+From Stdlib Require Import PeanoNat.
+From Stdlib Require Import Zabs.
+From Stdlib Require Import Zorder.
+From Stdlib Require Import RIneq.
 
 (** * Decidability of arithmetical statements *)
 

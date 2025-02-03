@@ -10,10 +10,10 @@
 
 (** Extraction of [positive], [N] and [Z] into Ocaml's [int] *)
 
-Require Stdlib.extraction.Extraction.
+From Stdlib Require Extraction.
 
-Require Import ZArith NArith.
-Require Import ExtrOcamlBasic.
+From Stdlib Require Import ZArith NArith.
+From Stdlib Require Import ExtrOcamlBasic.
 
 (** Disclaimer: trying to obtain efficient certified programs
     by extracting [Z] into [int] is definitively *not* a good idea.

@@ -10,7 +10,7 @@
 
 (** Euclidean Division *)
 
-Require Import NZAxioms NZMulOrder.
+From Stdlib Require Import NZAxioms NZMulOrder.
 
 (** The first signatures will be common to all divisions over NZ, N and Z *)
 

@@ -8,14 +8,14 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import QArith.
-Require Import Qabs.
-Require Import Qpower.
-Require Import ConstructiveCauchyReals.
-Require Import ConstructiveCauchyRealsMult.
-Require Import Lia.
-Require Import Lqa.
-Require Import QExtra.
+From Stdlib Require Import QArith.
+From Stdlib Require Import Qabs.
+From Stdlib Require Import Qpower.
+From Stdlib Require Import ConstructiveCauchyReals.
+From Stdlib Require Import ConstructiveCauchyRealsMult.
+From Stdlib Require Import Lia.
+From Stdlib Require Import Lqa.
+From Stdlib Require Import QExtra.
 
 Local Open Scope CReal_scope.
 

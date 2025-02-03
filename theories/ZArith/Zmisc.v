@@ -8,11 +8,11 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Wf_nat.
-Require Import BinInt.
-Require Import Zcompare.
-Require Import Zorder.
-Require Import Bool.
+From Stdlib Require Import Wf_nat.
+From Stdlib Require Import BinInt.
+From Stdlib Require Import Zcompare.
+From Stdlib Require Import Zorder.
+From Stdlib Require Import Bool.
 Local Open Scope Z_scope.
 
 (**********************************************************************)

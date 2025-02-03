@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import NAxioms NSub NDiv.
+From Stdlib Require Import NAxioms NSub NDiv.
 
 Module Type NDivPropPrivate (N : NAxiomsSig') (NP : NSubProp N).
 Declare Module Private_NDivProp : NDivProp N NP.

@@ -8,10 +8,10 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Rbase.
-Require Import Rfunctions.
-Require Import PartSum.
-Require Import Arith.Factorial.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import Rfunctions.
+From Stdlib Require Import PartSum.
+From Stdlib Require Import Arith.Factorial.
 Local Open Scope R_scope.
 
 Definition C (n p:nat) : R :=

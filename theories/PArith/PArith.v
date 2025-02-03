@@ -10,4 +10,4 @@
 
 (** Library for positive natural numbers *)
 
-Require Export BinNums BinPos Pnat POrderedType.
+From Stdlib Require Export BinNums BinPos Pnat POrderedType.

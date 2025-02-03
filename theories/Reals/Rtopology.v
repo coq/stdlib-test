@@ -8,13 +8,13 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Rbase.
-Require Import Rfunctions.
-Require Import Ranalysis1.
-Require Import RList.
-Require Import List.
-Require Import Classical_Prop.
-Require Import Classical_Pred_Type.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import Rfunctions.
+From Stdlib Require Import Ranalysis1.
+From Stdlib Require Import RList.
+From Stdlib Require Import List.
+From Stdlib Require Import Classical_Prop.
+From Stdlib Require Import Classical_Pred_Type.
 Local Open Scope R_scope.
 
 (** * General definitions and propositions *)

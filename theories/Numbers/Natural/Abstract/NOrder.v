@@ -10,7 +10,7 @@
 (*                      Evgeny Makarov, INRIA, 2007                     *)
 (************************************************************************)
 
-Require Export NAdd.
+From Stdlib Require Export NAdd.
 
 Module NOrderProp (Import N : NAxiomsMiniSig').
 Include NAddProp N.

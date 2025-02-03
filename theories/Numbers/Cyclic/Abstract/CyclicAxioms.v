@@ -16,11 +16,11 @@
 
 Set Implicit Arguments.
 
-Require Import ZArith.
-Require Import Lia.
-Require Import Znumtheory.
-Require Import Zpow_facts.
-Require Import DoubleType.
+From Stdlib Require Import ZArith.
+From Stdlib Require Import Lia.
+From Stdlib Require Import Znumtheory.
+From Stdlib Require Import Zpow_facts.
+From Stdlib Require Import DoubleType.
 
 Local Open Scope Z_scope.
 

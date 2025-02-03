@@ -10,7 +10,7 @@
 
 (** Power Function *)
 
-Require Import NZAxioms NZMulOrder.
+From Stdlib Require Import NZAxioms NZMulOrder.
 
 (** Interface of a power function, then its specification on naturals *)
 

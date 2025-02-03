@@ -10,7 +10,7 @@
 (*                      Evgeny Makarov, INRIA, 2007                     *)
 (************************************************************************)
 
-Require Export NAddOrder.
+From Stdlib Require Export NAddOrder.
 
 Module NMulOrderProp (Import N : NAxiomsMiniSig').
 Include NAddOrderProp N.

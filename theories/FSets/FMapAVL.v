@@ -18,7 +18,7 @@
     See the comments at the beginning of FSetAVL for more details.
 *)
 
-Require Import FMapInterface FMapList ZArith Int.
+From Stdlib Require Import FMapInterface FMapList ZArith Int.
 
 Set Implicit Arguments.
 Unset Strict Implicit.

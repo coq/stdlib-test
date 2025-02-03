@@ -8,15 +8,15 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Compare.
-Require Import Rbase.
-Require Import Rfunctions.
-Require Import Rseries.
-Require Import PartSum.
-Require Import Binomial.
-Require Import Lia.
-Require Import Arith.Factorial.
-Require Import Peano_dec.
+From Stdlib Require Import Compare.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import Rfunctions.
+From Stdlib Require Import Rseries.
+From Stdlib Require Import PartSum.
+From Stdlib Require Import Binomial.
+From Stdlib Require Import Lia.
+From Stdlib Require Import Arith.Factorial.
+From Stdlib Require Import Peano_dec.
 Local Open Scope R_scope.
 
 (** TT Ak; 0<=k<=N *)

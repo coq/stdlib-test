@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Arith BinInt BinNat Znat Nnat.
+From Stdlib Require Import Arith BinInt BinNat Znat Nnat.
 
 Local Open Scope Z_scope.
 
@@ -228,8 +228,8 @@ Module Z.
     to_euclidean_division_equations_with euclidean_division_equations_flags.default.
 End Z.
 
-Require Import ZifyClasses ZifyInst.
-Require Zify.
+From Stdlib Require Import ZifyClasses ZifyInst.
+From Stdlib Require Zify.
 
 Ltac Zify.zify_internal_to_euclidean_division_equations ::= Z.to_euclidean_division_equations.
 

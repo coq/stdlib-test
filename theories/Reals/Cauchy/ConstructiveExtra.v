@@ -1,5 +1,5 @@
-Require Import ZArith.
-Require Import ConstructiveEpsilon.
+From Stdlib Require Import ZArith.
+From Stdlib Require Import ConstructiveEpsilon.
 
 Definition Z_inj_nat (z : Z) : nat :=
   match z with

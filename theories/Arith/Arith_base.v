@@ -8,13 +8,13 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export PeanoNat.
-Require Export Factorial.
-Require Export Between.
-Require Export Peano_dec.
-Require Export Compare_dec.
-Require Export EqNat.
-Require Export Wf_nat.
+From Stdlib Require Export PeanoNat.
+From Stdlib Require Export Factorial.
+From Stdlib Require Export Between.
+From Stdlib Require Export Peano_dec.
+From Stdlib Require Export Compare_dec.
+From Stdlib Require Export EqNat.
+From Stdlib Require Export Wf_nat.
 
 (** * [arith] hint database *)
 

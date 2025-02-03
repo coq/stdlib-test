@@ -10,44 +10,44 @@
 
 (** Library for manipulating integers based on binary encoding *)
 
-Require Export BinNums.
-Require Export BinPos.
-Require Export BinNat.
-Require Export BinInt.
-Require Export Zcompare.
-Require Export Zorder.
-Require Export Zeven.
-Require Export Zminmax.
-Require Export Zmin.
-Require Export Zmax.
-Require Export Zabs.
-Require Export Znat.
-Require Export auxiliary.
-Require Export ZArith_dec.
-Require Export Zbool.
-Require Export Zmisc.
-Require Export Wf_Z.
+From Stdlib Require Export BinNums.
+From Stdlib Require Export BinPos.
+From Stdlib Require Export BinNat.
+From Stdlib Require Export BinInt.
+From Stdlib Require Export Zcompare.
+From Stdlib Require Export Zorder.
+From Stdlib Require Export Zeven.
+From Stdlib Require Export Zminmax.
+From Stdlib Require Export Zmin.
+From Stdlib Require Export Zmax.
+From Stdlib Require Export Zabs.
+From Stdlib Require Export Znat.
+From Stdlib Require Export auxiliary.
+From Stdlib Require Export ZArith_dec.
+From Stdlib Require Export Zbool.
+From Stdlib Require Export Zmisc.
+From Stdlib Require Export Wf_Z.
 
 #[global]
 Hint Resolve Z.le_refl Z.add_comm Z.add_assoc Z.mul_comm Z.mul_assoc Z.add_0_l
   Z.add_0_r Z.mul_1_l Z.add_opp_diag_l Z.add_opp_diag_r Z.mul_add_distr_l
   Z.mul_add_distr_r: zarith.
 
-Require Export Zhints.
+From Stdlib Require Export Zhints.
 
 (** Extra definitions *)
 
-Require Export Zpow_def.
+From Stdlib Require Export Zpow_def.
 
 (** Extra modules using [Ring]. *)
 
-Require Export OmegaLemmas.
-Require Export PreOmega.
-Require Export ZArith_hints.
-Require Export Zcomplements.
-Require Export Zpower.
-Require Export Zdiv.
-Require Export Zdiv_facts.
-Require Export Zbitwise.
+From Stdlib Require Export OmegaLemmas.
+From Stdlib Require Export PreOmega.
+From Stdlib Require Export ZArith_hints.
+From Stdlib Require Export Zcomplements.
+From Stdlib Require Export Zpower.
+From Stdlib Require Export Zdiv.
+From Stdlib Require Export Zdiv_facts.
+From Stdlib Require Export Zbitwise.
 
 Export ZArithRing.

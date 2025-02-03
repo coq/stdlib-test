@@ -8,10 +8,10 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Rbase.
-Require Import Rfunctions.
-Require Import Rseries.
-Require Import PartSum.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import Rfunctions.
+From Stdlib Require Import Rseries.
+From Stdlib Require Import PartSum.
 Local Open Scope R_scope.
 
   (**********)

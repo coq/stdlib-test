@@ -29,6 +29,7 @@ theories/funind/Recdef.v
 theories/ltac/Ltac.v
 theories/micromega/Ztac.v
 theories/micromega/DeclConstant.v
+theories/micromega/DeclConstantZ.v
 theories/micromega/Env.v
 theories/micromega/EnvRing.v
 theories/micromega/Fourier.v
@@ -36,7 +37,6 @@ theories/micromega/Fourier_util.v
 theories/micromega/Lia.v
 theories/micromega/Lqa.v
 theories/micromega/Lra.v
-theories/micromega/MExtraction.v
 theories/micromega/OrderedRing.v
 theories/micromega/Psatz.v
 theories/micromega/QMicromega.v
@@ -60,7 +60,6 @@ theories/micromega/ZifyClasses.v
 theories/micromega/ZifyPow.v
 theories/micromega/Zify.v
 theories/nsatz/NsatzTactic.v
-theories/nsatz/Nsatz.v
 theories/omega/OmegaLemmas.v
 theories/omega/PreOmega.v
 theories/quote/Quote.v
@@ -97,6 +96,7 @@ theories/ssr/ssrsetoid.v
 theories/Reals/Cauchy/ConstructiveExtra.v
 theories/Reals/Cauchy/PosExtra.v
 theories/Reals/Cauchy/QExtra.v
+theories/Reals/Nsatz.v
 theories/Numbers/Natural/Binary/NBinary.v
 theories/Numbers/Integer/Binary/ZBinary.v
 theories/Numbers/Integer/NatPairs/ZNatPairs.v

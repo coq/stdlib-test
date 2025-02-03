@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Bool NAxioms NSub NPow NDiv NParity NLog.
+From Stdlib Require Import Bool NAxioms NSub NPow NDiv NParity NLog.
 
 (** Derived properties of bitwise operations *)
 

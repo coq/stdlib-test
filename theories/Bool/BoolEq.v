@@ -13,7 +13,7 @@
 (** Properties of a boolean equality   *)
 
 
-Require Export Bool.
+From Stdlib Require Export Bool.
 
 Section Bool_eq_dec.
 

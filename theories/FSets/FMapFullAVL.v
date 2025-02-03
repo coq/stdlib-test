@@ -27,8 +27,8 @@
 
 *)
 
-Require Program.
-Require Import FMapInterface FMapList ZArith Int FMapAVL Lia.
+From Stdlib Require Program.
+From Stdlib Require Import FMapInterface FMapList ZArith Int FMapAVL Lia.
 
 Set Implicit Arguments.
 Unset Strict Implicit.

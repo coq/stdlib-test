@@ -8,14 +8,14 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import PeanoNat.
-Require Import BinNat.
-Require Import Nnat.
-Require Import ArithRing.
-Require Export Ring Field.
-Require Import Rdefinitions.
-Require Import Rpow_def.
-Require Import Raxioms.
+From Stdlib Require Import PeanoNat.
+From Stdlib Require Import BinNat.
+From Stdlib Require Import Nnat.
+From Stdlib Require Import ArithRing.
+From Stdlib Require Export Ring Field.
+From Stdlib Require Import Rdefinitions.
+From Stdlib Require Import Rpow_def.
+From Stdlib Require Import Raxioms.
 
 Local Open Scope R_scope.
 

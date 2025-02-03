@@ -6,10 +6,10 @@
  * implements [Num].
  *)
 
-Require Stdlib.extraction.Extraction.
+From Stdlib Require Extraction.
 
-Require Import Arith.
-Require Import EqNat.
+From Stdlib Require Import Arith.
+From Stdlib Require Import EqNat.
 
 Extract Inlined Constant Nat.add => "(Prelude.+)".
 Extract Inlined Constant Nat.mul => "(Prelude.*)".

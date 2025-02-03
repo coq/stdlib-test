@@ -26,9 +26,9 @@
 (* in Summer 1995. Several developments by E. Ledinot were an inspiration.  *)
 (****************************************************************************)
 
-Require Export Relations_1.
-Require Export Relations_1_facts.
-Require Export Relations_2.
+From Stdlib Require Export Relations_1.
+From Stdlib Require Export Relations_1_facts.
+From Stdlib Require Export Relations_2.
 
 Theorem Rstar_reflexive :
  forall (U:Type) (R:Relation U), Reflexive U (Rstar U R).

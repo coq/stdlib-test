@@ -15,8 +15,8 @@
 (*                                                                      *)
 (************************************************************************)
 
-Require Import List.
-Require Setoid.
+From Stdlib Require Import List.
+From Stdlib Require Setoid.
 
 Set Implicit Arguments.
 

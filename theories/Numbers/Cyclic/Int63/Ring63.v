@@ -11,7 +11,7 @@
 (** * Uint63 numbers defines Z/(2^63)Z, and can hence be equipped
       with a ring structure and a ring tactic *)
 
-Require Import Cyclic63 CyclicAxioms.
+From Stdlib Require Import Cyclic63 CyclicAxioms.
 
 Local Open Scope uint63_scope.
 

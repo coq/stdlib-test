@@ -8,9 +8,9 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import PeanoNat BinInt.
-Require Export Wf_nat.
-Require Import Lia.
+From Stdlib Require Import PeanoNat BinInt.
+From Stdlib Require Export Wf_nat.
+From Stdlib Require Import Lia.
 Local Open Scope Z_scope.
 
 (** Well-founded relations on Z. *)

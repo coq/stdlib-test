@@ -14,18 +14,18 @@
 (*                                                                      *)
 (************************************************************************)
 
-Require Import ZMicromega.
-Require Import QMicromega.
-Require Import RMicromega.
-Require Import QArith.
-Require Import ZArith.
-Require Import Rdefinitions.
-Require Import RingMicromega.
-Require Import VarMap.
-Require Stdlib.micromega.Tauto.
-Require Lia.
-Require Lra.
-Require Lqa.
+From Stdlib Require Import ZMicromega.
+From Stdlib Require Import QMicromega.
+From Stdlib Require Import RMicromega.
+From Stdlib Require Import QArith.
+From Stdlib Require Import ZArith.
+From Stdlib Require Import Rdefinitions.
+From Stdlib Require Import RingMicromega.
+From Stdlib Require Import VarMap.
+From Stdlib.micromega Require Tauto.
+From Stdlib Require Lia.
+From Stdlib Require Lra.
+From Stdlib Require Lqa.
 
 Declare ML Module "rocq-runtime.plugins.micromega".
 

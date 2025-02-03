@@ -15,7 +15,7 @@
 (* Adapted in May 2006 by Jean-Marc Notin from initial contents by
    Laurent Théry (Huffmann contribution, October 2003) *)
 
-Require Import List Setoid Compare_dec Morphisms FinFun PeanoNat.
+From Stdlib Require Import List Setoid Compare_dec Morphisms FinFun PeanoNat.
 Import ListNotations. (* For notations [] and [a;b;c] *)
 Set Implicit Arguments.
 (* Set Universe Polymorphism. *)

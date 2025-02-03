@@ -14,10 +14,10 @@
 (*                                                                      *)
 (************************************************************************)
 
-Require Import List.
-Require Import Refl.
-Require Import Bool.
-Require Import Relation_Definitions Setoid.
+From Stdlib Require Import List.
+From Stdlib Require Import Refl.
+From Stdlib Require Import Bool.
+From Stdlib Require Import Relation_Definitions Setoid.
 
 Set Implicit Arguments.
 

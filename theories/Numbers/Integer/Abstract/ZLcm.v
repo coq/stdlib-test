@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import ZAxioms ZMulOrder ZSgnAbs ZGcd ZDivTrunc ZDivFloor.
+From Stdlib Require Import ZAxioms ZMulOrder ZSgnAbs ZGcd ZDivTrunc ZDivFloor.
 
 (** * Least Common Multiple *)
 

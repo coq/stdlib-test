@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Bool.
+From Stdlib Require Import Bool.
 
 Inductive IfProp (A B:Prop) : bool -> Prop :=
   | Iftrue : A -> IfProp A B true

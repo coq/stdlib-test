@@ -9,16 +9,16 @@
 (************************************************************************)
 (************************************************************************)
 
-Require Import QArith.
-Require Import Qpower.
-Require Import Qabs.
-Require Import Qround.
-Require Import Logic.ConstructiveEpsilon.
-Require CMorphisms.
-Require Import Lia.
-Require Import Lqa.
-Require Import QExtra.
-Require Import ConstructiveExtra.
+From Stdlib Require Import QArith.
+From Stdlib Require Import Qpower.
+From Stdlib Require Import Qabs.
+From Stdlib Require Import Qround.
+From Stdlib Require Import ConstructiveEpsilon.
+From Stdlib Require CMorphisms.
+From Stdlib Require Import Lia.
+From Stdlib Require Import Lqa.
+From Stdlib Require Import QExtra.
+From Stdlib Require Import ConstructiveExtra.
 
 (** The constructive Cauchy real numbers, ie the Cauchy sequences
     of rational numbers.

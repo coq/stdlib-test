@@ -8,16 +8,16 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export Orders.
-Require Export OrdersEx.
-Require Export OrdersAlt.
-Require Export Equalities.
-Require Export MSetInterface.
-Require Export MSetFacts.
-Require Export MSetDecide.
-Require Export MSetProperties.
-Require Export MSetEqProperties.
-Require Export MSetWeakList.
-Require Export MSetList.
-Require Export MSetPositive.
-Require Export MSetAVL.
+From Stdlib Require Export Orders.
+From Stdlib Require Export OrdersEx.
+From Stdlib Require Export OrdersAlt.
+From Stdlib Require Export Equalities.
+From Stdlib Require Export MSetInterface.
+From Stdlib Require Export MSetFacts.
+From Stdlib Require Export MSetDecide.
+From Stdlib Require Export MSetProperties.
+From Stdlib Require Export MSetEqProperties.
+From Stdlib Require Export MSetWeakList.
+From Stdlib Require Export MSetList.
+From Stdlib Require Export MSetPositive.
+From Stdlib Require Export MSetAVL.

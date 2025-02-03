@@ -16,8 +16,8 @@
     It is now almost entirely made of compatibility formulations
     for results already present in BinInt.Z. *)
 
-Require Import BinPos BinInt Decidable Zcompare.
-Require Import Arith_base. (* Useless now, for compatibility only *)
+From Stdlib Require Import BinPos BinInt Decidable Zcompare.
+From Stdlib Require Import Arith_base. (* Useless now, for compatibility only *)
 
 Local Open Scope Z_scope.
 

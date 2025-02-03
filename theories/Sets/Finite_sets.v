@@ -26,7 +26,7 @@
 (* in Summer 1995. Several developments by E. Ledinot were an inspiration.  *)
 (****************************************************************************)
 
-Require Import Ensembles.
+From Stdlib Require Import Ensembles.
 
 Section Ensembles_finis.
   Variable U : Type.
@@ -50,7 +50,7 @@ Hint Resolve Empty_is_finite Union_is_finite: sets.
 #[global]
 Hint Resolve card_empty card_add: sets.
 
-Require Import Constructive_sets.
+From Stdlib Require Import Constructive_sets.
 
 Section Ensembles_finis_facts.
   Variable U : Type.

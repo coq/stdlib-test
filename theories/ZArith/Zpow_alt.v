@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import BinInt.
+From Stdlib Require Import BinInt.
 Local Open Scope Z_scope.
 
 (** An alternative power function for Z *)

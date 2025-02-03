@@ -8,8 +8,8 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export SetoidList.
-Require Equalities.
+From Stdlib Require Export SetoidList.
+From Stdlib Require Equalities.
 
 Set Implicit Arguments.
 Unset Strict Implicit.

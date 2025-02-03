@@ -15,8 +15,8 @@ Local Set Warnings "-deprecated".
     Useful to bootstrap lia.
  *)
 
-Require Import BinInt.
-Require Import (ltac.notations) Ring_tac.
+From Stdlib Require Import BinInt.
+From Stdlib Require Import (ltac.notations) Ring_tac.
 Local Open Scope Z_scope.
 
 #[deprecated(use=Z.eq_le_incl, since="9.0")]

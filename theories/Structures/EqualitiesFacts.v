@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Equalities Bool SetoidList RelationPairs.
+From Stdlib Require Import Equalities Bool SetoidList RelationPairs.
 
 Set Implicit Arguments.
 

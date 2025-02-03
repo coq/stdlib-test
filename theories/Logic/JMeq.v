@@ -17,7 +17,7 @@
 
 *)
 
-Require Import Eqdep.
+From Stdlib Require Import Eqdep.
 
 Set Implicit Arguments.
 
@@ -113,7 +113,7 @@ Register JMeq_congr as core.JMeq.congr.
 
 (** [JMeq] is equivalent to [eq_dep Type (fun X => X)] *)
 
-Require Import Eqdep.
+From Stdlib Require Import Eqdep.
 
 Lemma JMeq_eq_dep_id :
  forall (A B:Type) (x:A) (y:B), JMeq x y -> eq_dep Type (fun X => X) A x B y.

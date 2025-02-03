@@ -10,10 +10,10 @@
 
 (** Extraction of [nat] into Zarith's [Z.t] *)
 
-Require Stdlib.extraction.Extraction.
+From Stdlib Require Extraction.
 
-Require Import Arith EqNat Euclid.
-Require Import ExtrOcamlBasic.
+From Stdlib Require Import Arith EqNat Euclid.
+From Stdlib Require Import ExtrOcamlBasic.
 
 (** NB: The extracted code depends on [zarith] package. *)
 
@@ -70,7 +70,7 @@ Extract Constant Euclid.quotient => "(fun n m -> Big_int_Z.div_big_int m n)".
 Extract Constant Euclid.modulo => "(fun n m -> Big_int_Z.mod_big_int m n)".
 
 (*
-Require Import Euclid.
+From Stdlib Require Import Euclid.
 Definition test n m (H:m>0) :=
  let (q,r,_,_) := eucl_dev m H n in
  nat_compare n (q*m+r).

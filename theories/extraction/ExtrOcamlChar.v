@@ -10,10 +10,11 @@
 
 (* Extraction to Ocaml : extract ascii to OCaml's char type *)
 
-Require Stdlib.extraction.Extraction.
+From Stdlib Require Extraction.
 
-Require Import Ascii String Stdlib.Strings.Byte.
-Require Export ExtrOcamlBasic.
+From Stdlib Require Import Ascii String.
+From Stdlib.Strings Require Import Byte.
+From Stdlib Require Export ExtrOcamlBasic.
 
 Extract Inductive ascii => char
 [

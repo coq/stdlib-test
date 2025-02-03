@@ -13,7 +13,7 @@
     Proofs that conversions between hexadecimal numbers and [N]
     are bijections *)
 
-Require Import Hexadecimal HexadecimalFacts HexadecimalPos PArith NArith.
+From Stdlib Require Import Hexadecimal HexadecimalFacts HexadecimalPos PArith NArith.
 
 Module Unsigned.
 

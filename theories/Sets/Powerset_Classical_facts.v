@@ -26,16 +26,16 @@
 (* in Summer 1995. Several developments by E. Ledinot were an inspiration.  *)
 (****************************************************************************)
 
-Require Export Ensembles.
-Require Export Constructive_sets.
-Require Export Relations_1.
-Require Export Relations_1_facts.
-Require Export Partial_Order.
-Require Export Cpo.
-Require Export Powerset.
-Require Export Powerset_facts.
-Require Export Classical.
-Require Export Classical_sets.
+From Stdlib Require Export Ensembles.
+From Stdlib Require Export Constructive_sets.
+From Stdlib Require Export Relations_1.
+From Stdlib Require Export Relations_1_facts.
+From Stdlib Require Export Partial_Order.
+From Stdlib Require Export Cpo.
+From Stdlib Require Export Powerset.
+From Stdlib Require Export Powerset_facts.
+From Stdlib Require Export Classical.
+From Stdlib Require Export Classical_sets.
 
 Section Sets_as_an_algebra.
 

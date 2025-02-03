@@ -19,14 +19,14 @@
 (**    Lifts of basic operations for classical reals     *)
 (*********************************************************)
 
-Require Export BinInt.
-Require Import Znat.
-Require Import ClassicalDedekindReals.
-Require Import ConstructiveCauchyReals.
-Require Import ConstructiveCauchyRealsMult.
-Require Import ConstructiveRcomplete.
-Require Import ConstructiveLUB.
-Require Export Rdefinitions.
+From Stdlib Require Export BinInt.
+From Stdlib Require Import Znat.
+From Stdlib Require Import ClassicalDedekindReals.
+From Stdlib Require Import ConstructiveCauchyReals.
+From Stdlib Require Import ConstructiveCauchyRealsMult.
+From Stdlib Require Import ConstructiveRcomplete.
+From Stdlib Require Import ConstructiveLUB.
+From Stdlib Require Export Rdefinitions.
 Local Open Scope R_scope.
 
 (*********************************************************)

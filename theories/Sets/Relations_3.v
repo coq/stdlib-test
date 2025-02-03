@@ -26,8 +26,8 @@
 (* in Summer 1995. Several developments by E. Ledinot were an inspiration.  *)
 (****************************************************************************)
 
-Require Export Relations_1.
-Require Export Relations_2.
+From Stdlib Require Export Relations_1.
+From Stdlib Require Export Relations_2.
 
 Section Relations_3.
    Variable U : Type.

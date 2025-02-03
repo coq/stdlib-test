@@ -25,8 +25,8 @@ numbers.
 
 Notice that [NZMulOrderProp] [Include]s [NZAddOrderProp].
 *)
-Require Import NZAxioms.
-Require Import NZAddOrder.
+From Stdlib Require Import NZAxioms.
+From Stdlib Require Import NZAddOrder.
 
 Module Type NZMulOrderProp (Import NZ : NZOrdAxiomsSig').
 Include NZAddOrderProp NZ.

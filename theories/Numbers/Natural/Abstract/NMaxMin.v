@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import NAxioms NSub GenericMinMax.
+From Stdlib Require Import NAxioms NSub GenericMinMax.
 
 (** * Properties of minimum and maximum specific to natural numbers *)
 

@@ -10,7 +10,7 @@
 
 (** Properties of the power function *)
 
-Require Import Bool NAxioms NSub NParity NZPow.
+From Stdlib Require Import Bool NAxioms NSub NParity NZPow.
 
 (** Derived properties of power, specialized on natural numbers *)
 

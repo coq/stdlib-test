@@ -13,7 +13,7 @@
 (** This module implements bridges (as functors) from dependent
     to/from non-dependent set signature. *)
 
-Require Export FSetInterface.
+From Stdlib Require Export FSetInterface.
 Set Implicit Arguments.
 Unset Strict Implicit.
 Set Firstorder Depth 2.

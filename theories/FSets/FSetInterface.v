@@ -28,7 +28,7 @@
     [FSetBridge]).
 *)
 
-Require Export Bool OrderedType DecidableType.
+From Stdlib Require Export Bool OrderedType DecidableType.
 Set Implicit Arguments.
 Unset Strict Implicit.
 

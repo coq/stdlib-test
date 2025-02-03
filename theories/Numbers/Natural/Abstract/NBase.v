@@ -10,9 +10,9 @@
 (*                      Evgeny Makarov, INRIA, 2007                     *)
 (************************************************************************)
 
-Require Export Decidable.
-Require Export NAxioms.
-Require Import NZMulOrder.
+From Stdlib Require Export Decidable.
+From Stdlib Require Export NAxioms.
+From Stdlib Require Import NZMulOrder.
 
 Module NBaseProp (Import N : NAxiomsMiniSig').
 (** First, we import all known facts about both natural numbers and integers. *)

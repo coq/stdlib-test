@@ -32,8 +32,8 @@ Additional suggested reading:
    http://www.lri.fr/~filliatr/ftp/publis/fpp.ps.gz
 *)
 
-Require MSetGenTree.
-Require Import Bool List BinPos Pnat Setoid SetoidList PeanoNat.
+From Stdlib Require MSetGenTree.
+From Stdlib Require Import Bool List BinPos Pnat Setoid SetoidList PeanoNat.
 Local Open Scope list_scope.
 
 (* For nicer extraction, we create induction principles

@@ -101,7 +101,7 @@ Qed.
 (** A weakest form of propositional extensionality: extensionality for
     provable propositions only *)
 
-Require Import PropExtensionalityFacts.
+From Stdlib Require Import PropExtensionalityFacts.
 
 Definition provable_prop_extensionality := forall A:Prop, A -> A = True.
 
@@ -322,7 +322,7 @@ End Proof_irrelevance_CIC.
     paradox of system U- (e.g. Hurkens' paradox).
 *)
 
-Require Import Hurkens.
+From Stdlib Require Import Hurkens.
 
 Section Proof_irrelevance_EM_CC.
 
@@ -768,7 +768,7 @@ Qed.
 
 (** ** Principle of unrestricted minimization *)
 
-Require Import Stdlib.Arith.PeanoNat.
+From Stdlib.Arith Require Import PeanoNat.
 
 Definition Minimal (P:nat -> Prop) (n:nat) : Prop :=
   P n /\ forall k, P k -> n<=k.
@@ -799,7 +799,7 @@ Section Unrestricted_minimization_entails_excluded_middle.
 
 End Unrestricted_minimization_entails_excluded_middle.
 
-Require Import Wf_nat.
+From Stdlib Require Import Wf_nat.
 
 Section Excluded_middle_entails_unrestricted_minimization.
 
@@ -849,7 +849,7 @@ End Example_of_undecidable_predicate_with_the_minimization_property.
    [[Bell]] John L. Bell, Choice principles in intuitionistic set theory, unpublished.
 *)
 
-Require Import RelationClasses.
+From Stdlib Require Import RelationClasses.
 
 Local Notation representative_boolean_partition :=
   (forall R:bool->bool->Prop,

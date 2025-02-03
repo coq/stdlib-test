@@ -9,10 +9,10 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export BinNums BinPos Pnat.
-Require Import BinNat Bool Equalities GenericMinMax
+From Stdlib Require Export BinNums BinPos Pnat.
+From Stdlib Require Import BinNat Bool Equalities GenericMinMax
  OrdersFacts ZAxioms ZProperties DecidableClass.
-Require BinIntDef.
+From Stdlib Require BinIntDef.
 
 (***********************************************************)
 (** * Binary Integers *)

@@ -14,7 +14,7 @@
 
 (** Classical Propositional Logic *)
 
-Require Import ClassicalFacts.
+From Stdlib Require Import ClassicalFacts.
 
 #[global]
 Hint Unfold not: core.
@@ -110,7 +110,7 @@ Ltac classical_left := match goal with
 |- _ \/ ?X => (elim (classic X);intro;[right;trivial|left])
 end.
 
-Require Export EqdepFacts.
+From Stdlib Require Export EqdepFacts.
 
 Module Eq_rect_eq.
 

@@ -146,7 +146,7 @@ Theorem inj_right_pair A (eq_dec : forall x y : A, x = y \/ x <> y) (x : A)
     ex_intro P x y = ex_intro P x y' -> y = y'.
 Proof (@inj_right_pair_on A x (eq_dec x)).
 
-Require Import EqdepFacts.
+From Stdlib Require Import EqdepFacts.
 
 (** We deduce axiom [K] for (decidable) types *)
 Theorem K_dec_type (A:Type) (eq_dec:forall x y:A, {x = y} + {x <> y}) (x:A)

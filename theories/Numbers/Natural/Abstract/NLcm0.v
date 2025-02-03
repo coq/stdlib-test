@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import NAxioms NSub NDiv0 NGcd NLcm.
+From Stdlib Require Import NAxioms NSub NDiv0 NGcd NLcm.
 
 Module Type NLcmPropPrivate
   (A : NAxiomsSig') (B : NSubProp A) (C : NDivPropPrivate A B) (D : NGcdProp A B).

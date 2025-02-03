@@ -8,9 +8,9 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export Cring.
-Require Export Integral_domain.
-Require Export Ncring_initial.
+From Stdlib Require Export Cring.
+From Stdlib Require Export Integral_domain.
+From Stdlib Require Export Ncring_initial.
 
 #[global]
 Instance Zcri: (Cring (Rr:=Zr)).

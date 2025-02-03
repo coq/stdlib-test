@@ -10,7 +10,7 @@
 
 (** * Compatibility functors between FSetInterface and MSetInterface. *)
 
-Require Import FSetInterface FSetFacts MSetInterface MSetFacts.
+From Stdlib Require Import FSetInterface FSetFacts MSetInterface MSetFacts.
 Set Implicit Arguments.
 Unset Strict Implicit.
 

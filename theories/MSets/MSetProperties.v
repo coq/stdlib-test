@@ -16,8 +16,8 @@
     [In x s] instead of [mem x s=true],
     [Equal s s'] instead of [equal s s'=true], etc. *)
 
-Require Export MSetInterface.
-Require Import PeanoNat DecidableTypeEx OrdersLists MSetFacts MSetDecide.
+From Stdlib Require Export MSetInterface.
+From Stdlib Require Import PeanoNat DecidableTypeEx OrdersLists MSetFacts MSetDecide.
 Set Implicit Arguments.
 Unset Strict Implicit.
 

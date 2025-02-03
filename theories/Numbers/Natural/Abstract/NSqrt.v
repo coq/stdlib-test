@@ -10,7 +10,7 @@
 
 (** Properties of Square Root Function *)
 
-Require Import NAxioms NSub NZSqrt.
+From Stdlib Require Import NAxioms NSub NZSqrt.
 
 Module NSqrtProp (Import A : NAxiomsSig')(Import B : NSubProp A).
 

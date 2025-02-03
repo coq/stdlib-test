@@ -9,7 +9,7 @@ HIDDEN=$2
 tmp=$(mktemp)
 tmp2=$(mktemp)
 
-cp -f "$FILE.template" "$tmp"
+sed -e '/#include depends.svg/r doc/stdlib/depends.svg' "$FILE.template" > "$tmp"
 echo -n "Building file index-list.prehtml... "
 
 LIBDIRS=$(find theories/* -type d ! -name .coq-native)

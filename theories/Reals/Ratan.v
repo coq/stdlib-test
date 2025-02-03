@@ -8,21 +8,21 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Lra.
-Require Import Rbase.
-Require Import PSeries_reg.
-Require Import Rtrigo1.
-Require Import Rtrigo_facts.
-Require Import Ranalysis_reg.
-Require Import Rfunctions.
-Require Import AltSeries.
-Require Import Rseries.
-Require Import SeqProp.
-Require Import Ranalysis5.
-Require Import SeqSeries.
-Require Import PartSum.
-Require Import Lia.
-Require Import Znat.
+From Stdlib Require Import Lra.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import PSeries_reg.
+From Stdlib Require Import Rtrigo1.
+From Stdlib Require Import Rtrigo_facts.
+From Stdlib Require Import Ranalysis_reg.
+From Stdlib Require Import Rfunctions.
+From Stdlib Require Import AltSeries.
+From Stdlib Require Import Rseries.
+From Stdlib Require Import SeqProp.
+From Stdlib Require Import Ranalysis5.
+From Stdlib Require Import SeqSeries.
+From Stdlib Require Import PartSum.
+From Stdlib Require Import Lia.
+From Stdlib Require Import Znat.
 
 Local Open Scope R_scope.
 Local Ltac Tauto.intuition_solver ::= auto with rorders real arith.

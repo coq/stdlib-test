@@ -7,7 +7,7 @@
 (*         *     GNU Lesser General Public License Version 2.1          *)
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
-Require Import OrderedType.
+From Stdlib Require Import OrderedType.
 
 (** * An alternative (but equivalent) presentation for an Ordered Type
    inferface. *)

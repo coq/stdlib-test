@@ -8,12 +8,12 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Sumbool.
-Require Import Rbase.
-Require Import Rfunctions.
-Require Import SeqSeries.
-Require Import Ranalysis1.
-Require Import Lra.
+From Stdlib Require Import Sumbool.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import Rfunctions.
+From Stdlib Require Import SeqSeries.
+From Stdlib Require Import Ranalysis1.
+From Stdlib Require Import Lra.
 Local Open Scope R_scope.
 
 Fixpoint Dichotomy_lb (x y:R) (P:R -> bool) (N:nat) {struct N} : R :=

@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Rbasic_fun.
+From Stdlib Require Import Rbasic_fun.
 
 Ltac split_case_Rabs :=
   match goal with

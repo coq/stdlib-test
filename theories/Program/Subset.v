@@ -9,9 +9,9 @@
 (************************************************************************)
 (** Tactics related to subsets and proof irrelevance. *)
 
-Require Import Stdlib.Program.Utils.
-Require Import Stdlib.Program.Equality.
-Require Export ProofIrrelevance.
+From Stdlib.Program Require Import Utils.
+From Stdlib.Program Require Import Equality.
+From Stdlib Require Export ProofIrrelevance.
 
 Local Open Scope program_scope.
 

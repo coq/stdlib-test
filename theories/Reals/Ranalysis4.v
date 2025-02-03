@@ -8,15 +8,15 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Rbase.
-Require Import Rfunctions.
-Require Import SeqSeries.
-Require Import Rtrigo1.
-Require Import Ranalysis1.
-Require Import Ranalysis3.
-Require Import Exp_prop.
-Require Import MVT.
-Require Import Lra Lia.
+From Stdlib Require Import Rbase.
+From Stdlib Require Import Rfunctions.
+From Stdlib Require Import SeqSeries.
+From Stdlib Require Import Rtrigo1.
+From Stdlib Require Import Ranalysis1.
+From Stdlib Require Import Ranalysis3.
+From Stdlib Require Import Exp_prop.
+From Stdlib Require Import MVT.
+From Stdlib Require Import Lra Lia.
 Local Open Scope R_scope.
 
 (**********)

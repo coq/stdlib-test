@@ -17,8 +17,8 @@
     with non computable functions. It conflicts with the
     impredicativity of [Set] *)
 
-Require Export Classical.
-Require Import ChoiceFacts.
+From Stdlib Require Export Classical.
+From Stdlib Require Import ChoiceFacts.
 
 Set Implicit Arguments.
 

@@ -13,7 +13,7 @@
 (* G. Huet 1-9-95 *)
 (* Updated Papageno 12/98 *)
 
-Require Import Bool Permut.
+From Stdlib Require Import Bool Permut.
 
 Set Implicit Arguments.
 

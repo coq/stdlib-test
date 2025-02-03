@@ -10,7 +10,7 @@
 (*                      Evgeny Makarov, INRIA, 2007                     *)
 (************************************************************************)
 
-Require Export ZAddOrder.
+From Stdlib Require Export ZAddOrder.
 
 Module Type ZMulOrderProp (Import Z : ZAxiomsMiniSig').
 Include ZAddOrderProp Z.

@@ -8,8 +8,8 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import RIneq.
-Require Import Lia.
+From Stdlib Require Import RIneq.
+From Stdlib Require Import Lia.
 Local Open Scope R_scope.
 
 Lemma Rlt_R0_R2 : 0 < 2.

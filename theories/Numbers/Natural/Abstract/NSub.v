@@ -10,7 +10,7 @@
 (*                      Evgeny Makarov, INRIA, 2007                     *)
 (************************************************************************)
 
-Require Export NMulOrder.
+From Stdlib Require Export NMulOrder.
 
 Module Type NSubProp (Import N : NAxiomsMiniSig').
 Include NMulOrderProp N.

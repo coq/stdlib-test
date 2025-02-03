@@ -12,7 +12,7 @@
     From: Constructing Recursion Operators in Type Theory
     L. Paulson  JSC (1986) 2, 325-355 *)
 
-Require Import EqdepFacts.
+From Stdlib Require Import EqdepFacts.
 
 #[universes(template)]
 Inductive WO (A : Type) (B : A -> Type) : Type :=

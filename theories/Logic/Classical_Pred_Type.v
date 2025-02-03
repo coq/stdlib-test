@@ -13,7 +13,7 @@
 
 (** Classical Predicate Logic on Type *)
 
-Require Import Classical_Prop.
+From Stdlib Require Import Classical_Prop.
 
 Section Generic.
 Variable U : Type.

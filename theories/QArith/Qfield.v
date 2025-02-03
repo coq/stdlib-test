@@ -8,9 +8,9 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export Field.
-Require Export QArith_base.
-Require Import NArithRing.
+From Stdlib Require Export Field.
+From Stdlib Require Export QArith_base.
+From Stdlib Require Import NArithRing.
 
 (** * field and ring tactics for rational numbers *)
 

@@ -10,7 +10,7 @@
 
 (** Properties of the greatest common divisor *)
 
-Require Import ZAxioms ZMulOrder ZSgnAbs NZGcd.
+From Stdlib Require Import ZAxioms ZMulOrder ZSgnAbs NZGcd.
 
 Module Type ZGcdProp
  (Import A : ZAxiomsSig')

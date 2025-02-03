@@ -8,5 +8,5 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export Sorted.
-Require Export Mergesort.
+From Stdlib Require Export Sorted.
+From Stdlib Require Export Mergesort.

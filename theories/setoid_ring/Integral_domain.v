@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export Cring.
+From Stdlib Require Export Cring.
 Import BinNat.
 
 (* Definition of integral domains: commutative ring without zero divisor *)

@@ -8,7 +8,7 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Import Decimal Ascii String.
+From Stdlib Require Import Decimal Ascii String.
 
 (** * Conversion between decimal numbers and Coq strings *)
 

@@ -8,8 +8,8 @@
 (*         *     (see LICENSE file for the text of the license)         *)
 (************************************************************************)
 
-Require Export List.
-Require Export BinPos.
+From Stdlib Require Export List.
+From Stdlib Require Export BinPos.
 
 Open Scope positive_scope.
 
@@ -384,4 +384,4 @@ Arguments Full_map [A B f] S _.
 Notation "hyps \ A" := (push A hyps) (at level 72,left associativity).
 
 (* TODO #14736 for compatibility only, should be removed after deprecation *)
-Require Arith.EqNat.
+From Stdlib Require Arith.EqNat.

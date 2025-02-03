@@ -10,7 +10,7 @@
 (*                      Evgeny Makarov, INRIA, 2007                     *)
 (************************************************************************)
 
-Require Export Bool NZAxioms NZParity NZPow NZSqrt NZLog NZDiv NZGcd NZBits.
+From Stdlib Require Export Bool NZAxioms NZParity NZPow NZSqrt NZLog NZDiv NZGcd NZBits.
 
 (** From [NZ], we obtain natural numbers just by stating that [pred 0] == 0 *)
 

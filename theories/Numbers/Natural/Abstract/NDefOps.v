@@ -12,9 +12,9 @@
 
 Attributes deprecated(since="8.20", note="Use PeanoNat or BinInt instead.").
 
-Require Import Bool. (* To get the orb and negb function *)
-Require Import RelationPairs.
-Require Export NStrongRec.
+From Stdlib Require Import Bool. (* To get the orb and negb function *)
+From Stdlib Require Import RelationPairs.
+From Stdlib Require Export NStrongRec.
 
 (** In this module, we derive generic implementations of usual operators
    just via the use of a [recursion] function. *)

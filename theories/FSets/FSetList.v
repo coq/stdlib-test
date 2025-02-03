@@ -13,14 +13,14 @@
 (** This file proposes an implementation of the non-dependent
     interface [FSetInterface.S] using strictly ordered list. *)
 
-Require Export FSetInterface.
+From Stdlib Require Export FSetInterface.
 Set Implicit Arguments.
 Unset Strict Implicit.
 
 (** This is just a compatibility layer, the real implementation
     is now in [MSetList] *)
 
-Require FSetCompat MSetList Orders OrdersAlt.
+From Stdlib Require FSetCompat MSetList Orders OrdersAlt.
 
 Module Make (X: OrderedType) <: S with Module E := X.
  Module X' := OrdersAlt.Update_OT X.

@@ -10,12 +10,12 @@
 (*                      Evgeny Makarov, INRIA, 2007                     *)
 (************************************************************************)
 
-Require Export NZAxioms.
-Require Import ZArith.
-Require Import Zpow_facts.
-Require Import DoubleType.
-Require Import CyclicAxioms.
-Require Import Lia.
+From Stdlib Require Export NZAxioms.
+From Stdlib Require Import ZArith.
+From Stdlib Require Import Zpow_facts.
+From Stdlib Require Import DoubleType.
+From Stdlib Require Import CyclicAxioms.
+From Stdlib Require Import Lia.
 
 (** * From [CyclicType] to [NZAxiomsSig] *)
 

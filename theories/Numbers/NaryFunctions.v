@@ -14,7 +14,7 @@ Local Set Warnings "-deprecated".
 
 Local Open Scope type_scope.
 
-Require Import List.
+From Stdlib Require Import List.
 
 (** * Generic dependently-typed operators about [n]-ary functions *)
 

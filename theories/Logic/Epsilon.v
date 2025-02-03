@@ -11,7 +11,7 @@
 (** This file provides indefinite description under the form of
     Hilbert's epsilon operator; it does not assume classical logic. *)
 
-Require Import ChoiceFacts.
+From Stdlib Require Import ChoiceFacts.
 
 Set Implicit Arguments.
 

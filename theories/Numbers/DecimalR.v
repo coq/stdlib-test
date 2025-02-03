@@ -13,7 +13,7 @@
     Proofs that conversions between decimal numbers and [R]
     are bijections. *)
 
-Require Import Decimal DecimalFacts DecimalPos DecimalZ DecimalQ Rdefinitions.
+From Stdlib Require Import Decimal DecimalFacts DecimalPos DecimalZ DecimalQ Rdefinitions.
 Require Import PeanoNat.
 
 Lemma of_IQmake_to_decimal num den :

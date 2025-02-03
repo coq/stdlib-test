@@ -10,9 +10,9 @@
 (*                      Evgeny Makarov, INRIA, 2007                     *)
 (************************************************************************)
 
-Require Export Decidable.
-Require Export ZAxioms.
-Require Import NZMulOrder.
+From Stdlib Require Export Decidable.
+From Stdlib Require Export ZAxioms.
+From Stdlib Require Import NZMulOrder.
 
 Module ZBaseProp (Import Z : ZAxiomsMiniSig').
 Include NZMulOrderProp Z.
