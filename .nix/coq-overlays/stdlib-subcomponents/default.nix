@@ -16,13 +16,14 @@ let
     "structures" = [ "bool" ];
     "arith-base" = [ "structures" ];
     "positive" = [ "arith-base" ];
-    "narith" = [ "positive" ];
-    "zarith-base" = [ "narith" ];
+    "narith" = [ "ring" ];
+    "zarith-base" = [ "narith-base" ];
+    "narith-base" = [ "positive" ];
     "lists" = [ "arith-base" ];
     "ring" = [ "zarith-base" "lists" ];
     "arith" = [ "ring" ];
     "strings" = [ "arith" ];
-    "lia" = [ "arith" ];
+    "lia" = [ "arith" "narith" ];
     "zarith" = [ "lia" ];
     "qarith-base" = [ "ring" ];
     "field" = [ "qarith-base" "zarith" ];
