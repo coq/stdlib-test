@@ -187,8 +187,11 @@ through the <tt>From Stdlib Require Import</tt> command.</p>
     (theories/PArith/PArith.v)
   </dd>
 
-  <dt> <a name="narith"></a><b>NArith</b>:
-    Binary natural numbers
+  <dt> <a name="narith-base"></a><b>NArith-base</b>:
+    Binary natural numbers.
+    Everything can be loaded with From Stdlib Require Import NArith_base.
+    To enjoy the ring automatic tactic, you need to load
+    <a href="#narith">narith</a> below, using From Stdlib Require Import NArith.
   </dt>
   <dd>
     theories/NArith/BinNatDef.v
@@ -198,6 +201,13 @@ through the <tt>From Stdlib Require Import</tt> command.</p>
     theories/NArith/Ndiv_def.v
     theories/NArith/Ngcd_def.v
     theories/NArith/Nsqrt_def.v
+    (theories/NArith/NArith_base.v)
+  </dd>
+
+  <dt> <a name="narith"></a><b>NArith</b>:
+    Binary natural numbers
+  </dt>
+  <dd>
     (theories/NArith/NArith.v)
   </dd>
 
