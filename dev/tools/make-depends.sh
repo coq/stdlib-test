@@ -1,15 +1,9 @@
 #!/bin/bash
 
 # this should be called from root as
-# % dune build -p rocq-stdlib
 # % dev/tools/make-depends.sh
 
-THEORIES="_build/default/theories"
-if [ ! -d ${THEORIES} ] ; then
-    echo "Error: ${THEORIES} doesn't exist, run first"
-    echo "% dune build -p rocq-stdlib"
-    exit 1
-fi
+THEORIES="theories"
 
 declare -A FILE_PKG
 
@@ -42,10 +36,10 @@ done
 echo "node [shape=rectangle, style=filled, color=\"#ff540a\", URL=\"#\\N\"];";
 rocq dep -Q ${THEORIES} Stdlib ${THEORIES} | sed -n -e 's,/,.,g;s/[.]vo.*: [^ ]*v//p' | \
     while read src dst; do
-        src=${src#_build.default.theories.}
+        src=${src#theories.}
         srcf="$(echo ${src%.vo} | tr '.' '/').v"
         for d in $dst; do
-            d=${d#_build.default.theories.}
+            d=${d#theories.}
             df="$(echo ${d%.vo} | tr '.' '/').v"
             if [ -z ${FILE_PKG[${df}]:-""} ] ; then continue ; fi
             # File dependencies

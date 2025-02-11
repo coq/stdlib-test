@@ -1,1 +1,0 @@
-../SetoidChoice.v

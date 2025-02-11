@@ -36,9 +36,9 @@ How to Modify the Structure
 
 When adding a file, it is enough to list it in the appropriate
 `theories/Make.*` file. Note that, for historical reasons, some
-directories are split between different subcomponents. In this case, a
-symlink must be added in the appropriate `_SubComponent` subdirectory
-and only the symlink must be listed in `theories/Make.*`. Look at
+directories are split between different subcomponents. In this case,
+the new line in the `theories/Make.*` file must contain the
+appropriate `_SubComponent` fake subdirectory. Look at
 `theories/Make.lists` for an example.
 
 To add or remove a subcomponent, just add or remove the corresponding

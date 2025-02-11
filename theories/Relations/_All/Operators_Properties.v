@@ -1,1 +1,0 @@
-../Operators_Properties.v

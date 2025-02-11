@@ -1,1 +1,0 @@
-../PropExtensionality.v

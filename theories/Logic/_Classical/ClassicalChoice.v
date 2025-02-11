@@ -1,1 +1,0 @@
-../ClassicalChoice.v

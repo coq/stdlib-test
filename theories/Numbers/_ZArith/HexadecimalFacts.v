@@ -1,1 +1,0 @@
-../HexadecimalFacts.v
