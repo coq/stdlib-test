@@ -134,6 +134,8 @@ ide/coqide/index_urls.txt
 .lia.cache
 .nia.cache
 .nra.cache
+theories/Makefile.coq
+theories/Makefile.coq.conf
 
 # emacs save files
 *~

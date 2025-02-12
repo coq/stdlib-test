@@ -3,6 +3,15 @@ ROCQMAKEFILE?=$(ROCQBIN)rocq makefile
 ROCQMAKEOPTIONS?=
 ROCQMAKEFILEOPTIONS?=
 
+all: Makefile.coq
+	+$(MAKE) -f $< $(ROCQMAKEOPTIONS)
+
+install: Makefile.coq
+	+$(MAKE) -f $< $(ROCQMAKEOPTIONS) install
+
+Makefile.coq: _CoqProject
+	$(ROCQMAKEFILE) $(ROCQMAKEFILEOPTIONS) -f $< $(shell find . -name "*.v") -o $@
+
 build-%: Makefile-%.coq
 	+$(MAKE) -f $< $(ROCQMAKEOPTIONS)
 
@@ -18,3 +27,6 @@ Makefile-%.coq: Make.%
 
 install-%: Makefile-%.coq
 	+$(MAKE) -f $< $(ROCQMAKEOPTIONS) install
+
+%.vo: Makefile.coq %.v
+	+$(MAKE) -f $< $(ROCQMAKEOPTIONS) $@

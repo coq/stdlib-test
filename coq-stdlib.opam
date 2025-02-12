@@ -9,25 +9,10 @@ license: "LGPL-2.1-only"
 homepage: "https://coq.inria.fr/"
 doc: "https://coq.github.io/doc/"
 bug-reports: "https://github.com/coq/stdlib/issues"
+dev-repo: "git+https://github.com/coq/stdlib.git"
 depends: [
-  "dune" {>= "3.8"}
   "coq-core"
   "rocq-stdlib" {= version}
-  "odoc" {with-doc}
 ]
-dev-repo: "git+https://github.com/coq/stdlib.git"
 build: [
-  ["dune" "subst"] {dev}
-  [
-    "dev/with-rocq-wrap.sh"
-    "dune"
-    "build"
-    "-p"
-    name
-    "-j"
-    jobs
-    "@install"
-    "@runtest" {with-test}
-    "@doc" {with-doc}
-  ]
 ]
