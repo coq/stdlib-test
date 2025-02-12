@@ -59,19 +59,12 @@ let
       propagatedBuildInputs = stdlib-deps;
       useDune = false;
       mlPlugin = true;
-    } // (if component != "all" then {
+    } // {
       buildPhase = ''
         make ''${enableParallelBuilding:+-j $NIX_BUILD_CORES} build-${component}
       '';
       installPhase = ''
         make COQLIBINSTALL=$out/lib/coq/${coq.coq-version}/user-contrib install-${component}
       '';
-    } else {
-      buildPhase = ''
-        echo "nothing left to build"
-      '';
-      installPhase = ''
-        echo "nothing left to install"
-      '';
-    })) stdlib;
+    }) stdlib;
 in stdlib_ "all"
