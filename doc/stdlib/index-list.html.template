@@ -694,4 +694,11 @@ through the <tt>From Stdlib Require Import</tt> command.</p>
     theories/Compat/AdmitAxiom.v
     theories/Compat/Stdlib818.v
   </dd>
+
+  <dt> <a name="all"></a><b>All</b>:
+    Require the whole Stdlib
+  </dt>
+  <dd>
+    (theories/All/All.v)
+  </dd>
 </dl>

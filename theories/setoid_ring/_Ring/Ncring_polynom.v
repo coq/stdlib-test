@@ -1,1 +1,0 @@
-../Ncring_polynom.v

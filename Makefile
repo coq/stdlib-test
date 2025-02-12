@@ -1,9 +1,12 @@
 DUNE=dev/with-rocq-wrap.sh dune
 
-all:
+all install:
+	+$(MAKE) -C theories $@
+
+dune:
 	$(DUNE) build -p rocq-stdlib @install
 
-install:
+dune-install:
 	$(DUNE) install --root . rocq-stdlib
 
 build-% install-%:
@@ -11,7 +14,7 @@ build-% install-%:
 
 # Make of individual .vo
 theories/%.vo:
-	$(DUNE) build $@
+	+$(MAKE) -C theories $*.vo
 
 refman-html:
 	$(DUNE) build --root . --no-buffer @refman-html

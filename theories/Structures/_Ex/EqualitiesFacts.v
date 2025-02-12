@@ -1,1 +1,0 @@
-../EqualitiesFacts.v

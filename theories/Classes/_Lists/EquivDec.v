@@ -1,1 +1,0 @@
-../EquivDec.v
