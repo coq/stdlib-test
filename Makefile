@@ -21,5 +21,3 @@ refman-html:
 
 stdlib-html:
 	$(DUNE) build --root . @stdlib-html
-
-include Makefile.ci

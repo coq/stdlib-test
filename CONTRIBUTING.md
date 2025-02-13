@@ -679,7 +679,7 @@ documentation should be improved.
 
 [coq-contributing-guide]: https://github.com/coq/coq/blob/master/CONTRIBUTING.md
 [stdlib-repository]: https://github.com/coq-community/stdlib
-[CI-README]: dev/ci/README.md
+[CI-README]: dev/doc/README-CI.md
 [CODEOWNERS]: .github/CODEOWNERS
 [coqbot-minimize]: https://github.com/coq/coq/wiki/Coqbot-minimize-feature
 [coqdoc-documentation]: https://coq.inria.fr/refman/practical-tools/utilities.html#documenting-coq-files-with-coqdoc
@@ -717,5 +717,5 @@ documentation should be improved.
 [release-plan]: https://github.com/coq/coq/wiki/Release-Plan
 [stdlib-doc]: https://coq.inria.fr/stdlib/
 [test-suite-README]: test-suite/README.md
-[user-overlays]: dev/ci/user-overlays
+[user-overlays]: dev/doc/README-CI.md
 [Zulip]: https://coq.zulipchat.com/#narrow/channel/478198-Stdlib-devs-.26-users
