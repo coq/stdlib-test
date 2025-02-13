@@ -300,7 +300,7 @@ $(addsuffix .log,$(wildcard output/*.v)): %.v.log: %.v %.out $(PREREQUISITELOG)
 	$(HIDE)$(call REPORT_TIMER,$@)
 
 .PHONY: approve-output
-approve-output: output output-coqtop output-coqchk
+approve-output: output
 	$(HIDE)for f in $(addsuffix /*.out.real,$^); do if [ -f "$$f" ]; then \
 	  mv "$$f" "$${f%.real}"; \
 	  echo "Updated $${f%.real}!"; \
